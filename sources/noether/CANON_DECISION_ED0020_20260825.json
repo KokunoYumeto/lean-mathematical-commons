@@ -1,0 +1,120 @@
+{
+  "schema": "lean-mathematical-commons/noether-canon-decision-reference/1.0",
+  "recorded_at": "2026-08-25T02:36:00+02:00",
+  "canon_owner_thread": "019fca5c-0e73-7c72-92fb-5b507b710598",
+  "formalization_witness_unchanged": {
+    "authority_id": "NOETH-DE-ED-0014",
+    "sha256": "EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58",
+    "reason": "Existing theorem locators and build evidence remain bound to this immutable witness until an explicit canon rebase."
+  },
+  "authority_state_reported_by_canon_owner": {
+    "active_public_authority": "NOETH-DE-ED-0015",
+    "verified_local_source_path": "C:/Users/Floris/Documents/interlanguage/03_projects/noether/07_german_canon_control/candidates/ED0015/noether.tex",
+    "verified_local_source_bytes": 2154017,
+    "verified_local_source_sha256": "51A25101C04877AE740989E72B2AD65A7A7E65B081077C4A518BF1737AD5B907",
+    "inactive_successor": "NOETH-DE-ED-0020",
+    "activation_boundary": "ED0020 remains inactive until a separately valid registry activation/publication transaction."
+  },
+  "inactive_successor": {
+    "authority_id": "NOETH-DE-ED-0020",
+    "source": {
+      "path": "C:/Users/Floris/Documents/interlanguage/03_projects/noether/07_german_canon_control/candidates/ED0020/noether.tex",
+      "bytes": 2154078,
+      "sha256": "77D5BF32D9C6606EAB7DE4579097808EA1EEFD09949A81ED579DFFDB3A87F8C2"
+    },
+    "pdf": {
+      "path": "C:/Users/Floris/Documents/interlanguage/03_projects/noether/07_german_canon_control/build_logs/ED0020/noether.pdf",
+      "bytes": 2656393,
+      "sha256": "00A008DD4D12CD1A78AE9D035D5502F67C47A08F32CDB88889595DE0ED344315",
+      "pages": 466
+    },
+    "build_receipt": {
+      "path": "C:/Users/Floris/Documents/interlanguage/03_projects/noether/07_german_canon_control/build_logs/ED0020/BUILD.json",
+      "bytes": 16660,
+      "sha256": "1CF95DD5E9AEFF63F32BAA4005B30A68167FCEE33B5B32BEA662AB24470D3557"
+    },
+    "decision_packet": {
+      "path": "C:/Users/Floris/Documents/interlanguage/03_projects/noether/07_german_canon_control/evidence/LEAN_pilot_P18_P21_P25_20260825/DECISION.json",
+      "bytes": 12631,
+      "sha256": "3DC9B77C4B7A3F80196617C4FC1E8FC6DC0DC4527C6656E72CA07B96F4E39B1B"
+    },
+    "consolidated_p21_p25_adjudication": {
+      "path": "C:/Users/Floris/Documents/interlanguage/03_projects/noether/08_zenodo/audit/LEAN_P21_P25_CANON_ADJUDICATION_20260825.json",
+      "bytes": 14816,
+      "sha256": "9222B8CBB5C8E7A44687DEBF39DF68332C249A07FF5B5273CCCD00FABEF52020",
+      "authority_pins_rehashed": 13,
+      "new_unimplemented_german_corrections": 0
+    }
+  },
+  "decisions": [
+    {
+      "work_id": "P21",
+      "lines": [12622, 12635],
+      "decision": "accepted_append_only_transcription_correction",
+      "reading": "f(dx); delta f - d f_delta",
+      "effect": "ED0020 removes two spurious prime marks; the formal chain is coherent."
+    },
+    {
+      "work_id": "P21",
+      "lines": [12644, 12655],
+      "decision": "keep_primary_print",
+      "reading": "capital D throughout equations (141)",
+      "effect": "Type D as an implicit independent third formal differential direction."
+    },
+    {
+      "work_id": "P25",
+      "lines": [14187],
+      "decision": "keep_primary_print_with_critical_apparatus",
+      "reading": "0 <= k < n",
+      "effect": "Modern statements must use k <= n or add p != 0; the exact source repair is underdetermined."
+    },
+    {
+      "work_id": "P25",
+      "lines": [14172, 14189],
+      "decision": "keep_historical_terminology",
+      "reading": "Galoisscher/Galoisschen Koerper",
+      "effect": "Model by a splitting/normal field, adding modern IsGalois only with separability."
+    },
+    {
+      "work_id": "P18",
+      "lines": [11240],
+      "decision": "keep_primary_print_grammatical_anomaly",
+      "reading": "adjungiert ist"
+    },
+    {
+      "work_id": "P18",
+      "lines": [11232, 11238],
+      "decision": "keep_primary_print_staged_semantics_confirmed",
+      "effect": "The later Hentzelt-Noether paper confirms staged triangular resultants; do not read the display as one arbitrary hypersurface equation."
+    },
+    {
+      "work_id": "P18",
+      "lines": [24028],
+      "decision": "accepted_append_only_bibliographic_correction",
+      "reading": "J. Ber. d. DMV 30 (1921), S. 101",
+      "effect": "S. 48 identifies a different short notice."
+    },
+    {
+      "work_id": "P16",
+      "lines": [10014, 10018],
+      "decision": "keep_primary_print_continuation_layout"
+    },
+    {
+      "work_id": "P24",
+      "decision": "keep_printed_dummy_index_and_unit_ideal_convention; r_a corrected to r_alpha in ED0019"
+    },
+    {
+      "work_id": "P27",
+      "decision": "keep_printed_historical_ideal_quotient_slash_notation"
+    },
+    {
+      "work_id": "P28",
+      "decision": "keep_printed_Charaktere_with_modern_scope_caveat"
+    },
+    {
+      "work_id": "P31",
+      "decision": "u already introduced; keep. R_bar_ma corrected to R_bar_a and nach_1 corrected to nach_2 in ED0019."
+    }
+  ],
+  "source_or_translation_files_edited": false
+}

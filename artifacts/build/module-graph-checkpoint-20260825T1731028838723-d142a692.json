@@ -1,0 +1,118 @@
+{
+  "schema": "lean-mathematical-commons/module-graph-checkpoint/1.0",
+  "checkpoint_id": "20260825T1731028838723-d142a692",
+  "base_batch": {
+    "batch_id": "20260825T0355153955281-3669b4fc",
+    "manifest": "artifacts/build/module-batch-20260825T0355153955281-3669b4fc.json",
+    "verified_modules": 17
+  },
+  "previous_checkpoint": "artifacts/build/module-graph-checkpoint-20260825T1626433004707-35064a03.json",
+  "incremental_rebuild": {
+    "batch_ids": [
+      "20260825T1652078237270-aa0ef80b",
+      "20260825T1654275727112-cd32aaf0",
+      "20260825T1712260533528-91ede580",
+      "20260825T1724081052895-519d8642",
+      "20260825T1728307635127-cecdeeb1",
+      "20260825T1728494821731-29c87a3a"
+    ],
+    "cache_directory": "artifacts/build/local-olean/20260825T0355153955281-3669b4fc",
+    "reason": "P22 gained seven source-linked theorem modules: finite natural generic parameters, literal stage multipliers, the reverse and common-presentation halves completing Satz VI, Satz XI's exact residue rank and displayed basis, and Satz XII's finite-coordinate zero-locus substrate plus Nullstellensatz corollary",
+    "reused_unchanged_theorem_modules": 18,
+    "added_theorem_modules": 7,
+    "max_memory_gib": 2.5,
+    "rebuilt_modules": [
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FiniteParameterBridge",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1270198272,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FiniteParameterBridge-20260825T1712262015996-f20325d6.module.receipt.json"
+      },
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.GenericParameters",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1301225472,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-GenericParameters-20260825T1713256603826-8eceb7ac.module.receipt.json"
+      },
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.StageMultipliers",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1295699968,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-StageMultipliers-20260825T1652079444030-a9aaebc0.module.receipt.json"
+      },
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.SatzVIReverse",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1294675968,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-SatzVIReverse-20260825T1724082534888-c424b8f0.module.receipt.json"
+      },
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.SatzVICommonPresentation",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1297661952,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-SatzVICommonPresentation-20260825T1724217884888-614bc32e.module.receipt.json"
+      },
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.SatzXI",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1362034688,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-SatzXI-20260825T1654276582795-90e47005.module.receipt.json"
+      },
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.SatzXII",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1365041152,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-SatzXII-20260825T1728308694524-fa5e2a5e.module.receipt.json"
+      },
+      {
+        "module": "MathematicalCommons.Noether",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1820180480,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-20260825T1728495901046-1b0a6ac2.module.receipt.json"
+      },
+      {
+        "module": "MathematicalCommons",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1818218496,
+        "receipt": "artifacts/build/MathematicalCommons-20260825T1729117366774-15cf3e5a.module.receipt.json"
+      }
+    ]
+  },
+  "lean_version": "4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "max_memory_gib": 4.5,
+  "all_27_targets_current": true,
+  "all_exit_zero": true,
+  "all_stderr_empty": true,
+  "all_sources_unchanged_during_build": true,
+  "all_environments_unchanged_during_build": true,
+  "maximum_observed_process_tree_peak_bytes": 1827713024
+}

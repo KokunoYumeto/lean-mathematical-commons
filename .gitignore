@@ -1,0 +1,11 @@
+.lake/
+.agent-tmp/
+tmp/
+HmScratch.lean
+artifacts/build/local-olean/
+artifacts/build/*.stderr.txt
+artifacts/build/*.stdout.txt
+artifacts/build/.lean-build.lock
+*.olean
+*.ilean
+*.c

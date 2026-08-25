@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this formalization library, cite the release DOI and the historical source edition identified in its theorem ledger."
+title: "Lean of the Mathematical Commons: Emmy Noether pilot"
+type: software
+version: 0.1.0-dev
+date-released: 2026-08-24
+repository-code: "https://github.com/KokunoYumeto/lean-mathematical-commons"
+url: "https://github.com/KokunoYumeto/lean-mathematical-commons"
+authors:
+  - name: "Lean of the Mathematical Commons contributors"
+license: Apache-2.0
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21129945"
+    description: "Related concept DOI for the existing classical-mathematics Lean sidecars; not yet a DOI for this expanded repository checkpoint."
+keywords:
+  - Lean 4
+  - Mathlib
+  - Emmy Noether
+  - invariant theory
+  - primary decomposition
+  - formalized mathematics
+abstract: >-
+  A living, source-linked Lean 4 library and Mathlib coverage audit for
+  classical mathematical works. The pilot begins with Emmy Noether and keeps
+  formal verification separate from German transcription authority.

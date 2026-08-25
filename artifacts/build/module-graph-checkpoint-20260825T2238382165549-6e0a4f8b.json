@@ -1,0 +1,59 @@
+{
+  "schema": "lean-mathematical-commons/module-graph-checkpoint/1.0",
+  "checkpoint_id": "20260825T2238382165549-6e0a4f8b",
+  "base_batch": {
+    "batch_id": "20260825T0355153955281-3669b4fc",
+    "manifest": "artifacts/build/module-batch-20260825T0355153955281-3669b4fc.json",
+    "verified_modules": 17
+  },
+  "previous_checkpoint": "artifacts/build/module-graph-checkpoint-20260825T1731028838723-d142a692.json",
+  "incremental_rebuild": {
+    "batch_ids": [
+      "20260825T2235541451598-87ad7970"
+    ],
+    "cache_directory": "artifacts/build/local-olean/20260825T0355153955281-3669b4fc",
+    "reason": "P22 gained a source-linked regularity-specialization module: a pure-power regularity predicate, finite simultaneous nonvanishing over infinite domains, coefficient-map preservation, and the characteristic-zero finite-family specialization used after Satz VII",
+    "reused_unchanged_theorem_modules": 25,
+    "added_theorem_modules": 1,
+    "max_memory_gib": 2.5,
+    "rebuilt_modules": [
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularitySpecialization",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1190191104,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-RegularitySpecialization-20260825T2235544405991-6ed747de.module.receipt.json"
+      },
+      {
+        "module": "MathematicalCommons.Noether",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1825107968,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-20260825T2237217151814-f21b3393.module.receipt.json"
+      },
+      {
+        "module": "MathematicalCommons",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1823498240,
+        "receipt": "artifacts/build/MathematicalCommons-20260825T2237531117572-881bca55.module.receipt.json"
+      }
+    ]
+  },
+  "lean_version": "4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "max_memory_gib": 4.5,
+  "all_28_targets_current": true,
+  "all_exit_zero": true,
+  "all_stderr_empty": true,
+  "all_sources_unchanged_during_build": true,
+  "all_environments_unchanged_during_build": true,
+  "maximum_observed_process_tree_peak_bytes": 1827713024
+}

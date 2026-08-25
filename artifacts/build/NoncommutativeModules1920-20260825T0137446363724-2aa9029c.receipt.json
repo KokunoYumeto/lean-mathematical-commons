@@ -1,0 +1,186 @@
+{
+  "schema": "lean-mathematical-commons/build-receipt/1.2",
+  "run_id": "20260825T0137446363724-2aa9029c",
+  "source": {
+    "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\noncommutative_modules_1920\\NoncommutativeModules1920.lean",
+    "path_relative_to_repository": ".agent-tmp/noncommutative_modules_1920/NoncommutativeModules1920.lean",
+    "before": {
+      "bytes": 2558,
+      "sha256": "A276C48E81130BEDE0506A4B817DDFF6629D78E0D5AB788ACDCD4203B5FA51C2"
+    },
+    "after": {
+      "bytes": 2558,
+      "sha256": "A276C48E81130BEDE0506A4B817DDFF6629D78E0D5AB788ACDCD4203B5FA51C2"
+    },
+    "changed_during_build": false
+  },
+  "runner": {
+    "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\scripts\\run-lean-bounded.ps1",
+    "path_relative_to_repository": "scripts/run-lean-bounded.ps1",
+    "before": {
+      "bytes": 19656,
+      "sha256": "3BF9B59A8C714282791C7A816B6BC90600CD8BD91BDC5C60383E5236A83CEB99"
+    },
+    "after": {
+      "bytes": 19656,
+      "sha256": "3BF9B59A8C714282791C7A816B6BC90600CD8BD91BDC5C60383E5236A83CEB99"
+    }
+  },
+  "lean": {
+    "executable_path": "C:\\Users\\Floris\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\bin\\lean.exe",
+    "executable_before": {
+      "bytes": 83456,
+      "sha256": "9B216DEB50D37C32C829D1EFAAA5BAFD5560417D382DF35A815489E31A31593F"
+    },
+    "executable_after": {
+      "bytes": 83456,
+      "sha256": "9B216DEB50D37C32C829D1EFAAA5BAFD5560417D382DF35A815489E31A31593F"
+    },
+    "version_output": "Lean (version 4.31.0, x86_64-w64-windows-gnu, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)",
+    "expected_version_from_toolchain": "4.31.0",
+    "reported_version": "4.31.0",
+    "version_matches_toolchain": true,
+    "direct_invocation": true,
+    "argument_list": [
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\noncommutative_modules_1920\\NoncommutativeModules1920.lean"
+    ],
+    "working_directory": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN",
+    "lean_num_threads": 1,
+    "lean_path": [
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-aesop\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-batteries\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-importGraph\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-LeanSearchClient\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-plausible\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-proofwidgets\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-Qq\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-aesop\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-batteries\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-importGraph\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-LeanSearchClient\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-plausible\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-proofwidgets\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-Qq\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\lib\\lean"
+    ]
+  },
+  "toolchains": {
+    "normalized_values_match": true,
+    "repository": {
+      "path": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\lean-toolchain",
+      "normalized_value": "leanprover/lean4:v4.31.0",
+      "before": {
+        "bytes": 26,
+        "sha256": "1550DC85BB00026CC586C6390F0AF6D6B84C0AEF210F4B8B44EFDC6812EF6256"
+      },
+      "after": {
+        "bytes": 26,
+        "sha256": "1550DC85BB00026CC586C6390F0AF6D6B84C0AEF210F4B8B44EFDC6812EF6256"
+      }
+    },
+    "dependency_project": {
+      "path": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\lean-toolchain",
+      "normalized_value": "leanprover/lean4:v4.31.0",
+      "before": {
+        "bytes": 25,
+        "sha256": "EFAC0B94923B2D8B6840CD35BE9177AD0FC5AB2332F4F4311C98712CEE92FDEE"
+      },
+      "after": {
+        "bytes": 25,
+        "sha256": "EFAC0B94923B2D8B6840CD35BE9177AD0FC5AB2332F4F4311C98712CEE92FDEE"
+      }
+    }
+  },
+  "manifests": {
+    "mathlib_pins_match": true,
+    "repository": {
+      "path": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\lake-manifest.json",
+      "before": {
+        "bytes": 2692,
+        "sha256": "2914F8BEE3052F54329E5B606AB650D536B9E2FF2740D05AFB620DA84EDC6447"
+      },
+      "after": {
+        "bytes": 2692,
+        "sha256": "2914F8BEE3052F54329E5B606AB650D536B9E2FF2740D05AFB620DA84EDC6447"
+      },
+      "mathlib": {
+        "url": "https://github.com/leanprover-community/mathlib4.git",
+        "input_rev": "v4.31.0",
+        "resolved_rev": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f"
+      }
+    },
+    "dependency_project": {
+      "path": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\lake-manifest.json",
+      "before": {
+        "bytes": 3747,
+        "sha256": "8C47B013A63DAE8AE1EF2F578C5AC343C6EC05837941C9DD3BD4D3C7A9D96189"
+      },
+      "after": {
+        "bytes": 3747,
+        "sha256": "8C47B013A63DAE8AE1EF2F578C5AC343C6EC05837941C9DD3BD4D3C7A9D96189"
+      },
+      "mathlib": {
+        "url": "https://github.com/leanprover-community/mathlib4.git",
+        "input_rev": "v4.31.0",
+        "resolved_rev": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f"
+      }
+    }
+  },
+  "dependency_project": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery",
+  "platform": {
+    "os_description": "Microsoft Windows 10.0.26200",
+    "os_architecture": "X64",
+    "process_architecture": "X64",
+    "framework": ".NET 9.0.1",
+    "powershell_version": "7.5.0",
+    "powershell_edition": "Core"
+  },
+  "watcher": {
+    "enforcement": "best_effort_sampled_process_tree_working_set",
+    "hard_limit": false,
+    "limitation": "Transient memory peaks between samples are possible; this is not a Windows Job Object hard ceiling.",
+    "scope": "Lean root process and descendants captured from parent-process relationships",
+    "kill_policy": "On abnormal termination, stop only captured descendants (deepest first), then the captured root",
+    "sample_interval_milliseconds": 200,
+    "max_memory_gib": 5.0,
+    "limit_bytes": 5368709120,
+    "observed_process_tree_peak_bytes": 1101619200,
+    "memory_exceeded": false,
+    "terminated_process_ids": []
+  },
+  "workspace_build_lock": {
+    "path": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\.lean-build.lock",
+    "exclusive": true,
+    "purpose": "Prevent concurrent Lean builds in this workspace"
+  },
+  "environment_changed_during_build": false,
+  "process_started": true,
+  "process_completed": true,
+  "process_exit_code": 0,
+  "termination_reason": "process_exited",
+  "runner_errors": [],
+  "started_at": "2026-08-25T01:37:44.6531116+02:00",
+  "finished_at": "2026-08-25T01:37:53.5264282+02:00",
+  "exit_code": 0,
+  "logs": {
+    "stdout": {
+      "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\NoncommutativeModules1920-20260825T0137446363724-2aa9029c.stdout.txt",
+      "path_relative_to_repository": "artifacts/build/NoncommutativeModules1920-20260825T0137446363724-2aa9029c.stdout.txt",
+      "fingerprint": {
+        "bytes": 158,
+        "sha256": "C133F1BF178BD37F3A8A41B49CDAF434B7561CD7A1208DE3F5B4DCE6AF602552"
+      }
+    },
+    "stderr": {
+      "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\NoncommutativeModules1920-20260825T0137446363724-2aa9029c.stderr.txt",
+      "path_relative_to_repository": "artifacts/build/NoncommutativeModules1920-20260825T0137446363724-2aa9029c.stderr.txt",
+      "fingerprint": {
+        "bytes": 0,
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+      }
+    }
+  }
+}

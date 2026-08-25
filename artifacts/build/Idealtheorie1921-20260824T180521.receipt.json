@@ -1,0 +1,14 @@
+{
+  "schema": "lean-mathematical-commons/build-receipt/1.0",
+  "file": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\MathematicalCommons\\Noether\\Idealtheorie1921.lean",
+  "lake_project": "C:\\Users\\Floris\\Downloads\\helix_extract\\helix_frobenius-master",
+  "lean_num_threads": 1,
+  "max_memory_gib": 8.0,
+  "observed_process_tree_peak_bytes": 1668034560,
+  "memory_exceeded": false,
+  "started_at": "2026-08-24T18:05:21.0943563+02:00",
+  "finished_at": "2026-08-24T18:06:38.2071633+02:00",
+  "exit_code": 0,
+  "stdout": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\Idealtheorie1921-20260824T180521.stdout.txt",
+  "stderr": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\Idealtheorie1921-20260824T180521.stderr.txt"
+}

@@ -1,0 +1,7 @@
+author_id	author	life_dates	local_corpus_state	formalization_state	priority_lane	public_corpus_doi	central_source_index	limitations
+NOETHER	Emmy Noether	1882–1935	present_external_not_duplicated	active_pilot	invariant theory; ideal/module theory; representation theory; noncommutative algebra; number theory; variational calculus	10.5281/zenodo.20412587	https://github.com/KokunoYumeto/modern-latex-manuscripts	The 43 numbered works are inventoried; only selected papers currently have declaration-level Lean coverage.
+STEINITZ	Ernst Steinitz	1871–1928	present_external_not_duplicated	deposited_anchor_only	field theory; algebraic closure	10.5281/zenodo.20616988	https://github.com/KokunoYumeto/modern-latex-manuscripts	Existing sidecar anchor is indexed; no complete local paper-level audit yet.
+SYLVESTER	J. J. Sylvester	1814–1897	present_external_not_duplicated	queued	invariant theory; matrix theory; combinatorics	10.5281/zenodo.20520692	https://github.com/KokunoYumeto/modern-latex-manuscripts	Topic routing only; it is not evidence of a Mathlib gap.
+KNESER	Hellmuth Kneser	1898–1973	present_external_not_duplicated	queued	quadratic forms; topology; geometry	10.5281/zenodo.20836971	https://github.com/KokunoYumeto/modern-latex-manuscripts	Topic routing only; it is not evidence of a Mathlib gap.
+GORDAN	Paul Gordan	1837–1912	present_external_not_duplicated	scaffold_queued	classical invariant theory	10.5281/zenodo.20616260	https://github.com/KokunoYumeto/modern-latex-manuscripts	Existing TeX may support a later source scaffold; no formalization claim is made here.
+

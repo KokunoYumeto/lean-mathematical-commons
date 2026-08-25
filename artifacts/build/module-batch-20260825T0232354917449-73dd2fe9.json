@@ -1,0 +1,94 @@
+{
+  "schema": "lean-mathematical-commons/module-build-batch/1.0",
+  "batch_id": "20260825T0232354917449-73dd2fe9",
+  "lean_version": "4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "max_memory_gib": 4.5,
+  "all_exit_zero": true,
+  "all_stderr_empty": true,
+  "all_sources_unchanged": true,
+  "maximum_observed_process_tree_peak_bytes": 1826496512,
+  "modules": [
+    {
+      "module": "MathematicalCommons.Noether.FiniteGroupInvariants1916",
+      "peak_bytes": 1454968832,
+      "receipt": "artifacts/build/MathematicalCommons-Noether-FiniteGroupInvariants1916-20260825T0232356305350-dff20730.module.receipt.json"
+    },
+    {
+      "module": "MathematicalCommons.Noether.InvariantVariationalProblems1918",
+      "peak_bytes": 1666170880,
+      "receipt": "artifacts/build/MathematicalCommons-Noether-InvariantVariationalProblems1918-20260825T0233224608170-5dec38ed.module.receipt.json"
+    },
+    {
+      "module": "MathematicalCommons.Noether.IntegralInvariants1919",
+      "peak_bytes": 907411456,
+      "receipt": "artifacts/build/MathematicalCommons-Noether-IntegralInvariants1919-20260825T0233450798810-afcfa56e.module.receipt.json"
+    },
+    {
+      "module": "MathematicalCommons.Noether.SeriesExpansion1920",
+      "peak_bytes": 1130450944,
+      "receipt": "artifacts/build/MathematicalCommons-Noether-SeriesExpansion1920-20260825T0233564422492-439249c2.module.receipt.json"
+    },
+    {
+      "module": "MathematicalCommons.NoetherSchmeidler.NoncommutativeModules1920",
+      "peak_bytes": 1105911808,
+      "receipt": "artifacts/build/MathematicalCommons-NoetherSchmeidler-NoncommutativeModules1920-20260825T0234090520593-dfbf883a.module.receipt.json"
+    },
+    {
+      "module": "MathematicalCommons.Noether.Idealtheorie1921",
+      "peak_bytes": 1205301248,
+      "receipt": "artifacts/build/MathematicalCommons-Noether-Idealtheorie1921-20260825T0234206452781-b0254a18.module.receipt.json"
+    },
+    {
+      "module": "MathematicalCommons.Noether.AbsoluteIrreducibility1922",
+      "peak_bytes": 1317175296,
+      "receipt": "artifacts/build/MathematicalCommons-Noether-AbsoluteIrreducibility1922-20260825T0234338803657-381a5fd5.module.receipt.json"
+    },
+    {
+      "module": "MathematicalCommons.Noether.AlgebraicDifferentialInvariants1923",
+      "peak_bytes": 1343987712,
+      "receipt": "artifacts/build/MathematicalCommons-Noether-AlgebraicDifferentialInvariants1923-20260825T0234474034625-9ab6ba81.module.receipt.json"
+    },
+    {
+      "module": "MathematicalCommons.Noether.EliminationIdealTheory1923",
+      "peak_bytes": 1155637248,
+      "receipt": "artifacts/build/MathematicalCommons-Noether-EliminationIdealTheory1923-20260825T0235023220719-d50a80d7.module.receipt.json"
+    },
+    {
+      "module": "MathematicalCommons.Noether.EliminationIdealTheorySurvey1924",
+      "peak_bytes": 1233571840,
+      "receipt": "artifacts/build/MathematicalCommons-Noether-EliminationIdealTheorySurvey1924-20260825T0235131754542-aed969cc.module.receipt.json"
+    },
+    {
+      "module": "MathematicalCommons.Noether.ModularInvariants1926",
+      "peak_bytes": 1475338240,
+      "receipt": "artifacts/build/MathematicalCommons-Noether-ModularInvariants1926-20260825T0235300502149-0b8eff07.module.receipt.json"
+    },
+    {
+      "module": "MathematicalCommons.Noether.DedekindTheory1927",
+      "peak_bytes": 1372819456,
+      "receipt": "artifacts/build/MathematicalCommons-Noether-DedekindTheory1927-20260825T0235447202811-12ab530f.module.receipt.json"
+    },
+    {
+      "module": "MathematicalCommons.Noether.AbstractIdealTheory1924",
+      "peak_bytes": 1368788992,
+      "receipt": "artifacts/build/MathematicalCommons-Noether-AbstractIdealTheory1924-20260825T0236007151620-533dddee.module.receipt.json"
+    },
+    {
+      "module": "MathematicalCommons.Noether.DiscriminantTheorem1927",
+      "peak_bytes": 1559199744,
+      "receipt": "artifacts/build/MathematicalCommons-Noether-DiscriminantTheorem1927-20260825T0236163681961-15c07162.module.receipt.json"
+    },
+    {
+      "module": "MathematicalCommons.Noether",
+      "peak_bytes": 1818451968,
+      "receipt": "artifacts/build/MathematicalCommons-Noether-20260825T0236320589176-7de61555.module.receipt.json"
+    },
+    {
+      "module": "MathematicalCommons",
+      "peak_bytes": 1826496512,
+      "receipt": "artifacts/build/MathematicalCommons-20260825T0236484377103-c278aee3.module.receipt.json"
+    }
+  ]
+}
