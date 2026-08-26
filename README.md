@@ -99,9 +99,11 @@ never silently repaired here.
   proved to preserve the exact total degree of every nonzero input. A
   dehomogenization and algebraic-independence argument proves its first-variable
   leading coefficient nonzero for every nonzero polynomial, and the generic
-  transform of every nonzero ideal therefore contains a regular member. Finite
-  parameter descent, the later stage modules, staged resultants, and the
-  compatible-zero system remain open.
+  transform of every nonzero ideal therefore contains a regular member. In
+  characteristic zero, one finite ground-field assignment preserves any
+  supplied finite family of these witnesses; the resulting transform is proved
+  to be an actual lower-unitriangular algebra equivalence. The later stage
+  modules, staged resultants, and compatible-zero system remain open.
 - Extends P25's generic-zero construction: evaluation has kernel exactly the
   prime ideal, and the generic coordinate tuple generates the fraction field
   of the prime quotient over the coefficient field. It now also proves the
@@ -167,10 +169,10 @@ project; it refuses a conflicting target rather than rebuilding a package.
 
 The current 32-target graph check (30 promoted theorem/support modules and both
 umbrellas) is checkpoint
-[`20260826T0458000385704-942a1542`](artifacts/build/module-graph-checkpoint-20260826T0458000385704-942a1542.json).
+[`20260826T0527205736234-11e8edb4`](artifacts/build/module-graph-checkpoint-20260826T0527205736234-11e8edb4.json).
 It reuses 29 unchanged theorem modules, completes P22's existing generic-
-regularity module, and rebuilds both umbrellas; every current target exited
-zero with empty stderr and unchanged source/environment. The
+regularity finite-specialization bridge, and rebuilds both umbrellas; every
+current target exited zero with empty stderr and unchanged source/environment. The
 maximum observed process-tree working set across the checkpoint chain was
 1,919,344,640 bytes under the strict 3 GiB worker envelope; every new build
 used a 2.5 GiB process-tree cap.

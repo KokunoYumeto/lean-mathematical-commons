@@ -1,0 +1,64 @@
+{
+  "schema": "lean-mathematical-commons/module-graph-checkpoint/1.0",
+  "checkpoint_id": "20260826T0527205736234-11e8edb4",
+  "base_batch": {
+    "batch_id": "20260825T0355153955281-3669b4fc",
+    "manifest": "artifacts/build/module-batch-20260825T0355153955281-3669b4fc.json",
+    "verified_modules": 17
+  },
+  "previous_checkpoint": "artifacts/build/module-graph-checkpoint-20260826T0458000385704-942a1542.json",
+  "incremental_rebuild": {
+    "batch_ids": [
+      "20260826T0529026566006-52ccc37e",
+      "20260826T0531038085246-790eb739",
+      "20260826T0534516893972-4b0b4b23"
+    ],
+    "cache_directory": "artifacts/build/local-olean/20260825T0355153955281-3669b4fc",
+    "reason": "P22's equation-(12) regularity witness was descended from the rational-function field to polynomial parameter coefficients and then to one characteristic-zero ground-field assignment; the resulting map was identified with an actual lower-unitriangular algebra equivalence, yielding a regular member in a specialized transform of every nonzero ideal",
+    "reused_unchanged_theorem_modules": 29,
+    "changed_theorem_modules": 1,
+    "added_theorem_modules": 0,
+    "max_memory_gib": 2.5,
+    "global_worker_limit_gib": 3.0,
+    "rebuilt_modules": [
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.GenericRegularity",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1492131840,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-GenericRegularity-20260826T0529029977091-d53d82d9.module.receipt.json"
+      },
+      {
+        "module": "MathematicalCommons.Noether",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1917026304,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-20260826T0531041507915-ccc3bce0.module.receipt.json"
+      },
+      {
+        "module": "MathematicalCommons",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1917644800,
+        "receipt": "artifacts/build/MathematicalCommons-20260826T0534520721480-b7210535.module.receipt.json"
+      }
+    ]
+  },
+  "lean_version": "4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "dependency_sidecar_receipt": "artifacts/build/-lake-packages-mathlib-Mathlib-Algebra-MvPolynomial-Polynomial-20260826T0348146129700-4a8c9b38.module.receipt.json",
+  "serial": true,
+  "all_32_targets_current": true,
+  "all_exit_zero": true,
+  "all_stderr_empty": true,
+  "all_sources_unchanged_during_build": true,
+  "all_environments_unchanged_during_build": true,
+  "current_incremental_maximum_observed_process_tree_peak_bytes": 1917644800,
+  "maximum_observed_process_tree_peak_bytes": 1919344640
+}

@@ -30,7 +30,14 @@ variable to one dehomogenizes a homogeneous polynomial injectively. Evaluating
 that dehomogenization at the algebraically independent first-column parameters
 is therefore nonzero. This identifies exactly with the generic leading
 coefficient, so every nonzero homogeneous input becomes regular in the first
-variable.
+variable. Passing to the top homogeneous component extends this to every
+nonzero polynomial and every nonzero transformed ideal.
+
+The rational-function-field result is then descended to the polynomial
+parameter ring. In characteristic zero, one ground-field assignment preserves
+any supplied finite family of regularity witnesses. The evaluated transform is
+identified with an actual lower-unitriangular algebra equivalence, not merely a
+coefficient map.
 -/
 
 namespace MathematicalCommons.Noether.PolynomialIdealsAndResultants1923
@@ -579,6 +586,353 @@ theorem exists_regular_member_independentGenericTransformIdeal
     independentGenericTransform_mem_independentGenericTransformIdeal I hFI,
     independentGenericTransform_isRegular hF0⟩
 
+/-- Equation-(12) lower coefficients before embedding the parameter-polynomial
+ring in its fraction field. -/
+def parameterPolynomialLowerMatrix (i j : Fin n) :
+    MvPolynomial (LowerParameter n) P :=
+  if h : j < i then X (⟨(i, j), h⟩ : LowerParameter n) else 0
+
+@[simp]
+theorem parameterPolynomialLowerMatrix_of_lt (i j : Fin n) (h : j < i) :
+    parameterPolynomialLowerMatrix (P := P) i j =
+      X (⟨(i, j), h⟩ : LowerParameter n) := by
+  simp [parameterPolynomialLowerMatrix, h]
+
+@[simp]
+theorem parameterPolynomialLowerMatrix_of_not_lt (i j : Fin n) (h : ¬j < i) :
+    parameterPolynomialLowerMatrix (P := P) i j = 0 := by
+  simp [parameterPolynomialLowerMatrix, h]
+
+/-- The source coordinate equivalence over the polynomial parameter ring. -/
+def parameterPolynomialLowerUnitriangularEquiv :
+    MvPolynomial (Fin n) (MvPolynomial (LowerParameter n) P) ≃ₐ[
+      MvPolynomial (LowerParameter n) P]
+      MvPolynomial (Fin n) (MvPolynomial (LowerParameter n) P) :=
+  CoordinateShear.lowerUnitriangularEquiv
+    (parameterPolynomialLowerMatrix (P := P) (n := n))
+
+/-- The equation-(12) transform before passing to rational functions in its
+parameters. -/
+noncomputable def parameterPolynomialTransformHom :
+    MvPolynomial (Fin n) P →+*
+      MvPolynomial (Fin n) (MvPolynomial (LowerParameter n) P) :=
+  (parameterPolynomialLowerUnitriangularEquiv (P := P) (n := n)).toRingEquiv.toRingHom.comp
+    (MvPolynomial.map (algebraMap P (MvPolynomial (LowerParameter n) P)))
+
+noncomputable def parameterPolynomialTransform
+    (F : MvPolynomial (Fin n) P) :
+    MvPolynomial (Fin n) (MvPolynomial (LowerParameter n) P) :=
+  parameterPolynomialTransformHom (P := P) (n := n) F
+
+theorem map_parameterPolynomialLowerMatrix (i j : Fin n) :
+    algebraMap (MvPolynomial (LowerParameter n) P)
+        (ParameterField (P := P) n)
+        (parameterPolynomialLowerMatrix (P := P) i j) =
+      independentLowerMatrix P i j := by
+  by_cases h : j < i
+  · simp [parameterPolynomialLowerMatrix, independentLowerMatrix, h]
+  · simp [parameterPolynomialLowerMatrix, independentLowerMatrix, h]
+
+theorem map_parameterPolynomialLowerImage (i : Fin n) :
+    MvPolynomial.map
+        (algebraMap (MvPolynomial (LowerParameter n) P)
+          (ParameterField (P := P) n))
+        (CoordinateShear.lowerImage
+          (parameterPolynomialLowerMatrix (P := P) (n := n)) i) =
+      CoordinateShear.lowerImage (independentLowerMatrix P) i := by
+  classical
+  simp only [CoordinateShear.lowerImage, map_add,
+    MvPolynomial.map_X, map_sum, map_mul, MvPolynomial.map_C]
+  congr 1
+  apply Finset.sum_congr rfl
+  intro j hj
+  rw [map_parameterPolynomialLowerMatrix]
+
+/-- Embedding all parameter coefficients in the fraction field recovers the
+independent generic transform exactly. -/
+theorem map_parameterPolynomialTransform
+    (F : MvPolynomial (Fin n) P) :
+    MvPolynomial.map
+        (algebraMap (MvPolynomial (LowerParameter n) P)
+          (ParameterField (P := P) n))
+        (parameterPolynomialTransform (P := P) F) =
+      independentGenericTransform (P := P) F := by
+  have hhom :
+      (MvPolynomial.map
+          (algebraMap (MvPolynomial (LowerParameter n) P)
+            (ParameterField (P := P) n))).comp
+          (parameterPolynomialTransformHom (P := P) (n := n)) =
+        genericTransformHom (P := P) (U := LowerParameter n)
+          (independentLowerUnitriangularEquiv (P := P) (n := n)) := by
+    apply MvPolynomial.ringHom_ext
+    · intro c
+      simp only [RingHom.comp_apply, parameterPolynomialTransformHom,
+        genericTransformHom, MvPolynomial.map_C]
+      change MvPolynomial.map
+          (algebraMap (MvPolynomial (LowerParameter n) P)
+            (ParameterField (P := P) n))
+          (parameterPolynomialLowerUnitriangularEquiv (P := P) (n := n)
+            (C (algebraMap P (MvPolynomial (LowerParameter n) P) c))) =
+        independentLowerUnitriangularEquiv (P := P) (n := n)
+          (C (algebraMap P (ParameterField (P := P) n) c))
+      have hc₁ := (parameterPolynomialLowerUnitriangularEquiv
+        (P := P) (n := n)).commutes
+          (algebraMap P (MvPolynomial (LowerParameter n) P) c)
+      change parameterPolynomialLowerUnitriangularEquiv (P := P) (n := n)
+          (C (algebraMap P (MvPolynomial (LowerParameter n) P) c)) =
+        C (algebraMap P (MvPolynomial (LowerParameter n) P) c) at hc₁
+      rw [hc₁]
+      rw [MvPolynomial.map_C]
+      have hc₂ := (independentLowerUnitriangularEquiv
+        (P := P) (n := n)).commutes
+          (algebraMap P (ParameterField (P := P) n) c)
+      change independentLowerUnitriangularEquiv (P := P) (n := n)
+          (C (algebraMap P (ParameterField (P := P) n) c)) =
+        C (algebraMap P (ParameterField (P := P) n) c) at hc₂
+      rw [hc₂]
+      rw [IsScalarTower.algebraMap_apply P
+        (MvPolynomial (LowerParameter n) P) (ParameterField (P := P) n)]
+    · intro i
+      change MvPolynomial.map
+          (algebraMap (MvPolynomial (LowerParameter n) P)
+            (ParameterField (P := P) n))
+          (parameterPolynomialLowerUnitriangularEquiv (P := P) (n := n)
+            (MvPolynomial.map
+              (algebraMap P (MvPolynomial (LowerParameter n) P)) (X i))) =
+        independentLowerUnitriangularEquiv (P := P) (n := n)
+          (MvPolynomial.map
+            (algebraMap P (ParameterField (P := P) n)) (X i))
+      rw [MvPolynomial.map_X, MvPolynomial.map_X]
+      change MvPolynomial.map
+          (algebraMap (MvPolynomial (LowerParameter n) P)
+            (ParameterField (P := P) n))
+          (CoordinateShear.lowerUnitriangularEquiv
+            (parameterPolynomialLowerMatrix (P := P) (n := n)) (X i)) =
+        CoordinateShear.lowerUnitriangularEquiv
+          (independentLowerMatrix P) (X i)
+      rw [CoordinateShear.lowerUnitriangularEquiv_X,
+        CoordinateShear.lowerUnitriangularEquiv_X]
+      exact map_parameterPolynomialLowerImage i
+  change ((MvPolynomial.map
+    (algebraMap (MvPolynomial (LowerParameter n) P)
+      (ParameterField (P := P) n))).comp
+        (parameterPolynomialTransformHom (P := P) (n := n))) F = _
+  exact RingHom.congr_fun hhom F
+
+/-- The polynomial parameter that becomes the generic pure first-variable
+coefficient after fraction-field embedding. -/
+noncomputable def parameterPolynomialLeadingCoefficient
+    (hn : 0 < n) (F : MvPolynomial (Fin n) P) (r : ℕ) :
+    MvPolynomial (LowerParameter n) P :=
+  MvPolynomial.coeff (Finsupp.single (⟨0, hn⟩ : Fin n) r)
+    (parameterPolynomialTransform (P := P) F)
+
+theorem map_parameterPolynomialLeadingCoefficient
+    (hn : 0 < n) (F : MvPolynomial (Fin n) P) (r : ℕ) :
+    algebraMap (MvPolynomial (LowerParameter n) P)
+        (ParameterField (P := P) n)
+        (parameterPolynomialLeadingCoefficient (P := P) hn F r) =
+      independentGenericLeadingCoefficient (P := P) hn F r := by
+  unfold parameterPolynomialLeadingCoefficient independentGenericLeadingCoefficient
+  rw [← MvPolynomial.coeff_map, map_parameterPolynomialTransform]
+
+theorem parameterPolynomialLeadingCoefficient_totalDegree_ne_zero
+    {N : ℕ} {F : MvPolynomial (Fin (N + 1)) P} (hF0 : F ≠ 0) :
+    parameterPolynomialLeadingCoefficient (P := P) (Nat.succ_pos N)
+      F F.totalDegree ≠ 0 := by
+  intro hzero
+  have hmap := map_parameterPolynomialLeadingCoefficient
+    (P := P) (Nat.succ_pos N) F F.totalDegree
+  rw [hzero, map_zero] at hmap
+  exact independentGenericLeadingCoefficient_totalDegree_ne_zero hF0 hmap.symm
+
+theorem parameterPolynomialTransform_totalDegree
+    {N : ℕ} {F : MvPolynomial (Fin (N + 1)) P} (hF0 : F ≠ 0) :
+    (parameterPolynomialTransform (P := P) F).totalDegree = F.totalDegree := by
+  let ι := algebraMap (MvPolynomial (LowerParameter (N + 1)) P)
+    (ParameterField (P := P) (N + 1))
+  have hι : Function.Injective ι :=
+    IsFractionRing.injective (MvPolynomial (LowerParameter (N + 1)) P)
+      (ParameterField (P := P) (N + 1))
+  have hdegree :
+      (MvPolynomial.map ι
+        (parameterPolynomialTransform (P := P) F)).totalDegree =
+        (parameterPolynomialTransform (P := P) F).totalDegree := by
+    simp only [MvPolynomial.totalDegree,
+      MvPolynomial.support_map_of_injective _ hι]
+  calc
+    (parameterPolynomialTransform (P := P) F).totalDegree =
+        (MvPolynomial.map ι
+          (parameterPolynomialTransform (P := P) F)).totalDegree := hdegree.symm
+    _ = (independentGenericTransform (P := P) F).totalDegree := by
+      rw [map_parameterPolynomialTransform]
+    _ = F.totalDegree := independentGenericTransform_totalDegree hF0
+
+theorem parameterPolynomialTransform_isRegular
+    {N : ℕ} {F : MvPolynomial (Fin (N + 1)) P} (hF0 : F ≠ 0) :
+    IsRegularInDegree (0 : Fin (N + 1)) F.totalDegree
+      (parameterPolynomialTransform (P := P) F) := by
+  exact ⟨parameterPolynomialTransform_totalDegree hF0,
+    parameterPolynomialLeadingCoefficient_totalDegree_ne_zero hF0⟩
+
+/-- One parameter value simultaneously preserves the generic regularity of a
+finite family of nonzero inputs in characteristic zero. -/
+theorem exists_evaluation_parameterPolynomialTransforms_isRegular_charZero
+    [CharZero P] {N : ℕ} {Ι : Type*} [Fintype Ι]
+    (F : Ι → MvPolynomial (Fin (N + 1)) P) (hF0 : ∀ j, F j ≠ 0) :
+    ∃ a : LowerParameter (N + 1) → P, ∀ j,
+      IsRegularInDegree (0 : Fin (N + 1)) (F j).totalDegree
+        (MvPolynomial.map (MvPolynomial.eval a)
+          (parameterPolynomialTransform (P := P) (F j))) := by
+  exact exists_evaluation_preserving_regularity_fintype_charZero
+    (fun _ : Ι ↦ (0 : Fin (N + 1))) (fun j ↦ (F j).totalDegree)
+    (fun j ↦ parameterPolynomialTransform (P := P) (F j))
+    (fun j ↦ parameterPolynomialTransform_isRegular (hF0 j))
+
+/-- The lower-triangular coefficient matrix after assigning parameter values
+in the ground field. -/
+def specializedLowerMatrix (a : LowerParameter n → P) (i j : Fin n) : P :=
+  if h : j < i then a ⟨(i, j), h⟩ else 0
+
+/-- The actual ground-field coordinate equivalence determined by a finite
+parameter assignment. -/
+def specializedLowerUnitriangularEquiv (a : LowerParameter n → P) :
+    MvPolynomial (Fin n) P ≃ₐ[P] MvPolynomial (Fin n) P :=
+  CoordinateShear.lowerUnitriangularEquiv (specializedLowerMatrix a)
+
+theorem eval_parameterPolynomialLowerMatrix
+    (a : LowerParameter n → P) (i j : Fin n) :
+    MvPolynomial.eval a (parameterPolynomialLowerMatrix (P := P) i j) =
+      specializedLowerMatrix a i j := by
+  by_cases h : j < i
+  · simp [parameterPolynomialLowerMatrix, specializedLowerMatrix, h]
+  · simp [parameterPolynomialLowerMatrix, specializedLowerMatrix, h]
+
+theorem map_eval_parameterPolynomialLowerImage
+    (a : LowerParameter n → P) (i : Fin n) :
+    MvPolynomial.map (MvPolynomial.eval a)
+        (CoordinateShear.lowerImage
+          (parameterPolynomialLowerMatrix (P := P) (n := n)) i) =
+      CoordinateShear.lowerImage (specializedLowerMatrix a) i := by
+  classical
+  simp only [CoordinateShear.lowerImage, map_add, MvPolynomial.map_X,
+    map_sum, map_mul, MvPolynomial.map_C]
+  congr 1
+  apply Finset.sum_congr rfl
+  intro j hj
+  rw [eval_parameterPolynomialLowerMatrix]
+
+/-- The equation-(12) transform after assigning values in the ground field to
+all independent lower-triangular parameters. -/
+noncomputable def specializedParameterTransformHom
+    (a : LowerParameter n → P) :
+    MvPolynomial (Fin n) P →+* MvPolynomial (Fin n) P :=
+  (MvPolynomial.map (MvPolynomial.eval a)).comp
+    (parameterPolynomialTransformHom (P := P) (n := n))
+
+noncomputable def specializedParameterTransform
+    (a : LowerParameter n → P) (F : MvPolynomial (Fin n) P) :
+    MvPolynomial (Fin n) P :=
+  specializedParameterTransformHom (P := P) a F
+
+/-- The source ideal after the finite equation-(12) coordinate
+specialization. -/
+noncomputable def specializedParameterTransformIdeal
+    (a : LowerParameter n → P) (I : Ideal (MvPolynomial (Fin n) P)) :
+    Ideal (MvPolynomial (Fin n) P) :=
+  Ideal.map (specializedParameterTransformHom (P := P) a) I
+
+theorem specializedParameterTransform_mem_specializedParameterTransformIdeal
+    (a : LowerParameter n → P) (I : Ideal (MvPolynomial (Fin n) P))
+    {F : MvPolynomial (Fin n) P} (hFI : F ∈ I) :
+    specializedParameterTransform (P := P) a F ∈
+      specializedParameterTransformIdeal (P := P) a I := by
+  exact Ideal.mem_map_of_mem _ hFI
+
+/-- Evaluating the polynomial-parameter transform gives exactly the
+ground-field lower-unitriangular coordinate equivalence. -/
+theorem specializedParameterTransformHom_eq_equiv
+    (a : LowerParameter n → P) :
+    specializedParameterTransformHom (P := P) a =
+      (specializedLowerUnitriangularEquiv a).toRingEquiv.toRingHom := by
+  apply MvPolynomial.ringHom_ext
+  · intro c
+    simp only [specializedParameterTransformHom, RingHom.comp_apply,
+      parameterPolynomialTransformHom, MvPolynomial.map_C]
+    change MvPolynomial.map (MvPolynomial.eval a)
+        (parameterPolynomialLowerUnitriangularEquiv (P := P) (n := n)
+          (C (algebraMap P (MvPolynomial (LowerParameter n) P) c))) =
+      specializedLowerUnitriangularEquiv a (C c)
+    have hc₁ := (parameterPolynomialLowerUnitriangularEquiv
+      (P := P) (n := n)).commutes
+        (algebraMap P (MvPolynomial (LowerParameter n) P) c)
+    change parameterPolynomialLowerUnitriangularEquiv (P := P) (n := n)
+        (C (algebraMap P (MvPolynomial (LowerParameter n) P) c)) =
+      C (algebraMap P (MvPolynomial (LowerParameter n) P) c) at hc₁
+    rw [hc₁, MvPolynomial.map_C]
+    change C (MvPolynomial.eval a (C c)) = specializedLowerUnitriangularEquiv a (C c)
+    have hc₂ := (specializedLowerUnitriangularEquiv a).commutes c
+    change specializedLowerUnitriangularEquiv a (C c) = C c at hc₂
+    rw [hc₂]
+    simp
+  · intro i
+    change MvPolynomial.map (MvPolynomial.eval a)
+        (parameterPolynomialLowerUnitriangularEquiv (P := P) (n := n)
+          (MvPolynomial.map
+            (algebraMap P (MvPolynomial (LowerParameter n) P)) (X i))) =
+      specializedLowerUnitriangularEquiv a (X i)
+    rw [MvPolynomial.map_X]
+    change MvPolynomial.map (MvPolynomial.eval a)
+        (CoordinateShear.lowerUnitriangularEquiv
+          (parameterPolynomialLowerMatrix (P := P) (n := n)) (X i)) =
+      CoordinateShear.lowerUnitriangularEquiv
+        (specializedLowerMatrix a) (X i)
+    rw [CoordinateShear.lowerUnitriangularEquiv_X,
+      CoordinateShear.lowerUnitriangularEquiv_X]
+    exact map_eval_parameterPolynomialLowerImage a i
+
+theorem specializedParameterTransform_eq_equiv
+    (a : LowerParameter n → P) (F : MvPolynomial (Fin n) P) :
+    specializedParameterTransform (P := P) a F =
+      specializedLowerUnitriangularEquiv a F := by
+  exact RingHom.congr_fun (specializedParameterTransformHom_eq_equiv a) F
+
+/-- Membership is reflected as well as preserved because every finite
+specialization is an actual coordinate equivalence. -/
+theorem specializedParameterTransform_mem_ideal_iff
+    (a : LowerParameter n → P) (I : Ideal (MvPolynomial (Fin n) P))
+    (F : MvPolynomial (Fin n) P) :
+    specializedParameterTransform (P := P) a F ∈
+        specializedParameterTransformIdeal (P := P) a I ↔ F ∈ I := by
+  rw [specializedParameterTransform_eq_equiv]
+  unfold specializedParameterTransformIdeal
+  rw [specializedParameterTransformHom_eq_equiv]
+  change (specializedLowerUnitriangularEquiv a).toRingEquiv F ∈
+      Ideal.map (specializedLowerUnitriangularEquiv a).toRingEquiv I ↔ F ∈ I
+  exact Ideal.apply_mem_of_equiv_iff
+
+/-- Characteristic-zero finite descent: every nonzero ideal admits an actual
+ground-field specialization of equation (12) whose transformed ideal contains
+a polynomial regular in the first variable. -/
+theorem exists_specialization_regular_member
+    [CharZero P] {N : ℕ}
+    (I : Ideal (MvPolynomial (Fin (N + 1)) P)) (hI : I ≠ ⊥) :
+    ∃ (a : LowerParameter (N + 1) → P) (r : ℕ)
+      (G : MvPolynomial (Fin (N + 1)) P),
+      G ∈ specializedParameterTransformIdeal (P := P) a I ∧
+        IsRegularInDegree (0 : Fin (N + 1)) r G := by
+  obtain ⟨F, hFI, hF0⟩ := Submodule.exists_mem_ne_zero_of_ne_bot hI
+  obtain ⟨a, ha⟩ :=
+    exists_evaluation_parameterPolynomialTransforms_isRegular_charZero
+      (P := P) (Ι := Fin 1) (fun _ ↦ F) (fun _ ↦ hF0)
+  refine ⟨a, F.totalDegree, specializedParameterTransform (P := P) a F,
+    specializedParameterTransform_mem_specializedParameterTransformIdeal
+      a I hFI, ?_⟩
+  change IsRegularInDegree (0 : Fin (N + 1)) F.totalDegree
+    (MvPolynomial.map (MvPolynomial.eval a)
+      (parameterPolynomialTransform (P := P) F))
+  exact ha 0
+
 /-- Equation (12) sends the first generator to itself, so its generic leading
 coefficient is the unit. -/
 theorem independentGenericLeadingCoefficient_X_zero
@@ -659,6 +1013,16 @@ end Independent
 #print axioms independentGenericTransform_isRegular
 #print axioms independentGenericTransform_mem_independentGenericTransformIdeal
 #print axioms exists_regular_member_independentGenericTransformIdeal
+#print axioms map_parameterPolynomialTransform
+#print axioms parameterPolynomialLeadingCoefficient_totalDegree_ne_zero
+#print axioms parameterPolynomialTransform_totalDegree
+#print axioms parameterPolynomialTransform_isRegular
+#print axioms exists_evaluation_parameterPolynomialTransforms_isRegular_charZero
+#print axioms specializedParameterTransform_mem_specializedParameterTransformIdeal
+#print axioms specializedParameterTransformHom_eq_equiv
+#print axioms specializedParameterTransform_eq_equiv
+#print axioms specializedParameterTransform_mem_ideal_iff
+#print axioms exists_specialization_regular_member
 #print axioms independentGenericLeadingCoefficient_X_zero
 #print axioms independentGenericLeadingCoefficient_X_of_pos
 

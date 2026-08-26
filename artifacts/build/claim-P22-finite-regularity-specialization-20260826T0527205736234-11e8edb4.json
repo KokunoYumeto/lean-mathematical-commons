@@ -1,0 +1,53 @@
+{
+  "schema": "lean-mathematical-commons/claim-build-receipt/1.0",
+  "claim_id": "HENTZELT-NOETHER-1923-GENERIC-REGULARITY-SCAFFOLD",
+  "status": "finite_specialization_completed",
+  "supersedes": "artifacts/build/claim-P22-generic-regularity-20260826T0458000385704-942a1542.json",
+  "source": {
+    "witness": "NOETH-DE-ED-0014",
+    "sha256": "EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58",
+    "lines": "13004--13039 and 13319; equation (12), Definition IV, and characteristic-zero specialization"
+  },
+  "declarations": 62,
+  "new_declarations_since_previous_receipt": 27,
+  "newly_closed": [
+    "polynomial-parameter equation-(12) transform before fraction-field embedding",
+    "recovery of the independent generic transform after parameter-ring injection",
+    "nonzero leading parameter polynomial and regularity over the polynomial parameter ring",
+    "simultaneous characteristic-zero specialization for a finite family of nonzero inputs",
+    "identification of every finite specialization with an actual lower-unitriangular algebra equivalence",
+    "existence of a regular member in a finite specialized transform of every nonzero ideal"
+  ],
+  "modules": [
+    {
+      "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.GenericRegularity",
+      "source": {
+        "path": "MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/GenericRegularity.lean",
+        "bytes": 47651,
+        "sha256": "741E3433551B7B4039E7179DD09842C58D18BB58529B1BB6E14520CAE68CCDAD"
+      },
+      "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-GenericRegularity-20260826T0529029977091-d53d82d9.module.receipt.json",
+      "receipt_sha256": "C3B47690933D6F18019F2D17ADA2A20E8B855663B2E1A8D2D1EBBEAAAB7310E9",
+      "exit_code": 0,
+      "peak_bytes": 1492131840,
+      "stderr_bytes": 0,
+      "warnings": 0,
+      "sorry_or_admit": 0,
+      "axioms": ["propext", "Classical.choice", "Quot.sound"]
+    }
+  ],
+  "umbrella_receipts": [
+    "artifacts/build/MathematicalCommons-Noether-20260826T0531041507915-ccc3bce0.module.receipt.json",
+    "artifacts/build/MathematicalCommons-20260826T0534520721480-b7210535.module.receipt.json"
+  ],
+  "dependency_receipts": [
+    "artifacts/build/-lake-packages-mathlib-Mathlib-Algebra-MvPolynomial-Polynomial-20260826T0348146129700-4a8c9b38.module.receipt.json"
+  ],
+  "graph_checkpoint": "artifacts/build/module-graph-checkpoint-20260826T0527205736234-11e8edb4.json",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "worker_memory_limit_gib": 2.5,
+  "all_green": true,
+  "limitations": "Finite characteristic-zero descent for the first regular element is complete and is proved to be an invertible coordinate change. The source's successive construction still requires iterating regular elements through later-variable ground ideals, assembling the finite-stage quotient modules, proving Smith and primitive-normalization data, and constructing staged resultants, compatible zeros, and multiplicities."
+}

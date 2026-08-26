@@ -19,6 +19,13 @@
   preservation and first-variable regularity, and gives a regular member in
   the transform of every nonzero ideal. P22 now has 256 canonical declarations
   across the base and fifteen support modules, with 29 claim/definition records.
+- Added 27 equation-(12) finite-descent declarations, bringing that module to
+  62 declarations and P22 to 283 canonical declarations. The generic transform
+  is recovered from a polynomial-parameter transform; one characteristic-zero
+  parameter assignment preserves a finite family of regularity witnesses; and
+  every specialization is identified with an actual lower-unitriangular
+  algebra equivalence. Thus every nonzero ideal has a finite specialized
+  coordinate transform containing a first-variable regular member.
 - Expanded the maintained graph to 32 targets (30 theorem/support modules and
   both umbrellas). The completed module and umbrellas all exited zero with
   empty stderr under 2.5 GiB caps; the checkpoint-chain peak remains
