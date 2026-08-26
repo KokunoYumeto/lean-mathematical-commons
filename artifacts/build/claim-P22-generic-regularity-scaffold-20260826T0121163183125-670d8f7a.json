@@ -1,0 +1,37 @@
+{
+  "schema": "lean-mathematical-commons/claim-build-receipt/1.0",
+  "claim_id": "HENTZELT-NOETHER-1923-GENERIC-REGULARITY-SCAFFOLD",
+  "source": {
+    "witness": "NOETH-DE-ED-0014",
+    "sha256": "EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58",
+    "lines": "13004--13039; equation (12)"
+  },
+  "declarations": 10,
+  "modules": [
+    {
+      "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.GenericRegularity",
+      "source": {
+        "path": "MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/GenericRegularity.lean",
+        "bytes": 8669,
+        "sha256": "2E81090CFAE3D540F1996A1053C5B01F320FABF17694BAB6CB2AE2666FE82917"
+      },
+      "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-GenericRegularity-20260826T0312541437105-867a01c8.module.receipt.json",
+      "exit_code": 0,
+      "peak_bytes": 1381519360,
+      "stderr_bytes": 0,
+      "warnings": 0,
+      "sorry_or_admit": 0,
+      "axioms": ["propext", "Classical.choice", "Quot.sound"]
+    }
+  ],
+  "umbrella_receipts": [
+    "artifacts/build/MathematicalCommons-Noether-20260826T0316315623899-aa792a2c.module.receipt.json",
+    "artifacts/build/MathematicalCommons-20260826T0318112524428-4c1ae222.module.receipt.json"
+  ],
+  "graph_checkpoint": "artifacts/build/module-graph-checkpoint-20260826T0121163183125-670d8f7a.json",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "all_green": true,
+  "limitations": "This is an exact intermediate scaffold for the generic-coordinate regularity argument: the full independent lower-unitriangular transform preserves homogeneous degree; nonzero pure-power coefficient implies source-shaped regularity; and the controlling coefficient is computed on generators. It does not yet prove that the generic leading coefficient of every arbitrary nonzero homogeneous polynomial is nonzero, construct a regular element of the transformed ideal, connect that element to finite specialization, or construct the later C^(i), finite-stage, Smith, and resultant data."
+}

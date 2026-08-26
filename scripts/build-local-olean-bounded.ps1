@@ -13,7 +13,13 @@ param(
 
     [string] $CacheDirectory = "",
 
-    [string] $LogDirectory = ""
+    [string] $LogDirectory = "",
+
+    # Mirror explicitly compiled dependency-package objects into the
+    # disposable dependency project's package build tree.  Lean does not
+    # overlay two roots with the same package prefix, so this keeps the
+    # prebuilt import graph usable without a full package rebuild.
+    [switch] $MirrorPackageOutputs
 )
 
 $ErrorActionPreference = "Stop"
@@ -166,7 +172,8 @@ $packagesRoot = Join-Path $resolvedDependencyProject ".lake\packages"
 if (-not (Test-Path -LiteralPath $packagesRoot -PathType Container)) {
     throw "Dependency package cache not found: $packagesRoot"
 }
-foreach ($package in Get-ChildItem -LiteralPath $packagesRoot -Directory | Sort-Object Name) {
+ $dependencyPackages = @(Get-ChildItem -LiteralPath $packagesRoot -Directory | Sort-Object Name)
+foreach ($package in $dependencyPackages) {
     $packageLeanLib = Join-Path $package.FullName ".lake\build\lib\lean"
     if (Test-Path -LiteralPath $packageLeanLib -PathType Container) {
         $leanPathEntries.Add((Resolve-Path -LiteralPath $packageLeanLib).Path)
@@ -178,6 +185,76 @@ if (Test-Path -LiteralPath $projectLeanLib -PathType Container) {
 }
 $leanPathEntries.Add((Resolve-Path -LiteralPath (Join-Path $toolchainRoot "lib\lean")).Path)
 $exactLeanPath = (@($leanPathEntries | Select-Object -Unique) -join [IO.Path]::PathSeparator)
+
+function Mirror-PackageOutput([object] $Entry, [string] $OutputPath) {
+    if (-not $MirrorPackageOutputs) {
+        return $null
+    }
+
+    $package = $null
+    $packageRelative = $null
+    $repositoryPackagesRoot = Join-Path $sourceRoot ".lake\packages"
+    foreach ($candidate in $dependencyPackages) {
+        $repositoryCandidate = Join-Path $repositoryPackagesRoot $candidate.Name
+        $candidateRoot = $repositoryCandidate.TrimEnd('\') + '\'
+        if ($Entry.source.StartsWith($candidateRoot, [StringComparison]::OrdinalIgnoreCase)) {
+            $package = $candidate
+            $packageRelative = [IO.Path]::GetRelativePath($repositoryCandidate, $Entry.source)
+            break
+        }
+    }
+    if ($null -eq $package) {
+        return $null
+    }
+
+    $packageLeanLib = Join-Path $package.FullName ".lake\build\lib\lean"
+    $relativeObject = [IO.Path]::ChangeExtension($packageRelative, ".olean")
+    $mirrorPath = Join-Path $packageLeanLib $relativeObject
+    $mirrorParent = Split-Path -Parent $mirrorPath
+    New-Item -ItemType Directory -Force -Path $mirrorParent | Out-Null
+
+    $mirrored = [Collections.Generic.List[object]]::new()
+    foreach ($suffix in @("", ".private", ".server", ".ir")) {
+        $sourceSidecar = if ($suffix -eq ".ir") {
+            [IO.Path]::ChangeExtension($OutputPath, ".ir")
+        } else {
+            $OutputPath + $suffix
+        }
+        if (-not (Test-Path -LiteralPath $sourceSidecar -PathType Leaf)) {
+            continue
+        }
+        $targetSidecar = if ($suffix -eq ".ir") {
+            [IO.Path]::ChangeExtension($mirrorPath, ".ir")
+        } else {
+            $mirrorPath + $suffix
+        }
+        $sourceFingerprint = Get-FileFingerprint $sourceSidecar
+        if (Test-Path -LiteralPath $targetSidecar -PathType Leaf) {
+            $targetFingerprint = Get-FileFingerprint $targetSidecar
+            if (-not (Test-FingerprintEqual $sourceFingerprint $targetFingerprint)) {
+                throw "Refusing to overwrite a different dependency object: $targetSidecar"
+            }
+        } else {
+            Copy-Item -LiteralPath $sourceSidecar -Destination $targetSidecar
+            $targetFingerprint = Get-FileFingerprint $targetSidecar
+            if (-not (Test-FingerprintEqual $sourceFingerprint $targetFingerprint)) {
+                throw "Dependency object mirror failed integrity check: $targetSidecar"
+            }
+        }
+        $mirrored.Add([ordered]@{
+            path_absolute = $targetSidecar
+            source_fingerprint = $sourceFingerprint
+            target_fingerprint = $targetFingerprint
+        })
+    }
+
+    return [ordered]@{
+        enabled = $true
+        package = $package.Name
+        path_relative_to_package = $packageRelative.Replace('\', '/')
+        objects = @($mirrored)
+    }
+}
 
 $lockDirectory = Join-Path $sourceRoot "artifacts\build"
 New-Item -ItemType Directory -Force -Path $lockDirectory | Out-Null
@@ -267,6 +344,10 @@ try {
         if (Test-Path -LiteralPath $entry.output -PathType Leaf) {
             $outputFingerprint = Get-FileFingerprint $entry.output
         }
+        $packageMirror = $null
+        if ($exitCode -eq 0 -and $null -ne $outputFingerprint) {
+            $packageMirror = Mirror-PackageOutput $entry $entry.output
+        }
 
         $environmentChanged = -not (
             (Test-FingerprintEqual $runnerBefore $runnerAfter) -and
@@ -293,6 +374,7 @@ try {
                 path_relative_to_cache = [IO.Path]::GetRelativePath($resolvedCacheDirectory, $entry.output).Replace('\', '/')
                 fingerprint = $outputFingerprint
             }
+            package_mirror = $packageMirror
             runner = [ordered]@{ path_absolute = $runnerPath; before = $runnerBefore; after = $runnerAfter }
             lean = [ordered]@{
                 executable_path = $resolvedLeanExecutable

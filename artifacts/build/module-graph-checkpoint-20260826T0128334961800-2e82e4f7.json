@@ -1,0 +1,71 @@
+{
+  "schema": "lean-mathematical-commons/module-graph-checkpoint/1.0",
+  "checkpoint_id": "20260826T0128334961800-2e82e4f7",
+  "base_batch": {
+    "batch_id": "20260825T0355153955281-3669b4fc",
+    "manifest": "artifacts/build/module-batch-20260825T0355153955281-3669b4fc.json",
+    "verified_modules": 17
+  },
+  "previous_checkpoint": "artifacts/build/module-graph-checkpoint-20260826T0014097083391-9fccc982.json",
+  "incremental_rebuild": {
+    "batch_ids": [
+      "20260826T0116268084079-59080168",
+      "20260826T0126103248243-9a93f46b",
+      "20260826T0126521948847-23408a8c",
+      "20260826T0127393599340-a40ab81c"
+    ],
+    "cache_directory": "artifacts/build/local-olean/20260825T0355153955281-3669b4fc",
+    "reason": "P22 gained source-linked modules for equations (22)--(23): finite coefficient vectors for regular remainders, the exact bounded-part plus principal-tail decomposition of an ideal containing the regular divisor, and the zero-intersection/internal-sum strengthening used in Satz VII",
+    "reused_unchanged_theorem_modules": 27,
+    "added_theorem_modules": 2,
+    "max_memory_gib": 2.5,
+    "rebuilt_modules": [
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1260863488,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-RegularIdealDecomposition-20260826T0116271374572-83ecc6d8.module.receipt.json"
+      },
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularTailDisjoint",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1227345920,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-RegularTailDisjoint-20260826T0126104705129-52db92ff.module.receipt.json"
+      },
+      {
+        "module": "MathematicalCommons.Noether",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1829122048,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-20260826T0126524168305-dc9ca9af.module.receipt.json"
+      },
+      {
+        "module": "MathematicalCommons",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1818554368,
+        "receipt": "artifacts/build/MathematicalCommons-20260826T0127397939398-35249a4e.module.receipt.json"
+      }
+    ]
+  },
+  "lean_version": "4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "max_memory_gib": 4.5,
+  "all_31_targets_current": true,
+  "all_exit_zero": true,
+  "all_stderr_empty": true,
+  "all_sources_unchanged_during_build": true,
+  "all_environments_unchanged_during_build": true,
+  "maximum_observed_process_tree_peak_bytes": 1838075904
+}

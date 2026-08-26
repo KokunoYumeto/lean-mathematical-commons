@@ -1,0 +1,173 @@
+{
+  "schema": "lean-mathematical-commons/module-build-receipt/1.0",
+  "batch_id": "20260826T0215447325834-89469bdf",
+  "run_id": "20260826T0215453801402-8342dbe1",
+  "module": ".lake.packages.mathlib.Mathlib.Algebra.Group.TypeTags.Pointwise",
+  "source": {
+    "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.lake\\packages\\mathlib\\Mathlib\\Algebra\\Group\\TypeTags\\Pointwise.lean",
+    "path_relative_to_repository": ".lake/packages/mathlib/Mathlib/Algebra/Group/TypeTags/Pointwise.lean",
+    "before": {
+      "bytes": 1280,
+      "sha256": "08DA507D3F8007B153489E8FDD58FDB92A67195AB836EA553B419930FE6CF78B"
+    },
+    "after": {
+      "bytes": 1280,
+      "sha256": "08DA507D3F8007B153489E8FDD58FDB92A67195AB836EA553B419930FE6CF78B"
+    },
+    "changed_during_build": false
+  },
+  "output": {
+    "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\local-olean\\20260825T0355153955281-3669b4fc\\.lake\\packages\\mathlib\\Mathlib\\Algebra\\Group\\TypeTags\\Pointwise.olean",
+    "path_relative_to_cache": ".lake/packages/mathlib/Mathlib/Algebra/Group/TypeTags/Pointwise.olean",
+    "fingerprint": {
+      "bytes": 18528,
+      "sha256": "B425095B84ABDB781CE4A43C992F94180B3C9D925333790D5F0CD58676697DEA"
+    }
+  },
+  "package_mirror": {
+    "enabled": true,
+    "package": "mathlib",
+    "path_relative_to_package": "Mathlib/Algebra/Group/TypeTags/Pointwise.lean",
+    "objects": [
+      {
+        "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\Algebra\\Group\\TypeTags\\Pointwise.olean",
+        "source_fingerprint": {
+          "bytes": 18528,
+          "sha256": "B425095B84ABDB781CE4A43C992F94180B3C9D925333790D5F0CD58676697DEA"
+        },
+        "target_fingerprint": {
+          "bytes": 18528,
+          "sha256": "B425095B84ABDB781CE4A43C992F94180B3C9D925333790D5F0CD58676697DEA"
+        }
+      },
+      {
+        "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\Algebra\\Group\\TypeTags\\Pointwise.olean.private",
+        "source_fingerprint": {
+          "bytes": 36408,
+          "sha256": "C7089D78F89A21B2EB46290C96B4E40D21C654CB59F0D03A2676EC7441697DE1"
+        },
+        "target_fingerprint": {
+          "bytes": 36408,
+          "sha256": "C7089D78F89A21B2EB46290C96B4E40D21C654CB59F0D03A2676EC7441697DE1"
+        }
+      },
+      {
+        "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\Algebra\\Group\\TypeTags\\Pointwise.olean.server",
+        "source_fingerprint": {
+          "bytes": 1904,
+          "sha256": "7FA0591E7C07295AFFFFB9CDC9700FE124444E67D737AA704FC98B074C0220D3"
+        },
+        "target_fingerprint": {
+          "bytes": 1904,
+          "sha256": "7FA0591E7C07295AFFFFB9CDC9700FE124444E67D737AA704FC98B074C0220D3"
+        }
+      },
+      {
+        "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\Algebra\\Group\\TypeTags\\Pointwise.ir",
+        "source_fingerprint": {
+          "bytes": 1824,
+          "sha256": "FAE2B7D5F3CD6423E42253582BF694B27038089FC71909E6A1F13DC4FCE7E969"
+        },
+        "target_fingerprint": {
+          "bytes": 1824,
+          "sha256": "FAE2B7D5F3CD6423E42253582BF694B27038089FC71909E6A1F13DC4FCE7E969"
+        }
+      }
+    ]
+  },
+  "runner": {
+    "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\scripts\\build-local-olean-bounded.ps1",
+    "before": {
+      "bytes": 19596,
+      "sha256": "2BE9B6EBED0E973321A019A7B7E6A24E35C793EEB59FDDCD0ECD7F4D75616EB4"
+    },
+    "after": {
+      "bytes": 19596,
+      "sha256": "2BE9B6EBED0E973321A019A7B7E6A24E35C793EEB59FDDCD0ECD7F4D75616EB4"
+    }
+  },
+  "lean": {
+    "executable_path": "C:\\Users\\Floris\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\bin\\lean.exe",
+    "version_output": "Lean (version 4.31.0, x86_64-w64-windows-gnu, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)",
+    "direct_invocation": true,
+    "argument_list": [
+      "-o",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\local-olean\\20260825T0355153955281-3669b4fc\\.lake\\packages\\mathlib\\Mathlib\\Algebra\\Group\\TypeTags\\Pointwise.olean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.lake\\packages\\mathlib\\Mathlib\\Algebra\\Group\\TypeTags\\Pointwise.lean"
+    ],
+    "lean_num_threads": 1,
+    "lean_path": [
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\local-olean\\20260825T0355153955281-3669b4fc",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-aesop\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-batteries\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-importGraph\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-LeanSearchClient\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-plausible\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-proofwidgets\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-Qq\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-aesop\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-batteries\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-importGraph\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-LeanSearchClient\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-plausible\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-proofwidgets\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-Qq\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\lib\\lean"
+    ]
+  },
+  "toolchains": {
+    "normalized_values_match": true,
+    "repository": "leanprover/lean4:v4.31.0",
+    "dependency_project": "leanprover/lean4:v4.31.0"
+  },
+  "manifests": {
+    "mathlib_pins_match": true,
+    "repository_mathlib": {
+      "url": "https://github.com/leanprover-community/mathlib4.git",
+      "input_rev": "v4.31.0",
+      "resolved_rev": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f"
+    },
+    "dependency_mathlib": {
+      "url": "https://github.com/leanprover-community/mathlib4.git",
+      "input_rev": "v4.31.0",
+      "resolved_rev": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f"
+    }
+  },
+  "watcher": {
+    "enforcement": "best_effort_sampled_process_tree_working_set",
+    "hard_limit": false,
+    "sample_interval_milliseconds": 200,
+    "max_memory_gib": 2.5,
+    "limit_bytes": 2684354560,
+    "observed_process_tree_peak_bytes": 389005312,
+    "memory_exceeded": false,
+    "kill_policy": "Stop only the captured Lean process tree on limit breach."
+  },
+  "workspace_build_lock": {
+    "path": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\.lean-build.lock",
+    "exclusive": true
+  },
+  "environment_changed_during_build": false,
+  "started_at": "2026-08-26T02:15:45.4425805+02:00",
+  "finished_at": "2026-08-26T02:16:06.7583405+02:00",
+  "exit_code": 0,
+  "logs": {
+    "stdout": {
+      "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\-lake-packages-mathlib-Mathlib-Algebra-Group-TypeTags-Pointwise-20260826T0215453801402-8342dbe1.module.stdout.txt",
+      "fingerprint": {
+        "bytes": 0,
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+      }
+    },
+    "stderr": {
+      "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\-lake-packages-mathlib-Mathlib-Algebra-Group-TypeTags-Pointwise-20260826T0215453801402-8342dbe1.module.stderr.txt",
+      "fingerprint": {
+        "bytes": 0,
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+      }
+    }
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "schema": "lean-mathematical-commons/module-build-receipt/1.0",
+  "batch_id": "20260826T0205524499714-80faa955",
+  "run_id": "20260826T0205529656319-b441400c",
+  "module": ".lake.packages.mathlib.Mathlib.Algebra.Ring.Associator",
+  "source": {
+    "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.lake\\packages\\mathlib\\Mathlib\\Algebra\\Ring\\Associator.lean",
+    "path_relative_to_repository": ".lake/packages/mathlib/Mathlib/Algebra/Ring/Associator.lean",
+    "before": {
+      "bytes": 4477,
+      "sha256": "510AFF4060FA9EAFB6AD904606B1B48CA643A30485102720D882DBDA5286A8E7"
+    },
+    "after": {
+      "bytes": 4477,
+      "sha256": "510AFF4060FA9EAFB6AD904606B1B48CA643A30485102720D882DBDA5286A8E7"
+    },
+    "changed_during_build": false
+  },
+  "output": {
+    "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\local-olean\\20260825T0355153955281-3669b4fc\\.lake\\packages\\mathlib\\Mathlib\\Algebra\\Ring\\Associator.olean",
+    "path_relative_to_cache": ".lake/packages/mathlib/Mathlib/Algebra/Ring/Associator.olean",
+    "fingerprint": {
+      "bytes": 85296,
+      "sha256": "A6624508200251119B86843A0C65F20ED139B5189C2C205BCB12CF1F7253FBB6"
+    }
+  },
+  "package_mirror": {
+    "enabled": true,
+    "package": "mathlib",
+    "path_relative_to_package": "Mathlib/Algebra/Ring/Associator.lean",
+    "objects": [
+      {
+        "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\Algebra\\Ring\\Associator.olean",
+        "source_fingerprint": {
+          "bytes": 85296,
+          "sha256": "A6624508200251119B86843A0C65F20ED139B5189C2C205BCB12CF1F7253FBB6"
+        },
+        "target_fingerprint": {
+          "bytes": 85296,
+          "sha256": "A6624508200251119B86843A0C65F20ED139B5189C2C205BCB12CF1F7253FBB6"
+        }
+      },
+      {
+        "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\Algebra\\Ring\\Associator.olean.private",
+        "source_fingerprint": {
+          "bytes": 95984,
+          "sha256": "4A2AD66D68B5955C8581DC483DE446263555115F9AA83E011F70E591B95D6480"
+        },
+        "target_fingerprint": {
+          "bytes": 95984,
+          "sha256": "4A2AD66D68B5955C8581DC483DE446263555115F9AA83E011F70E591B95D6480"
+        }
+      },
+      {
+        "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\Algebra\\Ring\\Associator.olean.server",
+        "source_fingerprint": {
+          "bytes": 6376,
+          "sha256": "0AFDD8E7416EB271C8C4701C7F18A79706160516D4048AD6F63D0EC3D055A6F9"
+        },
+        "target_fingerprint": {
+          "bytes": 6376,
+          "sha256": "0AFDD8E7416EB271C8C4701C7F18A79706160516D4048AD6F63D0EC3D055A6F9"
+        }
+      }
+    ]
+  },
+  "runner": {
+    "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\scripts\\build-local-olean-bounded.ps1",
+    "before": {
+      "bytes": 19350,
+      "sha256": "411255DB8E688909187591A44C818B659F30910E86F2AE09A644495CF41682DA"
+    },
+    "after": {
+      "bytes": 19350,
+      "sha256": "411255DB8E688909187591A44C818B659F30910E86F2AE09A644495CF41682DA"
+    }
+  },
+  "lean": {
+    "executable_path": "C:\\Users\\Floris\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\bin\\lean.exe",
+    "version_output": "Lean (version 4.31.0, x86_64-w64-windows-gnu, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)",
+    "direct_invocation": true,
+    "argument_list": [
+      "-o",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\local-olean\\20260825T0355153955281-3669b4fc\\.lake\\packages\\mathlib\\Mathlib\\Algebra\\Ring\\Associator.olean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.lake\\packages\\mathlib\\Mathlib\\Algebra\\Ring\\Associator.lean"
+    ],
+    "lean_num_threads": 1,
+    "lean_path": [
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\local-olean\\20260825T0355153955281-3669b4fc",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-aesop\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-batteries\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-importGraph\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-LeanSearchClient\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-plausible\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-proofwidgets\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-Qq\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-aesop\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-batteries\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-importGraph\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-LeanSearchClient\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-plausible\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-proofwidgets\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-Qq\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\lib\\lean"
+    ]
+  },
+  "toolchains": {
+    "normalized_values_match": true,
+    "repository": "leanprover/lean4:v4.31.0",
+    "dependency_project": "leanprover/lean4:v4.31.0"
+  },
+  "manifests": {
+    "mathlib_pins_match": true,
+    "repository_mathlib": {
+      "url": "https://github.com/leanprover-community/mathlib4.git",
+      "input_rev": "v4.31.0",
+      "resolved_rev": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f"
+    },
+    "dependency_mathlib": {
+      "url": "https://github.com/leanprover-community/mathlib4.git",
+      "input_rev": "v4.31.0",
+      "resolved_rev": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f"
+    }
+  },
+  "watcher": {
+    "enforcement": "best_effort_sampled_process_tree_working_set",
+    "hard_limit": false,
+    "sample_interval_milliseconds": 200,
+    "max_memory_gib": 2.5,
+    "limit_bytes": 2684354560,
+    "observed_process_tree_peak_bytes": 506961920,
+    "memory_exceeded": false,
+    "kill_policy": "Stop only the captured Lean process tree on limit breach."
+  },
+  "workspace_build_lock": {
+    "path": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\.lean-build.lock",
+    "exclusive": true
+  },
+  "environment_changed_during_build": false,
+  "started_at": "2026-08-26T02:05:52.9941792+02:00",
+  "finished_at": "2026-08-26T02:06:08.7083811+02:00",
+  "exit_code": 0,
+  "logs": {
+    "stdout": {
+      "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\-lake-packages-mathlib-Mathlib-Algebra-Ring-Associator-20260826T0205529656319-b441400c.module.stdout.txt",
+      "fingerprint": {
+        "bytes": 0,
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+      }
+    },
+    "stderr": {
+      "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\-lake-packages-mathlib-Mathlib-Algebra-Ring-Associator-20260826T0205529656319-b441400c.module.stderr.txt",
+      "fingerprint": {
+        "bytes": 0,
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+      }
+    }
+  }
+}

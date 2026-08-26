@@ -1,0 +1,120 @@
+{
+  "schema": "lean-mathematical-commons/module-build-receipt/1.0",
+  "batch_id": "20260826T0148053726318-8b530b90",
+  "run_id": "20260826T0148059981494-6ad0f9b0",
+  "module": ".lake.packages.mathlib.Mathlib.Data.Finsupp.Weight",
+  "source": {
+    "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.lake\\packages\\mathlib\\Mathlib\\Data\\Finsupp\\Weight.lean",
+    "path_relative_to_repository": ".lake/packages/mathlib/Mathlib/Data/Finsupp/Weight.lean",
+    "before": {
+      "bytes": 13388,
+      "sha256": "817FCAA565723BCDB5FB361811C5D053242E3DA4BB20CA27B662190D3A27C051"
+    },
+    "after": {
+      "bytes": 13388,
+      "sha256": "817FCAA565723BCDB5FB361811C5D053242E3DA4BB20CA27B662190D3A27C051"
+    },
+    "changed_during_build": false
+  },
+  "output": {
+    "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\local-olean\\20260825T0355153955281-3669b4fc\\.lake\\packages\\mathlib\\Mathlib\\Data\\Finsupp\\Weight.olean",
+    "path_relative_to_cache": ".lake/packages/mathlib/Mathlib/Data/Finsupp/Weight.olean",
+    "fingerprint": null
+  },
+  "runner": {
+    "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\scripts\\build-local-olean-bounded.ps1",
+    "before": {
+      "bytes": 16934,
+      "sha256": "27CE6B1407F66AE1D29017CF0197A024BC8F6979F9B2A90D405E25D1372527CA"
+    },
+    "after": {
+      "bytes": 16934,
+      "sha256": "27CE6B1407F66AE1D29017CF0197A024BC8F6979F9B2A90D405E25D1372527CA"
+    }
+  },
+  "lean": {
+    "executable_path": "C:\\Users\\Floris\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\bin\\lean.exe",
+    "version_output": "Lean (version 4.31.0, x86_64-w64-windows-gnu, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)",
+    "direct_invocation": true,
+    "argument_list": [
+      "-o",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\local-olean\\20260825T0355153955281-3669b4fc\\.lake\\packages\\mathlib\\Mathlib\\Data\\Finsupp\\Weight.olean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.lake\\packages\\mathlib\\Mathlib\\Data\\Finsupp\\Weight.lean"
+    ],
+    "lean_num_threads": 1,
+    "lean_path": [
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\local-olean\\20260825T0355153955281-3669b4fc",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-aesop\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-batteries\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-importGraph\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-LeanSearchClient\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-plausible\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-proofwidgets\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-Qq\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\local-olean\\20260825T0355153955281-3669b4fc\\.lake\\packages\\mathlib",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-aesop\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-batteries\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-importGraph\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-LeanSearchClient\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-plausible\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-proofwidgets\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-Qq\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\lib\\lean"
+    ]
+  },
+  "toolchains": {
+    "normalized_values_match": true,
+    "repository": "leanprover/lean4:v4.31.0",
+    "dependency_project": "leanprover/lean4:v4.31.0"
+  },
+  "manifests": {
+    "mathlib_pins_match": true,
+    "repository_mathlib": {
+      "url": "https://github.com/leanprover-community/mathlib4.git",
+      "input_rev": "v4.31.0",
+      "resolved_rev": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f"
+    },
+    "dependency_mathlib": {
+      "url": "https://github.com/leanprover-community/mathlib4.git",
+      "input_rev": "v4.31.0",
+      "resolved_rev": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f"
+    }
+  },
+  "watcher": {
+    "enforcement": "best_effort_sampled_process_tree_working_set",
+    "hard_limit": false,
+    "sample_interval_milliseconds": 200,
+    "max_memory_gib": 2.5,
+    "limit_bytes": 2684354560,
+    "observed_process_tree_peak_bytes": 109936640,
+    "memory_exceeded": false,
+    "kill_policy": "Stop only the captured Lean process tree on limit breach."
+  },
+  "workspace_build_lock": {
+    "path": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\.lean-build.lock",
+    "exclusive": true
+  },
+  "environment_changed_during_build": false,
+  "started_at": "2026-08-26T01:48:06.0744513+02:00",
+  "finished_at": "2026-08-26T01:48:32.0871260+02:00",
+  "exit_code": 1,
+  "logs": {
+    "stdout": {
+      "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\-lake-packages-mathlib-Mathlib-Data-Finsupp-Weight-20260826T0148059981494-6ad0f9b0.module.stdout.txt",
+      "fingerprint": {
+        "bytes": 343,
+        "sha256": "E5AF24754F6D9F259A7DA3A06AE7DB593E9AB3F393949425E8A05B0C46147B75"
+      }
+    },
+    "stderr": {
+      "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\-lake-packages-mathlib-Mathlib-Data-Finsupp-Weight-20260826T0148059981494-6ad0f9b0.module.stderr.txt",
+      "fingerprint": {
+        "bytes": 0,
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+      }
+    }
+  }
+}

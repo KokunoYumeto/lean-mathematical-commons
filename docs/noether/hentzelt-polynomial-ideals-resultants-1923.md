@@ -48,7 +48,7 @@ resolution of P18's compressed product display.
 | 13004--13037, equation (12) and Definition IV | transformed ideals under the full lower-unitriangular generic coordinate matrix `U` | `MvPolynomial.bind₁`; algebra equivalences; ideal maps | The full family `y_μ = x_μ + Σ_{ν<μ} u_{μν}x_ν`, its recursive inverse, ideal transport, the natural lower-pair parameter type, and algebraic independence of its coefficients are promoted. The downstream regularity determinants remain. |
 | 13046--13055, Definition V | successive ground ideals | localization extension/contraction; local `groundIdealAlong` | The literal submonoid of nonzero polynomials free of the earlier variables, its source/zero-based indexing dictionary, equation-(16) membership, and stage antitonicity are promoted. |
 | 13057--13107, Satz VI | ground ideals of transformed ideals are transformed | relative Dedekind--Mertens; bounded Kronecker substitution; parameter localization | Equation (17), simultaneous common-denominator presentations, coefficient reconstruction, late-variable preservation, and the final two-sided transformed-contraction equality are promoted with no primary or saturation hypothesis. |
-| 13123--13319, Satz VII; equation (21) at 13134--13139 | infinite monomial module reduces to a finite module; only finitely many elementary divisors are nonunits | finite-free, Smith-normal-form, monic polynomial division, and polynomial-evaluation APIs | Equation (21) is promoted: division by a supplied degree-`k` polynomial regular in `x₁` gives every polynomial an exact representative modulo it with `x₁`-degree `< k`. The characteristic-zero finite-avoidance step preserving any supplied finite family of regular leading coefficients is also promoted. Construction of the `C^(i)`, the multistage finite-module assembly, determinant data, nonunit elementary-divisor theorem, and auxiliary-choice independence remain open. |
+| 13123--13319, Satz VII; equations (21)--(23) at 13134--13158 | infinite monomial module reduces to a finite module; only finitely many elementary divisors are nonunits | finite-free, Smith-normal-form, monic polynomial division, submodule sums, and polynomial-evaluation APIs | Equations (21)--(23) are promoted for a supplied degree-`k` polynomial regular in `x₁`: exact bounded representatives, their `Fin k` coefficient vectors, and the internal decomposition of every containing ideal into its bounded part and disjoint principal tail. The characteristic-zero finite-avoidance step preserving any supplied finite family of regular leading coefficients is also promoted. Construction of the source's regular elements, the multistage finite-module quotient, determinant data, nonunit elementary-divisor theorem, and auxiliary-choice independence remain open. |
 | 13128, repeated Definition V | isomorphism of residue-class systems | quotient modules; `LinearEquiv` | Modern quotient-module isomorphism is available vocabulary; the concrete equivalence is part of the missing Satz VII construction. |
 | 13323--13335, Definition VI | stage resultants, elementary-divisor forms, and their products | `associated_norm_prod_smith`; `Ideal.smithCoeffs`; `Matrix.det` | Mathlib relates a finite-free norm to Smith coefficients, but Hentzelt's staged modules and primitive normalizations still need construction. |
 | 13340--13382, Satz VIII | `E_m ∣ R_m`, `R_m ∣ E_m^N`, and tail products annihilate ground ideals modulo `m` | ideal radicals, divisibility, evaluation | The divisibilities themselves remain a gap. Their radical and zero-set consequence is now formally packaged. |
@@ -227,7 +227,7 @@ This is the exact finite-avoidance layer used by the specialization paragraph
 at line 13319 after polynomial denominator clearing. It does not construct the
 determinants `C^(i)`, prove their leading parameter polynomials nonzero, choose
 representatives for rational-function coefficients, or preserve the later gcd
-and resultant normalizations. At this checkpoint P22 had 196 canonical
+and resultant normalizations. At the preceding specialization checkpoint P22 had 196 canonical
 declarations across the base and eleven support modules.
 
 ## Equation (21): division by a regular polynomial
@@ -249,8 +249,66 @@ axiom audits and use only `propext`, `Classical.choice`, and `Quot.sound`.
 This formalizes equation (21) for one supplied regular divisor over a field. It
 does not construct `C^(1)` from the transformed ideal, construct the later
 `C^(i)`, assemble the finite stage modules or their Smith data, or prove
-independence from auxiliary regular-polynomial choices. P22 now has 208
+independence from auxiliary regular-polynomial choices. At the preceding
+regular-division checkpoint P22 had 208
 canonical declarations across the base and twelve support modules.
+
+## Equations (22)--(23): bounded parts and the common tail
+
+`RegularIdealDecomposition.lean` adds eight declarations. It defines the
+bounded part of an ideal in the univariate-over-the-remaining-variables model,
+defines the principal tail generated by the supplied regular polynomial, proves
+that regular remainders of ideal members stay in the ideal, extracts the exact
+`Fin k` coefficient vector displayed in equation (22), and proves equation
+(23): every ideal containing the regular divisor is the sum of its bounded part
+and that principal tail.
+
+`RegularTailDisjoint.lean` adds five more declarations. It proves that scaling
+the regular divisor to monic form does not change its principal tail and then
+uses the strict degree bound to show that the bounded part and principal tail
+are disjoint. Thus equation (23) is an internal sum, matching the independence
+argument at lines 13149--13160.
+
+The clean canonical receipts are
+`artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-RegularIdealDecomposition-20260826T0116271374572-83ecc6d8.module.receipt.json`
+(1,260,863,488 bytes peak) and
+`artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-RegularTailDisjoint-20260826T0126104705129-52db92ff.module.receipt.json`
+(1,227,345,920 bytes peak). All thirteen declarations have matching axiom
+audits and use only `propext`, `Classical.choice`, and `Quot.sound`.
+
+This layer models a polynomial ideal over the remaining-variable coefficient
+ring. It does not yet construct Noether's regular `C^(1)`, identify the exact
+historical linear-form modules `G₁` and `M₁`, prove their quotient isomorphism,
+or assemble the inductive finite stage and its Smith data. At this equations-
+(22)--(23) checkpoint P22 had 221 canonical declarations across the base and
+fourteen support modules, and its ledger had 28 claim/definition records after
+splitting those equations from the surrounding Satz-VII row.
+
+## Equation (12): generic homogeneous regularity scaffold
+
+`GenericRegularity.lean` adds ten declarations over the independent lower-
+triangular parameter field already used for the source-faithful coordinate
+change. It proves that each transformed coordinate is a homogeneous linear
+form and that the full lower-unitriangular equivalence preserves the exact
+homogeneous degree. It defines the pure first-variable coefficient controlling
+regularity, proves that its nonvanishing gives the source's degree-`r`
+regularity condition, and computes it on generators: `1` for the first
+coordinate and the independent `(i,0)` parameter for every later coordinate.
+
+The clean canonical receipt is
+`artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-GenericRegularity-20260826T0312541437105-867a01c8.module.receipt.json`,
+with 1,381,519,360 bytes observed peak. All seven theorem declarations have
+matching axiom audits and use only `propext`, `Classical.choice`, and
+`Quot.sound`; the other three declarations are one abbreviation and two
+definitions.
+
+This is deliberately an intermediate theorem cluster, not the completed
+historical regularity argument. It does not yet prove that the generic leading
+coefficient of every nonzero homogeneous polynomial is nonzero, extract a
+regular element from the transformed ideal, or connect such an element to the
+promoted finite-specialization theorem. P22 now has 231 canonical declarations
+across the base and fifteen support modules, and its ledger has 29
+claim/definition records.
 
 ## Canon and scope constraints
 
@@ -272,13 +330,15 @@ canonical declarations across the base and twelve support modules.
 
 ## Formalization route
 
-1. Construct the regularity determinants for the natural independent
-   lower-unitriangular transform and connect their nonzero leading
-   coefficients to the promoted finite-specialization theorem. The
-   regular-polynomial division needed once such a witness is supplied is now
+1. Complete the promoted independent lower-unitriangular regularity scaffold:
+   prove arbitrary nonzero homogeneous input has nonzero generic leading
+   coefficient, extract a regular transformed-ideal element, and connect it to
+   the promoted finite-specialization theorem. Homogeneous preservation,
+   generator coefficients, and regular-polynomial division are already
    promoted.
-2. Define the finite stage module, its Smith coefficients, determinant norm,
-   and the primitive normalization of `R^(i)`.
+2. Use the promoted internal decomposition to identify the quotient by the
+   common principal tail, then define the finite stage module, its Smith
+   coefficients, determinant norm, and the primitive normalization of `R^(i)`.
 3. Prove Satz VIII's divisibilities, discharging the hypotheses of the promoted
    radical/zero-set bridge.
 4. Build the successive determinantal ideals and strengthen the promoted

@@ -25,7 +25,7 @@ novelty of a theorem.
 
 | Author | State | Next formalization lane | Corpus record |
 |---|---|---|---|
-| Emmy Noether | active pilot | build P22's regularity determinants, staged resultants, and compatible-zero construction; Noetherian primary decomposition; remaining P25 function-field refinements; integral Plücker/Fischer layers | [DOI 10.5281/zenodo.20412587](https://doi.org/10.5281/zenodo.20412587) |
+| Emmy Noether | active pilot | complete P22's arbitrary-input generic nonvanishing, staged resultants, and compatible-zero construction; Noetherian primary decomposition; remaining P25 function-field refinements; integral Plücker/Fischer layers | [DOI 10.5281/zenodo.20412587](https://doi.org/10.5281/zenodo.20412587) |
 | Ernst Steinitz | deposited anchor only | field-theory paper inventory and algebraic-closure coverage | [DOI 10.5281/zenodo.20616988](https://doi.org/10.5281/zenodo.20616988) |
 | J. J. Sylvester | queued | invariant/matrix/combinatorial paper inventory | [DOI 10.5281/zenodo.20520692](https://doi.org/10.5281/zenodo.20520692) |
 | Hellmuth Kneser | queued | quadratic-form/topology/geometry paper inventory | [DOI 10.5281/zenodo.20836971](https://doi.org/10.5281/zenodo.20836971) |
@@ -60,8 +60,10 @@ evidence, and formalization-specific QA only.
   equation-(12) transform, literal stage multipliers, the completed two-sided
   Satz VI ground-ideal equality, Satz XI's exact basis, Satz XII's finite-zero
   substrate and Nullstellensatz corollary, characteristic-zero finite
-  regularity specialization, equation-(21) regular division with bounded
-  representatives, and promoted Satz VIII support.
+  regularity specialization, equation-(12) homogeneous preservation and
+  generator-level leading coefficients, equation-(21) regular division,
+  equations-(22)--(23) finite coefficient vectors and internal ideal
+  decomposition, and promoted Satz VIII support.
 - [1922 absolute-irreducibility map](noether/absolute-irreducibility-1922.md):
   universal reducibility-form and specialization gaps, with proof components.
 - [1922 formal-variational-calculus map](noether/formal-variational-calculus-1922.md):
