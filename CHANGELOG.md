@@ -10,15 +10,19 @@
   local Git blob hashes; anonymous archive and raw-checkpoint downloads both
   returned HTTP 200. Caches, staging, logs, credentials, and large corpora were
   excluded.
-- Added ten P22 generic-regularity declarations for equation (12): the full
-  independent lower-unitriangular transform preserves homogeneous degree, the
-  first-variable regularity coefficient is packaged, and its value is computed
-  on every coordinate generator. Arbitrary-input nonvanishing remains an
-  explicit gap. P22 now has 231 canonical declarations across the base and
-  fifteen support modules, with 29 claim/definition records.
+- Published the coherent 32-target P22 scaffold checkpoint at GitHub commit
+  `035cc26424023f2414cae2daf5fb0d0c213e371b`; 338 selected blobs were checked,
+  and anonymous archive, raw-file, and repository requests returned HTTP 200.
+- Expanded P22's equation-(12) module from ten to 35 declarations. The new
+  dehomogenization/algebraic-independence proof makes the generic leading
+  coefficient nonzero for every nonzero polynomial, proves exact total-degree
+  preservation and first-variable regularity, and gives a regular member in
+  the transform of every nonzero ideal. P22 now has 256 canonical declarations
+  across the base and fifteen support modules, with 29 claim/definition records.
 - Expanded the maintained graph to 32 targets (30 theorem/support modules and
-  both umbrellas). The new cluster and umbrellas all exited zero with empty
-  stderr under 2.5 GiB caps; the checkpoint-chain peak is 1,919,344,640 bytes.
+  both umbrellas). The completed module and umbrellas all exited zero with
+  empty stderr under 2.5 GiB caps; the checkpoint-chain peak remains
+  1,919,344,640 bytes under the strict 3 GiB worker envelope.
 - Added opt-in, hash-checked dependency sidecar mirroring to the bounded local
   builder for narrowly missing prebuilt objects; conflicting targets are
   refused and no package-wide rebuild is performed.

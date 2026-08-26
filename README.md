@@ -96,11 +96,12 @@ never silently repaired here.
   divisor. The characteristic-zero finite-avoidance step used after Satz VII
   is formalized for any supplied finite family of regularity coefficients. The
   full independent lower-unitriangular transform from equation (12) is now
-  proved to preserve homogeneous degree, and its first-variable leading
-  coefficient is defined and computed on every coordinate generator. Proving
-  that coefficient nonzero for every arbitrary nonzero homogeneous input—and
-  then constructing the ideal-level regular element—the later stage modules,
-  staged resultants, and compatible-zero system remain open.
+  proved to preserve the exact total degree of every nonzero input. A
+  dehomogenization and algebraic-independence argument proves its first-variable
+  leading coefficient nonzero for every nonzero polynomial, and the generic
+  transform of every nonzero ideal therefore contains a regular member. Finite
+  parameter descent, the later stage modules, staged resultants, and the
+  compatible-zero system remain open.
 - Extends P25's generic-zero construction: evaluation has kernel exactly the
   prime ideal, and the generic coordinate tuple generates the fraction field
   of the prime quotient over the coefficient field. It now also proves the
@@ -166,13 +167,13 @@ project; it refuses a conflicting target rather than rebuilding a package.
 
 The current 32-target graph check (30 promoted theorem/support modules and both
 umbrellas) is checkpoint
-[`20260826T0121163183125-670d8f7a`](artifacts/build/module-graph-checkpoint-20260826T0121163183125-670d8f7a.json).
-It reuses the 29 theorem modules from the preceding checkpoint, adds P22's
-generic homogeneous-regularity scaffold, and rebuilds both umbrellas; every current
-target exited zero with empty stderr and unchanged source/environment. The
+[`20260826T0458000385704-942a1542`](artifacts/build/module-graph-checkpoint-20260826T0458000385704-942a1542.json).
+It reuses 29 unchanged theorem modules, completes P22's existing generic-
+regularity module, and rebuilds both umbrellas; every current target exited
+zero with empty stderr and unchanged source/environment. The
 maximum observed process-tree working set across the checkpoint chain was
-1,919,344,640 bytes under the 4.5 GiB overall envelope; every new build used a
-2.5 GiB per-process-tree cap.
+1,919,344,640 bytes under the strict 3 GiB worker envelope; every new build
+used a 2.5 GiB process-tree cap.
 
 Meaningful theorem clusters—not individual edits—are the intended GitHub/Zenodo
 release unit. The existing sidecar concept DOI is

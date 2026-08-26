@@ -1,0 +1,51 @@
+{
+  "schema": "lean-mathematical-commons/claim-build-receipt/1.0",
+  "claim_id": "HENTZELT-NOETHER-1923-GENERIC-REGULARITY-SCAFFOLD",
+  "status": "completed_gap",
+  "supersedes": "artifacts/build/claim-P22-generic-regularity-scaffold-20260826T0121163183125-670d8f7a.json",
+  "source": {
+    "witness": "NOETH-DE-ED-0014",
+    "sha256": "EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58",
+    "lines": "13004--13039; equation (12) and Definition IV"
+  },
+  "declarations": 35,
+  "new_declarations_since_scaffold": 25,
+  "newly_closed": [
+    "generic leading-coefficient nonvanishing for every nonzero homogeneous polynomial",
+    "generic leading-coefficient nonvanishing at total degree for every nonzero polynomial",
+    "exact total-degree preservation under the independent lower-unitriangular transform",
+    "first-variable regularity of every nonzero transformed polynomial",
+    "existence of a regular member in the generic transform of every nonzero ideal"
+  ],
+  "modules": [
+    {
+      "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.GenericRegularity",
+      "source": {
+        "path": "MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/GenericRegularity.lean",
+        "bytes": 30035,
+        "sha256": "6D46FCBCDC35B0F8FE9DFE9E4187288DDE005AB197163F5224B614B862E0305E"
+      },
+      "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-GenericRegularity-20260826T0447365249334-0ce0c948.module.receipt.json",
+      "exit_code": 0,
+      "peak_bytes": 1434660864,
+      "stderr_bytes": 0,
+      "warnings": 0,
+      "sorry_or_admit": 0,
+      "axioms": ["propext", "Classical.choice", "Quot.sound"]
+    }
+  ],
+  "umbrella_receipts": [
+    "artifacts/build/MathematicalCommons-Noether-20260826T0449310436283-59625e9b.module.receipt.json",
+    "artifacts/build/MathematicalCommons-20260826T0450428902441-83a3a08d.module.receipt.json"
+  ],
+  "dependency_receipts": [
+    "artifacts/build/-lake-packages-mathlib-Mathlib-Algebra-MvPolynomial-Polynomial-20260826T0348146129700-4a8c9b38.module.receipt.json"
+  ],
+  "graph_checkpoint": "artifacts/build/module-graph-checkpoint-20260826T0458000385704-942a1542.json",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "worker_memory_limit_gib": 2.5,
+  "all_green": true,
+  "limitations": "The generic fraction-field regularity step is complete, including a regular member of the transform of every nonzero ideal. The next bridge must descend finite parameter data to the characteristic-zero specialization theorem and then construct the successive C^(i), finite-stage quotient modules, Smith data, primitive normalized resultants, compatible zeros, and multiplicities."
+}

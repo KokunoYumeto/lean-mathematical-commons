@@ -45,10 +45,10 @@ resolution of P18's compressed product display.
 | 12906--12918, Definition III | norm as determinant of the transition from ground module to module | `LinearMap.det`; `Algebra.norm_eq_matrix_det`; Smith bases | Modern determinant norms give the right language after finite-free hypotheses are reconstructed. |
 | 12919--12922, Satz IV | equal norm plus divisibility and equal rank imply module equality | determinant and Smith-normal-form APIs | No exact pinned declaration was found; equality of determinants alone is insufficient without the source's divisibility structure. |
 | 12924--12998, Satz V | coprime factorization of a norm gives unique module factors | `IsCoprime`; Chinese-remainder and Smith infrastructure | The source-specific module reconstruction is missing. |
-| 13004--13037, equation (12) and Definition IV | transformed ideals under the full lower-unitriangular generic coordinate matrix `U` | `MvPolynomial.bind₁`; algebra equivalences; ideal maps | The full family `y_μ = x_μ + Σ_{ν<μ} u_{μν}x_ν`, its recursive inverse, ideal transport, the natural lower-pair parameter type, and algebraic independence of its coefficients are promoted. The downstream regularity determinants remain. |
+| 13004--13037, equation (12) and Definition IV | transformed ideals under the full lower-unitriangular generic coordinate matrix `U` | `MvPolynomial.bind₁`; algebra equivalences; homogeneous components; algebraic independence; ideal maps | The full family `y_μ = x_μ + Σ_{ν<μ} u_{μν}x_ν`, its recursive inverse, ideal transport, exact total-degree preservation, generic leading-coefficient nonvanishing, and existence of a regular member in every nonzero transformed ideal are promoted. Finite descent and the successive later-stage regular elements remain. |
 | 13046--13055, Definition V | successive ground ideals | localization extension/contraction; local `groundIdealAlong` | The literal submonoid of nonzero polynomials free of the earlier variables, its source/zero-based indexing dictionary, equation-(16) membership, and stage antitonicity are promoted. |
 | 13057--13107, Satz VI | ground ideals of transformed ideals are transformed | relative Dedekind--Mertens; bounded Kronecker substitution; parameter localization | Equation (17), simultaneous common-denominator presentations, coefficient reconstruction, late-variable preservation, and the final two-sided transformed-contraction equality are promoted with no primary or saturation hypothesis. |
-| 13123--13319, Satz VII; equations (21)--(23) at 13134--13158 | infinite monomial module reduces to a finite module; only finitely many elementary divisors are nonunits | finite-free, Smith-normal-form, monic polynomial division, submodule sums, and polynomial-evaluation APIs | Equations (21)--(23) are promoted for a supplied degree-`k` polynomial regular in `x₁`: exact bounded representatives, their `Fin k` coefficient vectors, and the internal decomposition of every containing ideal into its bounded part and disjoint principal tail. The characteristic-zero finite-avoidance step preserving any supplied finite family of regular leading coefficients is also promoted. Construction of the source's regular elements, the multistage finite-module quotient, determinant data, nonunit elementary-divisor theorem, and auxiliary-choice independence remain open. |
+| 13123--13319, Satz VII; equations (21)--(23) at 13134--13158 | infinite monomial module reduces to a finite module; only finitely many elementary divisors are nonunits | finite-free, Smith-normal-form, monic polynomial division, submodule sums, and polynomial-evaluation APIs | Equations (21)--(23) are promoted for a supplied degree-`k` polynomial regular in `x₁`: exact bounded representatives, their `Fin k` coefficient vectors, and the internal decomposition of every containing ideal into its bounded part and disjoint principal tail. Equation (12) now constructs the first regular member for every nonzero ideal, and characteristic-zero finite avoidance preserves any supplied finite family of regularity witnesses. Finite parameter descent, iteration through later variables, the multistage quotient, determinant data, nonunit elementary-divisor theorem, and auxiliary-choice independence remain open. |
 | 13128, repeated Definition V | isomorphism of residue-class systems | quotient modules; `LinearEquiv` | Modern quotient-module isomorphism is available vocabulary; the concrete equivalence is part of the missing Satz VII construction. |
 | 13323--13335, Definition VI | stage resultants, elementary-divisor forms, and their products | `associated_norm_prod_smith`; `Ideal.smithCoeffs`; `Matrix.det` | Mathlib relates a finite-free norm to Smith coefficients, but Hentzelt's staged modules and primitive normalizations still need construction. |
 | 13340--13382, Satz VIII | `E_m ∣ R_m`, `R_m ∣ E_m^N`, and tail products annihilate ground ideals modulo `m` | ideal radicals, divisibility, evaluation | The divisibilities themselves remain a gap. Their radical and zero-set consequence is now formally packaged. |
@@ -284,31 +284,32 @@ or assemble the inductive finite stage and its Smith data. At this equations-
 fourteen support modules, and its ledger had 28 claim/definition records after
 splitting those equations from the surrounding Satz-VII row.
 
-## Equation (12): generic homogeneous regularity scaffold
+## Equation (12): generic regularity completed
 
-`GenericRegularity.lean` adds ten declarations over the independent lower-
-triangular parameter field already used for the source-faithful coordinate
-change. It proves that each transformed coordinate is a homogeneous linear
-form and that the full lower-unitriangular equivalence preserves the exact
-homogeneous degree. It defines the pure first-variable coefficient controlling
-regularity, proves that its nonvanishing gives the source's degree-`r`
-regularity condition, and computes it on generators: `1` for the first
-coordinate and the independent `(i,0)` parameter for every later coordinate.
+`GenericRegularity.lean` now contains 35 declarations over the independent
+lower-triangular parameter field used for the source-faithful coordinate
+change. In addition to the coordinate equivalence and homogeneous-degree
+lemmas, it dehomogenizes a homogeneous polynomial by setting the first
+coordinate to one and proves this operation injective at fixed degree. The
+generic pure first-variable coefficient is the resulting polynomial evaluated
+at the algebraically independent first-column parameters, so it is nonzero for
+every nonzero homogeneous input.
+
+Taking the nonzero top homogeneous component extends the result to every
+nonzero polynomial. The generic transform preserves its exact total degree and
+is regular in the first variable. At ideal level, the generic transform of
+every nonzero ideal contains such a regular member. This closes the construction
+that the earlier scaffold had left conditional.
 
 The clean canonical receipt is
-`artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-GenericRegularity-20260826T0312541437105-867a01c8.module.receipt.json`,
-with 1,381,519,360 bytes observed peak. All seven theorem declarations have
+`artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-GenericRegularity-20260826T0447365249334-0ce0c948.module.receipt.json`,
+with 1,434,660,864 bytes observed peak. All 27 theorem declarations have
 matching axiom audits and use only `propext`, `Classical.choice`, and
-`Quot.sound`; the other three declarations are one abbreviation and two
-definitions.
-
-This is deliberately an intermediate theorem cluster, not the completed
-historical regularity argument. It does not yet prove that the generic leading
-coefficient of every nonzero homogeneous polynomial is nonzero, extract a
-regular element from the transformed ideal, or connect such an element to the
-promoted finite-specialization theorem. P22 now has 231 canonical declarations
-across the base and fifteen support modules, and its ledger has 29
-claim/definition records.
+`Quot.sound`; the other eight declarations are definitions or abbreviations.
+The claim receipt is
+`artifacts/build/claim-P22-generic-regularity-20260826T0458000385704-942a1542.json`.
+P22 now has 256 canonical declarations across the base and fifteen support
+modules, and its ledger has 29 claim/definition records.
 
 ## Canon and scope constraints
 
@@ -330,12 +331,11 @@ claim/definition records.
 
 ## Formalization route
 
-1. Complete the promoted independent lower-unitriangular regularity scaffold:
-   prove arbitrary nonzero homogeneous input has nonzero generic leading
-   coefficient, extract a regular transformed-ideal element, and connect it to
-   the promoted finite-specialization theorem. Homogeneous preservation,
-   generator coefficients, and regular-polynomial division are already
-   promoted.
+1. Connect the completed fraction-field regular element to the promoted finite-
+   specialization theorem, then iterate the construction through the later
+   variables to produce the source's successive `C^(i)`. Generic coefficient
+   nonvanishing, exact degree preservation, ideal-level existence, and regular-
+   polynomial division are already promoted.
 2. Use the promoted internal decomposition to identify the quotient by the
    common principal tail, then define the finite stage module, its Smith
    coefficients, determinant norm, and the primitive normalization of `R^(i)`.

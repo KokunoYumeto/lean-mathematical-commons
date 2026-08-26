@@ -1,0 +1,72 @@
+{
+  "schema": "lean-mathematical-commons/github-publication-receipt/1.0",
+  "repository": {
+    "owner": "KokunoYumeto",
+    "name": "lean-mathematical-commons",
+    "url": "https://github.com/KokunoYumeto/lean-mathematical-commons",
+    "visibility": "public",
+    "created_at": "2026-08-25T23:12:05Z",
+    "default_branch": "main"
+  },
+  "published_checkpoint": {
+    "commit": "035cc26424023f2414cae2daf5fb0d0c213e371b",
+    "commit_url": "https://github.com/KokunoYumeto/lean-mathematical-commons/commit/035cc26424023f2414cae2daf5fb0d0c213e371b",
+    "tree": "23e66a4d712af2e367ed56720179403359b503e9",
+    "parent": "159b957c9d95375151d51d5dc957ebf879852659",
+    "message": "Advance P22 generic regularity: 32-target green checkpoint",
+    "module_graph_checkpoint": "20260826T0121163183125-670d8f7a"
+  },
+  "snapshot_verification": {
+    "selected_files": 338,
+    "selected_bytes": 2720607,
+    "changed_or_new_files": 89,
+    "changed_or_new_build_evidence_json": 77,
+    "remote_blobs": 338,
+    "extra_remote_blobs": 0,
+    "git_blob_hash_mismatches": 0,
+    "tree_response_truncated": false,
+    "selection": "Root project metadata plus MathematicalCommons, docs, metadata, scripts, sources, and direct artifacts/build JSON files",
+    "excluded": [
+      ".git",
+      ".lake",
+      ".agent-tmp",
+      "tmp",
+      "HmScratch.lean",
+      "artifacts/build/local-olean",
+      "build stdout/stderr logs",
+      "Lean object files",
+      "credential files",
+      "large source corpora"
+    ]
+  },
+  "anonymous_verification": {
+    "archive": {
+      "url": "https://codeload.github.com/KokunoYumeto/lean-mathematical-commons/zip/035cc26424023f2414cae2daf5fb0d0c213e371b",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 839546
+    },
+    "module_graph_checkpoint": {
+      "url": "https://raw.githubusercontent.com/KokunoYumeto/lean-mathematical-commons/035cc26424023f2414cae2daf5fb0d0c213e371b/artifacts/build/module-graph-checkpoint-20260826T0121163183125-670d8f7a.json",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 2611
+    },
+    "repository_landing_page": {
+      "url": "https://github.com/KokunoYumeto/lean-mathematical-commons/tree/035cc26424023f2414cae2daf5fb0d0c213e371b",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 322404,
+      "readme_checkpoint_id_visible": true
+    }
+  },
+  "topics": [
+    "emmy-noether",
+    "formal-verification",
+    "history-of-mathematics",
+    "lean",
+    "lean4",
+    "mathlib"
+  ],
+  "transport": "GitHub REST Git Database API through the authenticated GitHub CLI; no local Git command was run"
+}
