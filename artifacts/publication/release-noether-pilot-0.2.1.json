@@ -1,0 +1,84 @@
+{
+  "schema": "lean-mathematical-commons/cross-repository-publication-receipt/1.0",
+  "verified_at_utc": "2026-08-27T20:12:41.8279538Z",
+  "release": {
+    "version": "0.2.1",
+    "github_commit": "04af22a76bf8f2478859dafb8c01d0e6f19acadd",
+    "github_tree": "95e3c487c415fc656b1e05233f8a853380315e29",
+    "github_tag": "noether-pilot-0.2.1",
+    "github_release_id": 378096003,
+    "github_release_url": "https://github.com/KokunoYumeto/lean-mathematical-commons/releases/tag/noether-pilot-0.2.1",
+    "zenodo_record_id": 22133696,
+    "zenodo_release_doi": "10.5281/zenodo.22133696",
+    "zenodo_record_url": "https://zenodo.org/records/22133696",
+    "zenodo_concept_doi": "10.5281/zenodo.21129945"
+  },
+  "public_state": {
+    "github_repository_private": false,
+    "github_repository_visibility": "public",
+    "github_release_draft": false,
+    "github_release_prerelease": false,
+    "github_tag_object_type": "commit",
+    "github_tag_object_sha": "04af22a76bf8f2478859dafb8c01d0e6f19acadd",
+    "zenodo_access_right": "open",
+    "zenodo_submitted": true,
+    "zenodo_state": "done"
+  },
+  "files": [
+    {
+      "name": "lean-mathematical-commons-noether-pilot-0.2.1.zip",
+      "bytes": 905475,
+      "sha256": "A8EF44C35C69CB96072D68CF8B3054F8458A1A1332BABE003629D9E27FAFA4ED",
+      "md5": "C811D4540636FBDD83B1255A95CE6FB9",
+      "github_asset_id": 532814515,
+      "github_download_status": 200,
+      "zenodo_download_status": 200,
+      "byte_identical_across_mirrors": true
+    },
+    {
+      "name": "RELEASE-MANIFEST.json",
+      "bytes": 3194,
+      "sha256": "3084044F7BE27D4B72D3012A439DFF2402D9C02C23120D7DDE994B35592CE00B",
+      "md5": "2F1A81E1D872A67183061327E2B6E4FE",
+      "github_asset_id": 532814512,
+      "github_download_status": 200,
+      "zenodo_download_status": 200,
+      "byte_identical_across_mirrors": true
+    },
+    {
+      "name": "CHECKSUMS.txt",
+      "bytes": 376,
+      "sha256": "4BD4835C2DD29C0561D79EB50D5EC1387E8D463C70F92B414EDAE227A4237FBD",
+      "md5": "EBB2FFBD65FA5CB65788285FDB7D84B5",
+      "github_asset_id": 532814513,
+      "github_download_status": 200,
+      "zenodo_download_status": 200,
+      "byte_identical_across_mirrors": true
+    }
+  ],
+  "anonymous_verification": {
+    "github_repository_page_status": 200,
+    "github_release_page_status": 200,
+    "github_expanded_asset_inventory_status": 200,
+    "github_all_files_listed": true,
+    "github_all_direct_downloads_match": true,
+    "zenodo_public_record_id": 22133696,
+    "zenodo_all_direct_downloads_match": true,
+    "zenodo_versions_latest_record_id": 22133696,
+    "zenodo_concept_latest_record_id": 22133696,
+    "doi_resolution_status": 200,
+    "doi_resolution_target": "https://zenodo.org/records/22133696"
+  },
+  "integrity": {
+    "github_changed_blobs_checked": 16,
+    "github_changed_blob_mismatches": 0,
+    "github_recursive_tree_truncated": false,
+    "github_recursive_tree_entries": 382,
+    "archive_zip_entries": 383,
+    "archive_forbidden_entries": 0,
+    "archive_missing_required_entries": 0,
+    "all_core_files_public_and_identical": true
+  },
+  "credentials_in_receipt": false,
+  "note": "This credential-free receipt is generated only after both immutable public inventories can be downloaded anonymously. It cannot be embedded in the already published archive without circularly changing the archive hash; the next coherent archive carries the preceding receipt."
+}
