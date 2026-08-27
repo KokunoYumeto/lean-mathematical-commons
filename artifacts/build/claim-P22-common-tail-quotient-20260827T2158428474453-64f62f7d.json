@@ -1,0 +1,55 @@
+{
+  "schema": "lean-mathematical-commons/claim-build-receipt/1.0",
+  "claim_id": "HENTZELT-NOETHER-1923-COMMON-TAIL-QUOTIENT",
+  "status": "source_facing_mathlib_packaging_completed",
+  "source": {
+    "witness": "NOETH-DE-ED-0014",
+    "sha256": "EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58",
+    "lines": "13153--13160; equation (23) and the ensuing representative-system isomorphism"
+  },
+  "classification": "NEW_PACKAGING",
+  "mathlib_core": [
+    "LinearMap.quotientInfEquivSupQuotient",
+    "Submodule.Quotient.mk_surjective",
+    "Submodule.disjoint_def"
+  ],
+  "declarations": 6,
+  "newly_closed": [
+    "the historical denominator-to-numerator divisibility orientation is made explicit as M <= G",
+    "a common tail disjoint from the bounded numerator has intersection exactly the bounded denominator",
+    "adjoining that common tail to numerator and denominator preserves the relative quotient",
+    "every enlarged quotient class has a representative from the bounded numerator"
+  ],
+  "modules": [
+    {
+      "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.CommonTailQuotient",
+      "source": {
+        "path": "MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/CommonTailQuotient.lean",
+        "bytes": 4727,
+        "sha256": "3EC4D2902D68F107B703015B59813C17036EFB426B030691D2ED5D8A19800EE6"
+      },
+      "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-CommonTailQuotient-20260827T2157043610703-850064d3.module.receipt.json",
+      "receipt_sha256": "2A013FE7C68079774F87180DF22537F3BC4ED1CF814B0B5ED07B030884AD7A03",
+      "exit_code": 0,
+      "peak_bytes": 1132634112,
+      "stderr_bytes": 0,
+      "warnings": 0,
+      "sorry_or_admit": 0,
+      "declaration_count": 6,
+      "theorem_count": 2,
+      "definition_count": 4,
+      "axioms": ["propext", "Classical.choice", "Quot.sound"]
+    }
+  ],
+  "umbrella_receipts": [
+    "artifacts/build/MathematicalCommons-Noether-20260827T2157275998834-4d080e86.module.receipt.json",
+    "artifacts/build/MathematicalCommons-20260827T2157528198598-e8359168.module.receipt.json"
+  ],
+  "graph_checkpoint": "artifacts/build/module-graph-checkpoint-20260827T2158428474453-64f62f7d.json",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "worker_memory_limit_gib": 2.5,
+  "all_green": true,
+  "limitations": "This is source-facing packaging of Mathlib's existing second isomorphism theorem, not new mathematics. It closes the abstract common-tail quotient step after equation (23). Instantiating every later-variable stage, constructing Smith data and determinant norms, proving auxiliary-choice independence, and completing Sätze VII--XIII remain open."
+}

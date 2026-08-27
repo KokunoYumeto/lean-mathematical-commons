@@ -1,7 +1,7 @@
 {
   "title": "Lean of the Mathematical Commons: Emmy Noether pilot",
   "upload_type": "software",
-  "description": "<p>A living, source-linked Lean 4 library and Mathlib coverage audit for classical mathematics, beginning with Emmy Noether. This release includes the pinned Lean/Mathlib project, promoted theorem modules, paper- and theorem-level coverage ledgers, controlled-source provenance, bounded-memory build tooling, axiom audits, build receipts, limitations, and publication evidence.</p><p>The P22 cluster formalizes generic regularity, characteristic-zero descent to finite lower-unitriangular coordinate changes, regular division, the internal bounded-part/principal-tail decomposition, and the finite free quotient and containing-ideal image associated with a supplied regular polynomial.</p><p>Lean verification certifies only the formal statements and explicit assumptions. It does not certify German transcription fidelity, translation, prose, layout, completeness, or critical-edition status. German canon authority remains separate from this repository.</p>",
+  "description": "<p>A living, source-linked Lean 4 library and Mathlib coverage audit for classical mathematics, beginning with Emmy Noether. This release includes the pinned Lean/Mathlib project, promoted theorem modules, paper- and theorem-level coverage ledgers, controlled-source provenance, bounded-memory build tooling, axiom audits, build receipts, limitations, and publication evidence.</p><p>The P22 cluster formalizes generic regularity, characteristic-zero descent to finite lower-unitriangular coordinate changes, regular division, the internal bounded-part/principal-tail decomposition, the finite free quotient and containing-ideal image associated with a supplied regular polynomial, and the source-facing common-tail quotient isomorphism after equation (23). The last item is explicitly packaging of Mathlib's existing second isomorphism theorem, not new mathematics.</p><p>Lean verification certifies only the formal statements and explicit assumptions. It does not certify German transcription fidelity, translation, prose, layout, completeness, or critical-edition status. German canon authority remains separate from this repository.</p>",
   "creators": [
     {
       "name": "OpenAI Codex"
@@ -10,7 +10,7 @@
   "access_right": "open",
   "license": "apache-2.0",
   "publication_date": "2026-08-27",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "keywords": [
     "Lean 4",
     "Mathlib",

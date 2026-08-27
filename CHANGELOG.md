@@ -2,6 +2,21 @@
 
 ## Unreleased
 
+## 0.2.1 — 2026-08-27
+
+- Added the six-declaration P22 `CommonTailQuotient` module. It gives a
+  source-facing modern form of the representative-system isomorphism after
+  equation (23): if `M ≤ G` and a common tail `T` is disjoint from `G`, then
+  `(G ⊔ T)/(M ⊔ T) ≃ G/M`, and every enlarged class has a representative from
+  `G`. This is classified as `NEW_PACKAGING` of Mathlib's existing second
+  isomorphism theorem, not new mathematics.
+- Expanded the maintained graph to 34 targets (32 theorem/support modules and
+  both umbrellas). The new module and both umbrellas exited zero with empty
+  stderr under 2.5 GiB caps; the checkpoint-chain peak remains 1,919,508,480
+  bytes under the strict 3 GiB worker envelope.
+
+## 0.2.0 — 2026-08-27
+
 - Created the public living repository
   [`KokunoYumeto/lean-mathematical-commons`](https://github.com/KokunoYumeto/lean-mathematical-commons)
   and published the 29-target green Noether checkpoint at commit
@@ -33,9 +48,9 @@
   ideal maps exactly to its bounded coefficient module. P22 now has 299
   canonical declarations across the base and sixteen support modules, with 30
   claim/definition records.
-- Reserved Zenodo release DOI `10.5281/zenodo.22132542` under the existing
-  concept DOI `10.5281/zenodo.21129945`; the coherent source archive is mirrored
-  as an identical GitHub release asset and Zenodo deposit.
+- Published Zenodo release DOI `10.5281/zenodo.22132542` under the existing
+  concept DOI `10.5281/zenodo.21129945`; its coherent source archive is mirrored
+  as an identical public GitHub release asset and Zenodo deposit.
 - Expanded the maintained graph to 32 targets (30 theorem/support modules and
   both umbrellas). The completed module and umbrellas all exited zero with
   empty stderr under 2.5 GiB caps; the checkpoint-chain peak remains

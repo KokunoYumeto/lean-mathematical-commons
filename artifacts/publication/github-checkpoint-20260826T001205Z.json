@@ -1,0 +1,69 @@
+{
+  "schema": "lean-mathematical-commons/github-publication-receipt/1.0",
+  "repository": {
+    "owner": "KokunoYumeto",
+    "name": "lean-mathematical-commons",
+    "url": "https://github.com/KokunoYumeto/lean-mathematical-commons",
+    "visibility": "public",
+    "created_at": "2026-08-25T23:12:05Z",
+    "default_branch": "main"
+  },
+  "published_checkpoint": {
+    "commit": "159b957c9d95375151d51d5dc957ebf879852659",
+    "commit_url": "https://github.com/KokunoYumeto/lean-mathematical-commons/commit/159b957c9d95375151d51d5dc957ebf879852659",
+    "tree": "081e53a7d3b1ab2863f75f2eef4b894fc1cc0d39",
+    "parent": "ff2e570f5cf46e99cfac40c69b94d513ecd24ec2",
+    "message": "Publish Noether pilot: 29-target green checkpoint",
+    "module_graph_checkpoint": "20260826T0014097083391-9fccc982"
+  },
+  "snapshot_verification": {
+    "selected_files": 258,
+    "selected_bytes": 2128202,
+    "remote_blobs": 258,
+    "extra_remote_blobs": 0,
+    "git_blob_hash_mismatches": 0,
+    "tree_response_truncated": false,
+    "selection": "Root project metadata plus MathematicalCommons, docs, metadata, scripts, sources, and direct artifacts/build JSON files",
+    "excluded": [
+      ".git",
+      ".lake",
+      ".agent-tmp",
+      "tmp",
+      "HmScratch.lean",
+      "artifacts/build/local-olean",
+      "build stdout/stderr logs",
+      "Lean object files",
+      "credential files",
+      "large source corpora"
+    ]
+  },
+  "anonymous_verification": {
+    "archive": {
+      "url": "https://codeload.github.com/KokunoYumeto/lean-mathematical-commons/zip/159b957c9d95375151d51d5dc957ebf879852659",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 667660
+    },
+    "module_graph_checkpoint": {
+      "url": "https://raw.githubusercontent.com/KokunoYumeto/lean-mathematical-commons/159b957c9d95375151d51d5dc957ebf879852659/artifacts/build/module-graph-checkpoint-20260826T0014097083391-9fccc982.json",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 2592
+    },
+    "browser_landing_page": {
+      "project_title_visible": true,
+      "checkpoint_id_visible": true,
+      "published_commit_link_visible": true,
+      "source_docs_metadata_and_build_evidence_visible": true
+    }
+  },
+  "topics": [
+    "emmy-noether",
+    "formal-verification",
+    "history-of-mathematics",
+    "lean",
+    "lean4",
+    "mathlib"
+  ],
+  "transport": "GitHub REST Git Database API through the authenticated GitHub CLI; no local Git command was run"
+}

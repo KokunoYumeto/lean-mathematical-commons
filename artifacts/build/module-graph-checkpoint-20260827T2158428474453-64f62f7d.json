@@ -1,0 +1,63 @@
+{
+  "schema": "lean-mathematical-commons/module-graph-checkpoint/1.0",
+  "checkpoint_id": "20260827T2158428474453-64f62f7d",
+  "base_batch": {
+    "batch_id": "20260825T0355153955281-3669b4fc",
+    "manifest": "artifacts/build/module-batch-20260825T0355153955281-3669b4fc.json",
+    "verified_modules": 17
+  },
+  "previous_checkpoint": "artifacts/build/module-graph-checkpoint-20260827T1748240448096-3aca3b68.json",
+  "incremental_rebuild": {
+    "batch_ids": [
+      "20260827T2157042733942-b9d30e8d",
+      "20260827T2157275120580-fdfa0417",
+      "20260827T2157527223722-c4ff2ae0"
+    ],
+    "cache_directory": "artifacts/build/local-olean/20260825T0355153955281-3669b4fc",
+    "reason": "P22's equation-(23) common-tail representative-system isomorphism was packaged explicitly around Mathlib's second isomorphism theorem, with modern quotient orientation and a representative existence theorem",
+    "reused_unchanged_theorem_modules": 31,
+    "changed_theorem_modules": 0,
+    "added_theorem_modules": 1,
+    "max_memory_gib": 2.5,
+    "global_worker_limit_gib": 3.0,
+    "rebuilt_modules": [
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.CommonTailQuotient",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1132634112,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-CommonTailQuotient-20260827T2157043610703-850064d3.module.receipt.json"
+      },
+      {
+        "module": "MathematicalCommons.Noether",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1914425344,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-20260827T2157275998834-4d080e86.module.receipt.json"
+      },
+      {
+        "module": "MathematicalCommons",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1917009920,
+        "receipt": "artifacts/build/MathematicalCommons-20260827T2157528198598-e8359168.module.receipt.json"
+      }
+    ]
+  },
+  "lean_version": "4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "all_34_targets_current": true,
+  "all_exit_zero": true,
+  "all_stderr_empty": true,
+  "all_sources_unchanged_during_build": true,
+  "all_environments_unchanged_during_build": true,
+  "current_incremental_maximum_observed_process_tree_peak_bytes": 1917009920,
+  "maximum_observed_process_tree_peak_bytes": 1919508480
+}
