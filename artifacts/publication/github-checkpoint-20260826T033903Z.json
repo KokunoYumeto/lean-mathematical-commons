@@ -1,0 +1,69 @@
+{
+  "schema": "lean-mathematical-commons/github-publication-receipt/1.0",
+  "repository": {
+    "owner": "KokunoYumeto",
+    "name": "lean-mathematical-commons",
+    "url": "https://github.com/KokunoYumeto/lean-mathematical-commons",
+    "visibility": "public",
+    "default_branch": "main"
+  },
+  "published_checkpoint": {
+    "commit": "a060e8224205cd9b4a0da9b1adb0de955a0d61b4",
+    "commit_url": "https://github.com/KokunoYumeto/lean-mathematical-commons/commit/a060e8224205cd9b4a0da9b1adb0de955a0d61b4",
+    "tree": "25817b2b58c87c04d02f7ed5566fb4fc6e56cd2a",
+    "parent": "77ba67804e2339972f4264867186985838a60289",
+    "message": "Descend P22 regularity to finite coordinate changes",
+    "module_graph_checkpoint": "20260826T0527205736234-11e8edb4",
+    "claim_receipt": {
+      "path": "artifacts/build/claim-P22-finite-regularity-specialization-20260826T0527205736234-11e8edb4.json",
+      "bytes": 3112,
+      "sha256": "915943AAFCEA08733FA16B6DE542DA4DC7F37BAE805082F59491C0FD385B746B"
+    },
+    "graph_receipt": {
+      "path": "artifacts/build/module-graph-checkpoint-20260826T0527205736234-11e8edb4.json",
+      "bytes": 2968,
+      "sha256": "DE0EA737597D0856BF6289084FC30D0F81E7C983DCDA7CE5C60D1892D4BA4250"
+    }
+  },
+  "snapshot_verification": {
+    "updated_paths": 12,
+    "updated_bytes": 338740,
+    "changed_paths": 6,
+    "new_paths": 6,
+    "remote_tree_entries": 364,
+    "remote_blobs": 351,
+    "updated_path_blob_mismatches": 0,
+    "tree_response_truncated": false,
+    "verification_scope": "All 12 updated paths were rehashed as Git blobs and compared with the recursive remote tree; unchanged paths inherit unchanged from parent commit 77ba67804e2339972f4264867186985838a60289.",
+    "excluded": [
+      ".git",
+      ".lake",
+      ".agent-tmp",
+      "tmp",
+      "HmScratch.lean",
+      "artifacts/build/local-olean",
+      "build stdout/stderr logs",
+      "Lean object files",
+      "credential files",
+      "large source corpora"
+    ]
+  },
+  "anonymous_verification": {
+    "archive": {
+      "url": "https://codeload.github.com/KokunoYumeto/lean-mathematical-commons/zip/a060e8224205cd9b4a0da9b1adb0de955a0d61b4",
+      "http_status": 200,
+      "bytes": 870940
+    },
+    "module_graph_checkpoint": {
+      "url": "https://raw.githubusercontent.com/KokunoYumeto/lean-mathematical-commons/a060e8224205cd9b4a0da9b1adb0de955a0d61b4/artifacts/build/module-graph-checkpoint-20260826T0527205736234-11e8edb4.json",
+      "http_status": 200,
+      "bytes": 2968
+    },
+    "repository_landing_page": {
+      "url": "https://github.com/KokunoYumeto/lean-mathematical-commons/tree/a060e8224205cd9b4a0da9b1adb0de955a0d61b4",
+      "http_status": 200,
+      "checkpoint_id_visible": true
+    }
+  },
+  "transport": "GitHub REST Git Database API through the authenticated GitHub CLI; no local Git command was run"
+}

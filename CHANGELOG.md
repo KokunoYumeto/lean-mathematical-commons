@@ -26,10 +26,24 @@
   every specialization is identified with an actual lower-unitriangular
   algebra equivalence. Thus every nonzero ideal has a finite specialized
   coordinate transform containing a first-variable regular member.
+- Added the 16-declaration `RegularQuotient` module for P22's equation-(21)
+  representative system and the reduction following equation (23). It proves
+  that the quotient by a supplied regular polynomial's principal tail is free
+  finite on the `k` bounded coefficient classes, and that every containing
+  ideal maps exactly to its bounded coefficient module. P22 now has 299
+  canonical declarations across the base and sixteen support modules, with 30
+  claim/definition records.
+- Reserved Zenodo release DOI `10.5281/zenodo.22132542` under the existing
+  concept DOI `10.5281/zenodo.21129945`; the coherent source archive is mirrored
+  as an identical GitHub release asset and Zenodo deposit.
 - Expanded the maintained graph to 32 targets (30 theorem/support modules and
   both umbrellas). The completed module and umbrellas all exited zero with
   empty stderr under 2.5 GiB caps; the checkpoint-chain peak remains
   1,919,344,640 bytes under the strict 3 GiB worker envelope.
+- Expanded the maintained graph to 33 targets (31 theorem/support modules and
+  both umbrellas). The new module and both umbrellas exited zero with empty
+  stderr under 2.5 GiB caps; the checkpoint-chain peak is 1,919,508,480 bytes
+  under the strict 3 GiB worker envelope.
 - Added opt-in, hash-checked dependency sidecar mirroring to the bounded local
   builder for narrowly missing prebuilt objects; conflicting targets are
   refused and no package-wide rebuild is performed.

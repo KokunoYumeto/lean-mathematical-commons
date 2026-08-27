@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this formalization library, cite the release DOI and the historical source edition identified in its theorem ledger."
 title: "Lean of the Mathematical Commons: Emmy Noether pilot"
 type: software
-version: 0.1.0-dev
-date-released: 2026-08-24
+version: 0.2.0
+date-released: 2026-08-27
 repository-code: "https://github.com/KokunoYumeto/lean-mathematical-commons"
 url: "https://github.com/KokunoYumeto/lean-mathematical-commons"
 authors:
@@ -11,8 +11,11 @@ authors:
 license: Apache-2.0
 identifiers:
   - type: doi
+    value: "10.5281/zenodo.22132542"
+    description: "Noether-pilot release DOI."
+  - type: doi
     value: "10.5281/zenodo.21129945"
-    description: "Related concept DOI for the existing classical-mathematics Lean sidecars; not yet a DOI for this expanded repository checkpoint."
+    description: "Concept DOI for the living Lean sidecar series."
 keywords:
   - Lean 4
   - Mathlib

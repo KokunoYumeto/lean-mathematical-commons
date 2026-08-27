@@ -1,0 +1,64 @@
+{
+  "schema": "lean-mathematical-commons/module-graph-checkpoint/1.0",
+  "checkpoint_id": "20260827T1748240448096-3aca3b68",
+  "base_batch": {
+    "batch_id": "20260825T0355153955281-3669b4fc",
+    "manifest": "artifacts/build/module-batch-20260825T0355153955281-3669b4fc.json",
+    "verified_modules": 17
+  },
+  "previous_checkpoint": "artifacts/build/module-graph-checkpoint-20260826T0527205736234-11e8edb4.json",
+  "incremental_rebuild": {
+    "batch_ids": [
+      "20260826T0548419414385-b1687fe7",
+      "20260827T1946394716920-4ea9ea2e",
+      "20260827T1947305026370-4fa5ebcb"
+    ],
+    "cache_directory": "artifacts/build/local-olean/20260825T0355153955281-3669b4fc",
+    "reason": "P22's equation-(21) representative system and post-equation-(23) finite reduction were packaged as an explicit quotient equivalence, a k-coefficient basis, finite/free module instances, and an exact equivalence between the image of a containing ideal and its bounded coefficient module",
+    "reused_unchanged_theorem_modules": 30,
+    "changed_theorem_modules": 0,
+    "added_theorem_modules": 1,
+    "max_memory_gib": 2.5,
+    "global_worker_limit_gib": 3.0,
+    "rebuilt_modules": [
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularQuotient",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1363423232,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-RegularQuotient-20260826T0548423174602-634afaa4.module.receipt.json"
+      },
+      {
+        "module": "MathematicalCommons.Noether",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1910722560,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-20260827T1946396580822-d7ca61ae.module.receipt.json"
+      },
+      {
+        "module": "MathematicalCommons",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1919508480,
+        "receipt": "artifacts/build/MathematicalCommons-20260827T1947306621112-e5412382.module.receipt.json"
+      }
+    ]
+  },
+  "lean_version": "4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "dependency_sidecar_receipt": "artifacts/build/-lake-packages-mathlib-Mathlib-RingTheory-Polynomial-DegreeLT-20260826T0543285128281-e77c4a45.module.receipt.json",
+  "serial": true,
+  "all_33_targets_current": true,
+  "all_exit_zero": true,
+  "all_stderr_empty": true,
+  "all_sources_unchanged_during_build": true,
+  "all_environments_unchanged_during_build": true,
+  "current_incremental_maximum_observed_process_tree_peak_bytes": 1919508480,
+  "maximum_observed_process_tree_peak_bytes": 1919508480
+}

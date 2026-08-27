@@ -1,0 +1,173 @@
+{
+  "schema": "lean-mathematical-commons/module-build-receipt/1.0",
+  "batch_id": "20260826T0543283151252-a5ccae1b",
+  "run_id": "20260826T0543285128281-e77c4a45",
+  "module": ".lake.packages.mathlib.Mathlib.RingTheory.Polynomial.DegreeLT",
+  "source": {
+    "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.lake\\packages\\mathlib\\Mathlib\\RingTheory\\Polynomial\\DegreeLT.lean",
+    "path_relative_to_repository": ".lake/packages/mathlib/Mathlib/RingTheory/Polynomial/DegreeLT.lean",
+    "before": {
+      "bytes": 8337,
+      "sha256": "63727FDCE87CCC401A0CD6BEB3E95689C75B434E77D20953D6903FBC5156AA76"
+    },
+    "after": {
+      "bytes": 8337,
+      "sha256": "63727FDCE87CCC401A0CD6BEB3E95689C75B434E77D20953D6903FBC5156AA76"
+    },
+    "changed_during_build": false
+  },
+  "output": {
+    "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\local-olean\\20260825T0355153955281-3669b4fc\\.lake\\packages\\mathlib\\Mathlib\\RingTheory\\Polynomial\\DegreeLT.olean",
+    "path_relative_to_cache": ".lake/packages/mathlib/Mathlib/RingTheory/Polynomial/DegreeLT.olean",
+    "fingerprint": {
+      "bytes": 166480,
+      "sha256": "85332B456651D1BB2CCE314C21B1340FA0C30D9E94F88B5E9F7D16033F685341"
+    }
+  },
+  "package_mirror": {
+    "enabled": true,
+    "package": "mathlib",
+    "path_relative_to_package": "Mathlib/RingTheory/Polynomial/DegreeLT.lean",
+    "objects": [
+      {
+        "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\RingTheory\\Polynomial\\DegreeLT.olean",
+        "source_fingerprint": {
+          "bytes": 166480,
+          "sha256": "85332B456651D1BB2CCE314C21B1340FA0C30D9E94F88B5E9F7D16033F685341"
+        },
+        "target_fingerprint": {
+          "bytes": 166480,
+          "sha256": "85332B456651D1BB2CCE314C21B1340FA0C30D9E94F88B5E9F7D16033F685341"
+        }
+      },
+      {
+        "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\RingTheory\\Polynomial\\DegreeLT.olean.private",
+        "source_fingerprint": {
+          "bytes": 346384,
+          "sha256": "70E7A03AF9FF08E6A6D8025B77F4C510B31E618B750A1CA3D5C302AC0E70E08C"
+        },
+        "target_fingerprint": {
+          "bytes": 346384,
+          "sha256": "70E7A03AF9FF08E6A6D8025B77F4C510B31E618B750A1CA3D5C302AC0E70E08C"
+        }
+      },
+      {
+        "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\RingTheory\\Polynomial\\DegreeLT.olean.server",
+        "source_fingerprint": {
+          "bytes": 9664,
+          "sha256": "AB55B193DE1DD18793B4497E3F371950664D37F4186F5AD88E60C730715B5B8B"
+        },
+        "target_fingerprint": {
+          "bytes": 9664,
+          "sha256": "AB55B193DE1DD18793B4497E3F371950664D37F4186F5AD88E60C730715B5B8B"
+        }
+      },
+      {
+        "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\RingTheory\\Polynomial\\DegreeLT.ir",
+        "source_fingerprint": {
+          "bytes": 21304,
+          "sha256": "F195811545BB53DB57141C749D6A20E4723BB642A85F6BFBA1D68C64207C23F4"
+        },
+        "target_fingerprint": {
+          "bytes": 21304,
+          "sha256": "F195811545BB53DB57141C749D6A20E4723BB642A85F6BFBA1D68C64207C23F4"
+        }
+      }
+    ]
+  },
+  "runner": {
+    "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\scripts\\build-local-olean-bounded.ps1",
+    "before": {
+      "bytes": 19596,
+      "sha256": "2BE9B6EBED0E973321A019A7B7E6A24E35C793EEB59FDDCD0ECD7F4D75616EB4"
+    },
+    "after": {
+      "bytes": 19596,
+      "sha256": "2BE9B6EBED0E973321A019A7B7E6A24E35C793EEB59FDDCD0ECD7F4D75616EB4"
+    }
+  },
+  "lean": {
+    "executable_path": "C:\\Users\\Floris\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\bin\\lean.exe",
+    "version_output": "Lean (version 4.31.0, x86_64-w64-windows-gnu, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)",
+    "direct_invocation": true,
+    "argument_list": [
+      "-o",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\local-olean\\20260825T0355153955281-3669b4fc\\.lake\\packages\\mathlib\\Mathlib\\RingTheory\\Polynomial\\DegreeLT.olean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.lake\\packages\\mathlib\\Mathlib\\RingTheory\\Polynomial\\DegreeLT.lean"
+    ],
+    "lean_num_threads": 1,
+    "lean_path": [
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\local-olean\\20260825T0355153955281-3669b4fc",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-aesop\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-batteries\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-importGraph\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-LeanSearchClient\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-plausible\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-proofwidgets\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\0-prebuilt-Qq\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-aesop\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-batteries\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-importGraph\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-LeanSearchClient\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-plausible\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-proofwidgets\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\.lake\\packages\\prebuilt-Qq\\.lake\\build\\lib\\lean",
+      "C:\\Users\\Floris\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\lib\\lean"
+    ]
+  },
+  "toolchains": {
+    "normalized_values_match": true,
+    "repository": "leanprover/lean4:v4.31.0",
+    "dependency_project": "leanprover/lean4:v4.31.0"
+  },
+  "manifests": {
+    "mathlib_pins_match": true,
+    "repository_mathlib": {
+      "url": "https://github.com/leanprover-community/mathlib4.git",
+      "input_rev": "v4.31.0",
+      "resolved_rev": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f"
+    },
+    "dependency_mathlib": {
+      "url": "https://github.com/leanprover-community/mathlib4.git",
+      "input_rev": "v4.31.0",
+      "resolved_rev": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f"
+    }
+  },
+  "watcher": {
+    "enforcement": "best_effort_sampled_process_tree_working_set",
+    "hard_limit": false,
+    "sample_interval_milliseconds": 200,
+    "max_memory_gib": 2.5,
+    "limit_bytes": 2684354560,
+    "observed_process_tree_peak_bytes": 860565504,
+    "memory_exceeded": false,
+    "kill_policy": "Stop only the captured Lean process tree on limit breach."
+  },
+  "workspace_build_lock": {
+    "path": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\.lean-build.lock",
+    "exclusive": true
+  },
+  "environment_changed_during_build": false,
+  "started_at": "2026-08-26T05:43:28.5411687+02:00",
+  "finished_at": "2026-08-26T05:43:55.0006718+02:00",
+  "exit_code": 0,
+  "logs": {
+    "stdout": {
+      "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\-lake-packages-mathlib-Mathlib-RingTheory-Polynomial-DegreeLT-20260826T0543285128281-e77c4a45.module.stdout.txt",
+      "fingerprint": {
+        "bytes": 0,
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+      }
+    },
+    "stderr": {
+      "path_absolute": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\-lake-packages-mathlib-Mathlib-RingTheory-Polynomial-DegreeLT-20260826T0543285128281-e77c4a45.module.stderr.txt",
+      "fingerprint": {
+        "bytes": 0,
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+      }
+    }
+  }
+}

@@ -317,8 +317,33 @@ matching axiom audits and use only `propext`, `Classical.choice`, and
 `Quot.sound`; the other eighteen declarations are definitions or abbreviations.
 The claim receipt is
 `artifacts/build/claim-P22-finite-regularity-specialization-20260826T0527205736234-11e8edb4.json`.
-P22 now has 283 canonical declarations across the base and fifteen support
-modules, and its ledger has 29 claim/definition records.
+## Equation (21) and equation (23): finite regular quotient
+
+`RegularQuotient.lean` packages the finite-module conclusion needed after
+regular division. For a supplied polynomial regular of first-variable degree
+`k`, the degree-below-`k` representatives and the principal tail are proved to
+be complementary submodules. Consequently the ambient polynomial module
+modulo that tail is linearly equivalent both to `Polynomial.degreeLT R k` and
+to the `k`-entry coefficient space `Fin k → R`, where `R` is the polynomial
+ring in the remaining variables. An explicit basis proves that quotient free
+and finite over `R`.
+
+The construction is also restricted to every ideal containing the regular
+polynomial: under the quotient-to-remainder equivalence, the image of the ideal
+is exactly its bounded coefficient module. This is the precise modern module
+statement behind the source's passage from equations (22)--(23) to finitely
+many `ξ` variables; it does not silently identify the historical paired
+`G₁/M₁` quotient or supply later-stage Smith data.
+
+The module contains sixteen declarations (ten theorems and six definitions).
+Its clean canonical receipt is
+`artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-RegularQuotient-20260826T0548423174602-634afaa4.module.receipt.json`,
+with 1,363,423,232 bytes observed peak and only `propext`,
+`Classical.choice`, and `Quot.sound` in its axiom audits. The claim receipt is
+`artifacts/build/claim-P22-regular-quotient-20260827T1748240448096-3aca3b68.json`.
+
+P22 now has 299 canonical declarations across the base and sixteen support
+modules, and its ledger has 30 claim/definition records.
 
 ## Canon and scope constraints
 
@@ -345,9 +370,10 @@ modules, and its ledger has 29 claim/definition records.
    coefficient nonvanishing, exact degree preservation, ideal-level existence,
    simultaneous finite specialization, and regular-polynomial division are
    already promoted.
-2. Use the promoted internal decomposition to identify the quotient by the
-   common principal tail, then define the finite stage module, its Smith
-   coefficients, determinant norm, and the primitive normalization of `R^(i)`.
+2. Extend the promoted first regular quotient and exact bounded-ideal-image
+   equivalence to the historical paired `G_i/M_i` construction, then define
+   its Smith coefficients, determinant norm, and the primitive normalization
+   of `R^(i)`.
 3. Prove Satz VIII's divisibilities, discharging the hypotheses of the promoted
    radical/zero-set bridge.
 4. Build the successive determinantal ideals and strengthen the promoted

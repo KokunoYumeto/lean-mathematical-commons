@@ -1,0 +1,19 @@
+{
+  "schema": "lean-mathematical-commons/zenodo-draft-receipt/1.0",
+  "concept_doi": "10.5281/zenodo.21129945",
+  "previous_version": {
+    "record_id": 21129946,
+    "doi": "10.5281/zenodo.21129946"
+  },
+  "draft": {
+    "record_id": 22132542,
+    "reserved_doi": "10.5281/zenodo.22132542",
+    "created": "2026-08-27T19:49:35.315442+02:00",
+    "state": "unsubmitted",
+    "submitted": false,
+    "html": "https://zenodo.org/deposit/22132542",
+    "api": "https://zenodo.org/api/deposit/depositions/22132542"
+  },
+  "purpose": "Noether pilot 0.2.0 source, provenance, ledger, and bounded-build checkpoint",
+  "credential_material_recorded": false
+}

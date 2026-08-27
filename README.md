@@ -167,19 +167,23 @@ dependency object, its opt-in `-MirrorPackageOutputs` mode hash-checks and
 mirrors only explicitly compiled sidecars into the disposable dependency
 project; it refuses a conflicting target rather than rebuilding a package.
 
-The current 32-target graph check (30 promoted theorem/support modules and both
+The current 33-target graph check (31 promoted theorem/support modules and both
 umbrellas) is checkpoint
-[`20260826T0527205736234-11e8edb4`](artifacts/build/module-graph-checkpoint-20260826T0527205736234-11e8edb4.json).
-It reuses 29 unchanged theorem modules, completes P22's existing generic-
-regularity finite-specialization bridge, and rebuilds both umbrellas; every
-current target exited zero with empty stderr and unchanged source/environment. The
+[`20260827T1748240448096-3aca3b68`](artifacts/build/module-graph-checkpoint-20260827T1748240448096-3aca3b68.json).
+It reuses 30 unchanged theorem modules, adds P22's finite free quotient by the
+principal tail of a regular polynomial, identifies the image of every
+containing ideal with its bounded coefficient module, and rebuilds both
+umbrellas; every current target exited zero with empty stderr and unchanged
+source/environment. The
 maximum observed process-tree working set across the checkpoint chain was
-1,919,344,640 bytes under the strict 3 GiB worker envelope; every new build
+1,919,508,480 bytes under the strict 3 GiB worker envelope; every new build
 used a 2.5 GiB process-tree cap.
 
 Meaningful theorem clusters—not individual edits—are the intended GitHub/Zenodo
-release unit. The existing sidecar concept DOI is
-[10.5281/zenodo.21129945](https://doi.org/10.5281/zenodo.21129945).
+release unit. The living series uses concept DOI
+[10.5281/zenodo.21129945](https://doi.org/10.5281/zenodo.21129945); the current
+Noether-pilot release DOI is
+[10.5281/zenodo.22132542](https://doi.org/10.5281/zenodo.22132542).
 
 ## Project map
 

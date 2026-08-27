@@ -1,0 +1,53 @@
+{
+  "schema": "lean-mathematical-commons/claim-build-receipt/1.0",
+  "claim_id": "HENTZELT-NOETHER-1923-REGULAR-QUOTIENT",
+  "status": "first_regular_quotient_completed",
+  "source": {
+    "witness": "NOETH-DE-ED-0014",
+    "sha256": "EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58",
+    "lines": "13134--13167; equation (21), equations (22)--(23), and the ensuing finite representative-system argument"
+  },
+  "declarations": 16,
+  "newly_closed": [
+    "the degree-below-k representatives and the regular principal tail are complementary submodules",
+    "the ambient polynomial module modulo the regular principal tail is linearly equivalent to degree-below-k polynomials",
+    "the regular quotient is linearly equivalent to k coefficient vectors and therefore has an explicit finite free basis",
+    "the image of every ideal containing the regular polynomial is exactly its bounded coefficient module under the quotient equivalence",
+    "the ideal-image and bounded-part coefficient modules are linearly equivalent"
+  ],
+  "modules": [
+    {
+      "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularQuotient",
+      "source": {
+        "path": "MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/RegularQuotient.lean",
+        "bytes": 10890,
+        "sha256": "95961B5224D986688D9A96C3D6E585B1DAB5D133104FC69A3963CEDEB5D6B21B"
+      },
+      "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-RegularQuotient-20260826T0548423174602-634afaa4.module.receipt.json",
+      "receipt_sha256": "8856C8292FB345C1859ACEEE43B4B4452BB0E906C2DAE960DA30D316BB1431B3",
+      "exit_code": 0,
+      "peak_bytes": 1363423232,
+      "stderr_bytes": 0,
+      "warnings": 0,
+      "sorry_or_admit": 0,
+      "declaration_count": 16,
+      "theorem_count": 10,
+      "definition_count": 6,
+      "axioms": ["propext", "Classical.choice", "Quot.sound"]
+    }
+  ],
+  "umbrella_receipts": [
+    "artifacts/build/MathematicalCommons-Noether-20260827T1946396580822-d7ca61ae.module.receipt.json",
+    "artifacts/build/MathematicalCommons-20260827T1947306621112-e5412382.module.receipt.json"
+  ],
+  "dependency_receipts": [
+    "artifacts/build/-lake-packages-mathlib-Mathlib-RingTheory-Polynomial-DegreeLT-20260826T0543285128281-e77c4a45.module.receipt.json"
+  ],
+  "graph_checkpoint": "artifacts/build/module-graph-checkpoint-20260827T1748240448096-3aca3b68.json",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "worker_memory_limit_gib": 2.5,
+  "all_green": true,
+  "limitations": "This closes the finite free quotient and containing-ideal image associated with the first supplied regular polynomial. The historical quotient of the paired G_1/M_1 modules, iteration through later-variable ground ideals, Smith coefficients, determinant norms, primitive resultants, compatible zeros, and multiplicities remain open."
+}
