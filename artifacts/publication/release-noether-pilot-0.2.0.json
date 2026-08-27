@@ -1,0 +1,77 @@
+{
+  "schema": "lean-mathematical-commons/cross-repository-release-receipt/1.0",
+  "release": {
+    "name": "Lean of the Mathematical Commons: Emmy Noether pilot 0.2.0",
+    "version": "0.2.0",
+    "published_at_github_utc": "2026-08-27T17:56:19Z",
+    "publication_date": "2026-08-27"
+  },
+  "github": {
+    "repository": "https://github.com/KokunoYumeto/lean-mathematical-commons",
+    "commit": "cf9289c3d28215a28d317180a3eec00a2e229b59",
+    "tree": "7c23adb7366f8e39acac1e7a56a7b9c4079a6278",
+    "tag": "noether-pilot-0.2.0",
+    "release_id": 378019404,
+    "release_url": "https://github.com/KokunoYumeto/lean-mathematical-commons/releases/tag/noether-pilot-0.2.0",
+    "selected_commit_paths": 17,
+    "selected_commit_bytes": 322883,
+    "recursive_tree_entries": 374,
+    "recursive_tree_blobs": 361,
+    "recursive_tree_truncated": false,
+    "selected_blob_mismatches": 0,
+    "anonymous_asset_verification": true
+  },
+  "zenodo": {
+    "concept_doi": "10.5281/zenodo.21129945",
+    "previous_release_doi": "10.5281/zenodo.21129946",
+    "release_doi": "10.5281/zenodo.22132542",
+    "record_id": 22132542,
+    "record_url": "https://zenodo.org/records/22132542",
+    "title": "Lean of the Mathematical Commons: Emmy Noether pilot",
+    "version": "0.2.0",
+    "license": "apache2.0",
+    "doi_http_status": 200,
+    "doi_final_url": "https://zenodo.org/records/22132542",
+    "latest_version_id": 22132542,
+    "latest_version_doi": "10.5281/zenodo.22132542",
+    "concept_latest_id": 22132542,
+    "previous_record_modified": false,
+    "anonymous_file_verification": true
+  },
+  "mirrored_assets": [
+    {
+      "name": "lean-mathematical-commons-noether-pilot-0.2.0.zip",
+      "bytes": 890017,
+      "md5": "549546872B7484B4B481DBFBD1F7FB31",
+      "sha256": "6A3258150B78536B97B51C78A0C3D24739E4D10AF279039CF4B6D9FBD6F4EA4E",
+      "github_asset_id": 532670801,
+      "github_http_status": 200,
+      "zenodo_http_status": 200,
+      "byte_identical": true
+    },
+    {
+      "name": "RELEASE-MANIFEST.json",
+      "bytes": 3051,
+      "md5": "9DACA1180123F84BB8F5EC184193A7DA",
+      "sha256": "AAC793B17369A47893E4360897EBCA70E2D2B3A471949422B9EBA44DC1D26BB4",
+      "github_asset_id": 532670802,
+      "github_http_status": 200,
+      "zenodo_http_status": 200,
+      "byte_identical": true
+    },
+    {
+      "name": "CHECKSUMS.txt",
+      "bytes": 376,
+      "md5": "12E153F956D8B325FB79898E4518E481",
+      "sha256": "E60BBCB352D8944B85F0E089ACEC95D5956088B426E218E768E8E7FD1139A834",
+      "github_asset_id": 532670800,
+      "github_http_status": 200,
+      "zenodo_http_status": 200,
+      "byte_identical": true
+    }
+  ],
+  "transport": {
+    "github": "Authenticated GitHub REST/release API through gh; no local Git command was run.",
+    "zenodo": "Authenticated Zenodo deposit API with bearer credentials read only from the designated token file and never recorded in logs or artifacts."
+  }
+}
