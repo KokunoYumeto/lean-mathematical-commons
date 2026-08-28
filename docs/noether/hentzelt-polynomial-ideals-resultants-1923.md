@@ -48,9 +48,9 @@ resolution of P18's compressed product display.
 | 13004--13037, equation (12) and Definition IV | transformed ideals under the full lower-unitriangular generic coordinate matrix `U` | `MvPolynomial.bind₁`; algebra equivalences; homogeneous components; algebraic independence; ideal maps | The full family `y_μ = x_μ + Σ_{ν<μ} u_{μν}x_ν`, its recursive inverse, ideal transport, exact total-degree preservation, generic leading-coefficient nonvanishing, and existence of a regular member in every nonzero transformed ideal are promoted. Characteristic-zero descent to an actual finite ground-field lower-unitriangular equivalence is also promoted. The successive later-stage regular elements remain. |
 | 13046--13055, Definition V | successive ground ideals | localization extension/contraction; local `groundIdealAlong` | The literal submonoid of nonzero polynomials free of the earlier variables, its source/zero-based indexing dictionary, equation-(16) membership, and stage antitonicity are promoted. |
 | 13057--13107, Satz VI | ground ideals of transformed ideals are transformed | relative Dedekind--Mertens; bounded Kronecker substitution; parameter localization | Equation (17), simultaneous common-denominator presentations, coefficient reconstruction, late-variable preservation, and the final two-sided transformed-contraction equality are promoted with no primary or saturation hypothesis. |
-| 13123--13319, Satz VII; equations (21)--(23) at 13134--13160 | infinite monomial module reduces to a finite module; only finitely many elementary divisors are nonunits | finite-free, Smith-normal-form, monic polynomial division, submodule sums, and polynomial-evaluation APIs | Equations (21)--(23) are promoted for a supplied degree-`k` polynomial regular in `x₁`: exact bounded representatives, their `Fin k` coefficient vectors, the internal decomposition of every containing ideal into its bounded part and disjoint principal tail, the finite free quotient, and the paired common-tail quotient equivalence. Equation (12) constructs and finitely specializes the first regular member for every nonzero ideal while preserving any supplied finite family of witnesses. Iteration through later variables, determinant data, the nonunit elementary-divisor theorem, and auxiliary-choice independence remain open. |
-| 13153--13160, equation (23) | isomorphism of residue-class systems after adjoining the same independent tail | `LinearMap.quotientInfEquivSupQuotient`; quotient modules; `LinearEquiv` | The concrete abstract equivalence and representative existence theorem are packaged with historical divisibility oriented explicitly as denominator `M ≤ G`. This is `NEW_PACKAGING` of Mathlib's second isomorphism theorem. |
-| 13323--13335, Definition VI | stage resultants, elementary-divisor forms, and their products | `associated_norm_prod_smith`; `Ideal.smithCoeffs`; `Matrix.det` | Mathlib relates a finite-free norm to Smith coefficients, but Hentzelt's staged modules and primitive normalizations still need construction. |
+| 13123--13319, Satz VII; equations (21)--(24) at 13134--13173 | infinite monomial module reduces to a finite module; only finitely many elementary divisors are nonunits | finite-free, Smith-normal-form, monic polynomial division, submodule sums, and polynomial-evaluation APIs | Equations (21)--(23) are promoted for a supplied degree-`k` polynomial regular in `x₁`: exact bounded representatives, their `Fin k` coefficient vectors, the internal decomposition of every containing ideal into its bounded part and disjoint principal tail, the finite free quotient, the abstract common-tail equivalence, its concrete paired-ideal specialization, and the actual cutoff-one ground-ideal quotient. A source-modeled cutoff-one `ξ`/`ζ` coordinate module realizes that ideal pair and connects its quotient to the bounded model under a supplied regular member. A separate generic PID package exposes equation-(24)-shaped diagonal bases, cyclic factors, and the selected-basis determinant product. Line 13162's ground-module characterization, historical localization and Smith hypotheses, the infinite-tail nonunit-factor conclusion, later stages, determinant norms/resultants, and auxiliary-choice independence remain open. |
+| 13153--13160, equation (23) | isomorphism of residue-class systems after adjoining the same independent tail | `LinearMap.quotientInfEquivSupQuotient`; quotient modules; `LinearEquiv` | The abstract equivalence is `NEW_PACKAGING` of Mathlib's second isomorphism theorem, with divisibility oriented as denominator `M ≤ G`. The promoted first-stage coordinate model specializes it and transports the quotient to the actual cutoff-one ideal pair. |
+| 13164--13173, equation (24); 13323--13335, Definition VI | diagonal basis presentation, stage resultants, elementary-divisor forms, and their products | Smith bases/coefficients; `Submodule.quotientEquivPiSpan`; `Matrix.det_diagonal` | Generic full-rank finite-free PID `NEW_PACKAGING` now supplies the diagonal and cyclic-quotient scaffold plus a chosen-basis determinant product. Mathlib v4.31 does not make this a divisibility-ordered canonical elementary-divisor system. The historical coefficient-field localization, basis/full-rank proof for `G₁*/M₁*`, infinite-tail unit factors, determinant norms, staged modules, and primitive resultant normalizations remain open. |
 | 13340--13382, Satz VIII | `E_m ∣ R_m`, `R_m ∣ E_m^N`, and tail products annihilate ground ideals modulo `m` | ideal radicals, divisibility, evaluation | The divisibilities themselves remain a gap. Their radical and zero-set consequence is now formally packaged. |
 | 13387--13400, Satz IX | a divisor ideal with the same resultant form equals the original ideal | ideal order; stage norms | This depends on Satz IV at every stage and has no end-to-end pinned theorem. |
 | 13405--13417, Satz X | coprime factorization of one stage resultant gives unique ideal factors | comaximal ideals; Chinese remainder; colon ideals | The reconstruction of the two historical ideal factors and their least-common-multiple statement remains a gap. |
@@ -354,8 +354,64 @@ the observed peak was 1,132,634,112 bytes and the axiom audit again reports only
 `propext`, `Classical.choice`, and `Quot.sound`. The claim receipt is
 `artifacts/build/claim-P22-common-tail-quotient-20260827T2158428474453-64f62f7d.json`.
 
-P22 now has 305 canonical declarations across the base and seventeen support
-modules, and its ledger has 31 claim/definition records.
+`RegularPairedQuotient.lean` then instantiates that abstract equivalence with
+the actual bounded-part/principal-tail decomposition of a supplied regular
+ideal pair `M ≤ G`. It identifies the paired quotient with the quotient of the
+bounded coefficient modules, proves the former finite over the remaining-
+variable polynomial ring, and transports a bounded representative to every
+class. These six declarations are source-specific `NEW_PACKAGING`: they
+assemble existing Mathlib finite-module APIs and the preceding local wrappers,
+not new mathematics. The controlled claim stops at line 13160; line 13162's
+ground-module characterization remains open. The clean module receipt is
+`artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-RegularPairedQuotient-20260828T0057132656054-f5e829e8.module.receipt.json`,
+with 1,387,941,888 bytes observed peak and the same three standard axioms. The
+claim receipt is
+`artifacts/build/claim-P22-regular-paired-quotient-20260828T0110324461242-014a6a7e.json`.
+
+`FirstGroundPairedQuotient.lean` connects that supplied-pair package to the
+actual source indexing. It proves `g₀` is the unit ideal exactly when the input
+ideal is nonzero, represents source `g₁` by cutoff one in at least two total
+variables, transports `I ≤ g₁` through `MvPolynomial.finSuccEquiv`, and obtains
+the bounded quotient equivalence, module-finiteness, and bounded representatives
+for this stage-one ideal quotient. Its eleven declarations are
+`NEW_PACKAGING`. The clean receipt is
+`artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstGroundPairedQuotient-20260828T0156012692103-575448b6.module.receipt.json`,
+with 1,348,321,280 bytes observed peak, empty stderr, and only `propext`,
+`Classical.choice`, and `Quot.sound`. The claim receipt is
+`artifacts/build/claim-P22-stage-one-ground-ideal-quotient-20260828T1412133846760-797a2f84.json`.
+
+`FirstLinearFormModules.lean` closes the separate coordinate bridge. It models
+the finite `ξ` coordinates and common `ζ` tail by
+`Polynomial.degreeLT × principalTail`; regular division realizes the product by
+addition. Under supplied regularity and membership hypotheses, the bounded,
+tail, and full coordinate modules map to the bounded part, principal tail, and
+actual containing ideal. The cutoff-one ground/original pair is then transported
+through the coordinate quotient, actual ideal quotient, and bounded quotient in
+one explicit chain. Its twenty declarations (eight theorems and twelve
+definitions/abbreviations) are classified `FORMALIZED_GAP`. The module does not
+claim named individual `ξᵢ`/`ζν` bases or line 13162's ground-module theorem. Its
+clean receipt is
+`artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstLinearFormModules-20260828T1458432494370-59aaa585.module.receipt.json`,
+with 1,366,568,960 bytes observed peak, empty stderr, and only `propext`,
+`Classical.choice`, and `Quot.sound`. The claim receipt is
+`artifacts/build/claim-P22-first-linear-form-modules-20260828T1500160501084-3b7c5d91.json`.
+
+`SmithPairedQuotient.lean` gives a deliberately generic equation-(24) scaffold.
+For a supplied finite basis and full-rank relative denominator over a PID, it
+exposes Mathlib's Smith numerator/denominator bases and diagonal coefficients,
+decomposes the quotient into cyclic factors, composes this with common-tail
+cancellation, and proves that the selected-basis transition determinant is the
+product of those coefficients. These nine declarations (four theorems and five
+definitions) are `NEW_PACKAGING`, not the historical localized `G₁*/M₁*`
+instance and not a canonical divisibility-ordered elementary-divisor theorem.
+The clean receipt is
+`artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-SmithPairedQuotient-20260828T1459027809328-2d9a1f3c.module.receipt.json`,
+with 1,342,902,272 bytes observed peak, empty stderr, and the same three standard
+axioms. The claim receipt is
+`artifacts/build/claim-P22-smith-paired-quotient-20260828T1500160501084-3b7c5d91.json`.
+
+P22 now has 351 canonical declarations across the base and twenty-one support
+modules, and its ledger has 35 claim/definition records.
 
 ## Canon and scope constraints
 
@@ -377,19 +433,22 @@ modules, and its ledger has 31 claim/definition records.
 
 ## Formalization route
 
-1. Iterate the completed finite specialized coordinate construction through
-   the later ground ideals to produce the source's successive `C^(i)`. Generic
-   coefficient nonvanishing, exact degree preservation, ideal-level existence,
-   simultaneous finite specialization, and regular-polynomial division are
-   already promoted.
-2. Instantiate the promoted regular quotient, exact bounded-ideal-image
-   equivalence, and abstract common-tail quotient at every historical
-   `G_i/M_i` stage; then define its Smith coefficients, determinant norm, and
-   the primitive normalization of `R^(i)`.
-3. Prove Satz VIII's divisibilities, discharging the hypotheses of the promoted
+1. Prove line 13162's assertion that the finite cutoff-one ground coordinate
+   module is the ground module of the original coordinate module. This requires
+   transporting the source's admissible nonzero multipliers to a precise
+   saturation statement; the coordinate and ideal quotient bridge is already
+   promoted.
+2. Instantiate equation (24) for the historical cutoff-one pair: construct the
+   localized coefficient PID, exhibit the required finite basis and equal-rank
+   denominator, recover the intended divisibility ordering and infinite-tail
+   unit factors, and relate the chosen-basis determinant to Hentzelt's norm.
+3. Iterate the completed finite specialized coordinate construction through
+   later ground ideals to produce the successive `C^(i)`, `G_i/M_i`, Smith data,
+   and primitive normalizations of `R^(i)`.
+4. Prove Satz VIII's divisibilities, discharging the hypotheses of the promoted
    radical/zero-set bridge.
-4. Build the successive determinantal ideals and strengthen the promoted
+5. Build the successive determinantal ideals and strengthen the promoted
    finite-coordinate substrate and Nullstellensatz corollary to Satz XII's
    finite compatible-zero construction.
-5. Only then state the unique
+6. Only then state the unique
    compatible-zero and multiplicity results of Satz XII--XIII.

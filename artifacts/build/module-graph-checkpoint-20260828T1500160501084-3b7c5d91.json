@@ -1,0 +1,78 @@
+{
+  "schema": "lean-mathematical-commons/module-graph-checkpoint/1.0",
+  "checkpoint_id": "20260828T1500160501084-3b7c5d91",
+  "base_batch": {
+    "batch_id": "20260825T0355153955281-3669b4fc",
+    "manifest": "artifacts/build/module-batch-20260825T0355153955281-3669b4fc.json",
+    "verified_modules": 17
+  },
+  "previous_checkpoint": "artifacts/build/module-graph-checkpoint-20260828T1412133846760-797a2f84.json",
+  "previous_checkpoint_sha256": "681A9415D1262F3441C04BE8E42392BAB2D5EDCAE058BBD28645F366F15E361D",
+  "incremental_rebuild": {
+    "batch_ids": [
+      "20260828T1458431652018-030b9233",
+      "20260828T1459027008359-55eaa322",
+      "20260828T1459260978297-7f1aa83e",
+      "20260828T1459452420958-d8bf204a"
+    ],
+    "cache_directory": "artifacts/build/local-olean/20260825T0355153955281-3669b4fc",
+    "reason": "P22 equations (22)--(23)'s cutoff-one linear-form coordinate model and equation (24)'s generic full-rank Smith packaging were added, including the common-tail quotient bridge to the actual stage-one ground/original ideal pair",
+    "reused_unchanged_theorem_modules": 34,
+    "changed_theorem_modules": 0,
+    "added_theorem_modules": 2,
+    "max_memory_gib": 2.5,
+    "global_worker_limit_gib": 3.0,
+    "rebuilt_modules": [
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstLinearFormModules",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1366568960,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstLinearFormModules-20260828T1458432494370-59aaa585.module.receipt.json",
+        "receipt_sha256": "D419B81B3A9EDF7DB040DD6E6C3AC9157DEEF305E12B415DD607826F7E3CC4B9"
+      },
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.SmithPairedQuotient",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1342902272,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-SmithPairedQuotient-20260828T1459027809328-2d9a1f3c.module.receipt.json",
+        "receipt_sha256": "D429335F41D6EFDAA2C7EADB01EFA5B2DE916CD88045FEA2C4F78F558C936CB9"
+      },
+      {
+        "module": "MathematicalCommons.Noether",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1911529472,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-20260828T1459261804354-b09547f5.module.receipt.json",
+        "receipt_sha256": "45D01FB0D364580C02696E56ED567751D56826B65ECFA1271F961094103C6353"
+      },
+      {
+        "module": "MathematicalCommons",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1915265024,
+        "receipt": "artifacts/build/MathematicalCommons-20260828T1459453236544-cb7a371b.module.receipt.json",
+        "receipt_sha256": "F15FA8111507976628BD4E0528AF86521366381F538C0DC5595981143A715E14"
+      }
+    ]
+  },
+  "lean_version": "4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "all_38_targets_current": true,
+  "all_exit_zero": true,
+  "all_stderr_empty": true,
+  "all_sources_unchanged_during_build": true,
+  "all_environments_unchanged_during_build": true,
+  "current_incremental_maximum_observed_process_tree_peak_bytes": 1915265024,
+  "maximum_observed_process_tree_peak_bytes": 1922387968
+}

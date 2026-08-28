@@ -1,0 +1,19 @@
+{
+  "schema": "lean-mathematical-commons/zenodo-draft-receipt/1.0",
+  "concept_doi": "10.5281/zenodo.21129945",
+  "previous_version": {
+    "record_id": 22133696,
+    "doi": "10.5281/zenodo.22133696"
+  },
+  "draft": {
+    "record_id": 22144868,
+    "reserved_doi": "10.5281/zenodo.22144868",
+    "created": "2026-08-28T15:09:08.529707+02:00",
+    "state": "unsubmitted",
+    "submitted": false,
+    "html": "https://zenodo.org/deposit/22144868",
+    "api": "https://zenodo.org/api/deposit/depositions/22144868"
+  },
+  "purpose": "Noether pilot 0.2.2 cutoff-one linear-form coordinate bridge and generic equation-(24) Smith package",
+  "credential_material_recorded": false
+}

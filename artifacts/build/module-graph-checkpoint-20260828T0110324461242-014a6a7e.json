@@ -1,0 +1,63 @@
+{
+  "schema": "lean-mathematical-commons/module-graph-checkpoint/1.0",
+  "checkpoint_id": "20260828T0110324461242-014a6a7e",
+  "base_batch": {
+    "batch_id": "20260825T0355153955281-3669b4fc",
+    "manifest": "artifacts/build/module-batch-20260825T0355153955281-3669b4fc.json",
+    "verified_modules": 17
+  },
+  "previous_checkpoint": "artifacts/build/module-graph-checkpoint-20260827T2158428474453-64f62f7d.json",
+  "incremental_rebuild": {
+    "batch_ids": [
+      "20260828T0057131166178-aff5f86d",
+      "20260828T0058433742207-78b3e39e",
+      "20260828T0059210472002-34aa1e24"
+    ],
+    "cache_directory": "artifacts/build/local-olean/20260825T0355153955281-3669b4fc",
+    "reason": "P22's equation-(23) common-tail quotient was instantiated for a supplied regular ideal pair; the bounded quotient was proved finite and every class was given a bounded representative",
+    "reused_unchanged_theorem_modules": 32,
+    "changed_theorem_modules": 0,
+    "added_theorem_modules": 1,
+    "max_memory_gib": 2.5,
+    "global_worker_limit_gib": 3.0,
+    "rebuilt_modules": [
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularPairedQuotient",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1387941888,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-RegularPairedQuotient-20260828T0057132656054-f5e829e8.module.receipt.json"
+      },
+      {
+        "module": "MathematicalCommons.Noether",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1918935040,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-20260828T0058434728495-89141383.module.receipt.json"
+      },
+      {
+        "module": "MathematicalCommons",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1916526592,
+        "receipt": "artifacts/build/MathematicalCommons-20260828T0059211233505-419d0af3.module.receipt.json"
+      }
+    ]
+  },
+  "lean_version": "4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "all_35_targets_current": true,
+  "all_exit_zero": true,
+  "all_stderr_empty": true,
+  "all_sources_unchanged_during_build": true,
+  "all_environments_unchanged_during_build": true,
+  "current_incremental_maximum_observed_process_tree_peak_bytes": 1918935040,
+  "maximum_observed_process_tree_peak_bytes": 1919508480
+}

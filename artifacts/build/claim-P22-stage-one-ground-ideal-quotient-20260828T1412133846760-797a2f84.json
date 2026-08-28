@@ -1,0 +1,65 @@
+{
+  "schema": "lean-mathematical-commons/claim-build-receipt/1.0",
+  "claim_id": "HENTZELT-NOETHER-1923-STAGE-ONE-GROUND-IDEAL-QUOTIENT",
+  "status": "stage_one_ground_ideal_quotient_packaging_completed",
+  "source": {
+    "witness": "NOETH-DE-ED-0014",
+    "sha256": "EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58",
+    "lines": "13039--13052 and 13130--13160; regularity, Definition V, the base ground ideal, and the first nontrivial quotient step"
+  },
+  "classification": "NEW_PACKAGING",
+  "mathlib_core": [
+    "Ideal.map",
+    "Ideal.map_mono",
+    "Ideal.apply_mem_of_equiv_iff",
+    "Ideal.eq_top_iff_one",
+    "Ideal.ne_bot_iff",
+    "MvPolynomial.finSuccEquiv"
+  ],
+  "local_packaging_dependency": [
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.StageMultipliers.stageGroundIdeal",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.StageMultipliers.mem_stageGroundIdeal_iff",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.regularPairedQuotientEquivBounded",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.regularPairedQuotient_moduleFinite",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.exists_regularPaired_boundedRepresentative"
+  ],
+  "declarations": 11,
+  "newly_closed": [
+    "the source index g_1 is represented by cutoff one and requires at least two total variables",
+    "the cutoff-zero ground ideal is the unit ideal exactly when the original ideal is nonzero, recovering the base case from a regular member",
+    "the transported original ideal is contained in the transported stage-one ground ideal",
+    "the stage-one ideal quotient has the bounded-part equivalence, is finite over the late-variable polynomial ring, and has bounded representatives"
+  ],
+  "modules": [
+    {
+      "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstGroundPairedQuotient",
+      "source": {
+        "path": "MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/FirstGroundPairedQuotient.lean",
+        "bytes": 8974,
+        "sha256": "187FEA8609EFCFAC8BCE7784356E24041DEFD6B589B330F2F9C0F40F7B8788B9"
+      },
+      "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstGroundPairedQuotient-20260828T0156012692103-575448b6.module.receipt.json",
+      "receipt_sha256": "FEB8A8BA5D9E60E5D1D622F8B391DD4A3991A0DA8306DE354C82FB978EFC6F58",
+      "exit_code": 0,
+      "peak_bytes": 1348321280,
+      "stderr_bytes": 0,
+      "warnings": 0,
+      "sorry_or_admit": 0,
+      "declaration_count": 11,
+      "theorem_count": 8,
+      "definition_count": 3,
+      "axioms": ["propext", "Classical.choice", "Quot.sound"]
+    }
+  ],
+  "umbrella_receipts": [
+    "artifacts/build/MathematicalCommons-Noether-20260828T0159134889278-96d9cb78.module.receipt.json",
+    "artifacts/build/MathematicalCommons-20260828T0201522932065-30131c0c.module.receipt.json"
+  ],
+  "graph_checkpoint": "artifacts/build/module-graph-checkpoint-20260828T1412133846760-797a2f84.json",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "worker_memory_limit_gib": 2.5,
+  "all_green": true,
+  "limitations": "This is the ideal-level counterpart of the source's first nontrivial ground-module step, not the historical linear-form-module theorem itself. It does not construct or relate the source modules G_1 and M_1 by a proved equivalence, prove line 13162's ground-module characterization, perform later-stage induction, or establish the elementary-divisor, determinant, or resultant conclusions of Satz VII."
+}

@@ -1,0 +1,86 @@
+{
+  "schema": "lean-mathematical-commons/claim-build-receipt/1.0",
+  "claim_id": "HENTZELT-NOETHER-1923-FIRST-LINEAR-FORM-MODULES",
+  "status": "first_linear_form_module_bridge_completed",
+  "source": {
+    "witness": "NOETH-DE-ED-0014",
+    "sha256": "EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58",
+    "lines": "13141--13160; equations (22)--(23), the first linear-form coordinate model, common independent tail, and quotient equivalence"
+  },
+  "classification": "FORMALIZED_GAP",
+  "mathlib_core": [
+    "Submodule.prodEquivOfIsCompl",
+    "Submodule.map_sup",
+    "Submodule.prod_mono",
+    "Submodule.prod_inf_prod",
+    "Submodule.Quotient.equiv",
+    "LinearEquiv.ofSubmodules",
+    "Submodule.mem_map_equiv",
+    "MvPolynomial.finSuccEquiv"
+  ],
+  "local_packaging_dependency": [
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.principalTail_isCompl_degreeLT",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.boundedPartInDegreeLT",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.regularIdeal_eq_boundedPart_sup_principalTail",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.CommonTailQuotient.commonTailQuotientEquiv",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.stageOneGroundIdeal",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.stageOneGroundIdealQuotientEquivBounded",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.finSuccIdeal_le_stageOneGroundIdeal"
+  ],
+  "declarations": 20,
+  "newly_closed": [
+    "the finite xi-coordinate space and common zeta tail are modeled as an explicit product module",
+    "regular division realizes that coordinate space as the polynomial module by addition",
+    "under supplied regularity and membership hypotheses, the bounded, tail, and full coordinate modules map to the bounded part, principal tail, and containing ideal",
+    "equation (23)'s common-tail quotient equivalence is instantiated for the coordinate modules",
+    "a realization carrying numerator and denominator submodules induces an explicit relative-quotient equivalence",
+    "the cutoff-one ground and transported-original coordinate modules realize the actual stage-one ideal pair",
+    "the coordinate quotient, transported ideal quotient, and finite bounded quotient are joined in one explicit equivalence chain"
+  ],
+  "modules": [
+    {
+      "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstLinearFormModules",
+      "source": {
+        "path": "MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/FirstLinearFormModules.lean",
+        "bytes": 14889,
+        "sha256": "49CBAB2ABD5967EFF581DD50080532B4A5F35380F607E2B53705D4136FB63043"
+      },
+      "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstLinearFormModules-20260828T1458432494370-59aaa585.module.receipt.json",
+      "receipt_sha256": "D419B81B3A9EDF7DB040DD6E6C3AC9157DEEF305E12B415DD607826F7E3CC4B9",
+      "exit_code": 0,
+      "peak_bytes": 1366568960,
+      "stderr_bytes": 0,
+      "warnings": 0,
+      "sorry_or_admit": 0,
+      "declaration_count": 20,
+      "theorem_count": 8,
+      "definition_count": 12,
+      "axioms": ["propext", "Classical.choice", "Quot.sound"]
+    }
+  ],
+  "umbrella_receipts": [
+    "artifacts/build/MathematicalCommons-Noether-20260828T1459261804354-b09547f5.module.receipt.json",
+    "artifacts/build/MathematicalCommons-20260828T1459453236544-cb7a371b.module.receipt.json"
+  ],
+  "umbrella_receipt_pins": [
+    {
+      "path": "artifacts/build/MathematicalCommons-Noether-20260828T1459261804354-b09547f5.module.receipt.json",
+      "bytes": 6730,
+      "sha256": "45D01FB0D364580C02696E56ED567751D56826B65ECFA1271F961094103C6353"
+    },
+    {
+      "path": "artifacts/build/MathematicalCommons-20260828T1459453236544-cb7a371b.module.receipt.json",
+      "bytes": 6650,
+      "sha256": "F15FA8111507976628BD4E0528AF86521366381F538C0DC5595981143A715E14"
+    }
+  ],
+  "graph_checkpoint": "artifacts/build/module-graph-checkpoint-20260828T1500160501084-3b7c5d91.json",
+  "graph_checkpoint_bytes": 3658,
+  "graph_checkpoint_sha256": "0E40458857414FCA46F90F26B6D72FF5F4499E984364FAD684048F22A80833A4",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "worker_memory_limit_gib": 2.5,
+  "all_green": true,
+  "limitations": "This closes an explicit cutoff-one coordinate-module bridge, not the line-13162 assertion that G_1* is the ground module of M_1*. It does not package named bases for the individual xi_i and zeta_nu generators, transport admissible nonzero multipliers to a saturation theorem, construct later stages, prove the localized PID/full-rank hypotheses needed to instantiate SmithPairedQuotient, or derive resultants, compatible zeros, or multiplicities."
+}

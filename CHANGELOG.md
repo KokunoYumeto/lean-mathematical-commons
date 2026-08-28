@@ -2,6 +2,36 @@
 
 ## Unreleased
 
+## 0.2.2 — 2026-08-28
+
+- Added the six-declaration P22 `RegularPairedQuotient` module. For a supplied
+  regular polynomial in a denominator ideal `M ≤ G`, it specializes equations
+  (22)--(23) to identify `G/M` with the quotient of the bounded coefficient
+  modules, proves the paired quotient finite, and supplies a bounded numerator
+  representative for every class. This is `NEW_PACKAGING` of existing Mathlib
+  and local infrastructure, not new mathematics; line 13162's ground-module
+  characterization and later stages remain open.
+- Added the eleven-declaration P22 `FirstGroundPairedQuotient` module. It fixes
+  the source indexing `g₀ = cutoff 0`, `g₁ = cutoff 1`, recovers the unit-ideal
+  base case, and instantiates the finite bounded quotient for the transported
+  cutoff-one ground ideal. This is an ideal-level `NEW_PACKAGING` counterpart.
+- Added the twenty-declaration P22 `FirstLinearFormModules` module. It models the
+  first finite `ξ` coordinates and common `ζ` tail, realizes the ground/original
+  pair as the actual cutoff-one ideals under a supplied regular member, cancels
+  the common tail, and connects the coordinate, ideal, and bounded quotients.
+  This is `FORMALIZED_GAP`; line 13162's ground-module characterization remains
+  open.
+- Added the nine-declaration P22 `SmithPairedQuotient` module. It packages
+  Mathlib's finite-free PID Smith bases, diagonal coefficients, cyclic quotient
+  decomposition, common-tail composition, and selected-basis determinant
+  product. It is generic `NEW_PACKAGING`, not the historical localized
+  `G₁*/M₁*` instantiation and not a canonical divisibility-ordered
+  elementary-divisor theorem.
+- Expanded the maintained graph to 38 targets (36 theorem/support modules and
+  both umbrellas). Both added modules and both umbrellas exited zero with empty
+  stderr under 2.5 GiB caps; the checkpoint-chain peak is 1,922,387,968 bytes
+  under the strict 3 GiB worker envelope.
+
 ## 0.2.1 — 2026-08-27
 
 - Added the six-declaration P22 `CommonTailQuotient` module. It gives a

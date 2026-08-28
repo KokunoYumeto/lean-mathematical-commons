@@ -1,0 +1,65 @@
+{
+  "schema": "lean-mathematical-commons/claim-build-receipt/1.0",
+  "claim_id": "HENTZELT-NOETHER-1923-REGULAR-PAIRED-QUOTIENT",
+  "status": "supplied_regular_pair_quotient_packaging_completed",
+  "source": {
+    "witness": "NOETH-DE-ED-0014",
+    "sha256": "EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58",
+    "lines": "13141--13160; equations (22)--(23), the paired representative-system isomorphism, and its finite-module consequence"
+  },
+  "classification": "NEW_PACKAGING",
+  "mathlib_core": [
+    "Polynomial.degreeLT",
+    "Polynomial.degreeLTEquiv",
+    "isNoetherian_of_linearEquiv",
+    "Module.Finite.of_injective",
+    "Module.Finite.quotient",
+    "Module.Finite.equiv",
+    "LinearMap.quotientInfEquivSupQuotient",
+    "Submodule.Quotient.mk_surjective"
+  ],
+  "local_packaging_dependency": [
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.regularIdeal_eq_boundedPart_sup_principalTail",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.boundedPart_disjoint_principalTail",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.CommonTailQuotient.commonTailQuotientEquiv"
+  ],
+  "declarations": 6,
+  "newly_closed": [
+    "inclusion of ideals induces inclusion of their bounded coefficient modules",
+    "every bounded coefficient module is finite over the polynomial ring in the remaining variables",
+    "a supplied regular pair quotient G/M is linearly equivalent to the quotient of its bounded parts",
+    "the supplied regular-pair quotient is a finite module and every class has a bounded numerator representative"
+  ],
+  "modules": [
+    {
+      "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularPairedQuotient",
+      "source": {
+        "path": "MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/RegularPairedQuotient.lean",
+        "bytes": 5832,
+        "sha256": "604160511444B7558BB6B365623895EF95E642639A5C71953B126F7828879C50"
+      },
+      "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-RegularPairedQuotient-20260828T0057132656054-f5e829e8.module.receipt.json",
+      "receipt_sha256": "0849E5D39494DEE95D86FAF21C0D8E9D31BFF3B2E625EC874CF100F18F573B95",
+      "exit_code": 0,
+      "peak_bytes": 1387941888,
+      "stderr_bytes": 0,
+      "warnings": 0,
+      "sorry_or_admit": 0,
+      "declaration_count": 6,
+      "theorem_count": 5,
+      "definition_count": 1,
+      "axioms": ["propext", "Classical.choice", "Quot.sound"]
+    }
+  ],
+  "umbrella_receipts": [
+    "artifacts/build/MathematicalCommons-Noether-20260828T0058434728495-89141383.module.receipt.json",
+    "artifacts/build/MathematicalCommons-20260828T0059211233505-419d0af3.module.receipt.json"
+  ],
+  "graph_checkpoint": "artifacts/build/module-graph-checkpoint-20260828T0110324461242-014a6a7e.json",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "worker_memory_limit_gib": 2.5,
+  "all_green": true,
+  "limitations": "This is source-specific packaging, not new mathematics: it composes the promoted regular-ideal decomposition with Mathlib finite-module and quotient infrastructure and the source-facing wrapper around Mathlib's second isomorphism theorem. It assumes a supplied degree-k regular polynomial contained in the denominator ideal. Constructing the successive later-variable regular polynomials, identifying the line-13162 ground-module universal property, defining Smith coefficients and determinant norms, and proving the remaining conclusions of Satz VII remain open."
+}
