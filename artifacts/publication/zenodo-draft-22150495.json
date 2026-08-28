@@ -1,0 +1,19 @@
+{
+  "schema": "lean-mathematical-commons/zenodo-draft-receipt/1.0",
+  "concept_doi": "10.5281/zenodo.21129945",
+  "previous_version": {
+    "record_id": 22149791,
+    "doi": "10.5281/zenodo.22149791"
+  },
+  "draft": {
+    "record_id": 22150495,
+    "reserved_doi": "10.5281/zenodo.22150495",
+    "created": "2026-08-28",
+    "state": "unsubmitted",
+    "submitted": false,
+    "html": "https://zenodo.org/deposit/22150495",
+    "api": "https://zenodo.org/api/deposit/depositions/22150495"
+  },
+  "purpose": "Noether pilot 0.2.5: reciprocal Satz-II module/scalar quotient formulas and the finite localized Satz-VIII Smith-annihilator, coefficient-product, principal-generator divisibility, and radical bounds",
+  "credential_material_recorded": false
+}
