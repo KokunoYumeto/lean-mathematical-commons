@@ -206,7 +206,7 @@ finite-dimensional Lie group, not a finite-cardinality group.
 ## *Zur Theorie der Polynomideale und Resultanten* (1923)
 
 P22 is Kurt Hentzelt's mathematics in Emmy Noether's free conceptual
-Bearbeitung. Its 37 claim/definition records are mapped in
+Bearbeitung. Its 43 machine-readable coverage records are mapped in
 [hentzelt-polynomial-ideals-resultants-1923.md](hentzelt-polynomial-ideals-resultants-1923.md).
 
 | Source layer | Pinned coverage | State |
