@@ -1,0 +1,70 @@
+{
+  "schema": "lean-mathematical-commons/module-graph-checkpoint/1.0",
+  "checkpoint_id": "20260828T2248235911582-32a08ca0",
+  "base_batch": {
+    "batch_id": "20260825T0355153955281-3669b4fc",
+    "manifest": "artifacts/build/module-batch-20260825T0355153955281-3669b4fc.json",
+    "verified_modules": 17
+  },
+  "previous_checkpoint": "artifacts/build/module-graph-checkpoint-20260828T2221155880785-bb27cb08.json",
+  "previous_checkpoint_sha256": "24BA677DFBB473A7A09505A47DF00347DB1B0F2C9EA076180412D5C5BE5BF509",
+  "incremental_rebuild": {
+    "batch_ids": [
+      "20260828T2245347780069-ea6163c6",
+      "20260828T2246327834233-a05aeba1",
+      "20260828T2247216576747-31d3ec78"
+    ],
+    "cache_directory": "artifacts/build/local-olean/20260825T0355153955281-3669b4fc",
+    "reason": "P22 Satz VIII, lines 13340--13342, was advanced by identifying the annihilator of the actual finite localized first Smith quotient with the intersection of its principal coefficient ideals, bounding that annihilator between the selected coefficient-product ideal and its rank-th power, extracting both principal-generator divisibilities, and proving radical equality without assuming a divisibility ordering on Mathlib's selected Smith coefficients",
+    "reused_unchanged_theorem_modules": 43,
+    "changed_theorem_modules": 0,
+    "added_theorem_modules": 1,
+    "direct_noether_import_targets": 44,
+    "umbrella_targets": 2,
+    "total_current_targets": 46,
+    "max_memory_gib": 2.5,
+    "global_worker_limit_gib": 3.0,
+    "rebuilt_modules": [
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstSmithAnnihilatorBounds",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1402142720,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithAnnihilatorBounds-20260828T2245349715763-862933b6.module.receipt.json",
+        "receipt_sha256": "40BE879598DEAFCEDA0C9BBC8B8FD8437E46062F0D0C164E7B01F0002C52CC37"
+      },
+      {
+        "module": "MathematicalCommons.Noether",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1916997632,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-20260828T2246330231863-7dcdc7a7.module.receipt.json",
+        "receipt_sha256": "AD1AD88D375D239050A6065695BC6D0377A0411C09D606B8B4BAB937331EE908"
+      },
+      {
+        "module": "MathematicalCommons",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1921720320,
+        "receipt": "artifacts/build/MathematicalCommons-20260828T2247218522366-eca1660e.module.receipt.json",
+        "receipt_sha256": "248B76E920594289944596D67F0576EE10526157224FA0EDD4937BF1E059EBFE"
+      }
+    ]
+  },
+  "lean_version": "4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "all_46_targets_current": true,
+  "all_exit_zero": true,
+  "all_stderr_empty": true,
+  "all_sources_unchanged_during_build": true,
+  "all_environments_unchanged_during_build": true,
+  "current_incremental_maximum_observed_process_tree_peak_bytes": 1921720320,
+  "maximum_observed_process_tree_peak_bytes": 1922387968
+}

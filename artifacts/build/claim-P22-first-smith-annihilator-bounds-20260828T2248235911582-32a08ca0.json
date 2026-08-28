@@ -1,0 +1,117 @@
+{
+  "schema": "lean-mathematical-commons/claim-build-receipt/1.0",
+  "claim_id": "HENTZELT-NOETHER-1923-FIRST-SMITH-ANNIHILATOR-BOUNDS",
+  "status": "source_instantiated_finite_smith_annihilator_and_product_bounds_completed",
+  "source": {
+    "witness": "NOETH-DE-ED-0014",
+    "sha256": "EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58",
+    "lines": "13164--13179; 13323--13342; equation (24), Definition VI, and the opening divisibilities of Satz VIII"
+  },
+  "classification": "FORMALIZED_GAP",
+  "classification_split": {
+    "NEW_PACKAGING": {
+      "declarations": 10,
+      "scope": "intrinsic coefficient ideal and product, annihilator transport through a finite cyclic decomposition, two finite ideal bounds, principal-generator divisibilities, and radical equality"
+    },
+    "FORMALIZED_GAP": {
+      "declarations": 6,
+      "scope": "source-instantiated coefficient product, annihilator identities, two product bounds, generator divisibilities, and radical equality for the actual localized cutoff-one Smith quotient"
+    }
+  },
+  "mathlib_core": [
+    "LinearEquiv.annihilator_eq",
+    "Module.annihilator_pi",
+    "Submodule.annihilator_quotient",
+    "Ideal.annihilator_quotient",
+    "Ideal.prod_span_singleton",
+    "Ideal.prod_le_inf",
+    "Finset.pow_card_le_prod",
+    "Ideal.pow_mem_pow",
+    "Submodule.IsPrincipal.mem_iff_generator_dvd",
+    "Ideal.radical_mono",
+    "Ideal.radical_pow"
+  ],
+  "local_packaging_dependency": [
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.SmithPairedQuotient.relativeQuotientEquivSmithCyclic",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableSmithRank",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableSmithIndex",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableSmithCoefficients",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableRelativeQuotientEquivSmithCyclic",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableDenominatorCarrier"
+  ],
+  "declarations": 16,
+  "declaration_scope": "all exported declarations in the module; every declaration is covered by a trailing #print axioms command",
+  "theorem_count": 13,
+  "definition_and_abbreviation_count": 3,
+  "newly_closed": [
+    "the annihilator of a product of cyclic quotients R/(e_i) is the intersection of the principal ideals (e_i)",
+    "for D = product_i e_i and A = intersection_i (e_i), the finite bounds (D) <= A and A^(card i) <= (D) hold without ordering the coefficients",
+    "over a principal ideal ring, a chosen generator a of A satisfies a divides D and D divides a^(card i)",
+    "the product ideal (D) and the intrinsic annihilator A have equal radicals, including the empty-index case",
+    "the actual localized cutoff-one relative quotient has annihilator equal both to the selected coefficient-ideal intersection and to the denominator scalar colon",
+    "the two finite Satz-VIII divisibilities and their radical consequence are instantiated for the actual localized first Smith quotient"
+  ],
+  "modules": [
+    {
+      "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstSmithAnnihilatorBounds",
+      "source": {
+        "path": "MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/FirstSmithAnnihilatorBounds.lean",
+        "bytes": 14013,
+        "sha256": "417314B11EE176E90D365FA706EE01B0F48A6BB0A05293A88339CCF693880292"
+      },
+      "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithAnnihilatorBounds-20260828T2245349715763-862933b6.module.receipt.json",
+      "receipt_sha256": "40BE879598DEAFCEDA0C9BBC8B8FD8437E46062F0D0C164E7B01F0002C52CC37",
+      "exit_code": 0,
+      "peak_bytes": 1402142720,
+      "stdout_bytes": 3141,
+      "stdout_sha256": "90FE19CD5FDFA63D1978ABED3B09D1BDA0AE6EA541E6AFBCC3E5D9A36B8F8FCD",
+      "stderr_bytes": 0,
+      "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "warnings": 0,
+      "errors": 0,
+      "sorry_or_admit": 0,
+      "axiom_or_unsafe_declarations": 0,
+      "declaration_count": 16,
+      "print_axioms_count": 16,
+      "axioms": ["propext", "Classical.choice", "Quot.sound"],
+      "olean": {
+        "bytes": 178208,
+        "sha256": "898C366DAB4AD41B8B63778D9A445960680C69ED2F77A13B72028C30C4CC5965"
+      }
+    }
+  ],
+  "umbrella_receipts": [
+    "artifacts/build/MathematicalCommons-Noether-20260828T2246330231863-7dcdc7a7.module.receipt.json",
+    "artifacts/build/MathematicalCommons-20260828T2247218522366-eca1660e.module.receipt.json"
+  ],
+  "umbrella_receipt_pins": [
+    {
+      "path": "artifacts/build/MathematicalCommons-Noether-20260828T2246330231863-7dcdc7a7.module.receipt.json",
+      "bytes": 6730,
+      "sha256": "AD1AD88D375D239050A6065695BC6D0377A0411C09D606B8B4BAB937331EE908",
+      "peak_bytes": 1916997632
+    },
+    {
+      "path": "artifacts/build/MathematicalCommons-20260828T2247218522366-eca1660e.module.receipt.json",
+      "bytes": 6650,
+      "sha256": "248B76E920594289944596D67F0576EE10526157224FA0EDD4937BF1E059EBFE",
+      "peak_bytes": 1921720320
+    }
+  ],
+  "graph_checkpoint": "artifacts/build/module-graph-checkpoint-20260828T2248235911582-32a08ca0.json",
+  "graph_checkpoint_bytes": 3405,
+  "graph_checkpoint_sha256": "23A27DD8B7B1328F6BDADC008F5E898B12D61872258F65B690F6F40A6AAE8FDE",
+  "graph_target_accounting": {
+    "direct_noether_import_targets": 44,
+    "umbrella_targets": 2,
+    "total_current_targets": 46
+  },
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "lean_commit": "68218e876d2a38b1985b8590fff244a83c321783",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "worker_memory_limit_gib": 2.5,
+  "runner_sha256": "2BE9B6EBED0E973321A019A7B7E6A24E35C793EEB59FDDCD0ECD7F4D75616EB4",
+  "all_green": true,
+  "limitations": "This is the finite localized Smith-algebra kernel of the opening of Satz VIII. Mathlib v4.31 does not supply a divisibility-ordered canonical elementary-divisor family through the selected Smith API, so the annihilator generator is used as an intrinsic replacement for a greatest coefficient. The selected product is not identified with Hentzelt's primitive resultant form R^(i), the generator is not identified with a normalized historical E^(i), and no coefficient ordering, normalization, choice independence, determinant-norm/resultant identification, primitive descent from Frac(P[x_3,...])[x_2], historical unbounded-tail identification, later stage, equation (33), or equation (34) is asserted."
+}

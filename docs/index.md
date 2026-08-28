@@ -73,16 +73,21 @@ evidence, and formalization-specific QA only.
   cancellation, the scalar-colon interpretation after equation (24), its
   unconditional one-step principal quotient, and the exact whole-ground
   quotient as an infimum of the remaining principal coefficient ideals. It
-  also includes promoted Satz VIII support. A single principal ideal for the
-  whole-ground quotient is available only under an explicit divisibility
-  hypothesis. The
+  also types Satz II's reciprocal module-valued ideal quotient and proves
+  `G₁* = M₁*/(eᵢ)` for the actual localized pair, alongside the scalar-colon
+  identity `M₁*/G₁* = (eᵢ)`. The opening finite localized kernel of Satz VIII
+  is now unconditional in intrinsic form: the quotient annihilator is
+  `⋂ᵢ(eᵢ)`, and for `D = ∏ᵢeᵢ` it proves `(D) ≤ A`, `A^ρ ≤ (D)`, both
+  generator divisibilities, and radical equality. The reciprocal formulas
+  that name one distinguished selected coefficient still require an explicit
+  greatest-divisor hypothesis. The
   free-tail model is not yet identified with a separately constructed/localized
   historical unbounded module; there is no canonical coefficient ordering,
   resultant identification, or infinite determinant. Current P22 accounting is
-  487 declarations across the base and 27 support modules, represented by 43
-  machine-readable ledger records; all 42 direct Noether imports and both
+  511 declarations across the base and 29 support modules, represented by 47
+  machine-readable ledger records and 526 declaration references; all 44 direct Noether imports and both
   umbrellas are pinned by the
-  [44-target graph checkpoint](../artifacts/build/module-graph-checkpoint-20260828T2055573367899-6e27c54b.json).
+  [46-target graph checkpoint](../artifacts/build/module-graph-checkpoint-20260828T2248235911582-32a08ca0.json).
 - [1922 absolute-irreducibility map](noether/absolute-irreducibility-1922.md):
   universal reducibility-form and specialization gaps, with proof components.
 - [1922 formal-variational-calculus map](noether/formal-variational-calculus-1922.md):

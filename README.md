@@ -75,8 +75,9 @@ never silently repaired here.
   exactly on the prime ideal. Both are axiom-audited Lean 4.31 builds.
 - Maps P22's staged ground modules, Smith forms, resultants, determinantal
   elimination, compatible zeros, and multiplicities without conflating its
-  factors with `Polynomial.resultant`. Promotes the conditional Satz VIII
-  radical/zero-set bridge, proves unrestricted relative Dedekind--Mertens, and
+  factors with `Polynomial.resultant`. Promotes the intrinsic finite localized
+  opening of Satz VIII together with its conditional historical radical/zero-set
+  bridge, proves unrestricted relative Dedekind--Mertens, and
   uses bounded Kronecker substitution to prove Hentzelt's literal integer-linear
   multivariate equation (17). It now also formalizes the full lower-
   unitriangular equation (12) over its natural algebraically-independent
@@ -137,7 +138,20 @@ never silently repaired here.
   `ηᵢ` gives `(eᵢ)` unconditionally. Quotienting a filtration stage by the
   whole ground module gives the infimum of all remaining `(eⱼ)`; it becomes one
   distinguished `(eᵢ)` only under the explicit hypothesis that every remaining
-  coefficient divides `eᵢ`.
+  coefficient divides `eᵢ`. Satz II's reciprocal module operation is now typed
+  separately: six generic ideal-quotient and diagonal helpers are
+  `NEW_PACKAGING`, and two source-instantiated declarations prove for the actual
+  localized cutoff-one pair that `G₁* = M₁*/(eᵢ)` and package it with
+  `M₁*/G₁* = (eᵢ)`, under that same explicit greatest-coefficient hypothesis.
+  This uses the exact saturation theorem and does not silently impose an order
+  on Mathlib's selected Smith coefficients. The opening finite algebra of Satz
+  VIII is now formalized without that ordering hypothesis: the quotient
+  annihilator is `A = ⋂ᵢ(eᵢ)`, and for the selected coefficient product
+  `D = ∏ᵢeᵢ` the library proves `(D) ≤ A`, `A^ρ ≤ (D)`, both corresponding
+  generator divisibilities, and radical equality. Ten generic declarations are
+  `NEW_PACKAGING` and six actual localized declarations are `FORMALIZED_GAP`.
+  Neither `D` nor the annihilator generator is identified with Hentzelt's
+  primitive `R^(i)` or normalized `E^(i)`.
   The characteristic-zero finite-avoidance step used after Satz VII
   is formalized for any supplied finite family of regularity coefficients. The
   full independent lower-unitriangular transform from equation (12) is now
@@ -218,30 +232,30 @@ dependency object, its opt-in `-MirrorPackageOutputs` mode hash-checks and
 mirrors only explicitly compiled sidecars into the disposable dependency
 project; it refuses a conflicting target rather than rebuilding a package.
 
-The current 44-target graph check (42 direct Noether imports and both
+The current 46-target graph check (44 direct Noether imports and both
 umbrellas) is checkpoint
-[`20260828T2055573367899-6e27c54b`](artifacts/build/module-graph-checkpoint-20260828T2055573367899-6e27c54b.json).
+[`20260828T2248235911582-32a08ca0`](artifacts/build/module-graph-checkpoint-20260828T2248235911582-32a08ca0.json).
 It chains the preceding
-[43-target checkpoint](artifacts/build/module-graph-checkpoint-20260828T2016152269335-1092d717.json),
-adds the 35-declaration
-[`FirstSmithScalarQuotients`](artifacts/build/claim-P22-first-smith-scalar-quotients-20260828T2055573367899-6e27c54b.json),
+[45-target checkpoint](artifacts/build/module-graph-checkpoint-20260828T2221155880785-bb27cb08.json),
+adds the 16-declaration
+[`FirstSmithAnnihilatorBounds`](artifacts/build/claim-P22-first-smith-annihilator-bounds-20260828T2248235911582-32a08ca0.json),
 and rebuilds both umbrellas. The module's clean
-[build receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithScalarQuotients-20260828T2052403988381-386b0cec.module.receipt.json)
-records a 1,462,034,432-byte peak; its 34,313-byte source has SHA-256
-`D65B09A006E97F4B6F32FA50BC064BF401811069382CB2BA08DD5CB424BA7703`.
-All 35 declarations have matching axiom prints, with no warning, error,
+[build receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithAnnihilatorBounds-20260828T2245349715763-862933b6.module.receipt.json)
+records a 1,402,142,720-byte peak; its 14,013-byte source has SHA-256
+`417314B11EE176E90D365FA706EE01B0F48A6BB0A05293A88339CCF693880292`.
+All 16 declarations have matching axiom prints, with no warning, error,
 `sorry`, or nonstandard axiom. The Noether and top umbrellas peaked at
-1,921,867,776 and 1,916,366,848 bytes respectively. The checkpoint's
-incremental maximum is 1,921,867,776 bytes, while the checkpoint-chain maximum
+1,916,997,632 and 1,921,720,320 bytes respectively. The checkpoint's
+incremental maximum is 1,921,720,320 bytes, while the checkpoint-chain maximum
 remains 1,922,387,968 bytes under the strict 3 GiB worker envelope. P22 now has
-487 canonical declarations across its base and 27 support modules, represented
-by 43 machine-readable ledger records.
+511 canonical declarations across its base and 29 support modules, represented
+by 47 machine-readable ledger records and 526 declaration references.
 
 Meaningful theorem clusters—not individual edits—are the intended GitHub/Zenodo
 release unit. The living series uses concept DOI
 [10.5281/zenodo.21129945](https://doi.org/10.5281/zenodo.21129945); the current
 Noether-pilot release DOI is
-[10.5281/zenodo.22149791](https://doi.org/10.5281/zenodo.22149791).
+[10.5281/zenodo.22150495](https://doi.org/10.5281/zenodo.22150495).
 
 ## Project map
 
@@ -274,7 +288,8 @@ Noether-pilot release DOI is
   source-faithful coefficient localization to `Frac(P[x₃,…])[x₂]`, the
   generic equation-(24) Smith package and its actual finite cutoff-one
   Smith/cyclic-quotient and selected-basis determinant instance, and promoted
-  Satz VIII support.
+  intrinsic annihilator/coefficient-product bounds at the opening of Satz VIII,
+  together with the conditional radical/zero-set support for historical forms.
 - `docs/noether/formal-variational-calculus-1922.md`: formal variations,
   covariant differentiation, curvature, and the source-level Noether I/II gap.
 - `docs/noether/algebraic-differential-invariants-1923.md`: Hilbert-basis and

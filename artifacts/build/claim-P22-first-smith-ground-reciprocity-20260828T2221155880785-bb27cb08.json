@@ -1,0 +1,115 @@
+{
+  "schema": "lean-mathematical-commons/claim-build-receipt/1.0",
+  "claim_id": "HENTZELT-NOETHER-1923-FIRST-SMITH-GROUND-RECIPROCITY",
+  "status": "source_instantiated_ground_module_reciprocity_completed_with_explicit_divisibility_hypothesis",
+  "source": {
+    "witness": "NOETH-DE-ED-0014",
+    "sha256": "EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58",
+    "lines": "12815--12844; Satz II and equation (5)"
+  },
+  "classification": "FORMALIZED_GAP",
+  "classification_split": {
+    "NEW_PACKAGING": {
+      "declarations": 6,
+      "scope": "module-valued ideal quotient, principal-generator reduction, saturation recovery, and generic diagonal reciprocity helpers"
+    },
+    "FORMALIZED_GAP": {
+      "declarations": 2,
+      "scope": "source-instantiated reciprocal ground-module equality and paired Satz-II statement for the actual localized cutoff-one Smith pair"
+    }
+  },
+  "mathlib_core": [
+    "Submodule.comap",
+    "LinearMap.lsmul",
+    "Submodule.colon",
+    "Ideal.span",
+    "Ideal.mem_span_singleton",
+    "Basis.repr"
+  ],
+  "local_packaging_dependency": [
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.nonzeroScalarSaturation",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableGroundModule_eq_saturation",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableGroundCarrier",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableDenominatorCarrier",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableEtaBasis",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableSmithCoefficients",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableSmithCoefficients_ne_zero",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariable_mem_denominatorCarrier_iff_dvd",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableSmithFiltration_colon_ground_eq_span_of_greatest"
+  ],
+  "declarations": 8,
+  "declaration_scope": "all exported declarations in the module; every declaration is covered by a trailing #print axioms command",
+  "theorem_count": 7,
+  "definition_and_abbreviation_count": 1,
+  "newly_closed": [
+    "Definition II's module-valued quotient M / J is typed separately from the scalar-colon ideal M.colon G",
+    "quotienting a module by a principal ideal (e) is exactly the preimage under scalar multiplication by e",
+    "a nonzero scalar that sends an exact nonzero-scalar saturation G back into M recovers G as M / (e)",
+    "for a finite diagonal Smith pair, the two reciprocal Satz-II identities hold when every selected coefficient divides the distinguished coefficient",
+    "for the actual localized cutoff-one pair, G_1-star equals M_1-star / (e_i) under that explicit greatest-coefficient hypothesis",
+    "the actual scalar-colon identity and reciprocal module equality are exported together in one source-facing Satz-II theorem"
+  ],
+  "modules": [
+    {
+      "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstSmithGroundReciprocity",
+      "source": {
+        "path": "MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/FirstSmithGroundReciprocity.lean",
+        "bytes": 9122,
+        "sha256": "B34074BD5D298D53470B576CD322A3E1C44D7FC265B10480D35E95F213A52A07"
+      },
+      "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithGroundReciprocity-20260828T2217329496419-78b62eaf.module.receipt.json",
+      "receipt_sha256": "D1D61114AC63068550FB3B51EF4DE1C44BC3B02F0967F50D147BFCF96D4B16C9",
+      "exit_code": 0,
+      "peak_bytes": 1380622336,
+      "stdout_bytes": 1502,
+      "stdout_sha256": "46A1FFFA0684557B6B938B8A4AF4A0801E560116F6D5071FFAA4CF910F5C9F4E",
+      "stderr_bytes": 0,
+      "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "warnings": 0,
+      "errors": 0,
+      "sorry_or_admit": 0,
+      "axiom_or_unsafe_declarations": 0,
+      "declaration_count": 8,
+      "print_axioms_count": 8,
+      "axioms": ["propext", "Classical.choice", "Quot.sound"],
+      "olean": {
+        "bytes": 346648,
+        "sha256": "C88DF1EB30A673FFD4F3921889B258D186CCF24A55F6C33771E0F1E87AD6A708"
+      }
+    }
+  ],
+  "umbrella_receipts": [
+    "artifacts/build/MathematicalCommons-Noether-20260828T2218358851711-ad606e8d.module.receipt.json",
+    "artifacts/build/MathematicalCommons-20260828T2219181088778-8e1e32f2.module.receipt.json"
+  ],
+  "umbrella_receipt_pins": [
+    {
+      "path": "artifacts/build/MathematicalCommons-Noether-20260828T2218358851711-ad606e8d.module.receipt.json",
+      "bytes": 6730,
+      "sha256": "38A291D3B5F2D6725243211813F2454DFA5249C4E4D221017B2B61DA6709AB86",
+      "peak_bytes": 1919836160
+    },
+    {
+      "path": "artifacts/build/MathematicalCommons-20260828T2219181088778-8e1e32f2.module.receipt.json",
+      "bytes": 6650,
+      "sha256": "CE57D80F55C1163068311F11FC720B3CFF4FE648CB4E4BFF369A4E11EBD67B1F",
+      "peak_bytes": 1919815680
+    }
+  ],
+  "graph_checkpoint": "artifacts/build/module-graph-checkpoint-20260828T2221155880785-bb27cb08.json",
+  "graph_checkpoint_bytes": 3334,
+  "graph_checkpoint_sha256": "24BA677DFBB473A7A09505A47DF00347DB1B0F2C9EA076180412D5C5BE5BF509",
+  "graph_target_accounting": {
+    "direct_noether_import_targets": 43,
+    "umbrella_targets": 2,
+    "total_current_targets": 45
+  },
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "lean_commit": "68218e876d2a38b1985b8590fff244a83c321783",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "worker_memory_limit_gib": 2.5,
+  "runner_sha256": "2BE9B6EBED0E973321A019A7B7E6A24E35C793EEB59FDDCD0ECD7F4D75616EB4",
+  "all_green": true,
+  "limitations": "Mathlib v4.31 does not provide a divisibility-ordered canonical elementary-divisor family through the selected Smith API. The theorem therefore requires the explicit hypothesis that every selected coefficient divides the distinguished coefficient e_i. It proves the reciprocal identities for that coefficient but does not prove that the choice returned by Mathlib contains or canonically names Hentzelt's e_rho, and it asserts no normalization, uniqueness, choice independence, determinant-norm/resultant identification, historical unbounded-tail identification, infinite determinant/product, or later elimination stage."
+}

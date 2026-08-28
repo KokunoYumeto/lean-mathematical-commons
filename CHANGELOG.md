@@ -2,6 +2,62 @@
 
 ## Unreleased
 
+## 0.2.5 — 2026-08-28
+
+- Added the 16-declaration P22 `FirstSmithAnnihilatorBounds` module for the
+  finite localized algebra at the opening of Satz VIII, source lines
+  13340--13342. Ten generic declarations are `NEW_PACKAGING`; six declarations
+  instantiate the actual cutoff-one equation-(24) Smith quotient as
+  `FORMALIZED_GAP`. For `A = Ann(G₁*/M₁*) = ⋂ᵢ(eᵢ)` and
+  `D = ∏ᵢeᵢ`, the module proves `(D) ≤ A`, `A^ρ ≤ (D)`, the two principal-
+  generator divisibilities, and radical equality without assuming that
+  Mathlib's selected coefficients are divisibility ordered. It does not
+  identify `D` with primitive `R^(i)` or the annihilator generator with
+  normalized `E^(i)`. The 14,013-byte source has SHA-256
+  `417314B11EE176E90D365FA706EE01B0F48A6BB0A05293A88339CCF693880292`;
+  its clean 7,303-byte
+  [receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithAnnihilatorBounds-20260828T2245349715763-862933b6.module.receipt.json)
+  has SHA-256
+  `40BE879598DEAFCEDA0C9BBC8B8FD8437E46062F0D0C164E7B01F0002C52CC37`
+  and records a 1,402,142,720-byte peak.
+- Sealed the finite Smith-annihilator cluster with the 6,826-byte
+  [claim receipt](artifacts/build/claim-P22-first-smith-annihilator-bounds-20260828T2248235911582-32a08ca0.json),
+  SHA-256
+  `E39F795AE5CD93B03FA7F29182AB70C347B77E3E59DE424E1B9B6C94E2682421`,
+  and the 3,405-byte
+  [46-target graph checkpoint](artifacts/build/module-graph-checkpoint-20260828T2248235911582-32a08ca0.json),
+  SHA-256
+  `23A27DD8B7B1328F6BDADC008F5E898B12D61872258F65B690F6F40A6AAE8FDE`.
+  P22 now totals 511 declarations across its base and 29 support modules, with
+  47 machine-readable ledger records and 526 declaration references.
+- Added the eight-declaration P22 `FirstSmithGroundReciprocity` module for
+  Satz II and equation (5), source lines 12815--12844. Six generic declarations
+  are `NEW_PACKAGING`: they distinguish the module-valued quotient `M / J` from
+  the ideal-valued scalar colon, reduce a principal quotient to a scalar
+  preimage, and prove finite diagonal reciprocity. Two declarations are
+  `FORMALIZED_GAP` instances for the actual localized cutoff-one pair. Under
+  the explicit hypothesis that every selected Smith coefficient divides
+  `eᵢ`, they prove both `M₁*/G₁* = (eᵢ)` and
+  `G₁* = M₁*/(eᵢ)`. No canonical ordering or normalization is inferred.
+  The 9,122-byte source has SHA-256
+  `B34074BD5D298D53470B576CD322A3E1C44D7FC265B10480D35E95F213A52A07`;
+  its clean 7,301-byte
+  [receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithGroundReciprocity-20260828T2217329496419-78b62eaf.module.receipt.json)
+  has SHA-256
+  `D1D61114AC63068550FB3B51EF4DE1C44BC3B02F0967F50D147BFCF96D4B16C9`
+  and records a 1,380,622,336-byte peak.
+- Sealed the reciprocal-ground-module cluster with the 6,776-byte
+  [claim receipt](artifacts/build/claim-P22-first-smith-ground-reciprocity-20260828T2221155880785-bb27cb08.json),
+  SHA-256
+  `C7648327017131D30B5801A09F4E08F0F3E5A07C3FD7F6B4E70399607781A6A0`,
+  and the 3,334-byte
+  [45-target graph checkpoint](artifacts/build/module-graph-checkpoint-20260828T2221155880785-bb27cb08.json),
+  SHA-256
+  `24BA677DFBB473A7A09505A47DF00347DB1B0F2C9EA076180412D5C5BE5BF509`.
+  At that checkpoint P22 totaled 495 declarations across its base and 28
+  support modules, with 45 machine-readable ledger records and 505 declaration
+  references.
+
 ## 0.2.4 — 2026-08-28
 
 - Added the 35-declaration P22 `FirstSmithScalarQuotients` module for the

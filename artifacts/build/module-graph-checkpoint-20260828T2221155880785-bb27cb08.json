@@ -1,0 +1,69 @@
+{
+  "schema": "lean-mathematical-commons/module-graph-checkpoint/1.0",
+  "checkpoint_id": "20260828T2221155880785-bb27cb08",
+  "base_batch": {
+    "batch_id": "20260825T0355153955281-3669b4fc",
+    "manifest": "artifacts/build/module-batch-20260825T0355153955281-3669b4fc.json",
+    "verified_modules": 17
+  },
+  "previous_checkpoint": "artifacts/build/module-graph-checkpoint-20260828T2055573367899-6e27c54b.json",
+  "previous_checkpoint_sha256": "40889076C3B15D3F580D1FC5AA617A2D71890EE477C4C366E41D95A1BC6B98D3",
+  "incremental_rebuild": {
+    "batch_ids": [
+      "20260828T2217326492323-bb07bccc",
+      "20260828T2218356087424-d6126cc8"
+    ],
+    "cache_directory": "artifacts/build/local-olean/20260825T0355153955281-3669b4fc",
+    "reason": "P22 Satz II and equation (5), lines 12815--12844, were advanced by typing the module-valued quotient M / J separately from the scalar-colon ideal, proving both reciprocal identities for a diagonal Smith pair under the explicit greatest-coefficient divisibility condition, and instantiating G_1* = M_1* / (e_i) for the actual localized cutoff-one ground/original pair using its proved nonzero-scalar saturation identity",
+    "reused_unchanged_theorem_modules": 42,
+    "changed_theorem_modules": 0,
+    "added_theorem_modules": 1,
+    "direct_noether_import_targets": 43,
+    "umbrella_targets": 2,
+    "total_current_targets": 45,
+    "max_memory_gib": 2.5,
+    "global_worker_limit_gib": 3.0,
+    "rebuilt_modules": [
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstSmithGroundReciprocity",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1380622336,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithGroundReciprocity-20260828T2217329496419-78b62eaf.module.receipt.json",
+        "receipt_sha256": "D1D61114AC63068550FB3B51EF4DE1C44BC3B02F0967F50D147BFCF96D4B16C9"
+      },
+      {
+        "module": "MathematicalCommons.Noether",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1919836160,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-20260828T2218358851711-ad606e8d.module.receipt.json",
+        "receipt_sha256": "38A291D3B5F2D6725243211813F2454DFA5249C4E4D221017B2B61DA6709AB86"
+      },
+      {
+        "module": "MathematicalCommons",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1919815680,
+        "receipt": "artifacts/build/MathematicalCommons-20260828T2219181088778-8e1e32f2.module.receipt.json",
+        "receipt_sha256": "CE57D80F55C1163068311F11FC720B3CFF4FE648CB4E4BFF369A4E11EBD67B1F"
+      }
+    ]
+  },
+  "lean_version": "4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "all_45_targets_current": true,
+  "all_exit_zero": true,
+  "all_stderr_empty": true,
+  "all_sources_unchanged_during_build": true,
+  "all_environments_unchanged_during_build": true,
+  "current_incremental_maximum_observed_process_tree_peak_bytes": 1919836160,
+  "maximum_observed_process_tree_peak_bytes": 1922387968
+}

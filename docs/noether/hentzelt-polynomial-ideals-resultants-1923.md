@@ -50,8 +50,8 @@ resolution of P18's compressed product display.
 | 13057--13107, Satz VI | ground ideals of transformed ideals are transformed | relative Dedekind--Mertens; bounded Kronecker substitution; parameter localization | Equation (17), simultaneous common-denominator presentations, coefficient reconstruction, late-variable preservation, and the final two-sided transformed-contraction equality are promoted with no primary or saturation hypothesis. |
 | 13123--13319, Satz VII; equations (21)--(24) at 13134--13173 | infinite monomial module reduces to a finite module; only finitely many elementary divisors are nonunits | finite-free, localization, Smith-normal-form, monic polynomial division, submodule sums, torsion, rank-nullity, Finsupp bases, and polynomial-evaluation APIs | Equations (21)--(23) are promoted for a supplied degree-`k` polynomial regular in `x₁`: exact bounded representatives, their `Fin k` coefficient vectors, the internal decomposition of every containing ideal into its bounded part and disjoint principal tail, the finite free quotient, the abstract common-tail equivalence, its concrete paired-ideal specialization, and the actual cutoff-one ground-ideal quotient. A source-modeled cutoff-one `ξ`/`ζ` coordinate module realizes that ideal pair and connects its quotient to the bounded model. Line 13162 is exact: `G₁*` is the nonzero-scalar saturation of `M₁*`, its relative quotient is torsion, and the relative denominator has equal rank and `finrank`. The source-faithful map `P[x₃,…][x₂] → Frac(P[x₃,…])[x₂]` localizes only later-variable coefficients, commutes with the finite-coordinate saturation, and yields the actual localized pair and its equal-`finrank` denominator. The finite cutoff-one pair has a localized Smith instance with selected bases, diagonal coefficients, cyclic quotient, and determinant product. A freely adjoined arbitrary Finsupp tail, with a countable `ℕ` specialization, now models the printed independent `ζ` coordinates: numerator and denominator receive the same tail basis, every tail coefficient is `1`, the tail cancels, and the finite cyclic quotient is recovered. Identification with a separately constructed and localized historical unbounded `ζ`-module, canonical divisibility ordering, any infinite determinant, determinant norm/resultant identification, primitive normalization and choice independence, and later stages remain open. |
 | 13153--13160, equation (23) | isomorphism of residue-class systems after adjoining the same independent tail | `LinearMap.quotientInfEquivSupQuotient`; `Submodule.Quotient.equiv`; Finsupp modules; product submodules; `LinearEquiv` | The abstract equivalence and its product-head helpers are `NEW_PACKAGING` of Mathlib quotient equivalences, with divisibility oriented as denominator `M ≤ G`. The actual localized cutoff-one pair is now a `FORMALIZED_GAP` instantiation with an arbitrary freely adjoined Finsupp tail and a countable specialization; the resulting quotient cancels that shared tail and recovers the finite localized pair. This does not yet identify the free tail with a separately constructed/localized historical unbounded module. |
-| 13164--13173, equation (24); 13323--13335, Definition VI | diagonal basis presentation, stage resultants, elementary-divisor forms, and their products | Smith bases/coefficients; `Submodule.quotientEquivPiSpan`; `Basis.prod`; `Finsupp.basisSingleOne`; `Matrix.det_diagonal`; polynomial localization | Generic full-rank finite-free PID `NEW_PACKAGING` supplies the diagonal and cyclic-quotient scaffold plus a chosen-basis determinant product. The historical localization of only `P[x₃,…]` to `K = Frac(P[x₃,…])`, fixing `x₂`, and the corresponding finite cutoff-one Smith instance over `K[x₂]` are `FORMALIZED_GAP`. The source-instantiated common-tail module extends the selected finite bases by the standard Finsupp tail basis, proves coefficient `1` on every tail coordinate, and recovers the same finite cyclic quotient. That `1` is identity-tail data, not a canonical elementary-divisor normalization. The restored scalar-colon filtration proves the unconditional one-step quotient and computes quotient by the whole ground module as an infimum; a single displayed principal ideal requires an explicit divisibility hypothesis. Mathlib v4.31 does not turn the selected finite coefficients into a divisibility-ordered canonical system; no infinite determinant is formed. Historical-tail identification, determinant norm/resultant identification, staged modules, primitive normalization, and choice independence remain open. |
-| 13340--13382, Satz VIII | `E_m ∣ R_m`, `R_m ∣ E_m^N`, and tail products annihilate ground ideals modulo `m` | ideal radicals, divisibility, evaluation | The divisibilities themselves remain a gap. Their radical and zero-set consequence is now formally packaged. |
+| 13164--13173, equation (24); 13323--13335, Definition VI | diagonal basis presentation, stage resultants, elementary-divisor forms, and their products | Smith bases/coefficients; `Submodule.quotientEquivPiSpan`; module annihilators; finite ideal products; `Matrix.det_diagonal`; polynomial localization | Generic full-rank finite-free PID `NEW_PACKAGING` supplies the diagonal and cyclic-quotient scaffold plus a chosen-basis determinant product. The historical localization of only `P[x₃,…]` to `K = Frac(P[x₃,…])`, fixing `x₂`, and the corresponding finite cutoff-one Smith instance over `K[x₂]` are `FORMALIZED_GAP`. The intrinsic annihilator of that quotient is now identified with the intersection of the selected coefficient ideals and with the denominator scalar colon. If `D` is the selected coefficient product and `A` this annihilator, then `(D) ≤ A` and `A^ρ ≤ (D)`; over the PID their chosen generators satisfy both corresponding divisibilities and have equal radicals. The source-instantiated common-tail module still uses a freely adjoined identity tail. Mathlib v4.31 does not turn the selected finite coefficients into a divisibility-ordered canonical system, and neither `D` nor the annihilator generator is identified with Hentzelt's primitive forms. Historical-tail identification, determinant norm/resultant identification, staged modules, primitive normalization, and choice independence remain open. |
+| 13340--13382, Satz VIII | `E_m ∣ R_m`, `R_m ∣ E_m^N`, and tail products annihilate ground ideals modulo `m` | module annihilators; principal ideals; finite products and powers; ideal radicals; evaluation | The opening finite localized Smith-algebra divisibilities are promoted intrinsically for the actual cutoff-one quotient, without an ordering assumption. Conditional radical and zero-set consequences for supplied historical `R` and `E` are also packaged. Identification with primitive `R^(i)`/`E^(i)`, descent, later stages, and equations (33)--(34) remain gaps. |
 | 13387--13400, Satz IX | a divisor ideal with the same resultant form equals the original ideal | ideal order; stage norms | This depends on Satz IV at every stage and has no end-to-end pinned theorem. |
 | 13405--13417, Satz X | coprime factorization of one stage resultant gives unique ideal factors | comaximal ideals; Chinese remainder; colon ideals | The reconstruction of the two historical ideal factors and their least-common-multiple statement remains a gap. |
 | 13426--13428, Satz XI | rank of the image of a univariate ideal modulo a member `h` is `deg h - deg f` | PID structure; `finrank_quotient_span_eq_natDegree` | The exact residue-ideal rank theorem, quotient equivalence, and displayed basis represented by `f, Xf, ..., X^(deg h₁-1)f` are promoted with necessary nonzero hypotheses. |
@@ -79,6 +79,21 @@ source, observed 1,363,025,920 bytes peak under the 2.5 GiB watcher, and all 51
 declarations in the expanded module report only `propext`, `Classical.choice`,
 and `Quot.sound`. Receipt:
 `artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-20260825T1601284397517-047344cb.module.receipt.json`.
+
+The finite localized opening of Satz VIII is now unconditional in an
+intrinsic form. For the actual equation-(24) quotient, put
+
+```text
+A = Ann(G₁*/M₁*) = ⋂ᵢ (eᵢ),       D = ∏ᵢ eᵢ.
+```
+
+Then `(D) ≤ A` and `A^ρ ≤ (D)`. If `a` is Mathlib's chosen generator of the
+principal ideal `A`, this gives `a ∣ D` and `D ∣ a^ρ`, hence equal radicals.
+This avoids silently imposing a divisibility order on Mathlib's selected
+Smith coefficients. It is not yet the historical claim that primitive
+`E^(i)` and `R^(i)` enjoy those divisibilities: determinant-norm/resultant
+identification, primitive descent, later stages, and equations (33)--(34)
+remain explicit dependencies.
 
 ## Dedekind--Mertens and equation (17)
 
@@ -582,17 +597,86 @@ The comprehensive claim receipt is
 (7,537 bytes; SHA-256
 `681152AA43FCB326269455A7C38398DC34EF2B5F01A03967C4C8F14B2440A022`).
 
-P22 now has 487 canonical declarations across the base and twenty-seven support
-modules, and its ledger has 43 claim/definition records.
+`FirstSmithGroundReciprocity.lean` advances Satz II and equation (5), lines
+12815--12844. It first types Definition II's module-valued quotient `M / J`
+separately from the ideal-valued scalar colon `M.colon G`. For a principal
+ideal `(e)`, the former is the preimage of `M` under multiplication by `e`.
+Six generic declarations providing this operation, its saturation theorem, and
+the diagonal reciprocal calculation are `NEW_PACKAGING`. Two declarations are
+`FORMALIZED_GAP` instances for the actual localized cutoff-one ground/original
+pair.
 
-The current graph checkpoint is the 44-target
-`artifacts/build/module-graph-checkpoint-20260828T2055573367899-6e27c54b.json`
-(3,433 bytes; SHA-256
-`40889076C3B15D3F580D1FC5AA617A2D71890EE477C4C366E41D95A1BC6B98D3`).
-All 42 direct Noether imports and both umbrellas are current. The incremental
-peak is 1,921,867,776 bytes and the checkpoint-chain peak remains 1,922,387,968
+Under the explicit hypothesis that every selected Smith coefficient divides
+the distinguished `eᵢ`, the module proves the two reciprocal source formulas
+
+```text
+M₁* / G₁* = (eᵢ),       G₁* = M₁* / (eᵢ).
+```
+
+The first slash is a scalar colon ideal; the second is a module-valued ideal
+quotient. The second equality uses the already proved source identity that
+`G₁*` is exactly the nonzero-scalar saturation of `M₁*`. Mathlib's selected
+Smith coefficients are still not proved divisibility ordered, so the theorem
+does not silently identify `i` with a canonical historical `ρ`.
+
+The module source is
+`MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/FirstSmithGroundReciprocity.lean`
+(9,122 bytes; SHA-256
+`B34074BD5D298D53470B576CD322A3E1C44D7FC265B10480D35E95F213A52A07`).
+Its clean one-thread Lean 4.31 build exited zero with empty stderr, audited all
+eight declarations, used only `propext`, `Classical.choice`, and `Quot.sound`,
+and peaked at 1,380,622,336 bytes under the 2.5 GiB watcher. The receipt is
+`artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithGroundReciprocity-20260828T2217329496419-78b62eaf.module.receipt.json`
+(7,301 bytes; SHA-256
+`D1D61114AC63068550FB3B51EF4DE1C44BC3B02F0967F50D147BFCF96D4B16C9`).
+The comprehensive claim receipt is
+`artifacts/build/claim-P22-first-smith-ground-reciprocity-20260828T2221155880785-bb27cb08.json`
+(6,776 bytes; SHA-256
+`C7648327017131D30B5801A09F4E08F0F3E5A07C3FD7F6B4E70399607781A6A0`).
+
+`FirstSmithAnnihilatorBounds.lean` advances the opening algebraic step of Satz
+VIII, lines 13340--13342, using the actual finite localized equation-(24)
+Smith quotient. Ten generic `NEW_PACKAGING` declarations compute annihilators
+of products of cyclic quotients and prove finite ideal-product bounds. Six
+`FORMALIZED_GAP` declarations instantiate those results for the cutoff-one
+pair over `Frac(P[x₃,…])[x₂]`.
+
+The construction deliberately replaces the unavailable ordered “greatest
+elementary divisor” by the intrinsic annihilator
+`A = Ann(G₁*/M₁*) = ⋂ᵢ (eᵢ)`. With `D = ∏ᵢ eᵢ`, it proves `(D) ≤ A` and
+`A^ρ ≤ (D)`, the generator divisibilities `a ∣ D` and `D ∣ a^ρ`, and equality
+of the radicals of `(D)` and `A`. It also identifies `A` with the scalar colon
+of the actual relative denominator by the whole localized ground carrier.
+No theorem calls `D` the historical resultant form or calls `a` a normalized
+historical elementary-divisor form.
+
+The module source is
+`MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/FirstSmithAnnihilatorBounds.lean`
+(14,013 bytes; SHA-256
+`417314B11EE176E90D365FA706EE01B0F48A6BB0A05293A88339CCF693880292`).
+Its clean one-thread Lean 4.31 build exited zero with empty stderr, audited all
+16 declarations, used only `propext`, `Classical.choice`, and `Quot.sound`, and
+peaked at 1,402,142,720 bytes under the 2.5 GiB watcher. The receipt is
+`artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithAnnihilatorBounds-20260828T2245349715763-862933b6.module.receipt.json`
+(7,303 bytes; SHA-256
+`40BE879598DEAFCEDA0C9BBC8B8FD8437E46062F0D0C164E7B01F0002C52CC37`).
+The comprehensive claim receipt is
+`artifacts/build/claim-P22-first-smith-annihilator-bounds-20260828T2248235911582-32a08ca0.json`
+(6,826 bytes; SHA-256
+`E39F795AE5CD93B03FA7F29182AB70C347B77E3E59DE424E1B9B6C94E2682421`).
+
+P22 now has 511 canonical declarations across the base and twenty-nine support
+modules, and its ledger has 47 claim/definition records with 526 declaration
+references.
+
+The current graph checkpoint is the 46-target
+`artifacts/build/module-graph-checkpoint-20260828T2248235911582-32a08ca0.json`
+(3,405 bytes; SHA-256
+`23A27DD8B7B1328F6BDADC008F5E898B12D61872258F65B690F6F40A6AAE8FDE`).
+All 44 direct Noether imports and both umbrellas are current. The incremental
+peak is 1,921,720,320 bytes and the checkpoint-chain peak remains 1,922,387,968
 bytes under the 3 GiB worker envelope. The receipt chains the earlier 43-target
-artifact instead of rewriting its historical accounting.
+through 45-target artifacts instead of rewriting their historical accounting.
 
 For the preceding localization/finite-Smith checkpoint, an independent
 read-only pin, receipt, axiom, import-graph, ledger, and controlled-source
@@ -636,8 +720,11 @@ instance for the actual cutoff-one pair are complete. The remaining route is:
 3. Iterate the completed finite specialized coordinate construction through
    later ground ideals to produce the successive `C^(i)`, `G_i/M_i`, Smith data,
    and primitive normalizations of `R^(i)`.
-4. Prove Satz VIII's divisibilities, discharging the hypotheses of the promoted
-   radical/zero-set bridge.
+4. Lift the completed intrinsic finite localized Satz-VIII bounds to
+   Hentzelt's primitive `E^(i)` and `R^(i)`: prove determinant-norm/resultant
+   identification, primitive descent, and the later-stage divisibilities, then
+   discharge the hypotheses of the promoted radical/zero-set bridge and prove
+   equations (33)--(34).
 5. Build the successive determinantal ideals and strengthen the promoted
    finite-coordinate substrate and Nullstellensatz corollary to Satz XII's
    finite compatible-zero construction.
