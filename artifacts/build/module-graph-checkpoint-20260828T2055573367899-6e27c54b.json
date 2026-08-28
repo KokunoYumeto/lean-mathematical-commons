@@ -1,0 +1,70 @@
+{
+  "schema": "lean-mathematical-commons/module-graph-checkpoint/1.0",
+  "checkpoint_id": "20260828T2055573367899-6e27c54b",
+  "base_batch": {
+    "batch_id": "20260825T0355153955281-3669b4fc",
+    "manifest": "artifacts/build/module-batch-20260825T0355153955281-3669b4fc.json",
+    "verified_modules": 17
+  },
+  "previous_checkpoint": "artifacts/build/module-graph-checkpoint-20260828T2016152269335-1092d717.json",
+  "previous_checkpoint_sha256": "6DE844FF9A0189582515F29B4A405799694783CAD4DE50E3F121D70C62E9EBDD",
+  "incremental_rebuild": {
+    "batch_ids": [
+      "20260828T2052403045294-5f705157",
+      "20260828T2053195545668-9e1c8b13",
+      "20260828T2054062520145-4eb021f8"
+    ],
+    "cache_directory": "artifacts/build/local-olean/20260825T0355153955281-3669b4fc",
+    "reason": "P22 lines 13164--13179 were advanced by formalizing the historical module-slash notation as a scalar colon ideal on the actual finite localized Smith pair and its freely adjoined common tail: one-step quotients isolate the corresponding principal coefficient ideal unconditionally, while quotienting by the whole ground module is the infimum of all remaining coefficient ideals and becomes one displayed principal ideal only under an explicit greatest-remaining-divisor hypothesis",
+    "reused_unchanged_theorem_modules": 41,
+    "changed_theorem_modules": 0,
+    "added_theorem_modules": 1,
+    "direct_noether_import_targets": 42,
+    "umbrella_targets": 2,
+    "total_current_targets": 44,
+    "max_memory_gib": 2.5,
+    "global_worker_limit_gib": 3.0,
+    "rebuilt_modules": [
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstSmithScalarQuotients",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1462034432,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithScalarQuotients-20260828T2052403988381-386b0cec.module.receipt.json",
+        "receipt_sha256": "75EA954635F63B2A23AEC4CF866701006CEFA3A14F4FED37816A724EFB4D4593"
+      },
+      {
+        "module": "MathematicalCommons.Noether",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1921867776,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-20260828T2053196450693-36d74b56.module.receipt.json",
+        "receipt_sha256": "D046497CC013958A8DCF394CC1C8BD27790B5D6D552E27915B5F27D4BDA4CE74"
+      },
+      {
+        "module": "MathematicalCommons",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1916366848,
+        "receipt": "artifacts/build/MathematicalCommons-20260828T2054063457277-68c8e996.module.receipt.json",
+        "receipt_sha256": "4D0139A4DAB99014DBFC2F21847EB5314C426875B433CE9A71D024CC7A4A1B8A"
+      }
+    ]
+  },
+  "lean_version": "4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "all_44_targets_current": true,
+  "all_exit_zero": true,
+  "all_stderr_empty": true,
+  "all_sources_unchanged_during_build": true,
+  "all_environments_unchanged_during_build": true,
+  "current_incremental_maximum_observed_process_tree_peak_bytes": 1921867776,
+  "maximum_observed_process_tree_peak_bytes": 1922387968
+}

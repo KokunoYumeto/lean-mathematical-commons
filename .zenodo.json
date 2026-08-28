@@ -1,7 +1,7 @@
 {
   "title": "Lean of the Mathematical Commons: Emmy Noether pilot",
   "upload_type": "software",
-  "description": "<p>A living, source-linked Lean 4 library and Mathlib coverage audit for classical mathematics, beginning with Emmy Noether. This release includes the pinned Lean/Mathlib project, promoted theorem modules, paper- and theorem-level coverage ledgers, controlled-source provenance, bounded-memory build tooling, axiom audits, build receipts, limitations, and publication evidence.</p><p>The P22 cluster now includes a source-modeled cutoff-one ξ/ζ coordinate module, its explicit quotient transport to the actual stage-one ground/original ideal pair and finite bounded model, and a generic equation-(24) finite-free PID Smith package with diagonal bases, cyclic quotient factors, common-tail composition, and a selected-basis determinant product. The coordinate bridge is classified FORMALIZED_GAP. The Smith package and surrounding quotient wrappers are explicitly NEW_PACKAGING of existing Mathlib and promoted local infrastructure, not new mathematics or a completed historical G₁*/M₁* instantiation.</p><p>Still open are line 13162's ground-module characterization, the historical coefficient-field localization and Smith hypotheses, later stages, primitive resultants, compatible zeros, and multiplicities. Lean verification certifies only the formal statements and explicit assumptions. It does not certify German transcription fidelity, translation, prose, layout, completeness, or critical-edition status. German canon authority remains separate from this repository.</p>",
+  "description": "<p>A living, source-linked Lean 4 library and Mathlib coverage audit for classical mathematics, beginning with Emmy Noether. This release includes the pinned Lean/Mathlib project, promoted theorem modules, paper- and theorem-level coverage ledgers, controlled-witness provenance, bounded-memory build tooling, axiom audits, build receipts, limitations, and publication evidence.</p><p>The P22 cluster now constructs the actual finite localized first Smith pair, freely restores the source's arbitrary and countable common identity tail, proves exact cancellation back to the finite quotient, and formalizes the scalar module-slash formulas following equation (24) as Mathlib colon ideals. One-step quotients isolate the corresponding principal Smith-coefficient ideal unconditionally. Quotienting by the whole ground module is proved as the infimum of the remaining principal ideals and is simplified to one displayed ideal only under an explicit greatest-remaining-divisor hypothesis. The scalar module contains 15 generic NEW_PACKAGING declarations and 20 source-instantiated FORMALIZED_GAP declarations.</p><p>The free finitely supported tail is not yet identified with an independently constructed historical unbounded zeta module. Canonical divisibility ordering, normalization, choice independence, determinant-norm/resultant identification, infinite determinants or products, later elimination stages, compatible zeros, and multiplicity conclusions remain open. Lean verification certifies only formal statements and explicit assumptions; it does not certify German transcription fidelity, translation, prose, layout, completeness, or critical-edition status. German canon authority remains separate from this repository.</p>",
   "creators": [
     {
       "name": "OpenAI Codex"
@@ -10,7 +10,7 @@
   "access_right": "open",
   "license": "apache-2.0",
   "publication_date": "2026-08-28",
-  "version": "0.2.2",
+  "version": "0.2.4",
   "keywords": [
     "Lean 4",
     "Mathlib",
@@ -27,6 +27,11 @@
       "identifier": "https://github.com/KokunoYumeto/lean-mathematical-commons",
       "relation": "isSupplementedBy",
       "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.21129946",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
     },
     {
       "identifier": "10.5281/zenodo.20393488",

@@ -1,0 +1,113 @@
+{
+  "schema": "lean-mathematical-commons/claim-build-receipt/1.0",
+  "claim_id": "HENTZELT-NOETHER-1923-FIRST-SMITH-COMMON-TAIL",
+  "status": "source_instantiated_common_zeta_tail_completed",
+  "source": {
+    "witness": "NOETH-DE-ED-0014",
+    "sha256": "EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58",
+    "lines": "13155--13173; equations (23)--(24), common zeta tail and its finite Smith head"
+  },
+  "classification": "FORMALIZED_GAP",
+  "mathlib_core": [
+    "Submodule.Quotient.equiv",
+    "Submodule.Quotient.mk_surjective",
+    "Submodule.prod",
+    "Submodule.prod_inf_prod",
+    "Submodule.prod_sup_prod",
+    "Basis.prod",
+    "Finsupp.basisSingleOne",
+    "LinearMap.prodMap"
+  ],
+  "local_packaging_dependency": [
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.CommonTailQuotient.relativeDenominator",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.CommonTailQuotient.relativeQuotient",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.CommonTailQuotient.commonTailQuotientEquiv",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.secondVariablePID",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableBoundedAmbient",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableGroundModule",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableOriginalModule",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableSmithIndex",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableEtaBasis",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableDenominatorBasis",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableSmithCoefficients",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableSmithCoefficients_ne_zero",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableDenominatorBasis_eq_smul_eta",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariable_smul_eta_mem_original",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableRelativeQuotientEquivSmithCyclic"
+  ],
+  "declarations": 37,
+  "declaration_scope": "all exported declarations in the module; every declaration is covered by a trailing #print axioms command",
+  "theorem_count": 11,
+  "definition_and_abbreviation_count": 26,
+  "newly_closed": [
+    "the actual finite localized pair G1-star and M1-star is embedded as the first summand of a freely adjoined arbitrary finitely supported tail",
+    "the full source-shaped modules are the joins of their finite parts with the same tail, and the finite ground part is disjoint from that tail",
+    "the selected finite eta and denominator bases extend by the standard tail basis, with diagonal coefficients e_i on the finite head and the unit 1 on every tail coordinate",
+    "adjoining and then cancelling the common tail yields an exact linear equivalence with the actual finite localized relative quotient",
+    "the restored full quotient has the same finite product of cyclic Smith factors as the finite head, and every quotient class has a representative in that head",
+    "specializing the arbitrary tail index to Nat supplies a countable zeta-sequence model without forming an infinite determinant or infinite product"
+  ],
+  "modules": [
+    {
+      "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstSmithCommonTail",
+      "source": {
+        "path": "MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/FirstSmithCommonTail.lean",
+        "bytes": 25766,
+        "sha256": "6A2AC9FC7F0550676DA302581E54FBC244DEC400D802E2415D190231A300245A"
+      },
+      "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithCommonTail-20260828T2012238968138-efd307ef.module.receipt.json",
+      "receipt_sha256": "9812CF23D7DFACC4E4D58AB573549C60255D0F2A2F85B021953E5067A211A6F9",
+      "exit_code": 0,
+      "peak_bytes": 1421987840,
+      "stdout_bytes": 7297,
+      "stdout_sha256": "C8A09F19B2CEBF88F2E6B396078454405A710D6B568C911C377722B68EE9A010",
+      "stderr_bytes": 0,
+      "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "warnings": 0,
+      "errors": 0,
+      "sorry_or_admit": 0,
+      "axiom_or_unsafe_declarations": 0,
+      "declaration_count": 37,
+      "print_axioms_count": 37,
+      "axioms": ["propext", "Classical.choice", "Quot.sound"],
+      "olean": {
+        "bytes": 572824,
+        "sha256": "335FC4E2BAE26BE1CBEDC9CAD64C7B6D97106C8EEAACAB2763028D412582E46D"
+      }
+    }
+  ],
+  "umbrella_receipts": [
+    "artifacts/build/MathematicalCommons-Noether-20260828T2013050479665-7f272653.module.receipt.json",
+    "artifacts/build/MathematicalCommons-20260828T2013436547380-b1577cb4.module.receipt.json"
+  ],
+  "umbrella_receipt_pins": [
+    {
+      "path": "artifacts/build/MathematicalCommons-Noether-20260828T2013050479665-7f272653.module.receipt.json",
+      "bytes": 6730,
+      "sha256": "C317D8DF3623DDF966D365AF5899106E04303342DA4C3AF9F3AA89BC4C9D0694",
+      "peak_bytes": 1922113536
+    },
+    {
+      "path": "artifacts/build/MathematicalCommons-20260828T2013436547380-b1577cb4.module.receipt.json",
+      "bytes": 6650,
+      "sha256": "A665425A8F407B93D8A595E7AB9BD8B38224BCDCA6CD05AF440F2A6B82343EF4",
+      "peak_bytes": 1916559360
+    }
+  ],
+  "graph_checkpoint": "artifacts/build/module-graph-checkpoint-20260828T2016152269335-1092d717.json",
+  "graph_checkpoint_bytes": 3210,
+  "graph_checkpoint_sha256": "6DE844FF9A0189582515F29B4A405799694783CAD4DE50E3F121D70C62E9EBDD",
+  "graph_target_accounting": {
+    "direct_noether_import_targets": 41,
+    "umbrella_targets": 2,
+    "total_current_targets": 43
+  },
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "lean_commit": "68218e876d2a38b1985b8590fff244a83c321783",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "worker_memory_limit_gib": 2.5,
+  "runner_sha256": "2BE9B6EBED0E973321A019A7B7E6A24E35C793EEB59FDDCD0ECD7F4D75616EB4",
+  "all_green": true,
+  "limitations": "This is a source-instantiated free-tail model: it freely adjoins a finitely supported tail to the already constructed finite localized pair and proves exact quotient cancellation there. It does not independently construct and localize the historical unbounded zeta module or identify that module with the chosen free tail. Every individual Finsupp vector has finite support, and no infinite determinant or infinite product is asserted. The unit coefficient on each tail coordinate belongs to the common-identity-tail model. The module does not prove divisibility ordering, normalization, uniqueness or choice independence of Smith coefficients, identify the finite determinant product with Hentzelt's norm or resultant, or construct later elimination stages."
+}

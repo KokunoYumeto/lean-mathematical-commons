@@ -1,0 +1,69 @@
+{
+  "schema": "lean-mathematical-commons/module-graph-checkpoint/1.0",
+  "checkpoint_id": "20260828T2016152269335-1092d717",
+  "base_batch": {
+    "batch_id": "20260825T0355153955281-3669b4fc",
+    "manifest": "artifacts/build/module-batch-20260825T0355153955281-3669b4fc.json",
+    "verified_modules": 17
+  },
+  "previous_checkpoint": "artifacts/build/module-graph-checkpoint-20260828T1741336133599-43d2ef8c.json",
+  "previous_checkpoint_sha256": "BD1C021476EEFDC21CE77CC74144492BE73AD471A8913961E0A9CDDB7DBDF5F6",
+  "incremental_rebuild": {
+    "batch_ids": [
+      "20260828T2012237787306-56faf6ee",
+      "20260828T2013049316127-cdc072f5"
+    ],
+    "cache_directory": "artifacts/build/local-olean/20260825T0355153955281-3669b4fc",
+    "reason": "P22 lines 13155--13173 were advanced by freely adjoining the source's common zeta tail to the actual finite localized pair, proving the source-shaped equations (23)--(24), cancellation of the common tail, the extended diagonal relation with unit tail coefficients, and the countable-tail quotient equivalence",
+    "reused_unchanged_theorem_modules": 40,
+    "changed_theorem_modules": 0,
+    "added_theorem_modules": 1,
+    "direct_noether_import_targets": 41,
+    "umbrella_targets": 2,
+    "total_current_targets": 43,
+    "max_memory_gib": 2.5,
+    "global_worker_limit_gib": 3.0,
+    "rebuilt_modules": [
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstSmithCommonTail",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1421987840,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithCommonTail-20260828T2012238968138-efd307ef.module.receipt.json",
+        "receipt_sha256": "9812CF23D7DFACC4E4D58AB573549C60255D0F2A2F85B021953E5067A211A6F9"
+      },
+      {
+        "module": "MathematicalCommons.Noether",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1922113536,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-20260828T2013050479665-7f272653.module.receipt.json",
+        "receipt_sha256": "C317D8DF3623DDF966D365AF5899106E04303342DA4C3AF9F3AA89BC4C9D0694"
+      },
+      {
+        "module": "MathematicalCommons",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1916559360,
+        "receipt": "artifacts/build/MathematicalCommons-20260828T2013436547380-b1577cb4.module.receipt.json",
+        "receipt_sha256": "A665425A8F407B93D8A595E7AB9BD8B38224BCDCA6CD05AF440F2A6B82343EF4"
+      }
+    ]
+  },
+  "lean_version": "4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "all_43_targets_current": true,
+  "all_exit_zero": true,
+  "all_stderr_empty": true,
+  "all_sources_unchanged_during_build": true,
+  "all_environments_unchanged_during_build": true,
+  "current_incremental_maximum_observed_process_tree_peak_bytes": 1922113536,
+  "maximum_observed_process_tree_peak_bytes": 1922387968
+}

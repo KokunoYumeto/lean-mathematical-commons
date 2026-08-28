@@ -1,0 +1,19 @@
+{
+  "schema": "lean-mathematical-commons/zenodo-draft-receipt/1.0",
+  "concept_doi": "10.5281/zenodo.21129945",
+  "previous_version": {
+    "record_id": 22147890,
+    "doi": "10.5281/zenodo.22147890"
+  },
+  "draft": {
+    "record_id": 22149791,
+    "reserved_doi": "10.5281/zenodo.22149791",
+    "created": "2026-08-28",
+    "state": "unsubmitted",
+    "submitted": false,
+    "html": "https://zenodo.org/deposit/22149791",
+    "api": "https://zenodo.org/api/deposit/depositions/22149791"
+  },
+  "purpose": "Noether pilot 0.2.4: arbitrary and countable common-tail restoration for the actual finite localized equation-(24) Smith pair, exact tail cancellation, and the source's first-stage scalar module quotients formalized as colon ideals",
+  "credential_material_recorded": false
+}

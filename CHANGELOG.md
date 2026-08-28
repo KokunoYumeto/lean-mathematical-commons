@@ -2,6 +2,65 @@
 
 ## Unreleased
 
+## 0.2.4 — 2026-08-28
+
+- Added the 35-declaration P22 `FirstSmithScalarQuotients` module for the
+  displayed scalar module quotients following equation (24), source lines
+  13164--13179. Fifteen generic finite-filtration and product-tail declarations
+  are `NEW_PACKAGING`; the 20 declarations for the actual localized cutoff-one
+  Smith pair and its arbitrary/countable common tail are `FORMALIZED_GAP`. The
+  historical slash is interpreted as the scalar colon ideal
+  `A.colon (B : Set E)`: adjoining one `ηᵢ` yields `(eᵢ)` unconditionally,
+  whereas quotienting by the whole ground module yields the infimum of the
+  remaining principal coefficient ideals. Its reduction to one `(eᵢ)` requires
+  the explicit hypothesis that all remaining coefficients divide `eᵢ`. No
+  canonical divisibility ordering, norm/resultant identification, or
+  historical-tail identification is asserted. The 34,313-byte source has
+  SHA-256
+  `D65B09A006E97F4B6F32FA50BC064BF401811069382CB2BA08DD5CB424BA7703`;
+  the green 7,285-byte
+  [receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithScalarQuotients-20260828T2052403988381-386b0cec.module.receipt.json)
+  has SHA-256
+  `75EA954635F63B2A23AEC4CF866701006CEFA3A14F4FED37816A724EFB4D4593`
+  and records a 1,462,034,432-byte peak. P22 now totals 487 declarations across
+  its base and 27 support modules, with 43 machine-readable ledger records.
+- Sealed the scalar-quotient cluster with the 7,537-byte
+  [claim receipt](artifacts/build/claim-P22-first-smith-scalar-quotients-20260828T2055573367899-6e27c54b.json),
+  SHA-256
+  `681152AA43FCB326269455A7C38398DC34EF2B5F01A03967C4C8F14B2440A022`,
+  and the 3,433-byte
+  [44-target graph checkpoint](artifacts/build/module-graph-checkpoint-20260828T2055573367899-6e27c54b.json),
+  SHA-256
+  `40889076C3B15D3F580D1FC5AA617A2D71890EE477C4C366E41D95A1BC6B98D3`.
+- Added the 37-declaration P22 `FirstSmithCommonTail` module for source lines
+  13155--13173. Four generic product-head quotient helpers are `NEW_PACKAGING`;
+  the 33 source-instantiated declarations are `FORMALIZED_GAP`. The module
+  freely adjoins an arbitrary Finsupp tail to the actual localized cutoff-one
+  pair, specializes it to the printed countable `ζ` sequence, extends both
+  selected bases, proves coefficient `1` on every tail coordinate, cancels the
+  common tail, and recovers the finite cyclic quotient. It does not identify
+  this model with a separately constructed/localized historical unbounded
+  `ζ`-module, assert divisibility ordering, or form an infinite determinant.
+  The 25,766-byte source has SHA-256
+  `6A2AC9FC7F0550676DA302581E54FBC244DEC400D802E2415D190231A300245A`;
+  the green 7,240-byte
+  [receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithCommonTail-20260828T2012238968138-efd307ef.module.receipt.json)
+  has SHA-256
+  `9812CF23D7DFACC4E4D58AB573549C60255D0F2A2F85B021953E5067A211A6F9`
+  and records a 1,421,987,840-byte peak. P22 now totals 452 declarations across
+  its base and 26 support modules, with 41 machine-readable ledger records.
+- Sealed the common-tail cluster with
+  [claim receipt](artifacts/build/claim-P22-first-smith-common-tail-20260828T2016152269335-1092d717.json)
+  SHA-256
+  `D2610B6B73598E372BCEE8FE6C8AC58E14763ABB9E43989928B0431C3860FAEF`
+  and a [43-target graph checkpoint](artifacts/build/module-graph-checkpoint-20260828T2016152269335-1092d717.json)
+  SHA-256
+  `6DE844FF9A0189582515F29B4A405799694783CAD4DE50E3F121D70C62E9EBDD`.
+- Prepared the coherent public `noether-pilot-0.2.4` checkpoint under the
+  living concept DOI `10.5281/zenodo.21129945`; its immutable release DOI is
+  `10.5281/zenodo.22149791`. GitHub and Zenodo carry the same three release
+  assets and are anonymously rehashed after publication.
+
 ## 0.2.3 — 2026-08-28
 
 - Added the sixteen-declaration P22 `FirstGroundModule` module. It formalizes

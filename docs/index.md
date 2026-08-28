@@ -25,7 +25,7 @@ novelty of a theorem.
 
 | Author | State | Next formalization lane | Corpus record |
 |---|---|---|---|
-| Emmy Noether | active pilot | extend P22's localized finite equation-(24) instance to divisibility ordering, the infinite `ζ` tail/unit factors, determinant norm/resultant identification, primitive normalization and choice independence, then iterate later stages and compatible zeros; Noetherian primary decomposition; remaining P25 function-field refinements; integral Plücker/Fischer layers | [DOI 10.5281/zenodo.20412587](https://doi.org/10.5281/zenodo.20412587) |
+| Emmy Noether | active pilot | identify P22's freely adjoined countable Finsupp `ζ` tail with a separately constructed/localized historical unbounded module; add divisibility ordering, determinant norm/resultant identification, primitive normalization and choice independence, then iterate later stages and compatible zeros; Noetherian primary decomposition; remaining P25 function-field refinements; integral Plücker/Fischer layers | [DOI 10.5281/zenodo.20412587](https://doi.org/10.5281/zenodo.20412587) |
 | Ernst Steinitz | deposited anchor only | field-theory paper inventory and algebraic-closure coverage | [DOI 10.5281/zenodo.20616988](https://doi.org/10.5281/zenodo.20616988) |
 | J. J. Sylvester | queued | invariant/matrix/combinatorial paper inventory | [DOI 10.5281/zenodo.20520692](https://doi.org/10.5281/zenodo.20520692) |
 | Hellmuth Kneser | queued | quadratic-form/topology/geometry paper inventory | [DOI 10.5281/zenodo.20836971](https://doi.org/10.5281/zenodo.20836971) |
@@ -68,8 +68,21 @@ evidence, and formalization-specific QA only.
   torsion/equal-rank consequences, the source-faithful tower
   `P[x₃,…][x₂] → Frac(P[x₃,…])[x₂]` with exact localized saturation
   and `finrank`, a generic equation-(24) Smith package and its actual finite
-  cutoff-one cyclic-quotient/determinant instance, and promoted Satz VIII
-  support.
+  cutoff-one cyclic-quotient/determinant instance, the freely adjoined arbitrary
+  and countable Finsupp `ζ` tails with coefficient `1` and common-tail
+  cancellation, the scalar-colon interpretation after equation (24), its
+  unconditional one-step principal quotient, and the exact whole-ground
+  quotient as an infimum of the remaining principal coefficient ideals. It
+  also includes promoted Satz VIII support. A single principal ideal for the
+  whole-ground quotient is available only under an explicit divisibility
+  hypothesis. The
+  free-tail model is not yet identified with a separately constructed/localized
+  historical unbounded module; there is no canonical coefficient ordering,
+  resultant identification, or infinite determinant. Current P22 accounting is
+  487 declarations across the base and 27 support modules, represented by 43
+  machine-readable ledger records; all 42 direct Noether imports and both
+  umbrellas are pinned by the
+  [44-target graph checkpoint](../artifacts/build/module-graph-checkpoint-20260828T2055573367899-6e27c54b.json).
 - [1922 absolute-irreducibility map](noether/absolute-irreducibility-1922.md):
   universal reducibility-form and specialization gaps, with proof components.
 - [1922 formal-variational-calculus map](noether/formal-variational-calculus-1922.md):

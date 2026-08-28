@@ -120,7 +120,24 @@ never silently repaired here.
   cutoff-one instance supplies selected Smith bases and coefficients, the
   diagonal relation and membership theorem, the finite cyclic-quotient
   decomposition, and the selected-basis determinant product. The two
-  source-specific promotions are `FORMALIZED_GAP`.
+  source-specific promotions are `FORMALIZED_GAP`. The actual localized pair
+  is now also extended by an arbitrary freely adjoined Finsupp tail and by its
+  countable `ℕ` specialization. The same standard tail basis is adjoined to
+  numerator and denominator, every tail coefficient is `1`, common-tail
+  cancellation recovers the finite cyclic quotient, and every enlarged class
+  has a finite-part representative. Four generic quotient helpers are
+  `NEW_PACKAGING`; the 33 source-instantiated declarations are
+  `FORMALIZED_GAP`. This models the printed independent `ζ` tail, but does not
+  yet identify it with a separately constructed and localized historical
+  unbounded `ζ`-module or form an infinite determinant. The scalar-quotient
+  formulas following equation (24) are now formalized as scalar colon ideals:
+  15 generic filtration/product-tail declarations are `NEW_PACKAGING`, and 20
+  declarations instantiate them for the actual localized cutoff-one pair and
+  its arbitrary/countable common tail as `FORMALIZED_GAP`. Adjoining one
+  `ηᵢ` gives `(eᵢ)` unconditionally. Quotienting a filtration stage by the
+  whole ground module gives the infimum of all remaining `(eⱼ)`; it becomes one
+  distinguished `(eᵢ)` only under the explicit hypothesis that every remaining
+  coefficient divides `eᵢ`.
   The characteristic-zero finite-avoidance step used after Satz VII
   is formalized for any supplied finite family of regularity coefficients. The
   full independent lower-unitriangular transform from equation (12) is now
@@ -130,10 +147,13 @@ never silently repaired here.
   transform of every nonzero ideal therefore contains a regular member. In
   characteristic zero, one finite ground-field assignment preserves any
   supplied finite family of these witnesses; the resulting transform is proved
-  to be an actual lower-unitriangular algebra equivalence. Divisibility ordering,
-  the infinite `ζ` tail and its unit factors, identification of the determinant
-  product with Hentzelt's norm or resultant, primitive normalization and choice
-  independence, the later stages, and the compatible-zero system remain open.
+  to be an actual lower-unitriangular algebra equivalence. Canonical
+  divisibility ordering,
+  identification of the freely adjoined tail with the separately constructed
+  historical unbounded module, identification of the determinant product with
+  Hentzelt's norm or resultant, primitive normalization and choice independence,
+  the later stages, and the compatible-zero system remain open. Tail coefficient
+  `1` is identity-tail data, not a canonical normalization theorem.
 - Extends P25's generic-zero construction: evaluation has kernel exactly the
   prime ideal, and the generic coordinate tuple generates the fraction field
   of the prime quotient over the coefficient field. It now also proves the
@@ -198,30 +218,30 @@ dependency object, its opt-in `-MirrorPackageOutputs` mode hash-checks and
 mirrors only explicitly compiled sidecars into the disposable dependency
 project; it refuses a conflicting target rather than rebuilding a package.
 
-The current 42-target graph check (40 promoted theorem/support modules and both
+The current 44-target graph check (42 direct Noether imports and both
 umbrellas) is checkpoint
-[`20260828T1741336133599-43d2ef8c`](artifacts/build/module-graph-checkpoint-20260828T1741336133599-43d2ef8c.json).
-It reuses the preceding 38 theorem/support modules, adds the 25-declaration
-[`FirstGroundModuleLocalization`](artifacts/build/claim-P22-first-ground-module-localization-20260828T1741336133599-43d2ef8c.json)
-and 13-declaration
-[`FirstSmithPairedQuotient`](artifacts/build/claim-P22-first-smith-paired-quotient-20260828T1741336133599-43d2ef8c.json),
-and rebuilds both umbrellas. Their respective build receipts record peaks of
-[1,408,970,752 bytes](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstGroundModuleLocalization-20260828T1711488036548-b4e9f21a.module.receipt.json)
-and
-[1,391,661,056 bytes](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithPairedQuotient-20260828T1726213885481-badb6014.module.receipt.json).
-Both modules exited zero with empty stderr, zero warnings, zero `sorry`, and no
-new axioms beyond Lean's standard axioms; both umbrellas also exited zero with
-empty stderr. The checkpoint's
-incremental maximum was 1,917,771,776 bytes, while the checkpoint-chain maximum
+[`20260828T2055573367899-6e27c54b`](artifacts/build/module-graph-checkpoint-20260828T2055573367899-6e27c54b.json).
+It chains the preceding
+[43-target checkpoint](artifacts/build/module-graph-checkpoint-20260828T2016152269335-1092d717.json),
+adds the 35-declaration
+[`FirstSmithScalarQuotients`](artifacts/build/claim-P22-first-smith-scalar-quotients-20260828T2055573367899-6e27c54b.json),
+and rebuilds both umbrellas. The module's clean
+[build receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithScalarQuotients-20260828T2052403988381-386b0cec.module.receipt.json)
+records a 1,462,034,432-byte peak; its 34,313-byte source has SHA-256
+`D65B09A006E97F4B6F32FA50BC064BF401811069382CB2BA08DD5CB424BA7703`.
+All 35 declarations have matching axiom prints, with no warning, error,
+`sorry`, or nonstandard axiom. The Noether and top umbrellas peaked at
+1,921,867,776 and 1,916,366,848 bytes respectively. The checkpoint's
+incremental maximum is 1,921,867,776 bytes, while the checkpoint-chain maximum
 remains 1,922,387,968 bytes under the strict 3 GiB worker envelope. P22 now has
-415 canonical declarations across its base and 25 support modules, represented
-by 39 machine-readable ledger records.
+487 canonical declarations across its base and 27 support modules, represented
+by 43 machine-readable ledger records.
 
 Meaningful theorem clusters—not individual edits—are the intended GitHub/Zenodo
 release unit. The living series uses concept DOI
 [10.5281/zenodo.21129945](https://doi.org/10.5281/zenodo.21129945); the current
 Noether-pilot release DOI is
-[10.5281/zenodo.22147890](https://doi.org/10.5281/zenodo.22147890).
+[10.5281/zenodo.22149791](https://doi.org/10.5281/zenodo.22149791).
 
 ## Project map
 
