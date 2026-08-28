@@ -1,0 +1,102 @@
+{
+  "schema": "lean-mathematical-commons/cross-repository-publication-receipt/1.0",
+  "verified_at_utc": "2026-08-28T16:11:01.6392303Z",
+  "release": {
+    "version": "0.2.3",
+    "github_commit": "46032b9c6fab2048f9408f390c55782ea339fcf9",
+    "github_tree": "65f31a1c1099c29693f708d111eb85f8b574650b",
+    "github_tag": "noether-pilot-0.2.3",
+    "github_release_id": 378604340,
+    "github_release_url": "https://github.com/KokunoYumeto/lean-mathematical-commons/releases/tag/noether-pilot-0.2.3",
+    "zenodo_record_id": 22147890,
+    "zenodo_release_doi": "10.5281/zenodo.22147890",
+    "zenodo_record_url": "https://zenodo.org/records/22147890",
+    "zenodo_concept_doi": "10.5281/zenodo.21129945"
+  },
+  "formalization_checkpoint": {
+    "graph": "artifacts/build/module-graph-checkpoint-20260828T1741336133599-43d2ef8c.json",
+    "graph_sha256": "BD1C021476EEFDC21CE77CC74144492BE73AD471A8913961E0A9CDDB7DBDF5F6",
+    "targets": 42,
+    "p22_claim_records": 39,
+    "p22_canonical_declarations": 415,
+    "new_declarations": 64,
+    "new_cluster_classifications": [
+      "FORMALIZED_GAP"
+    ]
+  },
+  "public_state": {
+    "github_repository_private": false,
+    "github_repository_visibility": "public",
+    "github_release_draft": false,
+    "github_release_prerelease": false,
+    "github_tag_object_type": "commit",
+    "github_tag_object_sha": "46032b9c6fab2048f9408f390c55782ea339fcf9",
+    "zenodo_access_right": "open",
+    "zenodo_submitted": true,
+    "zenodo_state": "done",
+    "zenodo_public_status": "published"
+  },
+  "files": [
+    {
+      "name": "lean-mathematical-commons-noether-pilot-0.2.3.zip",
+      "bytes": 1011873,
+      "sha256": "0CD5CDD1869B7389378D13ADEC30662EC791F1377FD6CFB71C15DE973C94A476",
+      "md5": "76E2C563545606B58E21892A467F2637",
+      "github_asset_id": 534031820,
+      "github_download_status": 200,
+      "zenodo_download_status": 200,
+      "byte_identical_across_mirrors": true
+    },
+    {
+      "name": "RELEASE-MANIFEST.json",
+      "bytes": 5296,
+      "sha256": "0B00A60FEC47C1790D5B0067D05C7F67073B3D5E6F868463EEBB2574E35AFC9C",
+      "md5": "9FE08038A357AD7E3C736BA5D9DFFBFE",
+      "github_asset_id": 534031819,
+      "github_download_status": 200,
+      "zenodo_download_status": 200,
+      "byte_identical_across_mirrors": true
+    },
+    {
+      "name": "CHECKSUMS.txt",
+      "bytes": 376,
+      "sha256": "B8FBE2626672FB44381A963F39D01C574B4B3207B28609629EC2636A7A89AEEA",
+      "md5": "D3E4392BE2CFBFED8D34C6488C922A00",
+      "github_asset_id": 534031817,
+      "github_download_status": 200,
+      "zenodo_download_status": 200,
+      "byte_identical_across_mirrors": true
+    }
+  ],
+  "anonymous_verification": {
+    "github_repository_page_status": 200,
+    "github_commit_page_status": 200,
+    "github_release_page_status": 200,
+    "github_all_files_listed": true,
+    "github_all_direct_downloads_match": true,
+    "zenodo_public_record_id": 22147890,
+    "zenodo_record_page_status": 200,
+    "zenodo_all_direct_downloads_match": true,
+    "zenodo_versions_latest_record_id": 22147890,
+    "zenodo_concept_latest_record_id": 22147890,
+    "doi_resolution_status": 200,
+    "doi_resolution_target": "https://zenodo.org/records/22147890",
+    "concept_doi_resolution_status": 200,
+    "concept_doi_resolution_target": "https://zenodo.org/records/22147890",
+    "github_raw_graph_status": 200,
+    "github_raw_graph_bytes": 3670,
+    "github_raw_graph_sha256": "BD1C021476EEFDC21CE77CC74144492BE73AD471A8913961E0A9CDDB7DBDF5F6"
+  },
+  "integrity": {
+    "github_changed_blobs_checked": 27,
+    "github_changed_blob_mismatches": 0,
+    "github_recursive_tree_truncated": false,
+    "github_recursive_tree_entries": 426,
+    "archive_zip_entries": 427,
+    "archive_forbidden_entries": 0,
+    "archive_missing_required_entries": 0,
+    "all_core_files_public_and_identical": true
+  },
+  "credentials_in_receipt": false,
+  "note": "This credential-free receipt was generated only after both public inventories and every released file were downloaded anonymously and rehashed. It cannot be embedded in the already published immutable archive without circularly changing the archive hash; the next coherent archive carries this receipt."
+}
