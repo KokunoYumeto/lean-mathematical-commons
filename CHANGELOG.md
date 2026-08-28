@@ -30,6 +30,11 @@
   `23A27DD8B7B1328F6BDADC008F5E898B12D61872258F65B690F6F40A6AAE8FDE`.
   P22 now totals 511 declarations across its base and 29 support modules, with
   47 machine-readable ledger records and 526 declaration references.
+- Prepared the coherent public `noether-pilot-0.2.5` checkpoint under the
+  living concept DOI `10.5281/zenodo.21129945` and immutable release DOI
+  `10.5281/zenodo.22150495`. GitHub and Zenodo carry the same three release
+  assets: the exact immutable-commit source archive, `RELEASE-MANIFEST.json`,
+  and `CHECKSUMS.txt`.
 - Added the eight-declaration P22 `FirstSmithGroundReciprocity` module for
   Satz II and equation (5), source lines 12815--12844. Six generic declarations
   are `NEW_PACKAGING`: they distinguish the module-valued quotient `M / J` from
