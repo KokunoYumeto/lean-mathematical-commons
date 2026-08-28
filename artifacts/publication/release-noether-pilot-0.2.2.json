@@ -1,0 +1,100 @@
+{
+  "schema": "lean-mathematical-commons/cross-repository-publication-receipt/1.0",
+  "verified_at_utc": "2026-08-28T13:18:27.9807340Z",
+  "release": {
+    "version": "0.2.2",
+    "github_commit": "a94a446b423bf8ca926007723741db9fb5405930",
+    "github_tree": "e8be59aa510610fb767ad28c1e5ef98810a7a8f4",
+    "github_tag": "noether-pilot-0.2.2",
+    "github_release_id": 378496610,
+    "github_release_url": "https://github.com/KokunoYumeto/lean-mathematical-commons/releases/tag/noether-pilot-0.2.2",
+    "zenodo_record_id": 22144868,
+    "zenodo_release_doi": "10.5281/zenodo.22144868",
+    "zenodo_record_url": "https://zenodo.org/records/22144868",
+    "zenodo_concept_doi": "10.5281/zenodo.21129945"
+  },
+  "formalization_checkpoint": {
+    "graph": "artifacts/build/module-graph-checkpoint-20260828T1500160501084-3b7c5d91.json",
+    "graph_sha256": "0E40458857414FCA46F90F26B6D72FF5F4499E984364FAD684048F22A80833A4",
+    "targets": 38,
+    "p22_claim_records": 35,
+    "p22_canonical_declarations": 351,
+    "new_declarations": 29,
+    "new_cluster_classifications": [
+      "FORMALIZED_GAP",
+      "NEW_PACKAGING"
+    ]
+  },
+  "public_state": {
+    "github_repository_private": false,
+    "github_repository_visibility": "public",
+    "github_release_draft": false,
+    "github_release_prerelease": false,
+    "github_tag_object_type": "commit",
+    "github_tag_object_sha": "a94a446b423bf8ca926007723741db9fb5405930",
+    "zenodo_access_right": "open",
+    "zenodo_submitted": true,
+    "zenodo_state": "done",
+    "zenodo_public_status": "published"
+  },
+  "files": [
+    {
+      "name": "lean-mathematical-commons-noether-pilot-0.2.2.zip",
+      "bytes": 957548,
+      "sha256": "B31F2729FEF63C308AEF37FCBE60CB0FD84708B516DD430D54506992D5CC1DAC",
+      "md5": "676A31A1D644B102B14066F4ECFF8547",
+      "github_asset_id": 533828450,
+      "github_download_status": 200,
+      "zenodo_download_status": 200,
+      "byte_identical_across_mirrors": true
+    },
+    {
+      "name": "RELEASE-MANIFEST.json",
+      "bytes": 4092,
+      "sha256": "3195C8CEB32C3B949E1BA6D21DE6C42F70A8925D502A35CAE4BD7043922C1F13",
+      "md5": "3837DA24E5DF63C809D88F1B952C2DA0",
+      "github_asset_id": 533828451,
+      "github_download_status": 200,
+      "zenodo_download_status": 200,
+      "byte_identical_across_mirrors": true
+    },
+    {
+      "name": "CHECKSUMS.txt",
+      "bytes": 376,
+      "sha256": "06FB9191A8F5EA3545718C6DE212F6175A975EDE074A17F731A65A1505E96C05",
+      "md5": "27B11328604C9542C285E72DC10B6AF6",
+      "github_asset_id": 533828449,
+      "github_download_status": 200,
+      "zenodo_download_status": 200,
+      "byte_identical_across_mirrors": true
+    }
+  ],
+  "anonymous_verification": {
+    "github_repository_page_status": 200,
+    "github_commit_page_status": 200,
+    "github_release_page_status": 200,
+    "github_all_files_listed": true,
+    "github_all_direct_downloads_match": true,
+    "zenodo_public_record_id": 22144868,
+    "zenodo_record_page_status": 200,
+    "zenodo_all_direct_downloads_match": true,
+    "zenodo_versions_latest_record_id": 22144868,
+    "zenodo_concept_latest_record_id": 22144868,
+    "doi_resolution_status": 200,
+    "doi_resolution_target": "https://zenodo.org/records/22144868",
+    "concept_doi_resolution_status": 200,
+    "concept_doi_resolution_target": "https://zenodo.org/records/22144868"
+  },
+  "integrity": {
+    "github_changed_blobs_checked": 32,
+    "github_changed_blob_mismatches": 0,
+    "github_recursive_tree_truncated": false,
+    "github_recursive_tree_entries": 405,
+    "archive_zip_entries": 406,
+    "archive_forbidden_entries": 0,
+    "archive_missing_required_entries": 0,
+    "all_core_files_public_and_identical": true
+  },
+  "credentials_in_receipt": false,
+  "note": "This credential-free receipt was generated only after both public inventories and every released file were downloaded anonymously and rehashed. It cannot be embedded in the already published immutable archive without circularly changing the archive hash; the next coherent archive carries this receipt."
+}
