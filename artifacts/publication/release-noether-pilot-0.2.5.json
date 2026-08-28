@@ -1,0 +1,140 @@
+{
+  "schema": "lean-mathematical-commons/cross-repository-publication-receipt/1.0",
+  "verified_at_utc": "2026-08-28T21:17:56.3420215Z",
+  "release": {
+    "version": "0.2.5",
+    "github_commit": "f27378c235f009450e81bc4ba5c09af79da36d14",
+    "github_tree": "4d05b32355fcbd3bb649a6031b084c4d3a8d9fa0",
+    "github_tag": "noether-pilot-0.2.5",
+    "github_release_id": 378766214,
+    "github_release_url": "https://github.com/KokunoYumeto/lean-mathematical-commons/releases/tag/noether-pilot-0.2.5",
+    "zenodo_record_id": 22150495,
+    "zenodo_release_doi": "10.5281/zenodo.22150495",
+    "zenodo_record_url": "https://zenodo.org/records/22150495",
+    "zenodo_concept_doi": "10.5281/zenodo.21129945"
+  },
+  "formalization_checkpoint": {
+    "graph": "artifacts/build/module-graph-checkpoint-20260828T2248235911582-32a08ca0.json",
+    "graph_sha256": "23A27DD8B7B1328F6BDADC008F5E898B12D61872258F65B690F6F40A6AAE8FDE",
+    "targets": 46,
+    "p22_claim_records": 47,
+    "p22_canonical_declarations": 511,
+    "new_declarations": 24,
+    "new_theorems": 20,
+    "new_definitions_and_abbreviations": 4,
+    "new_cluster_classification_counts": {
+      "NEW_PACKAGING": 16,
+      "FORMALIZED_GAP": 8
+    },
+    "new_cluster_classifications": [
+      "NEW_PACKAGING",
+      "FORMALIZED_GAP"
+    ],
+    "latest_incremental_process_tree_peak_bytes": 1921720320,
+    "maximum_new_cluster_incremental_process_tree_peak_bytes": 1921720320,
+    "maximum_checkpoint_chain_process_tree_peak_bytes": 1922387968,
+    "worker_memory_limit_gib": 2.5,
+    "global_worker_limit_gib": 3.0
+  },
+  "public_state": {
+    "github_repository_private": false,
+    "github_repository_visibility": "public",
+    "github_release_draft": false,
+    "github_release_prerelease": false,
+    "github_release_latest": true,
+    "github_tag_object_type": "commit",
+    "github_tag_object_sha": "f27378c235f009450e81bc4ba5c09af79da36d14",
+    "zenodo_access_right": "open",
+    "zenodo_submitted": true,
+    "zenodo_state": "done",
+    "zenodo_public_status": "published"
+  },
+  "files": [
+    {
+      "name": "lean-mathematical-commons-noether-pilot-0.2.5.zip",
+      "bytes": 1091804,
+      "sha256": "A7027CFFAD60112AC8B574BD77F6E77C3E9FD3C9672642E19EB92D582DBCE763",
+      "md5": "21D8D540E26DD1E2F4E6D4C5233115C3",
+      "github_asset_id": 534348392,
+      "zenodo_file_id": "172ab643-714f-4647-81b3-635011bc1d0c",
+      "github_download_status": 200,
+      "zenodo_download_status": 200,
+      "byte_identical_across_mirrors": true
+    },
+    {
+      "name": "RELEASE-MANIFEST.json",
+      "bytes": 5617,
+      "sha256": "AB739129A7B8FC3C95B4749C0240DD13C243DCD4568E599620AABF6FABC80593",
+      "md5": "3D2CEF178909C979183917672DFAB18E",
+      "github_asset_id": 534348404,
+      "zenodo_file_id": "d09a9da1-12ea-48c1-9858-37c3a1626ded",
+      "github_download_status": 200,
+      "zenodo_download_status": 200,
+      "byte_identical_across_mirrors": true
+    },
+    {
+      "name": "CHECKSUMS.txt",
+      "bytes": 376,
+      "sha256": "737F833EECF3B7DD90E208BD56ABFE024FF7A110A62A71888753E6EDEB571491",
+      "md5": "878B42F19F3DA153D9F377AF561BB3EF",
+      "github_asset_id": 534348413,
+      "zenodo_file_id": "bc141b00-883f-4f1c-a7e1-2064c5eae48a",
+      "github_download_status": 200,
+      "zenodo_download_status": 200,
+      "byte_identical_across_mirrors": true
+    }
+  ],
+  "anonymous_verification": {
+    "authorization_header_sent": false,
+    "github_repository_page_status": 200,
+    "github_commit_page_status": 200,
+    "github_tag_page_status": 200,
+    "github_release_page_status": 200,
+    "github_latest_release_target": "https://github.com/KokunoYumeto/lean-mathematical-commons/releases/tag/noether-pilot-0.2.5",
+    "github_all_files_listed": true,
+    "github_all_direct_downloads_match": true,
+    "github_exact_codeload_bytes": 1091804,
+    "github_exact_codeload_sha256": "A7027CFFAD60112AC8B574BD77F6E77C3E9FD3C9672642E19EB92D582DBCE763",
+    "zenodo_public_record_id": 22150495,
+    "zenodo_record_page_status": 200,
+    "zenodo_all_direct_downloads_match": true,
+    "zenodo_versions_latest_record_id": 22150495,
+    "zenodo_concept_latest_record_id": 22150495,
+    "zenodo_version_chain_record_ids": [
+      22150495,
+      22149791,
+      22147890,
+      22144868,
+      22133696,
+      22132542,
+      21129946
+    ],
+    "doi_resolution_status": 200,
+    "doi_resolution_target": "https://zenodo.org/records/22150495",
+    "concept_doi_resolution_status": 200,
+    "concept_doi_resolution_target": "https://zenodo.org/records/22150495",
+    "github_raw_graph_status": 200,
+    "github_raw_graph_bytes": 3405,
+    "github_raw_graph_sha256": "23A27DD8B7B1328F6BDADC008F5E898B12D61872258F65B690F6F40A6AAE8FDE"
+  },
+  "integrity": {
+    "github_changed_blobs_checked": 24,
+    "github_changed_blob_mismatches": 0,
+    "github_changed_paths_added": 14,
+    "github_changed_paths_modified": 10,
+    "github_changed_paths_removed": 0,
+    "github_recursive_tree_truncated": false,
+    "github_recursive_tree_entries": 454,
+    "archive_zip_entries": 455,
+    "archive_forbidden_entries": 0,
+    "archive_missing_required_entries": 0,
+    "archive_embedded_zenodo_version": "0.2.5",
+    "archive_embedded_zenodo_access_right": "open",
+    "archive_embedded_zenodo_publication_date": "2026-08-28",
+    "archive_embedded_source_corpus_relation_verified": true,
+    "archive_embedded_citation_release_and_concept_dois_verified": true,
+    "all_core_files_public_and_identical": true
+  },
+  "credentials_in_receipt": false,
+  "note": "This credential-free receipt was generated only after both public inventories and every released file were downloaded anonymously and rehashed. It cannot be embedded in the already published immutable archive without circularly changing the archive hash; the next coherent archive carries this receipt. The release tag remains fixed to the audited source commit, while this receipt is committed to the moving main branch as a one-file follow-up."
+}
