@@ -1,0 +1,19 @@
+{
+  "schema": "lean-mathematical-commons/zenodo-draft-receipt/1.0",
+  "concept_doi": "10.5281/zenodo.21129945",
+  "previous_version": {
+    "record_id": 22144868,
+    "doi": "10.5281/zenodo.22144868"
+  },
+  "draft": {
+    "record_id": 22147890,
+    "reserved_doi": "10.5281/zenodo.22147890",
+    "created": "2026-08-28",
+    "state": "unsubmitted",
+    "submitted": false,
+    "html": "https://zenodo.org/deposit/22147890",
+    "api": "https://zenodo.org/api/deposit/depositions/22147890"
+  },
+  "purpose": "Noether pilot 0.2.3: exact cutoff-one ground-module saturation, torsion/equal-rank consequences, source-faithful later-variable localization, and the finite localized equation-(24) Smith instance",
+  "credential_material_recorded": false
+}

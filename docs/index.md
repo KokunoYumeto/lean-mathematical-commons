@@ -25,7 +25,7 @@ novelty of a theorem.
 
 | Author | State | Next formalization lane | Corpus record |
 |---|---|---|---|
-| Emmy Noether | active pilot | prove P22 line 13162's ground-module characterization, instantiate equation (24) over the historical coefficient field, then iterate later stages/resultants and compatible zeros; Noetherian primary decomposition; remaining P25 function-field refinements; integral Plücker/Fischer layers | [DOI 10.5281/zenodo.20412587](https://doi.org/10.5281/zenodo.20412587) |
+| Emmy Noether | active pilot | extend P22's localized finite equation-(24) instance to divisibility ordering, the infinite `ζ` tail/unit factors, determinant norm/resultant identification, primitive normalization and choice independence, then iterate later stages and compatible zeros; Noetherian primary decomposition; remaining P25 function-field refinements; integral Plücker/Fischer layers | [DOI 10.5281/zenodo.20412587](https://doi.org/10.5281/zenodo.20412587) |
 | Ernst Steinitz | deposited anchor only | field-theory paper inventory and algebraic-closure coverage | [DOI 10.5281/zenodo.20616988](https://doi.org/10.5281/zenodo.20616988) |
 | J. J. Sylvester | queued | invariant/matrix/combinatorial paper inventory | [DOI 10.5281/zenodo.20520692](https://doi.org/10.5281/zenodo.20520692) |
 | Hellmuth Kneser | queued | quadratic-form/topology/geometry paper inventory | [DOI 10.5281/zenodo.20836971](https://doi.org/10.5281/zenodo.20836971) |
@@ -63,9 +63,13 @@ evidence, and formalization-specific QA only.
   regularity specialization, equation-(12) homogeneous preservation and
   generator-level leading coefficients, equation-(21) regular division,
   equations-(22)--(23) finite coefficient vectors and internal ideal
-  decomposition, the cutoff-one `ξ`/`ζ` coordinate-module quotient bridge, a
-  generic equation-(24) Smith/cyclic quotient and determinant package, and
-  promoted Satz VIII support.
+  decomposition, the cutoff-one `ξ`/`ζ` coordinate-module quotient bridge, the
+  exact line-13162 nonzero-scalar ground-module saturation and its
+  torsion/equal-rank consequences, the source-faithful tower
+  `P[x₃,…][x₂] → Frac(P[x₃,…])[x₂]` with exact localized saturation
+  and `finrank`, a generic equation-(24) Smith package and its actual finite
+  cutoff-one cyclic-quotient/determinant instance, and promoted Satz VIII
+  support.
 - [1922 absolute-irreducibility map](noether/absolute-irreducibility-1922.md):
   universal reducibility-form and specialization gaps, with proof components.
 - [1922 formal-variational-calculus map](noether/formal-variational-calculus-1922.md):

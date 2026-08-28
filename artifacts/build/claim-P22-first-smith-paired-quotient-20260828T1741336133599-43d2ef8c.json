@@ -1,0 +1,89 @@
+{
+  "schema": "lean-mathematical-commons/claim-build-receipt/1.0",
+  "claim_id": "HENTZELT-NOETHER-1923-FIRST-SMITH-PAIRED-QUOTIENT",
+  "status": "finite_localized_equation_24_smith_instance_completed",
+  "source": {
+    "witness": "NOETH-DE-ED-0014",
+    "sha256": "EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58",
+    "lines": "13164--13173; equation (24), finite cutoff-one Smith instance"
+  },
+  "classification": "FORMALIZED_GAP",
+  "mathlib_core": [
+    "Pi.basisFun",
+    "Submodule.basisOfPid",
+    "Submodule.smithNormalFormTopBasis",
+    "Submodule.smithNormalFormBotBasis",
+    "Submodule.smithNormalFormCoeffs",
+    "Submodule.smithNormalFormCoeffs_ne_zero",
+    "Submodule.quotientEquivPiSpan",
+    "LinearMap.det_toMatrix",
+    "Matrix.det_diagonal"
+  ],
+  "local_packaging_dependency": [
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableGroundModule",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableOriginalModule",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.finrank_localizedSecondVariable_relativeDenominator_eq",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.SmithPairedQuotient.relativeSmithTopBasis",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.SmithPairedQuotient.relativeSmithBottomBasis",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.SmithPairedQuotient.relativeSmithCoefficients",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.SmithPairedQuotient.relativeSmithBottomBasis_eq_smul",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.SmithPairedQuotient.relativeSmithBottomBasis_mem",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.SmithPairedQuotient.relativeSmithCoefficients_ne_zero",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.SmithPairedQuotient.relativeQuotientEquivSmithCyclic",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.SmithPairedQuotient.det_relativeSmithBasisTransition_eq_prod"
+  ],
+  "declarations": 13,
+  "theorem_count": 3,
+  "definition_and_abbreviation_count": 10,
+  "newly_closed": [
+    "Mathlib's PID basis construction supplies an actual finite basis for the localized cutoff-one ground module",
+    "selected eta and relative-denominator bases and nonzero coefficients e_i satisfy the source diagonal relation e_i eta_i",
+    "each diagonal vector lies in the actual localized original module",
+    "the actual localized relative quotient is linearly equivalent to the finite product of cyclic quotients R/(e_i)",
+    "the determinant of the selected-basis transition is the finite product of the selected e_i"
+  ],
+  "modules": [
+    {
+      "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstSmithPairedQuotient",
+      "source": {
+        "path": "MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/FirstSmithPairedQuotient.lean",
+        "bytes": 10052,
+        "sha256": "14A628E4BA7F22C8DC729708309A5A7AA44E0BBF1E7076C6C108B442332ABC6D"
+      },
+      "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithPairedQuotient-20260828T1726213885481-badb6014.module.receipt.json",
+      "receipt_sha256": "4DAF838C37B13AD66F7B0CB8367FD8A5E670BBB69B8D6D4EF0F2BE6B1854D32B",
+      "exit_code": 0,
+      "peak_bytes": 1391661056,
+      "stderr_bytes": 0,
+      "warnings": 0,
+      "sorry_or_admit": 0,
+      "declaration_count": 13,
+      "axioms": ["propext", "Classical.choice", "Quot.sound"]
+    }
+  ],
+  "umbrella_receipts": [
+    "artifacts/build/MathematicalCommons-Noether-20260828T1728117832022-3ba8eeef.module.receipt.json",
+    "artifacts/build/MathematicalCommons-20260828T1729134799460-f8681041.module.receipt.json"
+  ],
+  "umbrella_receipt_pins": [
+    {
+      "path": "artifacts/build/MathematicalCommons-Noether-20260828T1728117832022-3ba8eeef.module.receipt.json",
+      "bytes": 6730,
+      "sha256": "9852D278063E4727CCEE54EDF3E23B303CB9D616E53106802B56C4629B003D7E"
+    },
+    {
+      "path": "artifacts/build/MathematicalCommons-20260828T1729134799460-f8681041.module.receipt.json",
+      "bytes": 6650,
+      "sha256": "66F04931902139FA38D743736B1A0A3551DB4B91305D1D431C84B49EC15765AB"
+    }
+  ],
+  "graph_checkpoint": "artifacts/build/module-graph-checkpoint-20260828T1741336133599-43d2ef8c.json",
+  "graph_checkpoint_bytes": 3670,
+  "graph_checkpoint_sha256": "BD1C021476EEFDC21CE77CC74144492BE73AD471A8913961E0A9CDDB7DBDF5F6",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "worker_memory_limit_gib": 2.5,
+  "all_green": true,
+  "limitations": "This is the finite source instance underlying equation (24), not the whole displayed infinite system. It does not assert a canonical divisibility ordering, construct the infinite zeta tail or its unit factors, identify the determinant product with Hentzelt's norm or resultant, prove primitive normalization or choice independence, or construct later stages. The determinant equality is inherited at its exact specialized proposition from the green generic theorem to avoid a Lean v4.31 polynomial-instance elaboration diamond; this changes neither the proposition nor its axioms."
+}

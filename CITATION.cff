@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this formalization library, cite the release DOI and the historical source edition identified in its theorem ledger."
 title: "Lean of the Mathematical Commons: Emmy Noether pilot"
 type: software
-version: 0.2.2
+version: 0.2.3
 date-released: 2026-08-28
 repository-code: "https://github.com/KokunoYumeto/lean-mathematical-commons"
 url: "https://github.com/KokunoYumeto/lean-mathematical-commons"
@@ -11,7 +11,7 @@ authors:
 license: Apache-2.0
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.22144868"
+    value: "10.5281/zenodo.22147890"
     description: "Noether-pilot release DOI."
   - type: doi
     value: "10.5281/zenodo.21129945"

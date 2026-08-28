@@ -106,13 +106,21 @@ never silently repaired here.
   transported ideal quotient, and the bounded quotient in one equivalence
   chain. This source-specific bridge is `FORMALIZED_GAP`; the surrounding
   common-tail and ideal-level layers are `NEW_PACKAGING`.
-  Equation (24) also has a generic finite-free PID scaffold using Mathlib's
-  Smith normal form: it exposes diagonal bases and coefficients, cyclic quotient
-  factors, common-tail composition, and the selected-basis determinant product.
-  That scaffold is `NEW_PACKAGING`, not an instantiation of historical
-  `G₁*/M₁*`; the coefficient-field localization, basis/full-rank hypotheses,
-  divisibility-ordered elementary divisors, and infinite-tail unit factors remain
-  open.
+  Line 13162 is now formalized exactly: the bounded cutoff-one ground module is
+  the nonzero-scalar saturation of the bounded original module. The library
+  proves the formula-(4) universal property, the source-facing membership iff,
+  torsion of the relative quotient, equal cardinal rank and `finrank`, and
+  finite generation of the bounded module. These are `FORMALIZED_GAP`, with no
+  PID or characteristic-zero assumption hidden in the statements.
+  The source-faithful late-variable tower is now formalized as
+  `B = P[x₃,…]`, `A = B[x₂]`, `K = Frac(B)`, and `R = K[x₂]`: it
+  localizes only the coefficients and fixes `x₂`. Exact cutoff-one saturation
+  and the equal-`finrank` premise are transported to `R`. Equation (24)'s
+  generic finite-free PID scaffold remains `NEW_PACKAGING`; its new actual
+  cutoff-one instance supplies selected Smith bases and coefficients, the
+  diagonal relation and membership theorem, the finite cyclic-quotient
+  decomposition, and the selected-basis determinant product. The two
+  source-specific promotions are `FORMALIZED_GAP`.
   The characteristic-zero finite-avoidance step used after Satz VII
   is formalized for any supplied finite family of regularity coefficients. The
   full independent lower-unitriangular transform from equation (12) is now
@@ -122,9 +130,10 @@ never silently repaired here.
   transform of every nonzero ideal therefore contains a regular member. In
   characteristic zero, one finite ground-field assignment preserves any
   supplied finite family of these witnesses; the resulting transform is proved
-  to be an actual lower-unitriangular algebra equivalence. The later stage
-  modules, line 13162's ground-module characterization, source-instantiated Smith
-  data, staged resultants, and compatible-zero system remain open.
+  to be an actual lower-unitriangular algebra equivalence. Divisibility ordering,
+  the infinite `ζ` tail and its unit factors, identification of the determinant
+  product with Hentzelt's norm or resultant, primitive normalization and choice
+  independence, the later stages, and the compatible-zero system remain open.
 - Extends P25's generic-zero construction: evaluation has kernel exactly the
   prime ideal, and the generic coordinate tuple generates the fraction field
   of the prime quotient over the coefficient field. It now also proves the
@@ -189,23 +198,30 @@ dependency object, its opt-in `-MirrorPackageOutputs` mode hash-checks and
 mirrors only explicitly compiled sidecars into the disposable dependency
 project; it refuses a conflicting target rather than rebuilding a package.
 
-The current 38-target graph check (36 promoted theorem/support modules and both
+The current 42-target graph check (40 promoted theorem/support modules and both
 umbrellas) is checkpoint
-[`20260828T1500160501084-3b7c5d91`](artifacts/build/module-graph-checkpoint-20260828T1500160501084-3b7c5d91.json).
-It reuses 34 unchanged theorem/support modules, adds P22's cutoff-one
-linear-form coordinate bridge and generic equation-(24) Smith package, and
-rebuilds both umbrellas;
-every current target exited zero with empty stderr and unchanged
-source/environment. The
-maximum observed process-tree working set across the checkpoint chain was
-1,922,387,968 bytes under the strict 3 GiB worker envelope; every new build
-used a 2.5 GiB process-tree cap.
+[`20260828T1741336133599-43d2ef8c`](artifacts/build/module-graph-checkpoint-20260828T1741336133599-43d2ef8c.json).
+It reuses the preceding 38 theorem/support modules, adds the 25-declaration
+[`FirstGroundModuleLocalization`](artifacts/build/claim-P22-first-ground-module-localization-20260828T1741336133599-43d2ef8c.json)
+and 13-declaration
+[`FirstSmithPairedQuotient`](artifacts/build/claim-P22-first-smith-paired-quotient-20260828T1741336133599-43d2ef8c.json),
+and rebuilds both umbrellas. Their respective build receipts record peaks of
+[1,408,970,752 bytes](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstGroundModuleLocalization-20260828T1711488036548-b4e9f21a.module.receipt.json)
+and
+[1,391,661,056 bytes](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithPairedQuotient-20260828T1726213885481-badb6014.module.receipt.json).
+Both modules exited zero with empty stderr, zero warnings, zero `sorry`, and no
+new axioms beyond Lean's standard axioms; both umbrellas also exited zero with
+empty stderr. The checkpoint's
+incremental maximum was 1,917,771,776 bytes, while the checkpoint-chain maximum
+remains 1,922,387,968 bytes under the strict 3 GiB worker envelope. P22 now has
+415 canonical declarations across its base and 25 support modules, represented
+by 39 machine-readable ledger records.
 
 Meaningful theorem clusters—not individual edits—are the intended GitHub/Zenodo
 release unit. The living series uses concept DOI
 [10.5281/zenodo.21129945](https://doi.org/10.5281/zenodo.21129945); the current
 Noether-pilot release DOI is
-[10.5281/zenodo.22144868](https://doi.org/10.5281/zenodo.22144868).
+[10.5281/zenodo.22147890](https://doi.org/10.5281/zenodo.22147890).
 
 ## Project map
 
@@ -233,9 +249,12 @@ Noether-pilot release DOI is
   Nullstellensatz corollary, the finite regularity-specialization theorem,
   equation-(21) bounded regular-division representatives, equations-(22)--(23)
   finite coefficients and internal ideal decomposition, the cutoff-one
-  `ξ`/`ζ` coordinate quotient bridge, the generic equation-(24) Smith/cyclic
-  quotient and selected-basis determinant package, and promoted Satz VIII
-  support.
+  `ξ`/`ζ` coordinate quotient bridge, the exact line-13162 nonzero-scalar
+  ground-module saturation and its torsion/equal-rank consequences, its
+  source-faithful coefficient localization to `Frac(P[x₃,…])[x₂]`, the
+  generic equation-(24) Smith package and its actual finite cutoff-one
+  Smith/cyclic-quotient and selected-basis determinant instance, and promoted
+  Satz VIII support.
 - `docs/noether/formal-variational-calculus-1922.md`: formal variations,
   covariant differentiation, curvature, and the source-level Noether I/II gap.
 - `docs/noether/algebraic-differential-invariants-1923.md`: Hilbert-basis and

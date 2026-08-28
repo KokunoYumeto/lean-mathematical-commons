@@ -1,0 +1,77 @@
+{
+  "schema": "lean-mathematical-commons/module-graph-checkpoint/1.0",
+  "checkpoint_id": "20260828T1620327764359-f0dc0f4c",
+  "base_batch": {
+    "batch_id": "20260825T0355153955281-3669b4fc",
+    "manifest": "artifacts/build/module-batch-20260825T0355153955281-3669b4fc.json",
+    "verified_modules": 17
+  },
+  "previous_checkpoint": "artifacts/build/module-graph-checkpoint-20260828T1500160501084-3b7c5d91.json",
+  "previous_checkpoint_sha256": "0E40458857414FCA46F90F26B6D72FF5F4499E984364FAD684048F22A80833A4",
+  "incremental_rebuild": {
+    "batch_ids": [
+      "20260828T1536215657343-0678a39d",
+      "20260828T1611182785757-e1ab3058",
+      "20260828T1613214728726-c181fee6"
+    ],
+    "cache_directory": "artifacts/build/local-olean/20260825T0355153955281-3669b4fc",
+    "reason": "P22 formula (4) and line 13162's exact cutoff-one ground-module saturation were added, together with the torsion relative quotient, finite-module, and same-rank/full-finrank consequences needed before the later Smith-form localization step",
+    "reused_unchanged_theorem_modules": 36,
+    "changed_theorem_modules": 0,
+    "added_theorem_modules": 2,
+    "max_memory_gib": 2.5,
+    "global_worker_limit_gib": 3.0,
+    "rebuilt_modules": [
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstGroundModule",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1350840320,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstGroundModule-20260828T1536217097235-72cee448.module.receipt.json",
+        "receipt_sha256": "F4028F27EC405EFA7A00CAD5FBEA4825A9AA3DC228F03047BD812FE6BB1E9517"
+      },
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstGroundModuleTorsion",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1527357440,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstGroundModuleTorsion-20260828T1611183796552-b3ea0d69.module.receipt.json",
+        "receipt_sha256": "A16D56F4CCC61E2223A8D39D064650E1F48803A0BCBFB84AAE69DC4CC6571D8A"
+      },
+      {
+        "module": "MathematicalCommons.Noether",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1918472192,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-20260828T1613216278826-79a3a184.module.receipt.json",
+        "receipt_sha256": "9748DD99E7D3AF398E1822CE4A54F3944A8EDC05643E24084B7E4FA00C57392E"
+      },
+      {
+        "module": "MathematicalCommons",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1910403072,
+        "receipt": "artifacts/build/MathematicalCommons-20260828T1614276847802-e58135be.module.receipt.json",
+        "receipt_sha256": "CE701FACB689904A205BEF7DA89C8F10D93928F9B127E83759E2FF83709034C2"
+      }
+    ]
+  },
+  "lean_version": "4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "all_40_targets_current": true,
+  "all_exit_zero": true,
+  "all_stderr_empty": true,
+  "all_sources_unchanged_during_build": true,
+  "all_environments_unchanged_during_build": true,
+  "current_incremental_maximum_observed_process_tree_peak_bytes": 1918472192,
+  "maximum_observed_process_tree_peak_bytes": 1922387968
+}

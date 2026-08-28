@@ -1,0 +1,78 @@
+{
+  "schema": "lean-mathematical-commons/module-graph-checkpoint/1.0",
+  "checkpoint_id": "20260828T1741336133599-43d2ef8c",
+  "base_batch": {
+    "batch_id": "20260825T0355153955281-3669b4fc",
+    "manifest": "artifacts/build/module-batch-20260825T0355153955281-3669b4fc.json",
+    "verified_modules": 17
+  },
+  "previous_checkpoint": "artifacts/build/module-graph-checkpoint-20260828T1620327764359-f0dc0f4c.json",
+  "previous_checkpoint_sha256": "AA8990B531EB4D62A95D19D08C2083646BC191D11F17E4A141782E42CC6C17BF",
+  "incremental_rebuild": {
+    "batch_ids": [
+      "20260828T1711485739004-49d4352f",
+      "20260828T1726212668708-36307c21",
+      "20260828T1728116475926-e40712df",
+      "20260828T1729133107765-9d558f7a"
+    ],
+    "cache_directory": "artifacts/build/local-olean/20260825T0355153955281-3669b4fc",
+    "reason": "P22 lines 13162--13173 were advanced through the source-faithful coefficient localization B = P[x3,...], A = B[x2], K = Frac(B), R = K[x2], followed by the finite cutoff-one Smith instance underlying equation (24)",
+    "reused_unchanged_theorem_modules": 38,
+    "changed_theorem_modules": 0,
+    "added_theorem_modules": 2,
+    "max_memory_gib": 2.5,
+    "global_worker_limit_gib": 3.0,
+    "rebuilt_modules": [
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstGroundModuleLocalization",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1408970752,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstGroundModuleLocalization-20260828T1711488036548-b4e9f21a.module.receipt.json",
+        "receipt_sha256": "43BD1973BA6924D3B1E466BA3EDD16EF0AD257AC15A5880C6110C5FD28C262A0"
+      },
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstSmithPairedQuotient",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1391661056,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithPairedQuotient-20260828T1726213885481-badb6014.module.receipt.json",
+        "receipt_sha256": "4DAF838C37B13AD66F7B0CB8367FD8A5E670BBB69B8D6D4EF0F2BE6B1854D32B"
+      },
+      {
+        "module": "MathematicalCommons.Noether",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1917718528,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-20260828T1728117832022-3ba8eeef.module.receipt.json",
+        "receipt_sha256": "9852D278063E4727CCEE54EDF3E23B303CB9D616E53106802B56C4629B003D7E"
+      },
+      {
+        "module": "MathematicalCommons",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1917771776,
+        "receipt": "artifacts/build/MathematicalCommons-20260828T1729134799460-f8681041.module.receipt.json",
+        "receipt_sha256": "66F04931902139FA38D743736B1A0A3551DB4B91305D1D431C84B49EC15765AB"
+      }
+    ]
+  },
+  "lean_version": "4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "all_42_targets_current": true,
+  "all_exit_zero": true,
+  "all_stderr_empty": true,
+  "all_sources_unchanged_during_build": true,
+  "all_environments_unchanged_during_build": true,
+  "current_incremental_maximum_observed_process_tree_peak_bytes": 1917771776,
+  "maximum_observed_process_tree_peak_bytes": 1922387968
+}

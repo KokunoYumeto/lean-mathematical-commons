@@ -1,0 +1,67 @@
+{
+  "schema": "lean-mathematical-commons/evidence-audit/1.0",
+  "audit_id": "20260828T1758017380965-820e28e2",
+  "scope": "P22 source-faithful later-variable localization and finite cutoff-one equation-(24) Smith instance",
+  "result": "pass",
+  "independent_read_only_audit": true,
+  "artifacts": [
+    {
+      "path": "artifacts/build/module-graph-checkpoint-20260828T1741336133599-43d2ef8c.json",
+      "bytes": 3670,
+      "sha256": "BD1C021476EEFDC21CE77CC74144492BE73AD471A8913961E0A9CDDB7DBDF5F6"
+    },
+    {
+      "path": "artifacts/build/claim-P22-first-ground-module-localization-20260828T1741336133599-43d2ef8c.json",
+      "bytes": 5041,
+      "sha256": "4A0F2C8C3BC83C43A856BB845D6674EFE7DBCBBB1DF569A2CFF6627EBA1255E0"
+    },
+    {
+      "path": "artifacts/build/claim-P22-first-smith-paired-quotient-20260828T1741336133599-43d2ef8c.json",
+      "bytes": 5436,
+      "sha256": "336CF9B9535D87BE2D99C47CA94414141231E263F9D1BABE78BBA8231F4900A1"
+    }
+  ],
+  "controlled_source": {
+    "witness": "NOETH-DE-ED-0014",
+    "path": "C:/Users/Floris/Documents/interlanguage/03_projects/noether/07_german_canon_control/candidates/ED0014/noether.tex",
+    "bytes": 2154011,
+    "sha256": "EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58",
+    "lines_checked": "13162--13173",
+    "german_mutated": false
+  },
+  "checks": {
+    "all_json_parsed": true,
+    "previous_checkpoint_pin_matches": true,
+    "all_module_and_umbrella_receipt_pins_match": true,
+    "all_source_and_olean_fingerprints_match_receipts": true,
+    "runner_and_log_fingerprints_match_receipts": true,
+    "all_exit_zero": true,
+    "all_stderr_empty": true,
+    "all_warning_counts_zero": true,
+    "all_sources_and_environments_unchanged_during_build": true,
+    "lean_version": "4.31.0",
+    "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+    "serial_nonoverlapping_builds": true,
+    "lean_threads": 1,
+    "watcher_policy": "best_effort_sampled_process_tree_working_set",
+    "watcher_hard_limit": false,
+    "watcher_limit_gib": 2.5,
+    "memory_limit_exceeded": false,
+    "maximum_incremental_peak_bytes": 1917771776,
+    "maximum_checkpoint_chain_peak_bytes": 1922387968,
+    "localization_axiom_reports": 25,
+    "smith_axiom_reports": 13,
+    "axiom_union": ["propext", "Classical.choice", "Quot.sound"],
+    "sorry_ax_found": false,
+    "source_sorry_admit_axiom_or_unsafe_found": false,
+    "noether_unique_direct_imports": 40,
+    "graph_targets_including_umbrellas": 42,
+    "metadata_data_rows": 308,
+    "metadata_columns_per_row": 15,
+    "metadata_duplicate_ids": 0,
+    "p22_ledger_records": 39
+  },
+  "declaration_count_note": "FirstGroundModuleLocalization exports and #print-audits 25 declarations: 8 theorems, 16 definitions/abbreviations, and 1 nonlocal instance. Two additional local instance helpers are implementation-only. FirstSmithPairedQuotient exports and audits 13 declarations.",
+  "scope_assessment": "The controlled lines support the exact coefficient-only localization, localized saturation and finrank premise, and finite selected-basis Smith instance. Canonical divisibility ordering, the infinite zeta tail and unit factors, determinant-norm/resultant identification, primitive normalization, choice independence, and later stages remain explicitly unclaimed.",
+  "credentials_recorded": false
+}

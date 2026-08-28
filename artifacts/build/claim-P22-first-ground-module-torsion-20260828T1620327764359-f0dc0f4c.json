@@ -1,0 +1,83 @@
+{
+  "schema": "lean-mathematical-commons/claim-build-receipt/1.0",
+  "claim_id": "HENTZELT-NOETHER-1923-FIRST-GROUND-MODULE-TORSION",
+  "status": "first_ground_module_torsion_and_full_rank_completed",
+  "source": {
+    "witness": "NOETH-DE-ED-0014",
+    "sha256": "EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58",
+    "lines": "12752--12795 and 13162--13173; the formula-(4) same-rank consequence and cutoff-one quotient premise preceding equation (24)"
+  },
+  "classification": "FORMALIZED_GAP",
+  "mathlib_core": [
+    "Module.IsTorsion",
+    "Submodule.Quotient.mk_surjective",
+    "Submodule.Quotient.mk_smul",
+    "Submodule.Quotient.mk_eq_zero",
+    "rank_eq_zero_iff",
+    "Submodule.rank_quotient_add_rank",
+    "Submodule.comapSubtypeEquivOfLe",
+    "Module.Finite.of_injective",
+    "Polynomial.degreeLTEquiv"
+  ],
+  "local_packaging_dependency": [
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.CommonTailQuotient.relativeDenominator",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.CommonTailQuotient.relativeQuotient",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.nonzeroScalarSaturation",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.mem_nonzeroScalarSaturation_iff",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.boundedPartInDegreeLT_stageOneGroundIdeal_eq_saturation"
+  ],
+  "declarations": 10,
+  "newly_closed": [
+    "torsion of a relative quotient is equivalent to every numerator element lying in the nonzero-scalar saturation of the denominator",
+    "over a domain, torsion is equivalent to cardinal rank zero",
+    "a saturated relative denominator has the same cardinal rank and finrank as its numerator, and saturation itself preserves rank",
+    "every bounded transported ideal module used here is finite over the late-variable coefficient ring",
+    "line 13162 makes the actual bounded stage-one relative quotient torsion and gives the full-finrank premise needed before Smith diagonalization"
+  ],
+  "modules": [
+    {
+      "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstGroundModuleTorsion",
+      "source": {
+        "path": "MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/FirstGroundModuleTorsion.lean",
+        "bytes": 8666,
+        "sha256": "9942DA17CE73EF50E9A7CAF9E591C8CDB0F36F068BA15CAFB725812784ACBE88"
+      },
+      "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstGroundModuleTorsion-20260828T1611183796552-b3ea0d69.module.receipt.json",
+      "receipt_sha256": "A16D56F4CCC61E2223A8D39D064650E1F48803A0BCBFB84AAE69DC4CC6571D8A",
+      "exit_code": 0,
+      "peak_bytes": 1527357440,
+      "stderr_bytes": 0,
+      "warnings": 0,
+      "sorry_or_admit": 0,
+      "declaration_count": 10,
+      "theorem_count": 10,
+      "definition_count": 0,
+      "axioms": ["propext", "Classical.choice", "Quot.sound"]
+    }
+  ],
+  "umbrella_receipts": [
+    "artifacts/build/MathematicalCommons-Noether-20260828T1613216278826-79a3a184.module.receipt.json",
+    "artifacts/build/MathematicalCommons-20260828T1614276847802-e58135be.module.receipt.json"
+  ],
+  "umbrella_receipt_pins": [
+    {
+      "path": "artifacts/build/MathematicalCommons-Noether-20260828T1613216278826-79a3a184.module.receipt.json",
+      "bytes": 6730,
+      "sha256": "9748DD99E7D3AF398E1822CE4A54F3944A8EDC05643E24084B7E4FA00C57392E"
+    },
+    {
+      "path": "artifacts/build/MathematicalCommons-20260828T1614276847802-e58135be.module.receipt.json",
+      "bytes": 6650,
+      "sha256": "CE701FACB689904A205BEF7DA89C8F10D93928F9B127E83759E2FF83709034C2"
+    }
+  ],
+  "graph_checkpoint": "artifacts/build/module-graph-checkpoint-20260828T1620327764359-f0dc0f4c.json",
+  "graph_checkpoint_bytes": 3631,
+  "graph_checkpoint_sha256": "AA8990B531EB4D62A95D19D08C2083646BC191D11F17E4A141782E42CC6C17BF",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "worker_memory_limit_gib": 2.5,
+  "all_green": true,
+  "limitations": "This derives torsion and equal-rank/full-finrank consequences over the unlocalized remaining-variable polynomial ring. It does not prove that ring is a principal ideal domain, instantiate the Smith bases or coefficients, construct later ground-module stages, or derive determinant, resultant, compatible-zero, or multiplicity conclusions."
+}

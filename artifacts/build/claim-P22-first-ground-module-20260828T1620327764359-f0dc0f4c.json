@@ -1,0 +1,82 @@
+{
+  "schema": "lean-mathematical-commons/claim-build-receipt/1.0",
+  "claim_id": "HENTZELT-NOETHER-1923-FIRST-GROUND-MODULE",
+  "status": "first_ground_module_characterization_completed",
+  "source": {
+    "witness": "NOETH-DE-ED-0014",
+    "sha256": "EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58",
+    "lines": "12752--12795 and 13162; Definition I, formula (4), Satz I, and the cutoff-one ground-module identity"
+  },
+  "classification": "FORMALIZED_GAP",
+  "mathlib_core": [
+    "MvPolynomial.finSuccEquiv",
+    "MvPolynomial.natDegree_finSuccEquiv",
+    "MvPolynomial.mem_vars_iff_degreeOf_ne_zero",
+    "Polynomial.eq_C_of_natDegree_eq_zero",
+    "Ideal.apply_mem_of_equiv_iff",
+    "Ideal.symm_apply_mem_of_equiv_iff",
+    "IsLeast"
+  ],
+  "local_packaging_dependency": [
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.StageMultipliers.mem_stageGroundIdeal_iff",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.finSuccIdeal",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.finSuccEquiv_mem_finSuccIdeal",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.stageOneGroundIdeal",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.boundedPartInDegreeLT",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.mem_boundedPartInDegreeLT_iff"
+  ],
+  "declarations": 16,
+  "newly_closed": [
+    "formula (4)'s nonzero-scalar saturation is a monotone idempotent submodule construction",
+    "Definition I's cancellation criterion is equivalent to being fixed by saturation",
+    "Satz I's saturation is the least ground module containing the original module",
+    "under finSuccEquiv, source stage-one multipliers free of the first variable are exactly nonzero scalars in the late-variable coefficient ring",
+    "line 13162's bounded stage-one ground ideal is exactly the nonzero-scalar saturation of the bounded transported original ideal and hence is a ground module"
+  ],
+  "modules": [
+    {
+      "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstGroundModule",
+      "source": {
+        "path": "MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/FirstGroundModule.lean",
+        "bytes": 10714,
+        "sha256": "BF4141B7328F8FD6C90420A54BA8EFC62588B7AB10E3EA0D5A0FAD2B54FFE830"
+      },
+      "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstGroundModule-20260828T1536217097235-72cee448.module.receipt.json",
+      "receipt_sha256": "F4028F27EC405EFA7A00CAD5FBEA4825A9AA3DC228F03047BD812FE6BB1E9517",
+      "exit_code": 0,
+      "peak_bytes": 1350840320,
+      "stderr_bytes": 0,
+      "warnings": 0,
+      "sorry_or_admit": 0,
+      "declaration_count": 16,
+      "theorem_count": 14,
+      "definition_count": 2,
+      "axioms": ["propext", "Classical.choice", "Quot.sound"]
+    }
+  ],
+  "umbrella_receipts": [
+    "artifacts/build/MathematicalCommons-Noether-20260828T1613216278826-79a3a184.module.receipt.json",
+    "artifacts/build/MathematicalCommons-20260828T1614276847802-e58135be.module.receipt.json"
+  ],
+  "umbrella_receipt_pins": [
+    {
+      "path": "artifacts/build/MathematicalCommons-Noether-20260828T1613216278826-79a3a184.module.receipt.json",
+      "bytes": 6730,
+      "sha256": "9748DD99E7D3AF398E1822CE4A54F3944A8EDC05643E24084B7E4FA00C57392E"
+    },
+    {
+      "path": "artifacts/build/MathematicalCommons-20260828T1614276847802-e58135be.module.receipt.json",
+      "bytes": 6650,
+      "sha256": "CE701FACB689904A205BEF7DA89C8F10D93928F9B127E83759E2FF83709034C2"
+    }
+  ],
+  "graph_checkpoint": "artifacts/build/module-graph-checkpoint-20260828T1620327764359-f0dc0f4c.json",
+  "graph_checkpoint_bytes": 3631,
+  "graph_checkpoint_sha256": "AA8990B531EB4D62A95D19D08C2083646BC191D11F17E4A141782E42CC6C17BF",
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "worker_memory_limit_gib": 2.5,
+  "all_green": true,
+  "limitations": "This proves the exact cutoff-one formula-(4) saturation statement. The torsion and rank consequences are separately pinned by the sibling FirstGroundModuleTorsion claim. It does not localize the coefficient ring to a principal ideal domain, instantiate SmithPairedQuotient, construct later stages, or derive determinant, resultant, compatible-zero, or multiplicity conclusions."
+}

@@ -2,6 +2,48 @@
 
 ## Unreleased
 
+## 0.2.3 — 2026-08-28
+
+- Added the sixteen-declaration P22 `FirstGroundModule` module. It formalizes
+  Definition I's nonzero-scalar saturation as the least ground module, proves
+  exact cutoff-one multiplier transport through `finSuccEquiv`, and closes line
+  13162 with `G₁* = saturation(M₁*)` plus the source-facing membership and
+  cancellation forms. This is `FORMALIZED_GAP`.
+- Added the ten-declaration P22 `FirstGroundModuleTorsion` module. It
+  characterizes saturation by torsion of the relative quotient, derives equal
+  cardinal rank and `finrank`, records Satz I's same-rank theorem, proves bounded
+  finite generation, and supplies the unlocalized full-rank premise for the
+  stage-one pair consumed by the new source-faithful localization.
+- Added the 25-declaration P22 `FirstGroundModuleLocalization` module. It uses
+  exactly `B = P[x₃,…]`, `A = B[x₂]`, `K = Frac(B)`, and `R = K[x₂]`, so
+  only the late-variable coefficients are inverted and `x₂` remains the
+  polynomial variable. It transports the cutoff-one saturation identity and
+  equal `finrank` to `R`. The green
+  [receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstGroundModuleLocalization-20260828T1711488036548-b4e9f21a.module.receipt.json)
+  records a 1,408,970,752-byte peak, and the promoted claim is pinned
+  [here](artifacts/build/claim-P22-first-ground-module-localization-20260828T1741336133599-43d2ef8c.json).
+- Added the 13-declaration P22 `FirstSmithPairedQuotient` module: the actual
+  finite cutoff-one equation-(24) instance over `R`. It provides selected Smith
+  bases and coefficients, the diagonal relation, denominator membership, the
+  cyclic-quotient decomposition, and the selected-basis determinant product.
+  The green
+  [receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithPairedQuotient-20260828T1726213885481-badb6014.module.receipt.json)
+  records a 1,391,661,056-byte peak, and the promoted claim is pinned
+  [here](artifacts/build/claim-P22-first-smith-paired-quotient-20260828T1741336133599-43d2ef8c.json).
+  Divisibility ordering, the infinite `ζ` tail and unit factors, determinant
+  norm/resultant identification, primitive normalization and choice
+  independence, and later stages remain explicit gaps. P22 now totals 415
+  declarations across the base and 25 support modules, with 39 ledger records.
+- Expanded the maintained graph to 42 targets (40 theorem/support modules and
+  both umbrellas). The new modules exited zero with empty stderr, zero warnings,
+  zero `sorry`, and no new axioms beyond Lean's standard axioms; both umbrellas
+  also exited zero with empty stderr under 2.5 GiB caps. Checkpoint
+  [`20260828T1741336133599-43d2ef8c`](artifacts/build/module-graph-checkpoint-20260828T1741336133599-43d2ef8c.json)
+  is 3,670 bytes with SHA-256
+  `BD1C021476EEFDC21CE77CC74144492BE73AD471A8913961E0A9CDDB7DBDF5F6`;
+  its incremental peak was 1,917,771,776 bytes and the checkpoint-chain peak
+  remains 1,922,387,968 bytes under the 3 GiB worker envelope.
+
 ## 0.2.2 — 2026-08-28
 
 - Added the six-declaration P22 `RegularPairedQuotient` module. For a supplied
