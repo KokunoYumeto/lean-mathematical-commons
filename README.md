@@ -76,8 +76,16 @@ never silently repaired here.
 - Maps P22's staged ground modules, Smith forms, resultants, determinantal
   elimination, compatible zeros, and multiplicities without conflating its
   factors with `Polynomial.resultant`. Promotes the intrinsic finite localized
-  opening of Satz VIII together with its conditional historical radical/zero-set
-  bridge, proves unrestricted relative Dedekind--Mertens, and
+  opening of Satz VIII, its explicit conditional greatest-coefficient bridge,
+  a nonzero integral numerator whose full-ring lift satisfies
+  `HasEquation33Witness I 1` by regular division with a genuine cutoff-two
+  denominator, and a compatible nonzero integral numerator for the finite
+  selected-Smith-coefficient product. Here local cutoff `1` is the source's
+  stage `i = 2`; the product numerator is not identified with historical
+  `R^(2)` or with a resultant. Equation (33)'s Noetherian descent and finite
+  iteration for supplied later witnesses reach the conditional `E`-product
+  half of equation (34), together with the conditional historical radical/zero-set bridge;
+  proves unrestricted relative Dedekind--Mertens, and
   uses bounded Kronecker substitution to prove Hentzelt's literal integer-linear
   multivariate equation (17). It now also formalizes the full lower-
   unitriangular equation (12) over its natural algebraically-independent
@@ -150,8 +158,31 @@ never silently repaired here.
   `D = ∏ᵢeᵢ` the library proves `(D) ≤ A`, `A^ρ ≤ (D)`, both corresponding
   generator divisibilities, and radical equality. Ten generic declarations are
   `NEW_PACKAGING` and six actual localized declarations are `FORMALIZED_GAP`.
-  Neither `D` nor the annihilator generator is identified with Hentzelt's
-  primitive `R^(i)` or normalized `E^(i)`.
+  Under the same explicit greatest-coefficient hypothesis used by Satz II,
+  four more generic declarations identify `A = (eᵢ)`, prove `eᵢ ∣ D` and
+  `D ∣ eᵢ^ρ`, and package radical and vanishing consequences; four actual
+  localized declarations join that bridge to the cutoff-one pair. The selected
+  localized greatest coefficient now has a nonzero integral numerator. Exact
+  coordinate rebuilding and regular division extend the bounded action to
+  every `g ∈ stageGroundIdeal 1 I`; the resulting full-ring lift satisfies
+  `HasEquation33Witness I 1` with a nonzero multiplier free of the first two
+  variables. Four further `NEW_PACKAGING` declarations clear the localized
+  divisibility of that coefficient into the finite selected-coefficient
+  product. They return a nonzero integral product numerator divisible by the
+  coefficient numerator, and both full-ring lifts retain the equation-(33)
+  witness. Local cutoff `1` is source stage `i = 2`; the new numerator is not
+  historical `R^(2)`, a historical resultant, primitive, normalized,
+  canonical, or choice-independent. Equation (33)'s next step is also
+  formalized: four generic finite-basis lemmas and six
+  source-shaped declarations turn supplied elementwise denominator witnesses
+  into one multiplier for the whole stage ideal, automatically under
+  Noetherianity, and specialize the construction to the first stage. A supplied
+  consecutive witness family is now iterated through arbitrary finite windows;
+  the terminal ground ideal is the original ideal, yielding the conditional
+  `E`-product half of equation (34) and its tail-window endpoint. The library
+  does not construct the later-stage witness family. Neither `D` nor the
+  annihilator generator is identified with Hentzelt's primitive `R^(i)`, and
+  the integral numerator is not normalized to historical `E^(i)`.
   The characteristic-zero finite-avoidance step used after Satz VII
   is formalized for any supplied finite family of regularity coefficients. The
   full independent lower-unitriangular transform from equation (12) is now
@@ -166,8 +197,10 @@ never silently repaired here.
   identification of the freely adjoined tail with the separately constructed
   historical unbounded module, identification of the determinant product with
   Hentzelt's norm or resultant, primitive normalization and choice independence,
-  the later stages, and the compatible-zero system remain open. Tail coefficient
-  `1` is identity-tail data, not a canonical normalization theorem.
+  later-stage equation-(33) witness construction, the parallel `R^(i)` product
+  needed to complete equation (34), and the compatible-zero system remain
+  open. Tail coefficient `1` is
+  identity-tail data, not a canonical normalization theorem.
 - Extends P25's generic-zero construction: evaluation has kernel exactly the
   prime ideal, and the generic coordinate tuple generates the fraction field
   of the prime quotient over the coefficient field. It now also proves the
@@ -232,24 +265,30 @@ dependency object, its opt-in `-MirrorPackageOutputs` mode hash-checks and
 mirrors only explicitly compiled sidecars into the disposable dependency
 project; it refuses a conflicting target rather than rebuilding a package.
 
-The current 46-target graph check (44 direct Noether imports and both
-umbrellas) is checkpoint
-[`20260828T2248235911582-32a08ca0`](artifacts/build/module-graph-checkpoint-20260828T2248235911582-32a08ca0.json).
-It chains the preceding
-[45-target checkpoint](artifacts/build/module-graph-checkpoint-20260828T2221155880785-bb27cb08.json),
-adds the 16-declaration
-[`FirstSmithAnnihilatorBounds`](artifacts/build/claim-P22-first-smith-annihilator-bounds-20260828T2248235911582-32a08ca0.json),
-and rebuilds both umbrellas. The module's clean
-[build receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithAnnihilatorBounds-20260828T2245349715763-862933b6.module.receipt.json)
-records a 1,402,142,720-byte peak; its 14,013-byte source has SHA-256
-`417314B11EE176E90D365FA706EE01B0F48A6BB0A05293A88339CCF693880292`.
-All 16 declarations have matching axiom prints, with no warning, error,
+The most recent sealed graph check has 52 targets (50 direct Noether imports
+and both umbrellas) at checkpoint
+[`20260829T1614266016417-a6b1b43c`](artifacts/build/module-graph-checkpoint-20260829T1614266016417-a6b1b43c.json),
+which chains the preceding
+[51-target checkpoint](artifacts/build/module-graph-checkpoint-20260829T1552050773212-64de772d.json).
+The preceding checkpoint adds the fourteen-declaration `FirstSmithEquation33Bridge`. Its clean
+[bounded receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithEquation33Bridge-20260829T1549364931065-c50c17d9.module.receipt.json)
+records a 1,393,115,136-byte peak. The 17,378-byte source has SHA-256
+`876DB09F6858D2237C6730ED823A2721C09F0D854EDA8DE31FA9A925B05210BE`.
+All fourteen declarations have matching axiom prints, with no warning, error,
 `sorry`, or nonstandard axiom. The Noether and top umbrellas peaked at
-1,916,997,632 and 1,921,720,320 bytes respectively. The checkpoint's
-incremental maximum is 1,921,720,320 bytes, while the checkpoint-chain maximum
-remains 1,922,387,968 bytes under the strict 3 GiB worker envelope. P22 now has
-511 canonical declarations across its base and 29 support modules, represented
-by 47 machine-readable ledger records and 526 declaration references.
+1,914,290,176 and 1,916,993,536 bytes respectively. The checkpoint's
+incremental maximum is 1,916,993,536 bytes, while the checkpoint-chain maximum
+remains 1,922,387,968 bytes under the strict 3 GiB worker envelope.
+
+The new green `FirstSmithCoefficientProductNumerator` module contributes
+four `NEW_PACKAGING` declarations. Its 9,279-byte source has SHA-256
+`C7E8C66C46A88FC578A040A60A9CD6B8FC6661D3965AD03A2AA696420AE77362`;
+the clean [bounded receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithCoefficientProductNumerator-20260829T1607180026573-04e54684.module.receipt.json)
+records a 1,421,578,240-byte peak. The new Noether and full umbrellas peaked at
+1,916,051,456 and 1,911,451,648 bytes respectively; the graph-chain maximum
+remains 1,922,387,968 bytes. P22 now accounts for 557 canonical declarations
+across its base and 35 support modules. The cluster claim is
+[`HENTZELT-NOETHER-1923-FIRST-SMITH-COEFFICIENT-PRODUCT-NUMERATOR-PACKAGING`](artifacts/build/claim-P22-first-smith-coefficient-product-numerator-20260829T1614266016417-a6b1b43c.json).
 
 Meaningful theorem clusters—not individual edits—are the intended GitHub/Zenodo
 release unit. The living series uses concept DOI
@@ -289,7 +328,12 @@ Noether-pilot release DOI is
   generic equation-(24) Smith package and its actual finite cutoff-one
   Smith/cyclic-quotient and selected-basis determinant instance, and promoted
   intrinsic annihilator/coefficient-product bounds at the opening of Satz VIII,
-  together with the conditional radical/zero-set support for historical forms.
+  the explicit conditional greatest-coefficient bridge, its nonzero integral
+  numerator and full cutoff-one witness, the compatible integral numerator for
+  the finite selected-coefficient product, equation (33)'s one-stage
+  Noetherian common-multiplier descent and supplied-witness iteration through
+  the conditional `E`-product half of equation (34), and conditional
+  radical/zero-set support for historical forms.
 - `docs/noether/formal-variational-calculus-1922.md`: formal variations,
   covariant differentiation, curvature, and the source-level Noether I/II gap.
 - `docs/noether/algebraic-differential-invariants-1923.md`: Hilbert-basis and

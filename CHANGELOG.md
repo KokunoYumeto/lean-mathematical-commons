@@ -1,6 +1,77 @@
 # Changelog
 
-## Unreleased
+## 0.2.6 — 2026-08-29
+
+- Added P22's four-declaration `FirstSmithCoefficientProductNumerator`, entirely
+  classified as `NEW_PACKAGING`. It proves stability of an equation-(33)
+  witness under right multiplication, clears a localized divisibility into an
+  integral numerator multiple, proves the finite selected-Smith-coefficient
+  product nonzero, and constructs compatible nonzero integral coefficient and
+  product numerators whose lifts both satisfy `HasEquation33Witness I 1`.
+  Local cutoff `1` is the source's stage `i = 2`; the product numerator is not
+  asserted to be historical `R^(2)`, a historical resultant, primitive,
+  normalized, canonical, or choice-independent. The 9,279-byte source has
+  SHA-256
+  `C7E8C66C46A88FC578A040A60A9CD6B8FC6661D3965AD03A2AA696420AE77362`;
+  its clean bounded [receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithCoefficientProductNumerator-20260829T1607180026573-04e54684.module.receipt.json)
+  is 7,390 bytes with SHA-256
+  `1A73C7CC2BC2E601E7B938801D8C4153791216B39C724F4309356E6BC2F00AE9`
+  and records a 1,421,578,240-byte peak.
+- Added P22's fourteen-declaration `FirstSmithEquation33Bridge`. Regular
+  division lifts the bounded integral-numerator action to every
+  `g ∈ stageGroundIdeal 1 I`; a genuine cutoff-two denominator gives the full
+  `HasEquation33Witness I 1`. The final theorem retains the localization
+  clearing equality and proves both the integral numerator and its full-ring
+  lift nonzero. Primitive normalization, canonicity, choice independence,
+  later-stage witness construction, and the parallel `R`/resultant half remain
+  open. The 17,378-byte source has SHA-256
+  `876DB09F6858D2237C6730ED823A2721C09F0D854EDA8DE31FA9A925B05210BE`;
+  its clean bounded [receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithEquation33Bridge-20260829T1549364931065-c50c17d9.module.receipt.json)
+  records a 1,393,115,136-byte peak.
+- Added P22's four-theorem `FirstSmithIntegralNumerator`: two generic
+  `NEW_PACKAGING` denominator-clearing lemmas and two `FORMALIZED_GAP`
+  declarations construct a nonzero integral numerator for the actual localized
+  greatest Smith coefficient and its bounded first-stage denominator action.
+  This module is the bounded kernel used by the full bridge above; it does not
+  by itself prove `HasEquation33Witness` or primitive normalization. The
+  9,458-byte source has SHA-256
+  `ECA6FBF7CAA909D689F6369B143E3969553D9004C335E6FA1C2F316DB70E328F`;
+  its clean bounded [receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithIntegralNumerator-20260829T1518064363393-bf431c1b.module.receipt.json)
+  records a 1,383,194,624-byte peak.
+- Added P22's six-theorem `SatzVIIIEquation33Iteration`: two generic
+  `NEW_PACKAGING` and four `FORMALIZED_GAP` declarations iterate supplied
+  equation-(33) witnesses, prove `g_n = I`, and establish the conditional
+  `E`-product half of equation (34) and its tail-window endpoint. Constructing
+  the witness family, primitive normalization, the parallel `R` product, and
+  resultant identification remain open. The 6,799-byte source has SHA-256
+  `A1DEDECBA8D6945B719A0014C9D46579DCC6AFC589B2DADB7B990E84405EE128`;
+  its clean bounded [receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-SatzVIIIEquation33Iteration-20260829T1519573911099-a856eb8a.module.receipt.json)
+  records a 1,339,314,176-byte peak.
+- Added P22's eight-theorem `FirstSmithGreatestCoefficientBridge`: four generic
+  `NEW_PACKAGING` and four localized `FORMALIZED_GAP` declarations recover the
+  greatest-coefficient product divisibilities, radical equality, and vanishing
+  bridge under an explicit `IsGreatestRemainingDivisor` hypothesis. The
+  10,807-byte source has SHA-256
+  `1F9626ECC4B8616BCE75CA9BD1BC988ADB597767F49D8FDD74AFDDC677E2BDCB`;
+  its clean bounded [receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithGreatestCoefficientBridge-20260828T2331335689853-381370ff.module.receipt.json)
+  records a 1,368,829,952-byte peak. Existence, canonical ordering, primitive
+  normalization, and later stages remain explicit gaps.
+- Added P22's ten-declaration `SatzVIIIOneStageDescent`: four generic
+  `NEW_PACKAGING` theorems and six source-shaped `FORMALIZED_GAP` declarations
+  formalize equation (33)'s finite-basis common multiplier and first-stage
+  descent, including automatic uniformization under Noetherianity. The
+  9,291-byte source has SHA-256
+  `53F41EF053C80CAA3C8BE851C760C4995401E8AFBEB68D6CDB9F38548D49135C`;
+  its clean bounded [receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-SatzVIIIOneStageDescent-20260828T2334520752660-df4abd76.module.receipt.json)
+  records a 1,335,193,600-byte peak. The module remains conditional on supplied
+  `E` and witnesses; the newer entries add a bounded integral numerator and
+  supplied-witness iteration without closing witness construction, primitive
+  normalization, or resultant identification.
+- Sealed the new direct module and both umbrellas in a
+  [52-target checkpoint](artifacts/build/module-graph-checkpoint-20260829T1614266016417-a6b1b43c.json)
+  covering 50 direct Noether imports plus both umbrellas. The incremental peak
+  is 1,916,051,456 bytes and the graph-chain peak remains 1,922,387,968 bytes.
+  P22 now totals 557 declarations across its base and 35 support modules.
 
 ## 0.2.5 — 2026-08-28
 

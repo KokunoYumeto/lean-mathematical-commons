@@ -1,0 +1,70 @@
+{
+  "schema": "lean-mathematical-commons/module-graph-checkpoint/1.0",
+  "checkpoint_id": "20260829T1614266016417-a6b1b43c",
+  "base_batch": {
+    "batch_id": "20260825T0355153955281-3669b4fc",
+    "manifest": "artifacts/build/module-batch-20260825T0355153955281-3669b4fc.json",
+    "verified_modules": 17
+  },
+  "previous_checkpoint": "artifacts/build/module-graph-checkpoint-20260829T1552050773212-64de772d.json",
+  "previous_checkpoint_sha256": "299B4F1AA44F9E63C59FC09AE7CBBBD14B5A22D5B4BBE23F362C90B9068CED9C",
+  "incremental_rebuild": {
+    "batch_ids": [
+      "20260829T1607177700255-bae2354e",
+      "20260829T1609451317277-db6e4983",
+      "20260829T1610526279907-aa57b3c1"
+    ],
+    "cache_directory": "artifacts/build/local-olean/20260825T0355153955281-3669b4fc",
+    "reason": "P22 Satz VIII, lines 13323--13380, was advanced by transporting the full cutoff-one equation-(33) witness from the selected greatest Smith coefficient to the finite product of all selected localized Smith coefficients: the product is nonzero, a generic localization numerator is chosen compatibly with divisibility, its integral numerator is a nonzero multiple of the selected-coefficient numerator, and its lift satisfies HasEquation33Witness I 1. This is a selected-coefficient product proxy only and is not identified with the historical resultant R^(2)",
+    "reused_unchanged_theorem_modules": 49,
+    "changed_theorem_modules": 0,
+    "added_theorem_modules": 1,
+    "direct_noether_import_targets": 50,
+    "umbrella_targets": 2,
+    "total_current_targets": 52,
+    "max_memory_gib": 2.5,
+    "global_worker_limit_gib": 3.0,
+    "rebuilt_modules": [
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstSmithCoefficientProductNumerator",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1421578240,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithCoefficientProductNumerator-20260829T1607180026573-04e54684.module.receipt.json",
+        "receipt_sha256": "1A73C7CC2BC2E601E7B938801D8C4153791216B39C724F4309356E6BC2F00AE9"
+      },
+      {
+        "module": "MathematicalCommons.Noether",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1916051456,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-20260829T1609454107272-2f16bd36.module.receipt.json",
+        "receipt_sha256": "D4A3BA7A14F785B84C301B4D5A067BA11DDAD9975DB211E58106432FC9B55E0C"
+      },
+      {
+        "module": "MathematicalCommons",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1911451648,
+        "receipt": "artifacts/build/MathematicalCommons-20260829T1610529178105-5ea6b549.module.receipt.json",
+        "receipt_sha256": "D1DF3BA5E9C820AB804220F62481F3F00E68947834BE83CC6CFF2BA9D766A663"
+      }
+    ]
+  },
+  "lean_version": "4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "all_52_targets_current": true,
+  "all_exit_zero": true,
+  "all_stderr_empty": true,
+  "all_sources_unchanged_during_build": true,
+  "all_environments_unchanged_during_build": true,
+  "current_incremental_maximum_observed_process_tree_peak_bytes": 1916051456,
+  "maximum_observed_process_tree_peak_bytes": 1922387968
+}

@@ -25,7 +25,7 @@ novelty of a theorem.
 
 | Author | State | Next formalization lane | Corpus record |
 |---|---|---|---|
-| Emmy Noether | active pilot | identify P22's freely adjoined countable Finsupp `ζ` tail with a separately constructed/localized historical unbounded module; add divisibility ordering, determinant norm/resultant identification, primitive normalization and choice independence, then iterate later stages and compatible zeros; Noetherian primary decomposition; remaining P25 function-field refinements; integral Plücker/Fischer layers | [DOI 10.5281/zenodo.20412587](https://doi.org/10.5281/zenodo.20412587) |
+| Emmy Noether | active pilot | extend P22's completed cutoff-one equation-(33) witness through the later Smith stages, normalize the historical `E^(i)`, and prove the parallel `R^(i)` product/resultant half of equation (34); identify the freely adjoined `ζ` tail with the historical unbounded module; determinant norm/resultant identification and choice independence; Noetherian primary decomposition; remaining P25 function-field refinements; integral Plücker/Fischer layers | [DOI 10.5281/zenodo.20412587](https://doi.org/10.5281/zenodo.20412587) |
 | Ernst Steinitz | deposited anchor only | field-theory paper inventory and algebraic-closure coverage | [DOI 10.5281/zenodo.20616988](https://doi.org/10.5281/zenodo.20616988) |
 | J. J. Sylvester | queued | invariant/matrix/combinatorial paper inventory | [DOI 10.5281/zenodo.20520692](https://doi.org/10.5281/zenodo.20520692) |
 | Hellmuth Kneser | queued | quadratic-form/topology/geometry paper inventory | [DOI 10.5281/zenodo.20836971](https://doi.org/10.5281/zenodo.20836971) |
@@ -76,18 +76,32 @@ evidence, and formalization-specific QA only.
   also types Satz II's reciprocal module-valued ideal quotient and proves
   `G₁* = M₁*/(eᵢ)` for the actual localized pair, alongside the scalar-colon
   identity `M₁*/G₁* = (eᵢ)`. The opening finite localized kernel of Satz VIII
-  is now unconditional in intrinsic form: the quotient annihilator is
-  `⋂ᵢ(eᵢ)`, and for `D = ∏ᵢeᵢ` it proves `(D) ≤ A`, `A^ρ ≤ (D)`, both
-  generator divisibilities, and radical equality. The reciprocal formulas
-  that name one distinguished selected coefficient still require an explicit
-  greatest-divisor hypothesis. The
+  is unconditional in intrinsic form: the quotient annihilator is `⋂ᵢ(eᵢ)`,
+  and for `D = ∏ᵢeᵢ` it proves `(D) ≤ A`, `A^ρ ≤ (D)`, both generator
+  divisibilities, and radical equality. Under the explicit greatest-divisor
+  hypothesis it now recovers `A = (eᵢ)`, `eᵢ ∣ D`, `D ∣ eᵢ^ρ`, and the
+  actual localized radical/vanishing bridge. The selected localized greatest
+  coefficient now has a nonzero integral numerator. `FirstSmithEquation33Bridge`
+  uses regular division to lift its
+  bounded action to every member of the cutoff-one ground ideal and produces
+  the full `HasEquation33Witness I 1` with a genuine cutoff-two denominator.
+  Four `NEW_PACKAGING` declarations then clear its localized divisibility into
+  the finite selected-coefficient product and produce a compatible nonzero
+  integral product numerator whose lift retains that witness. Local cutoff `1`
+  is source stage `i = 2`; this numerator is not historical `R^(2)`, a
+  historical resultant, primitive, canonical, or choice-independent.
+  Equation (33)'s one-stage Noetherian descent is formalized generally, and a
+  supplied witness family is iterated
+  through arbitrary finite windows to prove `g_n = I`, the conditional
+  `E`-product half of equation (34), and its tail-window endpoint. Extending the
+  construction through the later stages, primitive normalization and choice
+  independence, and the parallel `R`-product/resultant half remain open. The
   free-tail model is not yet identified with a separately constructed/localized
   historical unbounded module; there is no canonical coefficient ordering,
   resultant identification, or infinite determinant. Current P22 accounting is
-  511 declarations across the base and 29 support modules, represented by 47
-  machine-readable ledger records and 526 declaration references; all 44 direct Noether imports and both
-  umbrellas are pinned by the
-  [46-target graph checkpoint](../artifacts/build/module-graph-checkpoint-20260828T2248235911582-32a08ca0.json).
+  557 declarations across the base and 35 support modules. The latest sealed
+  graph pins all 50 direct Noether imports and both umbrellas in the
+  [52-target checkpoint](../artifacts/build/module-graph-checkpoint-20260829T1614266016417-a6b1b43c.json).
 - [1922 absolute-irreducibility map](noether/absolute-irreducibility-1922.md):
   universal reducibility-form and specialization gaps, with proof components.
 - [1922 formal-variational-calculus map](noether/formal-variational-calculus-1922.md):

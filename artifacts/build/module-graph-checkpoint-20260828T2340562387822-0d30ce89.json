@@ -1,0 +1,81 @@
+{
+  "schema": "lean-mathematical-commons/module-graph-checkpoint/1.0",
+  "checkpoint_id": "20260828T2340562387822-0d30ce89",
+  "base_batch": {
+    "batch_id": "20260825T0355153955281-3669b4fc",
+    "manifest": "artifacts/build/module-batch-20260825T0355153955281-3669b4fc.json",
+    "verified_modules": 17
+  },
+  "previous_checkpoint": "artifacts/build/module-graph-checkpoint-20260828T2248235911582-32a08ca0.json",
+  "previous_checkpoint_sha256": "23A27DD8B7B1328F6BDADC008F5E898B12D61872258F65B690F6F40A6AAE8FDE",
+  "incremental_rebuild": {
+    "batch_ids": [
+      "20260828T2331334462277-968424a6",
+      "20260828T2334518668936-914e6ad1",
+      "20260828T2335460536136-11eb42e4",
+      "20260828T2339042570657-d20a701f"
+    ],
+    "cache_directory": "artifacts/build/local-olean/20260825T0355153955281-3669b4fc",
+    "reason": "P22 Satz VIII, lines 13323--13373, was advanced in two bounded clusters: an explicit greatest-remaining-divisor hypothesis now identifies the finite selected coefficient ideal with its greatest principal coefficient and yields the historical product divisibilities and radical equality; a supplied equation-(33) witness now descends one stage into the next ground ideal, with Noetherian finite-basis uniformization producing a single common multiplier",
+    "reused_unchanged_theorem_modules": 44,
+    "changed_theorem_modules": 0,
+    "added_theorem_modules": 2,
+    "direct_noether_import_targets": 46,
+    "umbrella_targets": 2,
+    "total_current_targets": 48,
+    "max_memory_gib": 2.5,
+    "global_worker_limit_gib": 3.0,
+    "rebuilt_modules": [
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstSmithGreatestCoefficientBridge",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1368829952,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithGreatestCoefficientBridge-20260828T2331335689853-381370ff.module.receipt.json",
+        "receipt_sha256": "9ACF33D84DE5D7EA2E960B84699F003AA6DA17C67ACCB208D4A996662DAFE05E"
+      },
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.SatzVIIIOneStageDescent",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1335193600,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-SatzVIIIOneStageDescent-20260828T2334520752660-df4abd76.module.receipt.json",
+        "receipt_sha256": "095DFFBAA66EAE1CA7AE878B66B4FA87C7A93CA23C0E3B34C567238DD712DAB7"
+      },
+      {
+        "module": "MathematicalCommons.Noether",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1904861184,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-20260828T2335461651901-b7b14af2.module.receipt.json",
+        "receipt_sha256": "CCFAAC99059335FBAEA5ECE6B9F32B14E675AB4691B22CEF7510AE7ED46CAC2C"
+      },
+      {
+        "module": "MathematicalCommons",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1913257984,
+        "receipt": "artifacts/build/MathematicalCommons-20260828T2339044858622-3bb8213f.module.receipt.json",
+        "receipt_sha256": "803E7317ECD17DC59871A1A3F2076C7C7ED75E5C895BE5682D0B1D1452BCF166"
+      }
+    ]
+  },
+  "lean_version": "4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "all_48_targets_current": true,
+  "all_exit_zero": true,
+  "all_stderr_empty": true,
+  "all_sources_unchanged_during_build": true,
+  "all_environments_unchanged_during_build": true,
+  "current_incremental_maximum_observed_process_tree_peak_bytes": 1913257984,
+  "maximum_observed_process_tree_peak_bytes": 1922387968
+}

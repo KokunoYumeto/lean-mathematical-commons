@@ -1,0 +1,81 @@
+{
+  "schema": "lean-mathematical-commons/module-graph-checkpoint/1.0",
+  "checkpoint_id": "20260829T1523107316462-9c389dd9",
+  "base_batch": {
+    "batch_id": "20260825T0355153955281-3669b4fc",
+    "manifest": "artifacts/build/module-batch-20260825T0355153955281-3669b4fc.json",
+    "verified_modules": 17
+  },
+  "previous_checkpoint": "artifacts/build/module-graph-checkpoint-20260828T2340562387822-0d30ce89.json",
+  "previous_checkpoint_sha256": "DE9BF3CD21FFC3A281C2FA359B6B2A88F34D9FA8F84FB04CFD85DFDEB3837294",
+  "incremental_rebuild": {
+    "batch_ids": [
+      "20260829T1518063081452-cfe75da1",
+      "20260829T1519572819201-d8a7836e",
+      "20260829T1520465769399-4058ce8a",
+      "20260829T1521427727204-e7e2b74e"
+    ],
+    "cache_directory": "artifacts/build/local-olean/20260825T0355153955281-3669b4fc",
+    "reason": "P22 Satz VIII, lines 13323--13380, was advanced in two bounded clusters: localization surjectivity now constructs a nonzero integral numerator for the actual localized greatest Smith coefficient and clears its action on every bounded first-stage ground vector by a genuine later-variable denominator; supplied equation-(33) witnesses are now iterated through arbitrary finite windows, the terminal ground ideal is identified with the original ideal, and the conditional E-product half of equation (34) is proved",
+    "reused_unchanged_theorem_modules": 46,
+    "changed_theorem_modules": 0,
+    "added_theorem_modules": 2,
+    "direct_noether_import_targets": 48,
+    "umbrella_targets": 2,
+    "total_current_targets": 50,
+    "max_memory_gib": 2.5,
+    "global_worker_limit_gib": 3.0,
+    "rebuilt_modules": [
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstSmithIntegralNumerator",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1383194624,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithIntegralNumerator-20260829T1518064363393-bf431c1b.module.receipt.json",
+        "receipt_sha256": "4717412B681D6226D9049DDAEA9C173A86878134C0FEFE87D7BB5FB38FE0327E"
+      },
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.SatzVIIIEquation33Iteration",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1339314176,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-SatzVIIIEquation33Iteration-20260829T1519573911099-a856eb8a.module.receipt.json",
+        "receipt_sha256": "953FA6666354A4285223B06D5D43F3C32DB85DCAB01788312B15E11580735544"
+      },
+      {
+        "module": "MathematicalCommons.Noether",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1919537152,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-20260829T1520466978169-62dd6b04.module.receipt.json",
+        "receipt_sha256": "A0E50DC8E05CE54A72A9D86D0B8B3371A02E7ABF03D42228F07BB3CF3833CA4F"
+      },
+      {
+        "module": "MathematicalCommons",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1915904000,
+        "receipt": "artifacts/build/MathematicalCommons-20260829T1521428893246-51e0a271.module.receipt.json",
+        "receipt_sha256": "C3B7A4B40F36B1F021BE51AB752699AA92BD2C0ED2156618A6F597555488C700"
+      }
+    ]
+  },
+  "lean_version": "4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "all_50_targets_current": true,
+  "all_exit_zero": true,
+  "all_stderr_empty": true,
+  "all_sources_unchanged_during_build": true,
+  "all_environments_unchanged_during_build": true,
+  "current_incremental_maximum_observed_process_tree_peak_bytes": 1919537152,
+  "maximum_observed_process_tree_peak_bytes": 1922387968
+}

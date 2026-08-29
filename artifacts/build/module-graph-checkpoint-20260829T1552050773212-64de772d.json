@@ -1,0 +1,70 @@
+{
+  "schema": "lean-mathematical-commons/module-graph-checkpoint/1.0",
+  "checkpoint_id": "20260829T1552050773212-64de772d",
+  "base_batch": {
+    "batch_id": "20260825T0355153955281-3669b4fc",
+    "manifest": "artifacts/build/module-batch-20260825T0355153955281-3669b4fc.json",
+    "verified_modules": 17
+  },
+  "previous_checkpoint": "artifacts/build/module-graph-checkpoint-20260829T1523107316462-9c389dd9.json",
+  "previous_checkpoint_sha256": "8FC91EBB1E6333DF8D2CE9198E8B0EECD75A8CEABC5511368D7249232B4F7CF2",
+  "incremental_rebuild": {
+    "batch_ids": [
+      "20260829T1549362836279-bf1413f5",
+      "20260829T1550240659810-99db4bfd",
+      "20260829T1551097822670-3a1e5ebd"
+    ],
+    "cache_directory": "artifacts/build/local-olean/20260825T0355153955281-3669b4fc",
+    "reason": "P22 Satz VIII, lines 13323--13380, was advanced from bounded cutoff-one coordinates to the full first-stage equation-(33) witness: regular division now represents every member of the first ground ideal by a bounded coordinate modulo the original ideal; scalar and membership transport through the two exact finSuccEquiv changes is proved; a genuinely late-variable denominator lifts to a nonzero multiplier free of the first two original variables; and the actual selected greatest Smith coefficient now has a nonzero integral numerator whose lift satisfies HasEquation33Witness I 1",
+    "reused_unchanged_theorem_modules": 48,
+    "changed_theorem_modules": 0,
+    "added_theorem_modules": 1,
+    "direct_noether_import_targets": 49,
+    "umbrella_targets": 2,
+    "total_current_targets": 51,
+    "max_memory_gib": 2.5,
+    "global_worker_limit_gib": 3.0,
+    "rebuilt_modules": [
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstSmithEquation33Bridge",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1393115136,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithEquation33Bridge-20260829T1549364931065-c50c17d9.module.receipt.json",
+        "receipt_sha256": "722B7DB06B9E0664F155B9559839EC5AF719C7E6089D8367EE5018557D8AD907"
+      },
+      {
+        "module": "MathematicalCommons.Noether",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1914290176,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-20260829T1550242493302-b640b710.module.receipt.json",
+        "receipt_sha256": "8F639D17407A6FFC898AF7E5393ABA9F959A1459C46394404CDA91147A84464B"
+      },
+      {
+        "module": "MathematicalCommons",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1916993536,
+        "receipt": "artifacts/build/MathematicalCommons-20260829T1551100271960-8fecb4f3.module.receipt.json",
+        "receipt_sha256": "63DC9E507FCF824E51F4E79412A2B004EDC5A4D30218EA73FC63E183950CF931"
+      }
+    ]
+  },
+  "lean_version": "4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "all_51_targets_current": true,
+  "all_exit_zero": true,
+  "all_stderr_empty": true,
+  "all_sources_unchanged_during_build": true,
+  "all_environments_unchanged_during_build": true,
+  "current_incremental_maximum_observed_process_tree_peak_bytes": 1916993536,
+  "maximum_observed_process_tree_peak_bytes": 1922387968
+}

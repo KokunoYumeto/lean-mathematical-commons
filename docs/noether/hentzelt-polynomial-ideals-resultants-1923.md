@@ -50,8 +50,8 @@ resolution of P18's compressed product display.
 | 13057--13107, Satz VI | ground ideals of transformed ideals are transformed | relative Dedekind--Mertens; bounded Kronecker substitution; parameter localization | Equation (17), simultaneous common-denominator presentations, coefficient reconstruction, late-variable preservation, and the final two-sided transformed-contraction equality are promoted with no primary or saturation hypothesis. |
 | 13123--13319, Satz VII; equations (21)--(24) at 13134--13173 | infinite monomial module reduces to a finite module; only finitely many elementary divisors are nonunits | finite-free, localization, Smith-normal-form, monic polynomial division, submodule sums, torsion, rank-nullity, Finsupp bases, and polynomial-evaluation APIs | Equations (21)--(23) are promoted for a supplied degree-`k` polynomial regular in `x₁`: exact bounded representatives, their `Fin k` coefficient vectors, the internal decomposition of every containing ideal into its bounded part and disjoint principal tail, the finite free quotient, the abstract common-tail equivalence, its concrete paired-ideal specialization, and the actual cutoff-one ground-ideal quotient. A source-modeled cutoff-one `ξ`/`ζ` coordinate module realizes that ideal pair and connects its quotient to the bounded model. Line 13162 is exact: `G₁*` is the nonzero-scalar saturation of `M₁*`, its relative quotient is torsion, and the relative denominator has equal rank and `finrank`. The source-faithful map `P[x₃,…][x₂] → Frac(P[x₃,…])[x₂]` localizes only later-variable coefficients, commutes with the finite-coordinate saturation, and yields the actual localized pair and its equal-`finrank` denominator. The finite cutoff-one pair has a localized Smith instance with selected bases, diagonal coefficients, cyclic quotient, and determinant product. A freely adjoined arbitrary Finsupp tail, with a countable `ℕ` specialization, now models the printed independent `ζ` coordinates: numerator and denominator receive the same tail basis, every tail coefficient is `1`, the tail cancels, and the finite cyclic quotient is recovered. Identification with a separately constructed and localized historical unbounded `ζ`-module, canonical divisibility ordering, any infinite determinant, determinant norm/resultant identification, primitive normalization and choice independence, and later stages remain open. |
 | 13153--13160, equation (23) | isomorphism of residue-class systems after adjoining the same independent tail | `LinearMap.quotientInfEquivSupQuotient`; `Submodule.Quotient.equiv`; Finsupp modules; product submodules; `LinearEquiv` | The abstract equivalence and its product-head helpers are `NEW_PACKAGING` of Mathlib quotient equivalences, with divisibility oriented as denominator `M ≤ G`. The actual localized cutoff-one pair is now a `FORMALIZED_GAP` instantiation with an arbitrary freely adjoined Finsupp tail and a countable specialization; the resulting quotient cancels that shared tail and recovers the finite localized pair. This does not yet identify the free tail with a separately constructed/localized historical unbounded module. |
-| 13164--13173, equation (24); 13323--13335, Definition VI | diagonal basis presentation, stage resultants, elementary-divisor forms, and their products | Smith bases/coefficients; `Submodule.quotientEquivPiSpan`; module annihilators; finite ideal products; `Matrix.det_diagonal`; polynomial localization | Generic full-rank finite-free PID `NEW_PACKAGING` supplies the diagonal and cyclic-quotient scaffold plus a chosen-basis determinant product. The historical localization of only `P[x₃,…]` to `K = Frac(P[x₃,…])`, fixing `x₂`, and the corresponding finite cutoff-one Smith instance over `K[x₂]` are `FORMALIZED_GAP`. The intrinsic annihilator of that quotient is now identified with the intersection of the selected coefficient ideals and with the denominator scalar colon. If `D` is the selected coefficient product and `A` this annihilator, then `(D) ≤ A` and `A^ρ ≤ (D)`; over the PID their chosen generators satisfy both corresponding divisibilities and have equal radicals. The source-instantiated common-tail module still uses a freely adjoined identity tail. Mathlib v4.31 does not turn the selected finite coefficients into a divisibility-ordered canonical system, and neither `D` nor the annihilator generator is identified with Hentzelt's primitive forms. Historical-tail identification, determinant norm/resultant identification, staged modules, primitive normalization, and choice independence remain open. |
-| 13340--13382, Satz VIII | `E_m ∣ R_m`, `R_m ∣ E_m^N`, and tail products annihilate ground ideals modulo `m` | module annihilators; principal ideals; finite products and powers; ideal radicals; evaluation | The opening finite localized Smith-algebra divisibilities are promoted intrinsically for the actual cutoff-one quotient, without an ordering assumption. Conditional radical and zero-set consequences for supplied historical `R` and `E` are also packaged. Identification with primitive `R^(i)`/`E^(i)`, descent, later stages, and equations (33)--(34) remain gaps. |
+| 13164--13173, equation (24); 13323--13335, Definition VI | diagonal basis presentation, stage resultants, elementary-divisor forms, and their products | Smith bases/coefficients; `Submodule.quotientEquivPiSpan`; module annihilators; finite ideal products; `Matrix.det_diagonal`; polynomial localization | Generic full-rank finite-free PID `NEW_PACKAGING` supplies the diagonal and cyclic-quotient scaffold plus a chosen-basis determinant product. The historical localization of only `P[x₃,…]` to `K = Frac(P[x₃,…])`, fixing `x₂`, and the corresponding finite cutoff-one Smith instance over `K[x₂]` are `FORMALIZED_GAP`. The intrinsic annihilator of that quotient is identified with the intersection of the selected coefficient ideals and with the denominator scalar colon. If `D` is the selected coefficient product and `A` this annihilator, then `(D) ≤ A` and `A^ρ ≤ (D)`; over the PID their chosen generators satisfy both corresponding divisibilities and have equal radicals. Under the explicit `IsGreatestRemainingDivisor` hypothesis for a selected `eᵢ`, the library also identifies `A = (eᵢ)`, proves `eᵢ ∣ D`, `D ∣ eᵢ^ρ`, and packages the radical and vanishing bridges for the actual localized pair. That selected coefficient has a nonzero integral numerator. Given the regular member used in the finite reduction, regular division lifts its bounded denominator action to every element of the cutoff-one ground ideal and produces the full `HasEquation33Witness I 1` with a genuine cutoff-two multiplier. The library does not prove that a greatest index exists or impose a canonical divisibility order. The source-instantiated common-tail module still uses a freely adjoined identity tail. Historical-tail identification, determinant norm/resultant identification, later Smith stages, primitive normalization, and choice independence remain open. |
+| 13340--13382, Satz VIII | `E_m ∣ R_m`, `R_m ∣ E_m^N`, and tail products annihilate ground ideals modulo `m` | module annihilators; principal ideal products and powers; ideal radicals and evaluation; localization contraction; colon ideals; Noetherian finite generation | The intrinsic opening bounds and conditional greatest-coefficient bridge are promoted for the actual cutoff-one Smith quotient. Localization surjectivity supplies a nonzero integral numerator for the selected greatest coefficient, and regular division now promotes its bounded action to the full cutoff-one equation-(33) witness: for every `g ∈ stageGroundIdeal 1 I`, a nonzero multiplier free of the first two variables sends `E * g` into `I`. Equation (33)'s generic one-stage descent and Noetherian common-multiplier theorem remain available, and a supplied consecutive witness family is iterated through arbitrary finite windows to prove the terminal identity and conditional `E`-product half of equation (34). The first actual witness is not primitive, canonical, or choice-independent; later-stage witnesses are still supplied rather than constructed, and the parallel `R^(i)` product and determinant-norm/resultant identification remain open. |
 | 13387--13400, Satz IX | a divisor ideal with the same resultant form equals the original ideal | ideal order; stage norms | This depends on Satz IV at every stage and has no end-to-end pinned theorem. |
 | 13405--13417, Satz X | coprime factorization of one stage resultant gives unique ideal factors | comaximal ideals; Chinese remainder; colon ideals | The reconstruction of the two historical ideal factors and their least-common-multiple statement remains a gap. |
 | 13426--13428, Satz XI | rank of the image of a univariate ideal modulo a member `h` is `deg h - deg f` | PID structure; `finrank_quotient_span_eq_natDegree` | The exact residue-ideal rank theorem, quotient equivalence, and displayed basis represented by `f, Xf, ..., X^(deg h₁-1)f` are promoted with necessary nonzero hypotheses. |
@@ -91,9 +91,10 @@ Then `(D) ≤ A` and `A^ρ ≤ (D)`. If `a` is Mathlib's chosen generator of the
 principal ideal `A`, this gives `a ∣ D` and `D ∣ a^ρ`, hence equal radicals.
 This avoids silently imposing a divisibility order on Mathlib's selected
 Smith coefficients. It is not yet the historical claim that primitive
-`E^(i)` and `R^(i)` enjoy those divisibilities: determinant-norm/resultant
-identification, primitive descent, later stages, and equations (33)--(34)
-remain explicit dependencies.
+`E^(i)` and `R^(i)` enjoy those divisibilities: later-stage equation-(33)
+witness construction, primitive descent, the parallel `R^(i)` product, and
+determinant-norm/resultant identification still block the complete equation
+(34).
 
 ## Dedekind--Mertens and equation (17)
 
@@ -665,18 +666,171 @@ The comprehensive claim receipt is
 (6,826 bytes; SHA-256
 `E39F795AE5CD93B03FA7F29182AB70C347B77E3E59DE424E1B9B6C94E2682421`).
 
-P22 now has 511 canonical declarations across the base and twenty-nine support
-modules, and its ledger has 47 claim/definition records with 526 declaration
-references.
+`FirstSmithGreatestCoefficientBridge.lean` connects the intrinsic annihilator
+bounds back to Hentzelt's displayed greatest elementary divisor, but only under
+the explicit `IsGreatestRemainingDivisor` hypothesis. Its four generic
+`NEW_PACKAGING` theorems prove that the coefficient ideal is `(eᵢ)`, that
+`eᵢ ∣ ∏ⱼeⱼ`, that `∏ⱼeⱼ ∣ eᵢ^ρ`, and that the generated ideals have the
+same radical and field-valued vanishing behavior. Four `FORMALIZED_GAP`
+theorems instantiate this bridge for the actual localized cutoff-one pair and
+join the Satz-II reciprocal identities to the opening of Satz VIII.
 
-The current graph checkpoint is the 46-target
-`artifacts/build/module-graph-checkpoint-20260828T2248235911582-32a08ca0.json`
-(3,405 bytes; SHA-256
-`23A27DD8B7B1328F6BDADC008F5E898B12D61872258F65B690F6F40A6AAE8FDE`).
-All 44 direct Noether imports and both umbrellas are current. The incremental
-peak is 1,921,720,320 bytes and the checkpoint-chain peak remains 1,922,387,968
-bytes under the 3 GiB worker envelope. The receipt chains the earlier 43-target
-through 45-target artifacts instead of rewriting their historical accounting.
+The module does not prove existence of a greatest selected coefficient,
+canonical ordering or normalization, choice independence, descent from the
+coefficient localization, identification with primitive `R^(1)` or `E^(1)`, or
+any later stage. Its source is
+`MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/FirstSmithGreatestCoefficientBridge.lean`
+(10,807 bytes; SHA-256
+`1F9626ECC4B8616BCE75CA9BD1BC988ADB597767F49D8FDD74AFDDC677E2BDCB`).
+The clean one-thread Lean 4.31 build exited zero with empty stderr, audited all
+eight theorems, used only `propext`, `Classical.choice`, and `Quot.sound`, and
+peaked at 1,368,829,952 bytes under the 2.5 GiB watcher. Its receipt is
+`artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithGreatestCoefficientBridge-20260828T2331335689853-381370ff.module.receipt.json`
+(7,375 bytes; SHA-256
+`9ACF33D84DE5D7EA2E960B84699F003AA6DA17C67ACCB208D4A996662DAFE05E`).
+
+`SatzVIIIOneStageDescent.lean` formalizes equation (33), lines 13344--13373,
+as one denominator-descent step. Four generic `NEW_PACKAGING` theorems take
+elementwise multiplier witnesses on a finite ideal basis and construct one
+allowed multiplier that works on its span. The source-shaped definition and
+five `FORMALIZED_GAP` theorems express the equation-(33) witness, place
+`E * G` in the next ground ideal, uniformize the multiplier automatically from
+Noetherian finite generation, and specialize the result to the first stage.
+
+This is deliberately conditional on the supplied integral polynomial `E` and
+the elementwise equation-(33) witnesses. It does not derive them from the
+integral lift or localized Smith data, construct or normalize historical
+`E^(i)`, identify a determinant product with `R^(i)`, iterate lines
+13374--13380, or prove equation (34). The module source is
+`MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/SatzVIIIOneStageDescent.lean`
+(9,291 bytes; SHA-256
+`53F41EF053C80CAA3C8BE851C760C4995401E8AFBEB68D6CDB9F38548D49135C`).
+Its clean one-thread Lean 4.31 build exited zero with empty stderr, audited all
+ten declarations (one definition and nine theorems), used only `propext`,
+`Classical.choice`, and `Quot.sound`, and peaked at 1,335,193,600 bytes under
+the 2.5 GiB watcher. Its receipt is
+`artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-SatzVIIIOneStageDescent-20260828T2334520752660-df4abd76.module.receipt.json`
+(7,265 bytes; SHA-256
+`095DFFBAA66EAE1CA7AE878B66B4FA87C7A93CA23C0E3B34C567238DD712DAB7`).
+
+`FirstSmithIntegralNumerator.lean` clears the first localization barrier in
+lines 13323--13349. Two generic `NEW_PACKAGING` theorems clear localized
+submodule membership by an integral denominator. Two `FORMALIZED_GAP`
+theorems apply that mechanism to the actual cutoff-one Smith pair: under the
+explicit greatest-remaining-divisor hypothesis, the selected localized Smith
+coefficient acts on the localized ground module, and it has a nonzero integral
+numerator `a` whose action on every bounded ground vector can be returned to
+the bounded original module after multiplication by a genuine later-variable
+denominator.
+
+This is the strongest honest integral statement currently available. It does
+not transport the bounded action to every element of the full stage ground
+ideal, prove `HasEquation33Witness`, normalize `a` to a primitive historical
+`E^(2)`, or prove choice independence. The module source is
+`MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/FirstSmithIntegralNumerator.lean`
+(9,458 bytes; SHA-256
+`ECA6FBF7CAA909D689F6369B143E3969553D9004C335E6FA1C2F316DB70E328F`).
+Its clean one-thread Lean 4.31 build exited zero with empty stderr, audited all
+four theorems, and peaked at 1,383,194,624 bytes under the 2.5 GiB watcher.
+Its receipt is
+`artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithIntegralNumerator-20260829T1518064363393-bf431c1b.module.receipt.json`
+(7,300 bytes; SHA-256
+`4717412B681D6226D9049DDAEA9C173A86878134C0FEFE87D7BB5FB38FE0327E`).
+
+`SatzVIIIEquation33Iteration.lean` proves the finite induction in lines
+13344--13380 once the equation-(33) witnesses are supplied. Its two generic
+`NEW_PACKAGING` declarations give the ideal-inclusion interface and reusable
+finite-window iteration; four `FORMALIZED_GAP` declarations prove the terminal
+identity `g_n = I`, the printed prefix induction, the conditional `E`-product
+half of equation (34), and the terminal tail-window conclusion.
+
+The module does not construct the witness family, identify its forms with
+primitive or canonical historical `E^(i)`, prove the parallel `R^(i)` product,
+or establish determinant-norm/resultant identities. Its source is
+`MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/SatzVIIIEquation33Iteration.lean`
+(6,799 bytes; SHA-256
+`A1DEDECBA8D6945B719A0014C9D46579DCC6AFC589B2DADB7B990E84405EE128`).
+Its clean one-thread Lean 4.31 build exited zero with empty stderr, audited all
+six theorems, and peaked at 1,339,314,176 bytes under the 2.5 GiB watcher. Its
+receipt is
+`artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-SatzVIIIEquation33Iteration-20260829T1519573911099-a856eb8a.module.receipt.json`
+(7,301 bytes; SHA-256
+`953FA6666354A4285223B06D5D43F3C32DB85DCAB01788312B15E11580735544`).
+
+`FirstSmithEquation33Bridge.lean` closes the bounded-to-full transport at the
+first actual stage. Its fourteen declarations rebuild a bounded
+second-variable coordinate in the original multivariate ring, prove exact
+compatibility with integral scalar multiplication, and use regular division
+by the supplied regular `C ∈ I` to represent every member of
+`stageGroundIdeal 1 I` modulo the original ideal. A denominator from the
+genuinely later coefficient ring lifts to a nonzero polynomial free of the
+first two original variables, exactly the cutoff-two multiplier required by
+equation (33).
+
+Consequently, under the same explicit greatest-selected-coefficient hypothesis
+as the preceding Smith bridge, the final theorem retains the localization
+clearing equality, returns a nonzero integral numerator and nonzero full-ring
+lift, and proves `HasEquation33Witness I 1` for that lift. This first-stage
+form is not asserted to be primitive, normalized, canonical, or independent
+of the Smith choices. The module does not construct later Smith stages or the
+parallel `R^(i)` resultant product. Its source is
+`MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/FirstSmithEquation33Bridge.lean`
+(17,378 bytes; SHA-256
+`876DB09F6858D2237C6730ED823A2721C09F0D854EDA8DE31FA9A925B05210BE`).
+Its clean one-thread Lean 4.31 build exited zero with empty stderr, audited all
+fourteen declarations, and peaked at 1,393,115,136 bytes under the 2.5 GiB
+watcher. Its receipt is
+`artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithEquation33Bridge-20260829T1549364931065-c50c17d9.module.receipt.json`
+(7,294 bytes; SHA-256
+`722B7DB06B9E0664F155B9559839EC5AF719C7E6089D8367EE5018557D8AD907`).
+The cluster claim path is
+`artifacts/build/claim-P22-first-smith-equation33-full-20260829T1552050773212-64de772d.json`.
+
+`FirstSmithCoefficientProductNumerator.lean` advances the same cutoff without
+silently identifying the selected Smith product with the historical resultant.
+Its four `NEW_PACKAGING` theorems prove that an equation-(33) witness survives
+right multiplication, clear a localized divisibility into a compatible
+integral numerator multiple, prove the finite selected-Smith-coefficient
+product nonzero, and apply those facts to the actual cutoff-one Smith data.
+Under the existing regular-member and explicit greatest-selected-coefficient
+hypotheses, the final theorem returns nonzero integral numerators `a` and `r`,
+proves `a ∣ r`, retains both localization-clearing equations, and gives
+`HasEquation33Witness I 1` for both full-ring lifts.
+
+The local zero-based cutoff `1` is the source's stage `i = 2`. The numerator
+`r` is an integral numerator for the finite selected-coefficient product; it is
+not identified with historical `R^(2)`, a historical resultant, a primitive or
+normalized form, a canonical choice, or an object independent of the selected
+Smith/localization data. Its source is
+`MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/FirstSmithCoefficientProductNumerator.lean`
+(9,279 bytes; SHA-256
+`C7E8C66C46A88FC578A040A60A9CD6B8FC6661D3965AD03A2AA696420AE77362`).
+The clean one-thread Lean 4.31 build exited zero with empty stderr, audited all
+four declarations, and peaked at 1,421,578,240 bytes under the 2.5 GiB watcher.
+Its receipt is
+`artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithCoefficientProductNumerator-20260829T1607180026573-04e54684.module.receipt.json`
+(7,390 bytes; SHA-256
+`1A73C7CC2BC2E601E7B938801D8C4153791216B39C724F4309356E6BC2F00AE9`).
+
+P22 now has 557 canonical declarations across the base and thirty-five support
+modules.
+
+The latest sealed graph checkpoint is the 52-target
+`artifacts/build/module-graph-checkpoint-20260829T1614266016417-a6b1b43c.json`.
+All 50 direct Noether imports and both umbrellas are current. The incremental
+peak is 1,916,051,456 bytes and the checkpoint-chain peak remains 1,922,387,968
+bytes under the 3 GiB worker envelope. The receipt chains the preceding
+51-target artifact instead of rewriting its historical accounting. The clean
+Noether umbrella receipt is
+`artifacts/build/MathematicalCommons-Noether-20260829T1609454107272-2f16bd36.module.receipt.json`
+(6,730 bytes; SHA-256
+`D4A3BA7A14F785B84C301B4D5A067BA11DDAD9975DB211E58106432FC9B55E0C`;
+peak 1,916,051,456 bytes), and the clean full-umbrella receipt is
+`artifacts/build/MathematicalCommons-20260829T1610529178105-5ea6b549.module.receipt.json`
+(6,650 bytes; SHA-256
+`D1DF3BA5E9C820AB804220F62481F3F00E68947834BE83CC6CFF2BA9D766A663`;
+peak 1,911,451,648 bytes). The associated claim receipt is
+`artifacts/build/claim-P22-first-smith-coefficient-product-numerator-20260829T1614266016417-a6b1b43c.json`.
 
 For the preceding localization/finite-Smith checkpoint, an independent
 read-only pin, receipt, axiom, import-graph, ledger, and controlled-source
@@ -700,8 +854,10 @@ recheck is retained as
 - Equation (12) is a full lower-unitriangular coordinate matrix with one
   independent parameter `u_{μν}` for every `ν < μ`. An elementary shear is
   useful implementation substrate but is not itself the printed transform.
-- No new German discrepancy was found in this exact-range audit. No German or
-  translation file was edited.
+- Canon-QA item `NOETH-QA-034` remains open for line 13319, where the printed
+  footnote appears to place identical formulas on both sides of “not
+  isomorphic.” The missing distinction is not securely recoverable, so no
+  correction is asserted and no German or translation file was edited.
 
 ## Formalization route
 
@@ -720,11 +876,12 @@ instance for the actual cutoff-one pair are complete. The remaining route is:
 3. Iterate the completed finite specialized coordinate construction through
    later ground ideals to produce the successive `C^(i)`, `G_i/M_i`, Smith data,
    and primitive normalizations of `R^(i)`.
-4. Lift the completed intrinsic finite localized Satz-VIII bounds to
-   Hentzelt's primitive `E^(i)` and `R^(i)`: prove determinant-norm/resultant
-   identification, primitive descent, and the later-stage divisibilities, then
-   discharge the hypotheses of the promoted radical/zero-set bridge and prove
-   equations (33)--(34).
+4. Extend the completed cutoff-one equation-(33) witness to the later ground
+   ideals as their successive regular modules and Smith data become available,
+   and normalize the resulting `E^(i)`. The finite iteration is already
+   complete for a supplied witness family; combine a fully constructed family
+   with the parallel `R^(i)` product, determinant-norm/resultant identification,
+   and primitive descent to finish equation (34).
 5. Build the successive determinantal ideals and strengthen the promoted
    finite-coordinate substrate and Nullstellensatz corollary to Satz XII's
    finite compatible-zero construction.

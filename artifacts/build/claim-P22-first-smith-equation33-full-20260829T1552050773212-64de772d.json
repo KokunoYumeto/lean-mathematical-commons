@@ -1,0 +1,179 @@
+{
+  "schema": "lean-mathematical-commons/claim-build-receipt/1.0",
+  "claim_id": "HENTZELT-NOETHER-1923-FIRST-SMITH-EQUATION-33-FULL",
+  "status": "full_cutoff_one_equation33_witness_completed",
+  "source": {
+    "witness": "NOETH-DE-ED-0014",
+    "path": "C:\\Users\\Floris\\Documents\\interlanguage\\03_projects\\noether\\07_german_canon_control\\candidates\\ED0014\\noether.tex",
+    "sha256": "EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58",
+    "lines": "13323--13380; Satz VIII and equations (33)--(34)"
+  },
+  "classification": "FORMALIZED_GAP",
+  "classification_split": {
+    "NEW_PACKAGING": {
+      "declarations": 9,
+      "scope": "the double-finSucc integral lift, its injectivity and constant coherence, bounded-coordinate reconstruction, and exact scalar compatibility"
+    },
+    "FORMALIZED_GAP": {
+      "declarations": 5,
+      "scope": "transport from bounded original-module membership to the original ideal, regular bounded representatives modulo the ideal, genuine cutoff-two denominator lifting, the bounded-action-to-equation-(33) theorem, and existence for the actual selected Smith numerator"
+    }
+  },
+  "mathlib_core": [
+    "MvPolynomial.finSuccEquiv",
+    "MvPolynomial.rename",
+    "MvPolynomial.mem_vars_rename",
+    "MvPolynomial.rename_injective",
+    "Polynomial.degreeLT",
+    "SemilinearEquiv.map_smulₛₗ",
+    "Ideal.apply_mem_of_equiv_iff",
+    "Ideal.symm_apply_mem_of_equiv_iff"
+  ],
+  "local_packaging_dependency": [
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularityDivision.regularRemainder_mem_ideal",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularityDivision.exists_eq_boundedRepresentative_add_mul",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.secondVariableBoundedCoordinateEquiv",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.secondVariableGroundModule",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.secondVariableOriginalModule",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.lateVariableDenominators",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.exists_nonzero_integralSmithNumerator_with_denominator_action",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.SatzVIIIOneStageDescent.HasEquation33Witness"
+  ],
+  "preceding_claim": {
+    "path": "artifacts/build/claim-P22-integral-numerator-equation33-iteration-20260829T1523107316462-9c389dd9.json",
+    "bytes": 10832,
+    "sha256": "9F55F50ED2469E7636DBE177465B440AD5BAAE4C5C249EACAC4295DE2F4EF5DE"
+  },
+  "declarations": 14,
+  "declaration_scope": "all exported declarations in the module; every declaration is covered by a #print axioms command",
+  "theorem_count": 12,
+  "definition_and_abbreviation_count": 2,
+  "newly_closed": [
+    "the integral polynomial ring P[x3,...][x2] is embedded explicitly in the original multivariate ring by the two inverse finSucc equivalences",
+    "bounded cutoff-one coordinates rebuild full multivariate representatives and scalar action agrees exactly with multiplication by the integral lift",
+    "every member of the full first ground ideal has a bounded second-variable coordinate representative modulo the original ideal when a regular degree-k member C belongs to the ideal",
+    "each literal later-variable localization denominator lifts to a nonzero source multiplier free of the first two original variables",
+    "any bounded denominator action satisfying the existing kernel gives a full HasEquation33Witness at cutoff one",
+    "the actual selected greatest localized Smith coefficient has a nonzero integral numerator, a nonzero full lift, the retained localization-clearing equality, and a full cutoff-one equation-(33) witness"
+  ],
+  "modules": [
+    {
+      "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstSmithEquation33Bridge",
+      "source": {
+        "path": "MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/FirstSmithEquation33Bridge.lean",
+        "bytes": 17378,
+        "sha256": "876DB09F6858D2237C6730ED823A2721C09F0D854EDA8DE31FA9A925B05210BE"
+      },
+      "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithEquation33Bridge-20260829T1549364931065-c50c17d9.module.receipt.json",
+      "receipt_sha256": "722B7DB06B9E0664F155B9559839EC5AF719C7E6089D8367EE5018557D8AD907",
+      "batch_id": "20260829T1549362836279-bf1413f5",
+      "exit_code": 0,
+      "peak_bytes": 1393115136,
+      "stdout_bytes": 2671,
+      "stdout_sha256": "15527DA070CAA5B165E1B2A24016A7BC8302E7EB758BB60458DF37BD04E8C7E8",
+      "stderr_bytes": 0,
+      "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "warnings": 0,
+      "errors": 0,
+      "sorry_or_admit": 0,
+      "axiom_or_unsafe_declarations": 0,
+      "declaration_count": 14,
+      "print_axioms_count": 14,
+      "axioms": ["propext", "Classical.choice", "Quot.sound"],
+      "olean": {
+        "bytes": 621592,
+        "sha256": "00935C31AF1F5E4479CADF1C5281F2DB24C6F15BC4DEAC8C513CE9D5DFF3BD74"
+      }
+    }
+  ],
+  "umbrella_receipt_pins": [
+    {
+      "module": "MathematicalCommons.Noether",
+      "source": {
+        "path": "MathematicalCommons/Noether.lean",
+        "bytes": 4013,
+        "sha256": "66D66565819A0366E5830368DEDD127F27FA768ADEF608A9666A81A6B6D54779"
+      },
+      "path": "artifacts/build/MathematicalCommons-Noether-20260829T1550242493302-b640b710.module.receipt.json",
+      "bytes": 6730,
+      "sha256": "8F639D17407A6FFC898AF7E5393ABA9F959A1459C46394404CDA91147A84464B",
+      "exit_code": 0,
+      "peak_bytes": 1914290176,
+      "olean_bytes": 7576,
+      "olean_sha256": "E28232380116AAB3C56DEB08E85F423205ED4C9AC42544F7EE174BAB9B4063B3"
+    },
+    {
+      "module": "MathematicalCommons",
+      "source": {
+        "path": "MathematicalCommons.lean",
+        "bytes": 36,
+        "sha256": "48EB6B102712DB6C8F0F2289C19200F9FDFB341E7D777BC6DC29B1D3D4C2FA94"
+      },
+      "path": "artifacts/build/MathematicalCommons-20260829T1551100271960-8fecb4f3.module.receipt.json",
+      "bytes": 6650,
+      "sha256": "63DC9E507FCF824E51F4E79412A2B004EDC5A4D30218EA73FC63E183950CF931",
+      "exit_code": 0,
+      "peak_bytes": 1916993536,
+      "olean_bytes": 1480,
+      "olean_sha256": "1C24DDBEC34C55C36E1DD8777FD4987630F13A48F421A4352F86338199D53604"
+    }
+  ],
+  "graph_checkpoint": "artifacts/build/module-graph-checkpoint-20260829T1552050773212-64de772d.json",
+  "graph_checkpoint_bytes": 3537,
+  "graph_checkpoint_sha256": "299B4F1AA44F9E63C59FC09AE7CBBBD14B5A22D5B4BBE23F362C90B9068CED9C",
+  "graph_target_accounting": {
+    "direct_noether_import_targets": 49,
+    "umbrella_targets": 2,
+    "total_current_targets": 51
+  },
+  "metadata_pins": [
+    {
+      "path": "metadata/noether-theorems.tsv",
+      "bytes": 266112,
+      "sha256": "56C82D598CABC6DE3C63DF7FC44279E6FE4D66B01025AE28467CF49921045D27",
+      "data_rows": 326,
+      "unique_ids": 326,
+      "columns": 15,
+      "p22_rows": 57,
+      "p22_grouped_declaration_references": 568
+    },
+    {
+      "path": "metadata/noether-works.tsv",
+      "bytes": 20230,
+      "sha256": "4E590A115C35A4753181BD87FE13D00E7B331333290F172681A6090B6E0FE236",
+      "data_rows": 43,
+      "columns": 20,
+      "p22_canonical_declarations": 553,
+      "p22_support_modules": 34
+    },
+    {
+      "path": "metadata/noether-canon-qa.tsv",
+      "bytes": 15576,
+      "sha256": "493E46FFE536F72D6BB16C63D359E391D2FBE2E95E835FED4E58D222B620C7C5",
+      "open_reference": "NOETH-QA-034"
+    }
+  ],
+  "documentation_pins": [
+    {"path": "docs/noether/hentzelt-polynomial-ideals-resultants-1923.md", "bytes": 62768, "sha256": "478753E8F6271635FFE6AC959DEE694814F07544BA09CA91CBC08025A678972E"},
+    {"path": "docs/noether/mathlib-coverage.md", "bytes": 40305, "sha256": "88801B3EB1025A758B780F9BB0D31D01192C96F584998373BDCAA02311572F0E"},
+    {"path": "docs/index.md", "bytes": 9537, "sha256": "014258BB5B5B77461D61656F693C11E68871EBCD9683EEE7FD4E28B2A80B710F"},
+    {"path": "README.md", "bytes": 23420, "sha256": "C8397B6C0A6B14552CD8CCB200AF90CFB4A074CB09B12FBB57267CB2C02E6346"},
+    {"path": "CHANGELOG.md", "bytes": 33474, "sha256": "4A03FBF572A113015A7E257F9D8075BA2C06CB96728E3BFA2DB089F60EF3F1A5"}
+  ],
+  "canon_qa": {
+    "id": "NOETH-QA-034",
+    "source_line": 13319,
+    "state": "OPEN_CANON_QA",
+    "effect_on_claim": "none; the item lies before the formalized target lines and no German, translation, or Lean source was silently corrected",
+    "owner_thread": "019fca5c-0e73-7c72-92fb-5b507b710598",
+    "delivery_state": "recorded locally; exact direct owner-task delivery was attempted but the task is currently unavailable/unreadable on this host"
+  },
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "lean_commit": "68218e876d2a38b1985b8590fff244a83c321783",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "worker_memory_limit_gib": 2.5,
+  "runner_sha256": "2BE9B6EBED0E973321A019A7B7E6A24E35C793EEB59FDDCD0ECD7F4D75616EB4",
+  "all_green": true,
+  "limitations": "The theorem assumes an explicit regular degree-k member C of I and an explicitly selected localized Smith coefficient satisfying the greatest-remaining-divisor hypothesis. Its nonzero integral numerator is not proved primitive, normalized, canonical, unique, or independent of Smith/localization choices, so it is not identified with Hentzelt's canonical historical E^(2). Only the actual cutoff-one witness is constructed; later-stage Smith data and the full witness family used by the iteration module remain supplied hypotheses. No parallel R-product/resultant half of equation (34), determinant-norm/resultant identification, primitive descent, compatible-zero theorem, or multiplicity theorem is asserted. The local open canon item NOETH-QA-034 concerns line 13319 outside the target range and does not alter this mathematical claim."
+}

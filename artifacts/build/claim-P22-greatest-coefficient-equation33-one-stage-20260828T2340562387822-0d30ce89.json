@@ -1,0 +1,183 @@
+{
+  "schema": "lean-mathematical-commons/claim-build-receipt/1.0",
+  "claim_id": "HENTZELT-NOETHER-1923-GREATEST-COEFFICIENT-AND-EQUATION-33-ONE-STAGE",
+  "status": "conditional_greatest_coefficient_and_one_stage_equation33_descent_completed",
+  "source": {
+    "witness": "NOETH-DE-ED-0014",
+    "sha256": "EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58",
+    "lines": "12815--12844; 13323--13373; Satz II, Definition VI, Satz VIII, and equation (33)"
+  },
+  "classification": "FORMALIZED_GAP",
+  "classification_split": {
+    "NEW_PACKAGING": {
+      "declarations": 8,
+      "scope": "four generic greatest-coefficient/finite-product consequences and four generic finite common-denominator/localization-contraction lemmas"
+    },
+    "FORMALIZED_GAP": {
+      "declarations": 10,
+      "scope": "four declarations for the actual localized cutoff-one Smith pair and six source-shaped equation-(33) one-stage declarations for the actual stage ground ideals"
+    }
+  },
+  "mathlib_core": [
+    "Ideal.span_singleton_le_span_singleton",
+    "Ideal.mem_span_singleton",
+    "Ideal.pow_mem_pow",
+    "Ideal.radical",
+    "Submonoid.prod_mem",
+    "Finset.dvd_prod_of_mem",
+    "Ideal.mem_colon_span_singleton",
+    "Ideal.span_singleton_mul_le_iff",
+    "Submodule.fg_iff_exists_fin_generating_family",
+    "IsNoetherian.noetherian"
+  ],
+  "local_packaging_dependency": [
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.SmithAnnihilatorBounds.coefficientIdeal",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.SmithAnnihilatorBounds.coefficientProduct",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.SmithScalarQuotients.IsGreatestRemainingDivisor",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableSmithCoefficients",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableSmithCoefficientProduct",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.stageGroundIdeal",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.nonzeroLateVariableSubmonoid"
+  ],
+  "declarations": 18,
+  "declaration_scope": "all exported declarations in both modules; every declaration is covered by a trailing #print axioms command",
+  "theorem_count": 17,
+  "definition_and_abbreviation_count": 1,
+  "newly_closed": [
+    "under an explicit greatest-remaining-divisor hypothesis, the intrinsic finite coefficient ideal is the displayed principal coefficient ideal",
+    "the displayed greatest coefficient divides the selected coefficient product, while the product divides its rank-th power",
+    "the corresponding principal ideals have equal radicals and the two elements vanish together after every map to a field",
+    "the greatest-coefficient identities are instantiated for the actual localized cutoff-one Smith quotient and joined to Satz-II reciprocity",
+    "a supplied equation-(33) witness sends the current stage ground ideal into the next after multiplication by the supplied integral polynomial",
+    "finite-basis denominator witnesses admit one common allowed multiplier, and Noetherianity supplies such a finite basis automatically",
+    "for a nonzero ideal, the cutoff-zero specialization gives the printed first-stage membership"
+  ],
+  "modules": [
+    {
+      "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstSmithGreatestCoefficientBridge",
+      "source": {
+        "path": "MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/FirstSmithGreatestCoefficientBridge.lean",
+        "bytes": 10807,
+        "sha256": "1F9626ECC4B8616BCE75CA9BD1BC988ADB597767F49D8FDD74AFDDC677E2BDCB"
+      },
+      "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithGreatestCoefficientBridge-20260828T2331335689853-381370ff.module.receipt.json",
+      "receipt_sha256": "9ACF33D84DE5D7EA2E960B84699F003AA6DA17C67ACCB208D4A996662DAFE05E",
+      "exit_code": 0,
+      "peak_bytes": 1368829952,
+      "stdout_bytes": 1681,
+      "stdout_sha256": "2FCD57F6552EA233340712AA2FFFC9D1246039212171F713F47735E37B55F988",
+      "stderr_bytes": 0,
+      "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "warnings": 0,
+      "errors": 0,
+      "sorry_or_admit": 0,
+      "axiom_or_unsafe_declarations": 0,
+      "declaration_count": 8,
+      "print_axioms_count": 8,
+      "axioms": ["propext", "Classical.choice", "Quot.sound"],
+      "olean": {
+        "bytes": 105792,
+        "sha256": "F52B678E347413EB1CEEEB5B08953F0996BE73A2DD886F7282689080DA572552"
+      }
+    },
+    {
+      "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.SatzVIIIOneStageDescent",
+      "source": {
+        "path": "MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/SatzVIIIOneStageDescent.lean",
+        "bytes": 9291,
+        "sha256": "53F41EF053C80CAA3C8BE851C760C4995401E8AFBEB68D6CDB9F38548D49135C"
+      },
+      "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-SatzVIIIOneStageDescent-20260828T2334520752660-df4abd76.module.receipt.json",
+      "receipt_sha256": "095DFFBAA66EAE1CA7AE878B66B4FA87C7A93CA23C0E3B34C567238DD712DAB7",
+      "exit_code": 0,
+      "peak_bytes": 1335193600,
+      "stdout_bytes": 1829,
+      "stdout_sha256": "DDF894B2742F7A7E71A4FC8DFC575F00D3F3941B8D164BC15F2DCB2D40424298",
+      "stderr_bytes": 0,
+      "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "warnings": 0,
+      "errors": 0,
+      "sorry_or_admit": 0,
+      "axiom_or_unsafe_declarations": 0,
+      "declaration_count": 10,
+      "print_axioms_count": 10,
+      "axioms": ["propext", "Classical.choice", "Quot.sound"],
+      "olean": {
+        "bytes": 195480,
+        "sha256": "375BC508E025D3D991ABD8B81029AE6B96A88AFBFFADCA0ACEDC9C59C372F2C4"
+      }
+    }
+  ],
+  "umbrella_receipts": [
+    "artifacts/build/MathematicalCommons-Noether-20260828T2335461651901-b7b14af2.module.receipt.json",
+    "artifacts/build/MathematicalCommons-20260828T2339044858622-3bb8213f.module.receipt.json"
+  ],
+  "umbrella_receipt_pins": [
+    {
+      "path": "artifacts/build/MathematicalCommons-Noether-20260828T2335461651901-b7b14af2.module.receipt.json",
+      "bytes": 6730,
+      "sha256": "CCFAAC99059335FBAEA5ECE6B9F32B14E675AB4691B22CEF7510AE7ED46CAC2C",
+      "peak_bytes": 1904861184
+    },
+    {
+      "path": "artifacts/build/MathematicalCommons-20260828T2339044858622-3bb8213f.module.receipt.json",
+      "bytes": 6650,
+      "sha256": "803E7317ECD17DC59871A1A3F2076C7C7ED75E5C895BE5682D0B1D1452BCF166",
+      "peak_bytes": 1913257984
+    }
+  ],
+  "graph_checkpoint": "artifacts/build/module-graph-checkpoint-20260828T2340562387822-0d30ce89.json",
+  "graph_checkpoint_bytes": 4019,
+  "graph_checkpoint_sha256": "DE9BF3CD21FFC3A281C2FA359B6B2A88F34D9FA8F84FB04CFD85DFDEB3837294",
+  "graph_target_accounting": {
+    "direct_noether_import_targets": 46,
+    "umbrella_targets": 2,
+    "total_current_targets": 48
+  },
+  "metadata_pins": [
+    {
+      "path": "metadata/noether-theorems.tsv",
+      "bytes": 253131,
+      "sha256": "3B01BE99038A65C0AA8E54321773B09B51C1C600BD76D668F1267ADB0CFB3F61",
+      "data_rows": 320,
+      "unique_ids": 320,
+      "columns": 15
+    },
+    {
+      "path": "metadata/noether-works.tsv",
+      "bytes": 19562,
+      "sha256": "4D301A0C61984F2A91CB58000C142BADBF7B9596F2903208E06E792FCFF57805",
+      "data_rows": 43,
+      "columns": 20
+    },
+    {
+      "path": "metadata/noether-canon-qa.tsv",
+      "bytes": 15576,
+      "sha256": "493E46FFE536F72D6BB16C63D359E391D2FBE2E95E835FED4E58D222B620C7C5",
+      "open_reference": "NOETH-QA-034"
+    }
+  ],
+  "documentation_pins": [
+    {"path": "docs/noether/hentzelt-polynomial-ideals-resultants-1923.md", "bytes": 56851, "sha256": "A3426312B3FDBD83D5807B4040F371903E8BECE799C078700C96CFBBB617BCB2"},
+    {"path": "docs/noether/mathlib-coverage.md", "bytes": 39667, "sha256": "AF73F7EB0050ABBC52E33A6C2D19F02E5F207650D1C66104678E87C5C704832F"},
+    {"path": "docs/index.md", "bytes": 9041, "sha256": "34FF8ABB88148B960733129CB0A412CE763EC1C49DBE06A3B95E84FC36709C14"},
+    {"path": "README.md", "bytes": 22703, "sha256": "70A6208220B7165B33A8BB773EE68A526549699F0B80903363EB83ABDE410541"},
+    {"path": "CHANGELOG.md", "bytes": 30979, "sha256": "410A111F92A5E417C8386A3AEF468649B045B9CCEEE841D09EFFF567FFB46C80"}
+  ],
+  "canon_qa": {
+    "id": "NOETH-QA-034",
+    "source_line": 13319,
+    "state": "OPEN_CANON_QA",
+    "effect_on_claim": "none; outside the formalized target lines and no German, translation, or Lean source was silently corrected",
+    "owner_thread": "019fca5c-0e73-7c72-92fb-5b507b710598",
+    "delivery_state": "recorded locally; direct task messaging endpoint unavailable on this host"
+  },
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "lean_commit": "68218e876d2a38b1985b8590fff244a83c321783",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "worker_memory_limit_gib": 2.5,
+  "runner_sha256": "2BE9B6EBED0E973321A019A7B7E6A24E35C793EEB59FDDCD0ECD7F4D75616EB4",
+  "all_green": true,
+  "limitations": "The greatest selected coefficient and the equation-(33) integral lift/witness remain explicit hypotheses. No existence or canonical ordering of the selected greatest coefficient, auxiliary-choice independence, identification of the selected product with primitive R^(i), identification or normalization of a historical E^(i), primitive descent from the coefficient localization, construction of later-variable Smith stages, iteration through lines 13374--13380, equation (34), determinant-norm/resultant identification, or final tail-product ideal-membership theorem is asserted. The local open canon item NOETH-QA-034 concerns line 13319 outside these target ranges and does not alter this mathematical claim."
+}

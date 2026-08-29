@@ -1,0 +1,201 @@
+{
+  "schema": "lean-mathematical-commons/claim-build-receipt/1.0",
+  "claim_id": "HENTZELT-NOETHER-1923-INTEGRAL-NUMERATOR-EQUATION-33-ITERATION",
+  "status": "bounded_integral_numerator_and_conditional_equation33_iteration_completed",
+  "source": {
+    "witness": "NOETH-DE-ED-0014",
+    "path": "C:\\Users\\Floris\\Documents\\interlanguage\\03_projects\\noether\\07_german_canon_control\\candidates\\ED0014\\noether.tex",
+    "sha256": "EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58",
+    "lines": "13323--13380; Satz VIII and equations (33)--(34)"
+  },
+  "classification": "FORMALIZED_GAP",
+  "classification_split": {
+    "NEW_PACKAGING": {
+      "declarations": 4,
+      "scope": "two generic localized-submodule denominator-clearing theorems and two reusable equation-(33) ideal-inclusion/finite-window packaging theorems"
+    },
+    "FORMALIZED_GAP": {
+      "declarations": 6,
+      "scope": "two theorems for the actual cutoff-one localized Smith coefficient and four source-shaped terminal/iterated equation-(33) results for the actual stage ground ideals"
+    }
+  },
+  "mathlib_core": [
+    "Submodule.mem_localized'",
+    "IsLocalizedModule.exists_of_eq",
+    "IsLocalization.surj",
+    "IsLocalization.map_units",
+    "Ideal.span_singleton_mul_le_iff",
+    "MvPolynomial.vars_eq_empty_iff_eq_C",
+    "Ideal.unit_mul_mem_iff_mem",
+    "Finset.prod_range_succ"
+  ],
+  "local_packaging_dependency": [
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableSmithCoefficients",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableGroundModule_eq_moduleQuotientBySmithCoefficient",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.secondVariableBoundedLocalizationMap_isLocalizedModule",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.stageGroundIdeal",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.SatzVIIIOneStageDescent.HasEquation33Witness",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.SatzVIIIOneStageDescent.equation33_mem_succStageGroundIdeal"
+  ],
+  "declarations": 10,
+  "declaration_scope": "all exported declarations in both modules; every declaration is covered by a #print axioms command",
+  "theorem_count": 10,
+  "definition_and_abbreviation_count": 0,
+  "newly_closed": [
+    "localized-submodule membership can be cleared after one denominator without assuming injectivity of the localization map",
+    "localization surjectivity produces a nonzero integral numerator for the actual selected greatest cutoff-one Smith coefficient",
+    "for every vector in the bounded cutoff-one ground module, a genuinely late-variable denominator sends the integral numerator action back into the bounded original module",
+    "an elementwise equation-(33) witness is equivalent to the corresponding principal-ideal product inclusion",
+    "a finite consecutive family of supplied equation-(33) witnesses transports the product through an arbitrary finite window of stage ground ideals",
+    "the terminal stage ground ideal over the source field equals the original ideal",
+    "a complete supplied equation-(33) witness family proves the conditional E-product half of equation (34), together with its tail-window form"
+  ],
+  "modules": [
+    {
+      "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstSmithIntegralNumerator",
+      "source": {
+        "path": "MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/FirstSmithIntegralNumerator.lean",
+        "bytes": 9458,
+        "sha256": "ECA6FBF7CAA909D689F6369B143E3969553D9004C335E6FA1C2F316DB70E328F"
+      },
+      "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithIntegralNumerator-20260829T1518064363393-bf431c1b.module.receipt.json",
+      "receipt_sha256": "4717412B681D6226D9049DDAEA9C173A86878134C0FEFE87D7BB5FB38FE0327E",
+      "batch_id": "20260829T1518063081452-cfe75da1",
+      "exit_code": 0,
+      "peak_bytes": 1383194624,
+      "stdout_bytes": 863,
+      "stdout_sha256": "25DEFEDD98C688C12B5F0E314AA0AD9C465576AAE10B1EBF59DC88811A53E60D",
+      "stderr_bytes": 0,
+      "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "warnings": 0,
+      "errors": 0,
+      "sorry_or_admit": 0,
+      "axiom_or_unsafe_declarations": 0,
+      "declaration_count": 4,
+      "print_axioms_count": 4,
+      "axioms": ["propext", "Classical.choice", "Quot.sound"],
+      "olean": {
+        "bytes": 366624,
+        "sha256": "CDA4D3888F8F5486E169C68D7AA2DFB4B8A71A7427A1A83AABF95C88939F27A1"
+      }
+    },
+    {
+      "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.SatzVIIIEquation33Iteration",
+      "source": {
+        "path": "MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/SatzVIIIEquation33Iteration.lean",
+        "bytes": 6799,
+        "sha256": "A1DEDECBA8D6945B719A0014C9D46579DCC6AFC589B2DADB7B990E84405EE128"
+      },
+      "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-SatzVIIIEquation33Iteration-20260829T1519573911099-a856eb8a.module.receipt.json",
+      "receipt_sha256": "953FA6666354A4285223B06D5D43F3C32DB85DCAB01788312B15E11580735544",
+      "batch_id": "20260829T1519572819201-d8a7836e",
+      "exit_code": 0,
+      "peak_bytes": 1339314176,
+      "stdout_bytes": 1142,
+      "stdout_sha256": "63ED322F02A721CCE9DD67DB5D8DEA47E7D0FCE8558BB9CB5D4BB5A9F3AD43CE",
+      "stderr_bytes": 0,
+      "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "warnings": 0,
+      "errors": 0,
+      "sorry_or_admit": 0,
+      "axiom_or_unsafe_declarations": 0,
+      "declaration_count": 6,
+      "print_axioms_count": 6,
+      "axioms": ["propext", "Classical.choice", "Quot.sound"],
+      "olean": {
+        "bytes": 160024,
+        "sha256": "5D4A7114D68ABA0055010C7205870812280C5BDAF9BC0B8095B7BD97242C4EC2"
+      }
+    }
+  ],
+  "umbrella_receipt_pins": [
+    {
+      "module": "MathematicalCommons.Noether",
+      "source": {
+        "path": "MathematicalCommons/Noether.lean",
+        "bytes": 3917,
+        "sha256": "EDC7C25C228A968C6B1B7AC50560E507E9B6F395BF1D6F77F8039562A07A7F16"
+      },
+      "path": "artifacts/build/MathematicalCommons-Noether-20260829T1520466978169-62dd6b04.module.receipt.json",
+      "bytes": 6730,
+      "sha256": "A0E50DC8E05CE54A72A9D86D0B8B3371A02E7ABF03D42228F07BB3CF3833CA4F",
+      "exit_code": 0,
+      "peak_bytes": 1919537152,
+      "olean_bytes": 7448,
+      "olean_sha256": "2FEAF1BE61E952FA1C49E8209FE3D7B4AFC78B81623083B68E91B834FA5C5269"
+    },
+    {
+      "module": "MathematicalCommons",
+      "source": {
+        "path": "MathematicalCommons.lean",
+        "bytes": 36,
+        "sha256": "48EB6B102712DB6C8F0F2289C19200F9FDFB341E7D777BC6DC29B1D3D4C2FA94"
+      },
+      "path": "artifacts/build/MathematicalCommons-20260829T1521428893246-51e0a271.module.receipt.json",
+      "bytes": 6650,
+      "sha256": "C3B7A4B40F36B1F021BE51AB752699AA92BD2C0ED2156618A6F597555488C700",
+      "exit_code": 0,
+      "peak_bytes": 1915904000,
+      "olean_bytes": 1480,
+      "olean_sha256": "1C24DDBEC34C55C36E1DD8777FD4987630F13A48F421A4352F86338199D53604"
+    }
+  ],
+  "graph_checkpoint": "artifacts/build/module-graph-checkpoint-20260829T1523107316462-9c389dd9.json",
+  "graph_checkpoint_bytes": 4071,
+  "graph_checkpoint_sha256": "8FC91EBB1E6333DF8D2CE9198E8B0EECD75A8CEABC5511368D7249232B4F7CF2",
+  "graph_target_accounting": {
+    "direct_noether_import_targets": 48,
+    "umbrella_targets": 2,
+    "total_current_targets": 50
+  },
+  "metadata_pins": [
+    {
+      "path": "metadata/noether-theorems.tsv",
+      "bytes": 260540,
+      "sha256": "8EDC9B3FBDC130D3A53BAE6AE7F804E7FD149A0219A6BFDD16341396078EBC93",
+      "data_rows": 324,
+      "unique_ids": 324,
+      "columns": 15,
+      "p22_rows": 55,
+      "p22_grouped_declaration_references": 554
+    },
+    {
+      "path": "metadata/noether-works.tsv",
+      "bytes": 19975,
+      "sha256": "451BD722D4024BB5867AE2F93DDBA3DEEEE5EB6F3149086E1B247BF951500131",
+      "data_rows": 43,
+      "columns": 20,
+      "p22_canonical_declarations": 539,
+      "p22_support_modules": 33
+    },
+    {
+      "path": "metadata/noether-canon-qa.tsv",
+      "bytes": 15576,
+      "sha256": "493E46FFE536F72D6BB16C63D359E391D2FBE2E95E835FED4E58D222B620C7C5",
+      "open_reference": "NOETH-QA-034"
+    }
+  ],
+  "documentation_pins": [
+    {"path": "docs/noether/hentzelt-polynomial-ideals-resultants-1923.md", "bytes": 60387, "sha256": "0671F7332052DE3F285075824D91B33BFDAA1076E69CA204A3D2E90A85835F9E"},
+    {"path": "docs/noether/mathlib-coverage.md", "bytes": 40057, "sha256": "760EC186322E0B8EEFA868F74C54E8E0D1D400919455EDBE3F3E890BF8D67BE1"},
+    {"path": "docs/index.md", "bytes": 9347, "sha256": "6740EB46E7C8F6271F3FB2025BEB3ED6176019EA0E9D56E6A0D897F692385E37"},
+    {"path": "README.md", "bytes": 23554, "sha256": "390765902F1E9A334D5E3A0B0EDD131CA3828002357C084807794D59598783EA"},
+    {"path": "CHANGELOG.md", "bytes": 32544, "sha256": "90CB885648C05AE60A613310F786C940AD1FCF173E0E1094CB9F4783052293C2"}
+  ],
+  "canon_qa": {
+    "id": "NOETH-QA-034",
+    "source_line": 13319,
+    "state": "OPEN_CANON_QA",
+    "effect_on_claim": "none; the item lies before the formalized target lines and no German, translation, or Lean source was silently corrected",
+    "owner_thread": "019fca5c-0e73-7c72-92fb-5b507b710598",
+    "delivery_state": "recorded locally; exact direct owner-task delivery was attempted but the task is currently unavailable/unreadable on this host"
+  },
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "lean_commit": "68218e876d2a38b1985b8590fff244a83c321783",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "worker_memory_limit_gib": 2.5,
+  "runner_sha256": "2BE9B6EBED0E973321A019A7B7E6A24E35C793EEB59FDDCD0ECD7F4D75616EB4",
+  "all_green": true,
+  "limitations": "The integral numerator theorem controls only the bounded cutoff-one coordinate module; it neither transports the action to every element of the full first stage ground ideal nor constructs a full HasEquation33Witness. The numerator is not proved primitive, canonical, or independent of Smith/localization choices. The iteration theorems require an externally supplied equation-(33) witness family. No primitive or canonical historical E^(i), parallel R-product/resultant half of equation (34), determinant-norm/resultant identification, or full final Satz VIII conclusion is asserted. The local open canon item NOETH-QA-034 concerns line 13319 outside the target range and does not alter this mathematical claim."
+}
