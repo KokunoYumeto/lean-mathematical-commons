@@ -1,7 +1,7 @@
 {
   "title": "Lean of the Mathematical Commons: Emmy Noether pilot",
   "upload_type": "software",
-  "description": "<p>A living, source-linked Lean 4 library and Mathlib coverage audit for classical mathematics, beginning with Emmy Noether. This release includes the pinned Lean/Mathlib project, promoted theorem modules, paper- and theorem-level coverage ledgers, controlled-witness provenance, bounded-memory build tooling, axiom audits, build receipts, limitations, and publication evidence.</p><p>Version 0.2.6 adds six coherent P22 modules with 46 declarations: a greatest-selected-coefficient bridge, one-stage equation-(33) descent, integral localization numerators, finite equation-(33) iteration, the full conditional cutoff-one equation-(33) witness for the selected Smith coefficient, and compatible integral numerators for that coefficient and the finite product of selected Smith coefficients. The product numerator inherits a nonzero full lift and a cutoff-one witness while retaining the localized product-divides-power bound. P22 now has 557 canonical declarations across the base and 35 support modules, and the verified graph has 50 direct Noether targets plus two umbrellas.</p><p>Cutoff 1 is source stage i = 2. The selected-coefficient product numerator is not identified with Hentzelt's primitive historical R^(2), a resultant, a normalized or canonical form, or a choice-independent object. The later-stage witness family, historical R^(i) forms, determinant-norm/resultant identification, primitive descent, compatible zeros, and multiplicity conclusions remain open. Lean verification certifies only formal statements and explicit assumptions; it does not certify German transcription fidelity, translation, prose, layout, completeness, or critical-edition status. German canon authority remains separate from this repository.</p>",
+  "description": "<p>A living, source-linked Lean 4 library and Mathlib coverage audit for classical mathematics, beginning with Emmy Noether. This release includes the pinned Lean/Mathlib project, promoted theorem modules, paper- and theorem-level coverage ledgers, controlled-witness provenance, bounded-memory build tooling, axiom audits, build receipts, limitations, Internet-source audits, and publication evidence.</p><p>Version 0.3.0 adds three late P22 modules for primitive selected-coefficient/product representatives, transition determinants, and finite determinantal ideals; a source-linked P40 module for the full-matrix and real-quaternion special cases of Noether's inner-automorphism theorem; and a P11 module for elementary-symmetric algebraic independence, the full symmetric invariant ring, and its abstract fraction-ring extension. The P40 adaptations retain exact Apache-2.0 attribution. A commit-pinned P11 Internet candidate supplied an API lead, but no unlicensed source bytes were copied. The verified graph has 55 direct Noether modules plus two umbrellas. Twenty-one of 43 works are partially audited; 154 of 343 inventoried units are completed or available, with 59 newly completed local rows.</p><p>The historical P22 determinant-norm/resultant identification, canonical forms, and later stages remain open. The full P40 arbitrary simple-subring theorem remains open. P11's arbitrary-subgroup fixed-field bridge, minimal-basis and parameterization theorem, singular locus, n-2 reduction, Castelnuovo step, and cyclotomic case remain open. Lean verification certifies only formal statements and explicit assumptions; it does not certify German transcription fidelity, translation, prose, layout, completeness, or critical-edition status. German canon authority remains separate from this repository.</p>",
   "creators": [
     {
       "name": "OpenAI Codex"
@@ -10,7 +10,7 @@
   "access_right": "open",
   "license": "apache-2.0",
   "publication_date": "2026-08-29",
-  "version": "0.2.6",
+  "version": "0.3.0",
   "keywords": [
     "Lean 4",
     "Mathlib",
@@ -20,7 +20,9 @@
     "polynomial ideals",
     "regular polynomials",
     "historical mathematics",
-    "source-linked formalization"
+    "source-linked formalization",
+    "Galois theory",
+    "Skolem-Noether theorem"
   ],
   "related_identifiers": [
     {

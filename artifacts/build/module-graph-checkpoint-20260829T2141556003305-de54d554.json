@@ -1,0 +1,70 @@
+{
+  "schema": "lean-mathematical-commons/module-graph-checkpoint/1.0",
+  "checkpoint_id": "20260829T2141556003305-de54d554",
+  "base_batch": {
+    "batch_id": "20260825T0355153955281-3669b4fc",
+    "manifest": "artifacts/build/module-batch-20260825T0355153955281-3669b4fc.json",
+    "verified_modules": 17
+  },
+  "previous_checkpoint": "artifacts/build/module-graph-checkpoint-20260829T2034526550242-a888be76.json",
+  "previous_checkpoint_sha256": "63914A6654B90D1B9E2128ADB9CE91A4C25D238C2FD64CECCAC57BA818D38B6A",
+  "incremental_rebuild": {
+    "batch_ids": [
+      "20260829T2119092268645-ba444f1e",
+      "20260829T2122198301111-1c47bb4b",
+      "20260829T2141556003305-de54d554"
+    ],
+    "cache_directory": "artifacts/build/local-olean/20260825T0355153955281-3669b4fc",
+    "reason": "P22's determinant/minor gap is advanced by a source-neutral finite-matrix scaffold: k-minors are determinants of selected submatrices, their determinantal ideal is the span of all selected minors, generators are members, repeated selected rows or columns vanish, all-zero minors give the bottom ideal, the positive-degree zero matrix gives bottom, and degree zero gives top. This is infrastructure only: Cauchy--Binet invariance, Fitting ideals, module norm, maximal-minor gcd, historical R^(2), resultant, canonicality, and choice independence remain open.",
+    "reused_unchanged_theorem_modules": 52,
+    "changed_theorem_modules": 0,
+    "added_theorem_modules": 1,
+    "direct_noether_import_targets": 53,
+    "umbrella_targets": 2,
+    "total_current_targets": 55,
+    "max_memory_gib": 2.5,
+    "global_worker_limit_gib": 3.0,
+    "rebuilt_modules": [
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.DeterminantalIdealScaffold",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1167695872,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-DeterminantalIdealScaffold-20260829T2119094849183-578e0ed0.module.receipt.json",
+        "receipt_sha256": "F99EEE43D3FE34045D5582AB83F394158EBE9D0B09787799BE8100DC332087B3"
+      },
+      {
+        "module": "MathematicalCommons.Noether",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1919422464,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-20260829T2122201733912-236d52be.module.receipt.json",
+        "receipt_sha256": "814C126E414953A59DB9302E943FD8F3772DFABA4AEE6BD3CCEF309A0957A0A1"
+      },
+      {
+        "module": "MathematicalCommons",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1918066688,
+        "receipt": "artifacts/build/MathematicalCommons-20260829T2141556987939-211968ff.module.receipt.json",
+        "receipt_sha256": "ECC8A36F324FCE75310109465DE8092BF7239B19C3CB223A32884D0F1F5497E9"
+      }
+    ]
+  },
+  "lean_version": "4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "all_55_targets_current": true,
+  "all_exit_zero": true,
+  "all_stderr_empty": true,
+  "all_sources_unchanged_during_build": true,
+  "all_environments_unchanged_during_build": true,
+  "current_incremental_maximum_observed_process_tree_peak_bytes": 1919422464,
+  "maximum_observed_process_tree_peak_bytes": 1922387968
+}

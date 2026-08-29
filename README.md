@@ -19,11 +19,20 @@ never silently repaired here.
 - Reproduces the downloaded Zenodo sidecars from
   [record 21129946](https://zenodo.org/records/21129946) under
   `archive/zenodo/21129946/`, with verified MD5 and SHA-256.
+- Retains a local copy of the exact 9,834-byte sidecar archive in
+  [`artifacts/corpus/`](artifacts/corpus/ClassicalAudit_LeanSidecars_Noether_Steinitz_Weber_Jordan_20260630.zip)
+  with credential-free [download](artifacts/corpus/zenodo-21129946-download-receipt.json)
+  and [lossless-extraction](artifacts/corpus/zenodo-21129946-extraction-receipt.json)
+  receipts. The extraction retains all 14 entries and independently pins every
+  byte count and SHA-256.
+  Its four Lean entries are `NoetherIdealtheorie.lean`, `Steinitz.lean`,
+  `Weber.lean`, and `AffineGroup.lean`; they remain provenance sidecars rather
+  than being silently merged into the controlled P22 development.
 - Pins Lean/Mathlib `v4.31.0`, matching that deposit.
 - Indexes all 43 numbered Noether work packets, including joint authorship,
   editorial roles, posthumous-source caveats, and open canon QA.
-- Records declaration-level Mathlib coverage for nineteen Noether works: the 1916
-  finite-group invariant paper, 1918 variational paper, 1919 integral-invariant
+- Records declaration-level Mathlib coverage for twenty-one Noether works: the 1916
+  finite-group invariant paper, 1918 prescribed-group and variational papers, 1919 integral-invariant
   paper, 1920 series-expansion paper, joint 1920 Noether–Schmeidler
   noncommutative-module paper, Noether's 1921 report on Hentzelt's elimination
   theory, 1921 *Idealtheorie*, the 1922 formal-variational encyclopedia entry
@@ -32,7 +41,8 @@ never silently repaired here.
   invariant/elimination surveys, the 1924 elimination/ideal-theory survey, the
   1924 abstract ideal-theory and 1925
   Hilbert-number/group-character communications, the 1926 modular-invariant
-  paper, 1927 abstract Dedekind ideal theory, and the 1927 discriminant paper.
+  paper, 1927 abstract Dedekind ideal theory, the 1927 discriminant paper, and
+  the inner-automorphism theorem in the 1933 *Nichtkommutative Algebren*.
 - Adds source-shaped, axiom-audited 1921 declarations for finite irreducible
   decomposition, both primary-ideal formulations, Satz V's unique prime,
   greatest-ideal and least-exponent clauses, Satz VI, and part of Satz VIII.
@@ -48,6 +58,18 @@ never silently repaired here.
 - Maps every numbered theorem in the joint 1920 noncommutative-module paper,
   records its source dictionary and QA conflicts, and promotes the bounded,
   axiom-audited noncommutative quotient-product core of Satz I.
+- Content-reads and commit-pins four Internet-hosted Lean files relevant to
+  Noether. The source-linked P40 module adapts QICLean's full-matrix inner-
+  automorphism wrapper and TauCeti's real-quaternion conjugacy case with
+  Apache-2.0 attribution; both build green. Blackfeather's Jacobson–Noether
+  incubator is already upstream in Mathlib, while TauCeti's general theorem is
+  retained as a dependency model rather than copying its infrastructure
+  cluster. The full P40 simple-subring theorem remains open.
+- Content-reads and commit-pins three additional Internet candidates. The
+  Hilbert-14 file is subsumed by the stronger local fixed-ring theorem; the
+  P11 file supplies a provenance/API lead for an independently written green
+  symmetric-invariant module with zero copied bytes; and the apparent
+  variational `NoetherAudit` is rejected as an unrelated relabelling theorem.
 - Maps the 1919 integral-invariant paper through its determinant, multisymmetric,
   Plücker-ideal, straightening, and arithmetic finite-generation layers, and
   promotes only the elementary four-index Plücker support identity with bounded
@@ -80,7 +102,9 @@ never silently repaired here.
   a nonzero integral numerator whose full-ring lift satisfies
   `HasEquation33Witness I 1` by regular division with a genuine cutoff-two
   denominator, and a compatible nonzero integral numerator for the finite
-  selected-Smith-coefficient product. Here local cutoff `1` is the source's
+  selected-Smith-coefficient product. The selected-basis transition determinant
+  is now defined, identified with that finite product, and controlled up to
+  association under basis change. Here local cutoff `1` is the source's
   stage `i = 2`; the product numerator is not identified with historical
   `R^(2)` or with a resultant. Equation (33)'s Noetherian descent and finite
   iteration for supplied later witnesses reach the conditional `E`-product
@@ -196,7 +220,8 @@ never silently repaired here.
   divisibility ordering,
   identification of the freely adjoined tail with the separately constructed
   historical unbounded module, identification of the determinant product with
-  Hentzelt's norm or resultant, primitive normalization and choice independence,
+  Hentzelt's norm or resultant, historical/canonical primitive-form
+  identification and choice independence,
   later-stage equation-(33) witness construction, the parallel `R^(i)` product
   needed to complete equation (34), and the compatible-zero system remain
   open. Tail coefficient `1` is
@@ -265,10 +290,14 @@ dependency object, its opt-in `-MirrorPackageOutputs` mode hash-checks and
 mirrors only explicitly compiled sidecars into the disposable dependency
 project; it refuses a conflicting target rather than rebuilding a package.
 
-The most recent sealed graph check has 52 targets (50 direct Noether imports
+The most recent sealed graph check has 55 targets (53 direct Noether imports
 and both umbrellas) at checkpoint
+[`20260829T2141556003305-de54d554`](artifacts/build/module-graph-checkpoint-20260829T2141556003305-de54d554.json),
+which chains the preceding 54-target checkpoint
+[`20260829T2034526550242-a888be76`](artifacts/build/module-graph-checkpoint-20260829T2034526550242-a888be76.json),
+which chains the preceding 52-target checkpoint
 [`20260829T1614266016417-a6b1b43c`](artifacts/build/module-graph-checkpoint-20260829T1614266016417-a6b1b43c.json),
-which chains the preceding
+which in turn chains the preceding
 [51-target checkpoint](artifacts/build/module-graph-checkpoint-20260829T1552050773212-64de772d.json).
 The preceding checkpoint adds the fourteen-declaration `FirstSmithEquation33Bridge`. Its clean
 [bounded receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithEquation33Bridge-20260829T1549364931065-c50c17d9.module.receipt.json)
@@ -286,20 +315,99 @@ four `NEW_PACKAGING` declarations. Its 9,279-byte source has SHA-256
 the clean [bounded receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithCoefficientProductNumerator-20260829T1607180026573-04e54684.module.receipt.json)
 records a 1,421,578,240-byte peak. The new Noether and full umbrellas peaked at
 1,916,051,456 and 1,911,451,648 bytes respectively; the graph-chain maximum
-remains 1,922,387,968 bytes. P22 now accounts for 557 canonical declarations
-across its base and 35 support modules. The cluster claim is
+remains 1,922,387,968 bytes. The cluster claim is
 [`HENTZELT-NOETHER-1923-FIRST-SMITH-COEFFICIENT-PRODUCT-NUMERATOR-PACKAGING`](artifacts/build/claim-P22-first-smith-coefficient-product-numerator-20260829T1614266016417-a6b1b43c.json).
+
+The green `FirstSmithPrimitiveCoefficientProductForm` module adds two generic
+`NEW_PACKAGING` helpers and two source-shaped
+`FORMALIZED_SOURCE_PACKAGING` declarations. Removing content from the selected
+integral coefficient and coefficient-product numerators gives primitive,
+nonzero representatives `e` and `r`; after localization they remain associated
+with the selected Smith coefficient and finite selected-coefficient product,
+they satisfy the integral divisibilities `e ∣ r` and `r ∣ e ^ ρ`, and both
+full-ring lifts retain `HasEquation33Witness I 1`. These remain conditional
+selected proxies: they are not the historical `E^(2)` or `R^(2)`, module norm,
+gcd of maximal minors, or resultant, and are not canonical or choice-independent.
+The new green `FirstSmithPrimitiveTransitionDeterminantForm` module adds five
+source-facing definitions/theorems. It defines the localized ground-to-
+denominator transition determinant, proves that the selected Smith-basis
+determinant is exactly the finite selected-coefficient product, and proves
+association under a change of linear equivalence. Its final theorem adds the
+association of the primitive product proxy with that selected determinant after
+localization, while deliberately stopping short of historical `R^(2)`, the
+module norm, the gcd of maximal minors, a resultant, or any canonical/
+choice-independent identification. The 12,260-byte source has SHA-256
+`D7E1454B7D1175DF7B68FC150A81D16CE8FA762C7B0A9BAEC706156FD0CC3579`;
+its clean [bounded receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithPrimitiveTransitionDeterminantForm-20260829T2024252306168-af0bed92.module.receipt.json)
+has SHA-256
+`70551DBCF893AC7384F6F4A223A8BE4944A11BA05FE32A862130B9486942D922`, records
+a 1,428,381,696-byte peak, and audits all five declarations. Its module claim
+is [`HENTZELT-NOETHER-1923-FIRST-SMITH-PRIMITIVE-TRANSITION-DETERMINANT-FORM-PACKAGING`](artifacts/build/claim-P22-first-smith-primitive-transition-determinant-20260829T2024252306168-af0bed92.json).
+The green `DeterminantalIdealScaffold` module then adds ten source-neutral
+`NEW_PACKAGING` declarations. It defines finite `k`-minors by selected
+submatrix determinants and the ideal spanned by all such minors; it proves
+generator membership, repeated-row/column vanishing, the all-zero-minors and
+zero-matrix bottom cases, and the degree-zero top case. All ten declarations
+have explicit axiom prints. The 6,009-byte source has SHA-256
+`1BCAAE22D0B4E18243A4F575DC2DBE2A9DE7F1FAF65783D524B179F379F63B80`;
+its clean [bounded receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-DeterminantalIdealScaffold-20260829T2119094849183-578e0ed0.module.receipt.json)
+records a 1,167,695,872-byte peak. This is not yet a Fitting ideal,
+Cauchy--Binet invariance theorem, maximal-minor gcd, module norm, historical
+`R^(2)`, resultant, canonical form, or choice-independent object. Its
+[claim receipt](artifacts/build/claim-P22-determinantal-ideal-scaffold-20260829T2119094849183-578e0ed0.json)
+keeps those boundaries explicit.
+The preceding 12,041-byte source has SHA-256
+`0DB8944E6447B3678CDF56959FC5552832DE62691A8B02B4E35CBAC133B1F06E`;
+its clean [bounded receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithPrimitiveCoefficientProductForm-20260829T1922416820685-b3774a59.module.receipt.json)
+records a 1,412,005,888-byte peak. P22 now accounts for 576 canonical
+declarations across its base and 38 support modules. With the finite-minor
+scaffold integrated, the working graph has 53 direct Noether imports and 55
+targets including both umbrellas; both fresh serial umbrella receipts are green
+at that P22 checkpoint. The subsequent P40 and P11 modules bring the current
+graph to 55 direct Noether imports and 57 targets including both umbrellas; the
+[57-target checkpoint](artifacts/build/module-graph-checkpoint-20260829T2327308948138-d815b8e6.json)
+is the latest sealed graph.
+
+The P11 pilot now has a green source-linked module for *Gleichungen mit
+vorgeschriebener Gruppe* (1918). It packages Mathlib's elementary-symmetric
+algebraic independence and full symmetric invariant-ring equivalence, and adds
+the corresponding abstract fraction-ring equivalence. The
+[standalone receipt](artifacts/build/MathematicalCommons-Noether-EquationsWithPrescribedGroup1918-20260829T2315159464772-244c1dd8.module.receipt.json)
+records exit 0, the three standard Mathlib axioms, and a 1,170,911,232-byte
+peak; both fresh umbrellas are green below 2 GiB. The ten-row
+[claim receipt](artifacts/build/claim-P11-prescribed-group-20260829T2315159464772-244c1dd8.json)
+keeps the stronger fixed-field bridge, minimal-basis/parameterization theorem,
+singular locus, `n - 2` reduction, Castelnuovo step, and abelian cyclotomic case
+open. A commit-pinned Internet candidate supplied an API lead, but no external
+source bytes were copied.
+
+The conservative [Noether coverage snapshot](artifacts/coordination/noether-coverage-snapshot-20260829.json)
+records 21 of 43 works under partial theorem audit, covering 7,694 of 20,437
+controlled-source lines. Of 343 inventoried claim units, 154 (44.9%) are
+available through exact/modern Mathlib coverage or completed local content;
+59 are newly completed local content: 58 locally original rows and one
+externally attributed promoted gap. Since no paper audit is complete, the
+whole-corpus planning estimates are 17–22% available and 6–8% newly completed
+locally. Green support builds are not counted as closure of a historical claim.
 
 Meaningful theorem clusters—not individual edits—are the intended GitHub/Zenodo
 release unit. The living series uses concept DOI
 [10.5281/zenodo.21129945](https://doi.org/10.5281/zenodo.21129945); the current
 Noether-pilot release DOI is
-[10.5281/zenodo.22150495](https://doi.org/10.5281/zenodo.22150495).
+[10.5281/zenodo.22162481](https://doi.org/10.5281/zenodo.22162481).
 
 ## Project map
 
 - `MathematicalCommons/`: compiling Lean source.
 - `docs/noether/mathlib-coverage.md`: verified coverage and gaps.
+- `docs/noether/external-lean-discovery-and-publication.md`: third-party
+  Noether Lean discovery, the actual four-file content audit and P40
+  absorption decisions, the three-file follow-up and P11 API-lead absorption,
+  DOI lineage, author-repository architecture, and the ranked high-value
+  formalization program.
+- `metadata/topic-literature-route-noether-p11-prescribed-group.json`: the
+  ten-claim P11 crosswalk, source witness, external lead, green receipts, and
+  next fixed-field dependencies.
 - `docs/index.md`: central cross-author “Lean of the Mathematical Commons”
   landing page.
 - `docs/noether/paper-inventory.md`: all 43 numbered work packets and QA flags.

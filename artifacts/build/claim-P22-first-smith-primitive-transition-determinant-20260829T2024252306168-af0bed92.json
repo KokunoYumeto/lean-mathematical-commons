@@ -1,0 +1,201 @@
+{
+  "schema": "lean-mathematical-commons/claim-build-receipt/1.0",
+  "claim_id": "HENTZELT-NOETHER-1923-FIRST-SMITH-PRIMITIVE-TRANSITION-DETERMINANT-FORM-PACKAGING",
+  "status": "integrated_green_pending_public_release",
+  "source": {
+    "witness": "NOETH-DE-ED-0014",
+    "path": "C:\\Users\\Floris\\Documents\\interlanguage\\03_projects\\noether\\07_german_canon_control\\candidates\\ED0014\\noether.tex",
+    "sha256": "EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58",
+    "lines": "13323--13350; Satz VIII opening, Definition VI, and the equation-(33) determinant edge"
+  },
+  "classification": "NEW_PACKAGING",
+  "local_contribution": "FORMALIZED_SOURCE_PACKAGING",
+  "classification_split": {
+    "NEW_PACKAGING": {
+      "declarations": 5,
+      "scope": "selected-basis transition determinant, its exact finite Smith-coefficient product formula, basis-change association, and the primitive integral representative bridge"
+    },
+    "FORMALIZED_GAP": {
+      "declarations": 0,
+      "scope": "none; the module records only the determinant/product content already supported by the constructed localized Smith pair"
+    }
+  },
+  "mathlib_core": [
+    "LinearMap.det",
+    "LinearMap.associated_det_comp_equiv",
+    "LinearMap.comp",
+    "LinearEquiv.toLinearMap",
+    "Submodule.subtype"
+  ],
+  "local_packaging_dependency": [
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstSmithPrimitiveCoefficientProductForm",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.exists_primitive_integralSmithCoefficientProductRepresentatives_hasEquation33Witness",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableSmithCoefficients",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableSmithCoefficientProduct",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableEtaBasis",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.localizedSecondVariableDenominatorBasis",
+    "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.RegularIdealDecomposition.det_localizedSecondVariableSmithBasisTransition_eq_prod"
+  ],
+  "declarations": 5,
+  "declaration_scope": "all exported declarations in the module; every declaration is covered by a trailing #print axioms command",
+  "theorem_count": 3,
+  "definition_and_abbreviation_count": 2,
+  "newly_closed": [
+    "the determinant of an explicitly chosen localized ground-to-denominator linear equivalence is defined with the coherent local additive and semiring instances",
+    "the selected Smith-basis transition determinant is exactly the finite product of the selected localized Smith coefficients",
+    "changing the chosen linear equivalence changes the transition determinant only by association",
+    "primitive nonzero integral representatives for the selected coefficient and product retain the cutoff-one equation-(33) witnesses, and the product representative is associated after localization with the selected transition determinant"
+  ],
+  "modules": [
+    {
+      "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstSmithPrimitiveTransitionDeterminantForm",
+      "source": {
+        "path": "MathematicalCommons/Noether/PolynomialIdealsAndResultants1923/FirstSmithPrimitiveTransitionDeterminantForm.lean",
+        "bytes": 12260,
+        "sha256": "D7E1454B7D1175DF7B68FC150A81D16CE8FA762C7B0A9BAEC706156FD0CC3579"
+      },
+      "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithPrimitiveTransitionDeterminantForm-20260829T2024252306168-af0bed92.module.receipt.json",
+      "receipt_bytes": 7456,
+      "receipt_sha256": "70551DBCF893AC7384F6F4A223A8BE4944A11BA05FE32A862130B9486942D922",
+      "exit_code": 0,
+      "peak_bytes": 1428381696,
+      "stdout_bytes": 1081,
+      "stdout_sha256": "F8476162C5AB332C9297EE0C25397A39D982BEE875C65B24F1E116DC04058177",
+      "stderr_bytes": 0,
+      "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "warnings": 0,
+      "errors": 0,
+      "sorry_or_admit": 0,
+      "axiom_or_unsafe_declarations": 0,
+      "declaration_count": 5,
+      "print_axioms_count": 5,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "olean": {
+        "bytes": 342760,
+        "sha256": "F03035E1595AD9A6FD6C8BF7D1C422CC55800A094FCCB957E4B32AD6C31CF06B"
+      }
+    }
+  ],
+  "umbrella_receipts": [
+    "artifacts/build/MathematicalCommons-Noether-20260829T2033422599546-e96b4930.module.receipt.json",
+    "artifacts/build/MathematicalCommons-20260829T2034528125251-2d182c2c.module.receipt.json"
+  ],
+  "umbrella_receipt_pins": [
+    {
+      "module": "MathematicalCommons.Noether",
+      "source": {
+        "path": "MathematicalCommons/Noether.lean",
+        "bytes": 4345,
+        "sha256": "521203F7A4DA9AC93E48D909C2C84A19B4521192601666283C6ABB1DD3562F26"
+      },
+      "path": "artifacts/build/MathematicalCommons-Noether-20260829T2033422599546-e96b4930.module.receipt.json",
+      "bytes": 6730,
+      "sha256": "73E7D557CEC9A4A470F4E458780365F4BE313285907C7EF5A59219790588C245",
+      "exit_code": 0,
+      "peak_bytes": 1918812160,
+      "olean_bytes": 8000,
+      "olean_sha256": "F65399F1774BF03CE97E604125D47DE611AA3E9A6784163BFAE276A7C526D637"
+    },
+    {
+      "module": "MathematicalCommons",
+      "source": {
+        "path": "MathematicalCommons.lean",
+        "bytes": 36,
+        "sha256": "48EB6B102712DB6C8F0F2289C19200F9FDFB341E7D777BC6DC29B1D3D4C2FA94"
+      },
+      "path": "artifacts/build/MathematicalCommons-20260829T2034528125251-2d182c2c.module.receipt.json",
+      "bytes": 6650,
+      "sha256": "83FF79301B90C88749F81CE75833242006314FDEC54809E03140CD2622044CBB",
+      "exit_code": 0,
+      "peak_bytes": 1913110528,
+      "olean_bytes": 1480,
+      "olean_sha256": "1C24DDBEC34C55C36E1DD8777FD4987630F13A48F421A4352F86338199D53604"
+    }
+  ],
+  "integration": {
+    "status": "integrated_green_pending_public_release",
+    "note": "The transition module is imported by MathematicalCommons.Noether and both serial umbrella builds exit zero under the 2.5 GiB watcher. The chained 54-target graph checkpoint and metadata/document pins are recorded locally; the next meaningful GitHub/Zenodo publication is intentionally queued rather than repeated immediately."
+  },
+  "graph_checkpoint": "artifacts/build/module-graph-checkpoint-20260829T2034526550242-a888be76.json",
+  "graph_checkpoint_bytes": 3557,
+  "graph_checkpoint_sha256": "63914A6654B90D1B9E2128ADB9CE91A4C25D238C2FD64CECCAC57BA818D38B6A",
+  "graph_target_accounting": {
+    "direct_noether_import_targets": 52,
+    "umbrella_targets": 2,
+    "total_current_targets": 54
+  },
+  "metadata_pins": [
+    {
+      "path": "metadata/noether-theorems.tsv",
+      "bytes": 272465,
+      "sha256": "28A5613B4065EFE33B29677347007C555794623BE2F09AE98E0BF0BA96381973",
+      "data_rows": 329,
+      "unique_ids": 329,
+      "columns": 15,
+      "p22_rows": 60,
+      "p22_canonical_declarations": 566
+    },
+    {
+      "path": "metadata/noether-works.tsv",
+      "bytes": 21260,
+      "sha256": "3F299FA7827F5DD21B53FC0974F4B104D1B43AA17BA4549CE877B5242B90CB55",
+      "data_rows": 43,
+      "columns": 20,
+      "p22_canonical_declarations": 566,
+      "p22_support_modules": 37
+    },
+    {
+      "path": "metadata/topic-literature-route-noether-p22-satz-viii-primitive-descent.json",
+      "bytes": 5515,
+      "sha256": "65283D57EBC8130D74B74349D05E241197C2456F3494FC09CFF81CDB127064D4",
+      "crosswalk_ids": 3,
+      "queries": 0
+    }
+  ],
+  "documentation_pins": [
+    {
+      "path": "README.md",
+      "bytes": 28188,
+      "sha256": "C4DCCF3F6EF0B28A72435F690E6F5BC7BB94566D91915C696187800FCA080A13"
+    },
+    {
+      "path": "docs/index.md",
+      "bytes": 10711,
+      "sha256": "E55EA707EC9E6C9E43E6AE740B548260814D1D93C3CB84FB9590D9B18125F262"
+    },
+    {
+      "path": "docs/noether/mathlib-coverage.md",
+      "bytes": 42282,
+      "sha256": "CE239EC4F793C919FF07DBF9164E57D7FF85BE6173007626E9EB5FAF319FB9F6"
+    },
+    {
+      "path": "docs/noether/hentzelt-polynomial-ideals-resultants-1923.md",
+      "bytes": 69103,
+      "sha256": "AC070E82D575D1CDFD701CE0473C39980F3219BAEB40BF83BFE1A25DBB5EFBB2"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 37657,
+      "sha256": "B069911A18E7687DA0891496783EA3D4D465047ACEC279859A69D58AE3E61BF6"
+    }
+  ],
+  "source_download_pin": {
+    "path": "artifacts/corpus/zenodo-21129946-download-receipt.json",
+    "bytes": 1466,
+    "sha256": "C790855EC4C799958A5927FFB38E17CA464BC2DAA43EAD6D042E7E09854BB3BF",
+    "archive_sha256": "E9E494210774F814505CEC76F5AA5F2D6C8309EC46EA8B1A70CB77B070691FA9",
+    "lean_sidecar_count": 4
+  },
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "lean_commit": "68218e876d2a38b1985b8590fff244a83c321783",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "worker_memory_limit_gib": 2.5,
+  "runner_sha256": "2BE9B6EBED0E973321A019A7B7E6A24E35C793EEB59FDDCD0ECD7F4D75616EB4",
+  "all_green": true,
+  "limitations": "The module proves only selected-basis packaging: the explicitly selected transition determinant equals the finite product of the selected localized Smith coefficients, arbitrary equivalence choices give associated determinants, and the primitive integral product representative from the preceding module is associated with this selected determinant after localization. It does not identify that representative or determinant with historical R^(2), Hentzelt's module norm, a gcd of maximal minors or a determinantal ideal, a historical resultant, a normalized canonical or choice-independent value, or any later-stage R^(i) construction. No equation-(34) parallel R-product, primitive-descent strengthening, multiplicity theorem, or unbounded-tail result is asserted."
+}

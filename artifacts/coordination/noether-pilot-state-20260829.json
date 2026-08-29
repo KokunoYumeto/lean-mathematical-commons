@@ -1,0 +1,53 @@
+{
+  "schema": "lean-mathematical-commons/coordination-state/1.0",
+  "recorded_utc": "2026-08-29T18:52:00.0000000Z",
+  "active_goal": "Build a continuously source-linked Lean library for Emmy Noether first, with transcription QA kept separate from formal statements, honest gap classification, bounded resource use, and meaningful public GitHub/Zenodo checkpoints; extend to other authors after the Noether lane is mature.",
+  "resource_policy": {
+    "lean_worker_limit": 1,
+    "worker_memory_limit_gib": 2.5,
+    "global_worker_limit_gib": 3.0,
+    "python_from_this_task": false,
+    "broad_interlanguage_git_scans": false,
+    "external_ssd": "Use only bounded direct reads; do not trigger wide corpus or repository scans."
+  },
+  "source_authority": {
+    "work_id": "P22",
+    "witness": "NOETH-DE-ED-0014",
+    "witness_sha256": "EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58",
+    "canon_note": "German canon remains unchanged; ED0014 is the active controlled witness for this lane."
+  },
+  "completed_checkpoint": {
+    "new_module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstSmithPrimitiveTransitionDeterminantForm",
+    "new_module_source_sha256": "D7E1454B7D1175DF7B68FC150A81D16CE8FA762C7B0A9BAEC706156FD0CC3579",
+    "new_module_receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithPrimitiveTransitionDeterminantForm-20260829T2024252306168-af0bed92.module.receipt.json",
+    "new_module_peak_bytes": 1428381696,
+    "noether_umbrella_receipt": "artifacts/build/MathematicalCommons-Noether-20260829T2033422599546-e96b4930.module.receipt.json",
+    "noether_umbrella_peak_bytes": 1918812160,
+    "top_umbrella_receipt": "artifacts/build/MathematicalCommons-20260829T2034528125251-2d182c2c.module.receipt.json",
+    "top_umbrella_peak_bytes": 1913110528,
+    "graph_checkpoint": "artifacts/build/module-graph-checkpoint-20260829T2034526550242-a888be76.json",
+    "graph_checkpoint_sha256": "63914A6654B90D1B9E2128ADB9CE91A4C25D238C2FD64CECCAC57BA818D38B6A",
+    "graph_targets": 54,
+    "p22_canonical_declarations": 566,
+    "p22_support_modules": 37,
+    "all_builds_green": true
+  },
+  "claim": {
+    "path": "artifacts/build/claim-P22-first-smith-primitive-transition-determinant-20260829T2024252306168-af0bed92.json",
+    "status": "integrated_green_pending_public_release",
+    "scope": "Selected-basis transition determinant/product equality and basis-change association; no historical R^(2), module norm, maximal-minor gcd, resultant, canonicality, or choice independence claimed."
+  },
+  "publication": {
+    "last_public_release": "noether-pilot-0.2.6",
+    "last_public_doi": "10.5281/zenodo.22162481",
+    "living_concept_doi": "10.5281/zenodo.21129945",
+    "next_action": "Queue this coherent 54-target checkpoint for the next authorized public GitHub/Zenodo mirror update; do not run Git or upload commands without an exact authorized operation."
+  },
+  "unfinished": [
+    "Mathlib audit complete: no native determinantal/Fitting-ideal API was found; next scaffold is a finite-minor Ideal.span layer using Matrix.submatrix.det, with exterior-power coefficients as the longer-term invariance route.",
+    "Construct later-stage HasEquation33Witness families and the parallel R^(i)-product/resultant half only when hypotheses are formalized.",
+    "Keep canonical divisibility ordering, unit normalization, auxiliary-choice independence, historical unbounded-tail identification, compatible zeros, and multiplicities explicit as open gaps.",
+    "Mirror the next meaningful checkpoint publicly and anonymously verify byte counts and hashes after authorized publication."
+  ],
+  "last_process_audit": "2026-08-29T18:50:52Z fresh audit: Windows zero lean.exe/lake.exe/wsl.exe and zero interlanguage git scans; Debian and Ubuntu-22.04 zero Lean/Lake/Elan; post-WSL Windows audit zero. One corrected non-Lean smoke was explicitly released to the separate task; no clone/provisioning released."
+}

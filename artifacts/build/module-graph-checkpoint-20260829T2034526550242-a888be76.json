@@ -1,0 +1,70 @@
+{
+  "schema": "lean-mathematical-commons/module-graph-checkpoint/1.0",
+  "checkpoint_id": "20260829T2034526550242-a888be76",
+  "base_batch": {
+    "batch_id": "20260825T0355153955281-3669b4fc",
+    "manifest": "artifacts/build/module-batch-20260825T0355153955281-3669b4fc.json",
+    "verified_modules": 17
+  },
+  "previous_checkpoint": "artifacts/build/module-graph-checkpoint-20260829T1614266016417-a6b1b43c.json",
+  "previous_checkpoint_sha256": "22CD9F9F4BFFE1E55999A9F0C765809EF05F5F461FEAF20E3F3792437159E79F",
+  "incremental_rebuild": {
+    "batch_ids": [
+      "20260829T2024251439133-fb4dbff4",
+      "20260829T2033420677910-e3d5d5bb",
+      "20260829T2034526550242-a888be76"
+    ],
+    "cache_directory": "artifacts/build/local-olean/20260825T0355153955281-3669b4fc",
+    "reason": "P22 Satz VIII, lines 13323--13327, was advanced from the primitive selected-coefficient/product proxies to an explicitly defined localized ground-to-denominator transition determinant: the selected Smith-basis determinant equals the finite selected-coefficient product, arbitrary equivalence choices give associated determinants, and the primitive product representative is associated with that selected determinant after localization. Historical R^(2), module-norm, maximal-minor-gcd, resultant, canonical-normalization, and choice-independence bridges remain open.",
+    "reused_unchanged_theorem_modules": 50,
+    "changed_theorem_modules": 0,
+    "added_theorem_modules": 1,
+    "direct_noether_import_targets": 52,
+    "umbrella_targets": 2,
+    "total_current_targets": 54,
+    "max_memory_gib": 2.5,
+    "global_worker_limit_gib": 3.0,
+    "rebuilt_modules": [
+      {
+        "module": "MathematicalCommons.Noether.PolynomialIdealsAndResultants1923.FirstSmithPrimitiveTransitionDeterminantForm",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1428381696,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithPrimitiveTransitionDeterminantForm-20260829T2024252306168-af0bed92.module.receipt.json",
+        "receipt_sha256": "70551DBCF893AC7384F6F4A223A8BE4944A11BA05FE32A862130B9486942D922"
+      },
+      {
+        "module": "MathematicalCommons.Noether",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1918812160,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-20260829T2033422599546-e96b4930.module.receipt.json",
+        "receipt_sha256": "73E7D557CEC9A4A470F4E458780365F4BE313285907C7EF5A59219790588C245"
+      },
+      {
+        "module": "MathematicalCommons",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1913110528,
+        "receipt": "artifacts/build/MathematicalCommons-20260829T2034528125251-2d182c2c.module.receipt.json",
+        "receipt_sha256": "83FF79301B90C88749F81CE75833242006314FDEC54809E03140CD2622044CBB"
+      }
+    ]
+  },
+  "lean_version": "4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "all_54_targets_current": true,
+  "all_exit_zero": true,
+  "all_stderr_empty": true,
+  "all_sources_unchanged_during_build": true,
+  "all_environments_unchanged_during_build": true,
+  "current_incremental_maximum_observed_process_tree_peak_bytes": 1918812160,
+  "maximum_observed_process_tree_peak_bytes": 1922387968
+}

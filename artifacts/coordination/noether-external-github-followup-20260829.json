@@ -1,0 +1,100 @@
+{
+  "schema": "lean-mathematical-commons/noether-external-github-followup/1.0",
+  "search_date": "2026-08-29",
+  "scope": "Focused GitHub follow-up beyond the four files recorded in artifacts/coordination/noether-external-four-file-audit-20260829.json",
+  "method": {
+    "discovery": "Bounded GitHub search in the in-app browser, followed by content reads of the candidate Lean files",
+    "hashing": "Commit-pinned raw response bytes hashed in memory",
+    "clones_created": 0,
+    "local_repository_scans_used_for_discovery": false,
+    "network_access_during_receipt_authoring": false
+  },
+  "searches": [
+    {
+      "query": "Noether language:Lean",
+      "code_search_url": "https://github.com/search?q=Noether+language%3ALean&type=code",
+      "repository_search_url": "https://github.com/search?q=Noether+language%3ALean&type=repositories",
+      "reported_code_files": 449,
+      "reported_repository_matches": 4,
+      "assessment": "The code results were dominated by Mathlib forks and uses of noetherian terminology, rather than source-facing formalizations of Emmy Noether's papers."
+    },
+    {
+      "query": "\"Emmy Noether\" language:Lean",
+      "code_search_url": "https://github.com/search?q=%22Emmy+Noether%22+language%3ALean&type=code",
+      "repository_search_url": "https://github.com/search?q=%22Emmy+Noether%22+language%3ALean&type=repositories",
+      "pull_request_search_url": "https://github.com/search?q=%22Emmy+Noether%22+language%3ALean&type=pullrequests",
+      "reported_code_matches": 0,
+      "reported_repository_matches": 1,
+      "reported_pull_request_matches": 7,
+      "assessment": "The exact-name query was sparse; candidate value was determined from the actual commit-pinned file contents rather than titles or snippets."
+    }
+  ],
+  "content_read_candidates": [
+    {
+      "id": "RJWALTERS-HILBERT14-OQ04",
+      "repository": "rjwalters/lean-genius",
+      "commit": "c36558251619115ceef7be6a6446c790fda29297",
+      "path": "proofs/Proofs/Hilbert14OQ04.lean",
+      "commit_pinned_url": "https://github.com/rjwalters/lean-genius/blob/c36558251619115ceef7be6a6446c790fda29297/proofs/Proofs/Hilbert14OQ04.lean",
+      "raw_url": "https://raw.githubusercontent.com/rjwalters/lean-genius/c36558251619115ceef7be6a6446c790fda29297/proofs/Proofs/Hilbert14OQ04.lean",
+      "bytes": 4520,
+      "sha256": "E9F32433EE983DCC6251A7668396AE3B60B348292A86ECF879A2F45B8E750EED",
+      "license_observation": "NO_REPOSITORY_LICENSE_OBSERVED_DURING_BOUNDED_AUDIT",
+      "content_read": true,
+      "source_relation": "P29-like finite-generation result related to Hilbert's fourteenth problem and Noether's invariant-theory work.",
+      "classification": "SEMANTICALLY_SUBSUMED_BY_LOCAL_MORE_GENERAL_THEOREM",
+      "local_more_general_result": {
+        "module": "MathematicalCommons/Noether/ModularInvariants1926.lean",
+        "declaration": "MathematicalCommons.Noether.ModularInvariants1926.fixedPoints_finiteType",
+        "assessment": "The local theorem is a characteristic-free finite-type result for fixed points of finite actions over a Noetherian base and does not require the external file's narrower presentation."
+      },
+      "absorption_decision": "Do not copy source bytes. Retain provenance and classify the candidate as semantically subsumed by the existing local, more-general theorem."
+    },
+    {
+      "id": "RJWALTERS-ABEL-RUFFINI-GALOIS-EXTENSIONS-OQ11",
+      "repository": "rjwalters/lean-genius",
+      "commit": "494c45c4a1000ba00e15ae515d87916628c9d3a2",
+      "path": "proofs/Proofs/AbelRuffiniGaloisExtensionsOQ11.lean",
+      "commit_pinned_url": "https://github.com/rjwalters/lean-genius/blob/494c45c4a1000ba00e15ae515d87916628c9d3a2/proofs/Proofs/AbelRuffiniGaloisExtensionsOQ11.lean",
+      "raw_url": "https://raw.githubusercontent.com/rjwalters/lean-genius/494c45c4a1000ba00e15ae515d87916628c9d3a2/proofs/Proofs/AbelRuffiniGaloisExtensionsOQ11.lean",
+      "bytes": 6932,
+      "sha256": "3ACBE0B58F153BB753355C2F55FE04C61E51684FEEBF8B4F3E5F6C64D6EAA3B4",
+      "license_observation": "NO_REPOSITORY_LICENSE_OBSERVED_DURING_BOUNDED_AUDIT",
+      "content_read": true,
+      "source_relation": "Source-relevant to P11, Gleichungen mit vorgeschriebener Gruppe (1918).",
+      "classification": "SOURCE_RELEVANT_PARTIAL_OVERLAP",
+      "mathematical_scope": "The file establishes a symmetric invariant-ring presentation and algebraic independence; it does not prove equality with the fixed field of the ambient rational function field.",
+      "local_independent_result": {
+        "module": "MathematicalCommons/Noether/EquationsWithPrescribedGroup1918.lean",
+        "copied_external_source_bytes": 0,
+        "assessment": "The local module was independently derived from the relevant Mathlib API and records the fixed-field equality as still open."
+      },
+      "absorption_decision": "Absorb the mathematical lead and exact provenance, not the unlicensed source bytes. Preserve the distinction between the symmetric invariant ring and the stronger fixed-field claim."
+    },
+    {
+      "id": "LUTAR-LEAN-NOETHER-AUDIT",
+      "repository": "szl-holdings/lutar-lean",
+      "pull_request": "https://github.com/szl-holdings/lutar-lean/pull/166",
+      "commit": "d29904e1335ec6bddd6e5fca144becd1155c5123",
+      "path": "Lutar/Innovations/round6/NoetherAudit.lean",
+      "commit_pinned_url": "https://github.com/szl-holdings/lutar-lean/blob/d29904e1335ec6bddd6e5fca144becd1155c5123/Lutar/Innovations/round6/NoetherAudit.lean",
+      "raw_url": "https://raw.githubusercontent.com/szl-holdings/lutar-lean/d29904e1335ec6bddd6e5fca144becd1155c5123/Lutar/Innovations/round6/NoetherAudit.lean",
+      "bytes": 2153,
+      "sha256": "7A5A5B6EA3BEC4BFFBDE84B6E8DD438F4259C864C5F3C0742B2C49FE7ABBFC9B",
+      "license_observation": "Apache-2.0",
+      "content_read": true,
+      "classification": "UNRELATED_TRIVIAL_RELABELLING",
+      "mathematical_scope": "A permutation-sum relabelling statement whose doctrine hypothesis is unused.",
+      "relation_to_noether_corpus": "Despite its title, it is unrelated to the variational Noether theorem and does not formalize a theorem from the controlled Emmy Noether corpus.",
+      "absorption_decision": "REJECT_ABSORPTION"
+    }
+  ],
+  "summary": {
+    "additional_commit_pinned_files_content_read": 3,
+    "external_source_files_copied": 0,
+    "semantically_subsumed_by_local_more_general_result": 1,
+    "source_relevant_partial_overlap_with_independent_local_module": 1,
+    "rejected_as_unrelated": 1,
+    "finding": "The focused follow-up found useful provenance and one source-relevant lead, but no additional external Lean file that should be copied into the corpus."
+  }
+}

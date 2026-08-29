@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "topic_id": "NOETHER-P11-EQUATIONS-WITH-PRESCRIBED-GROUP",
+  "topic": "Noether 1918 P11: invariant fields, minimal bases, and equations with prescribed Galois group",
+  "workspace": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN",
+  "corpus_entrypoint": "C:\\Users\\Floris\\Documents\\Papors\\Chatnotes\\Zeta-Function-Foundation\\config\\literature_index_entrypoint.json",
+  "updated_utc": "2026-08-29T21:20:52.1023789Z",
+  "mathematical_objects": [
+    "finite permutation-group actions on rational function fields",
+    "fixed fields and invariant rings",
+    "elementary symmetric polynomials",
+    "algebraic independence and transcendence bases",
+    "fraction rings and rational function fields",
+    "minimal bases for invariant fields",
+    "generic polynomials and prescribed Galois groups",
+    "Hilbert irreducibility and singular specialization loci",
+    "Luroth and Castelnuovo rationality",
+    "abelian actions over cyclotomic coefficient fields"
+  ],
+  "queries": [
+    "Full controlled-source read of activated ED0020 P11 lines 7882--8084",
+    "Pinned Mathlib audit for MvPolynomial.esymmAlgEquiv, esymmAlgHom_injective, IsFractionRing.algEquivOfAlgEquiv, and RatFunc.Luroth",
+    "Focused commit-pinned GitHub follow-up recorded in artifacts/coordination/noether-external-github-followup-20260829.json"
+  ],
+  "formalization_status": {
+    "status": "GREEN_SYMMETRIC_SUPPORT_GENERAL_P11_OPEN",
+    "claim_id": "NOETHER-1918-P11-EQUATIONS-WITH-PRESCRIBED-GROUP",
+    "claim_receipt": {
+      "path": "artifacts/build/claim-P11-prescribed-group-20260829T2315159464772-244c1dd8.json",
+      "bytes": 8112,
+      "sha256": "15631C7F52236E00349BC5FFB0AE9B7ADA5A28E08CD042F82EEDEC54AFE5EF31"
+    },
+    "external_followup_audit": {
+      "path": "artifacts/coordination/noether-external-github-followup-20260829.json",
+      "bytes": 6707,
+      "sha256": "4335B77F4ED5928227FA3BAE79D1165326187ADF15106B2AECE8EE4743DACE71"
+    },
+    "module": {
+      "name": "MathematicalCommons.Noether.EquationsWithPrescribedGroup1918",
+      "path": "MathematicalCommons/Noether/EquationsWithPrescribedGroup1918.lean",
+      "bytes": 4626,
+      "sha256": "CB767C6D32D391513610094E586B77EF90D80AEA63E098490D7A26386CB01AE9",
+      "public_declarations": 3,
+      "receipt": "artifacts/build/MathematicalCommons-Noether-EquationsWithPrescribedGroup1918-20260829T2315159464772-244c1dd8.module.receipt.json",
+      "receipt_bytes": 7845,
+      "receipt_sha256": "19E2CC82B49089DF50A76DFB2AC6CB8EEDE004C836D7CD1B7237ADB6BAF0DF6D",
+      "exit_code": 0,
+      "peak_process_tree_bytes": 1170911232,
+      "memory_limit_bytes": 2684354560
+    },
+    "claim_crosswalk": [
+      {
+        "claim_id": "NOETHER-1918-ELEMENTARY-SYMMETRIC-ALGEBRAIC-INDEPENDENCE",
+        "classification": "MATHLIB_MODERN_FORM",
+        "status": "GREEN"
+      },
+      {
+        "claim_id": "NOETHER-1918-FULL-SYMMETRIC-INVARIANT-RING",
+        "classification": "MATHLIB_MODERN_FORM",
+        "status": "GREEN"
+      },
+      {
+        "claim_id": "NOETHER-1918-SYMMETRIC-INVARIANT-FRACTION-RING-RATIONALITY",
+        "classification": "NEW_PACKAGING",
+        "status": "GREEN"
+      },
+      {
+        "claim_id": "NOETHER-1918-DEGREE-THREE-LUROTH-MINIMAL-BASIS",
+        "classification": "MATHLIB_EXACT",
+        "status": "CENTRAL_INGREDIENT_ONLY"
+      },
+      {
+        "claim_id": "NOETHER-1918-MINIMAL-BASIS-PARAMETERIZATION-THEOREM",
+        "classification": "DEFERRED_INFRASTRUCTURE",
+        "status": "DEPENDENCY_BLOCKED"
+      }
+    ],
+    "green_umbrella_receipts": [
+      {
+        "module": "MathematicalCommons.Noether",
+        "path": "artifacts/build/MathematicalCommons-Noether-20260829T2316475857334-177e79a6.module.receipt.json",
+        "bytes": 7541,
+        "sha256": "F6161A34543B77FE88DAC728CDF633834CB451BDDCD006C231BF91EB8A44A0F3",
+        "exit_code": 0
+      },
+      {
+        "module": "MathematicalCommons",
+        "path": "artifacts/build/MathematicalCommons-20260829T2317517150328-a16d31a8.module.receipt.json",
+        "bytes": 7461,
+        "sha256": "A8035889D1A806D0194A65ED7E00A9BB6935F91805FF1876691F8A20DE1CDF12",
+        "exit_code": 0
+      }
+    ]
+  },
+  "sources": [
+    {
+      "source_class": "local_activated_canon",
+      "publication_unit_or_source_id": "NOETH-DE-ED-0020",
+      "exact_locators": [
+        "C:\\Users\\Floris\\Documents\\interlanguage\\03_projects\\noether\\07_german_canon_control\\candidates\\ED0020\\noether.tex; 2,154,078 bytes; SHA-256 77D5BF32D9C6606EAB7DE4579097808EA1EEFD09949A81ED579DFFDB3A87F8C2",
+        "P11 lines 7882--8084"
+      ],
+      "relevance_edge": "Primary activated German witness for the full ten-target P11 source inventory.",
+      "reading_status": "fully_content_read_for_current_dependency",
+      "content_loci_read": [
+        "lines 7882--8084"
+      ],
+      "notes": "No German change is proposed and no transcription defect was identified. Three full-symmetric-group support declarations are green; the general prescribed-subgroup theorems remain explicit gaps."
+    },
+    {
+      "source_class": "external_public_lean",
+      "publication_unit_or_source_id": "RJWALTERS-ABEL-RUFFINI-GALOIS-EXTENSIONS-OQ11",
+      "exact_locators": [
+        "rjwalters/lean-genius commit 494c45c4a1000ba00e15ae515d87916628c9d3a2",
+        "proofs/Proofs/AbelRuffiniGaloisExtensionsOQ11.lean; 6,932 bytes; SHA-256 3ACBE0B58F153BB753355C2F55FE04C61E51684FEEBF8B4F3E5F6C64D6EAA3B4"
+      ],
+      "relevance_edge": "Source-relevant API lead for the full symmetric-group invariant ring and algebraic independence.",
+      "reading_status": "fully_content_read",
+      "notes": "No repository license was observed during the bounded audit. No source bytes were copied; the local module is written directly against pinned Mathlib and explicitly preserves the stronger fixed-field equality as open."
+    }
+  ],
+  "unresolved_dependencies": [
+    {
+      "dependency": "Fixed-field bridge for arbitrary finite permutation groups",
+      "reason_unresolved": "The fraction ring of the polynomial invariant ring has not been identified with the fixed subfield inside the ambient multivariate rational-function field.",
+      "next_bounded_query_or_read": "Construct the permutation action on the fraction field and prove the invariant-ring fraction-field equality with explicit characteristic hypotheses."
+    },
+    {
+      "dependency": "Noether's main minimal-basis and prescribed-group parameterization theorem",
+      "reason_unresolved": "It depends on the fixed-field bridge, generic polynomial Galois-group control, specialization, and a suitable Hilbert-irreducibility theorem.",
+      "next_bounded_query_or_read": "Audit pinned Mathlib's Polynomial.Gal, specialization, and Hilbert irreducibility surfaces before designing the smallest source-faithful theorem statement."
+    },
+    {
+      "dependency": "Degree-four Castelnuovo and explicit group bases",
+      "reason_unresolved": "No pinned two-variable Castelnuovo rationality theorem was identified, and Noether's explicit Klein-four basis has not been formalized.",
+      "next_bounded_query_or_read": "Choose between a reusable Castelnuovo theorem and a direct degree-four finite-group computation."
+    }
+  ],
+  "refresh_reason": "P11 was read end to end, ten source claims were inventoried, three source-facing support declarations were compiled and umbrella-validated, exact Luroth infrastructure was mapped, and a source-relevant Internet candidate was absorbed as a provenance/API lead without copying its unlicensed bytes.",
+  "anti_loop_note": "Do not repeat broad GitHub discovery for this P11 slice. Continue from the fixed-field bridge and the exact ten-target ledger unless the activated German witness or pinned Mathlib commit changes."
+}

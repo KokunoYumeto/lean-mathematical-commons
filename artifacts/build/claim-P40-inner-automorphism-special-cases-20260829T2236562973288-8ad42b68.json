@@ -1,0 +1,215 @@
+{
+  "schema": "lean-mathematical-commons/claim-build-receipt/1.0",
+  "claim_id": "NOETHER-1933-P40-INNER-AUTOMORPHISM-SPECIAL-CASES",
+  "status": "matrix_and_quaternion_special_cases_completed_full_p40_open",
+  "source": {
+    "witness": "NOETH-DE-ED-0014",
+    "path": "C:\\Users\\Floris\\Documents\\interlanguage\\03_projects\\noether\\07_german_canon_control\\candidates\\ED0014\\noether.tex",
+    "bytes": 2154011,
+    "sha256": "EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58",
+    "work_id": "P40",
+    "work": "Nichtkommutative Algebren",
+    "year": 1933,
+    "lines": "19477--19483; § 5, 2. Satz über innere Automorphismen",
+    "reading": "Isomorphic finite-rank simple subrings of A_f containing the center are carried into one another by an inner automorphism; in particular every automorphism of A_f is inner.",
+    "german_changed": false
+  },
+  "classification_split": {
+    "MATHLIB_MODERN_FORM": {
+      "claim_id": "NOETHER-1933-MATRIX-INNER-AUTOMORPHISM",
+      "local_contribution": "FORMALIZED_SOURCE_PACKAGING",
+      "public_declarations": 1,
+      "scope": "Arbitrary-field full-matrix algebra automorphisms are inner. The mathematical innerness core already exists as Mathlib's endomorphism-algebra conjugacy theorem; the local result supplies explicit matrix and unit transport in P40 form."
+    },
+    "FORMALIZED_GAP": {
+      "claim_id": "NOETHER-1933-QUATERNION-COMPLEX-INNER-CONJUGACY",
+      "local_contribution": "PROMOTED_EXTERNAL_THEOREM",
+      "public_declarations": 10,
+      "scope": "Any two real-algebra embeddings of C into the real quaternions are conjugate by a unit, with an explicit j-conjugation formula. This is an attributed adaptation from TauCeti, not locally original mathematics."
+    },
+    "GAP_CANDIDATE": {
+      "claim_id": "NOETHER-1933-FULL-SIMPLE-SUBRING-INNER-AUTOMORPHISM",
+      "local_contribution": "NONE",
+      "public_declarations": 0,
+      "scope": "The full printed theorem for arbitrary finite-rank simple subrings containing the center remains open."
+    }
+  },
+  "external_lineage": [
+    {
+      "id": "QICLEAN-MATRIX-SKOLEM-NOETHER",
+      "repository": "LionSR/QICLean",
+      "commit": "6bb40f17a0bed7cc62a6d5cf1ff13aaecbbdae8b",
+      "path": "QICLean/Algebra/SkolemNoether.lean",
+      "bytes": 8562,
+      "sha256": "17EAE7BC696567E5A9B7F3C2595F051F66CEE41809C7647B65705D41637AFA6C",
+      "license": "Apache-2.0",
+      "use": "Adapted the relevant unit-transport pattern only and generalized from complex coefficients to an arbitrary field; unrelated matrix-product-state declarations were not imported."
+    },
+    {
+      "id": "TAUCETI-QUATERNION-COMPLEX-SUBFIELD",
+      "repository": "TauCetiProject/TauCeti",
+      "commit": "ddb7e2a955836d345df91708d0cfc14a6f5c4698",
+      "path": "TauCeti/Algebra/Quaternion/ComplexSubfield.lean",
+      "bytes": 12695,
+      "sha256": "11062D84C4B0C2F2DE95BA5A8312B6B1C061F7A332E4FB04DD1A0BAC3A21B604",
+      "license": "Apache-2.0",
+      "use": "Adapted the self-contained quaternion conjugacy proof with exact attribution."
+    },
+    {
+      "id": "TAUCETI-SKOLEM-NOETHER-GENERAL",
+      "repository": "TauCetiProject/TauCeti",
+      "commit": "ddb7e2a955836d345df91708d0cfc14a6f5c4698",
+      "path": "TauCeti/Algebra/CentralSimple/SkolemNoether.lean",
+      "bytes": 11368,
+      "sha256": "967AC2D7C4995DD866ED3AFB967468AF01880D5F3DD8AEE6A560A44A8DE40655",
+      "license": "Apache-2.0",
+      "use": "Read and retained as a proof-architecture and dependency model. It was not copied because it assumes a central-simple source and depends on a substantial TauCeti-only infrastructure cone."
+    },
+    {
+      "id": "BLACKFEATHER-JACOBSON-NOETHER",
+      "repository": "Blackfeather007/Jacobson_Noether_Thm",
+      "commit": "19aadd04dbf52f851073dda0aeaf04f97f326b8f",
+      "path": "JacobsonNoetherThm/JacobsonNoether.lean",
+      "bytes": 12243,
+      "sha256": "B4BEF29D239941AC194D93DF71A43D9BFFD962FAC20A1AB853C2EEA17A2AA5BD",
+      "license": "NO_LICENSE_IN_STANDALONE_REPOSITORY",
+      "use": "Not copied. The result is adjacent to P40 rather than an inner-automorphism theorem and its reviewed successor is already in Mathlib as JacobsonNoether.exists_separable_and_not_isCentral."
+    }
+  ],
+  "external_audit": {
+    "path": "artifacts/coordination/noether-external-four-file-audit-20260829.json",
+    "bytes": 14233,
+    "sha256": "343C0F46CB378983EBE266C909BE9FAE303A1A63F48878893251DA449804E595",
+    "files_content_read": 4
+  },
+  "mathlib_core": [
+    "AlgEquiv.eq_linearEquivConjAlgEquiv",
+    "Matrix.toLinAlgEquiv'",
+    "Matrix.GeneralLinearGroup.toLin",
+    "Quaternion algebra",
+    "Complex.lift",
+    "Complex.conjAe"
+  ],
+  "module": {
+    "name": "MathematicalCommons.Noether.NoncommutativeAlgebras1933",
+    "source": {
+      "path": "MathematicalCommons/Noether/NoncommutativeAlgebras1933.lean",
+      "bytes": 11841,
+      "sha256": "3D6D2E916798571B20C3B59FE1C958F0C024252AAB168D428929F550F992BB13"
+    },
+    "receipt": "artifacts/build/MathematicalCommons-Noether-NoncommutativeAlgebras1933-20260829T2236562973288-8ad42b68.module.receipt.json",
+    "receipt_bytes": 6984,
+    "receipt_sha256": "C0FC6EBDE7F63DAF1C957D8F8DEDA803396CC9C80307E16E54AB4B3C86413E0E",
+    "batch_id": "20260829T2236561790646-0ed0b871",
+    "run_id": "20260829T2236562973288-8ad42b68",
+    "exit_code": 0,
+    "peak_process_tree_bytes": 1365549056,
+    "memory_limit_bytes": 2684354560,
+    "memory_exceeded": false,
+    "stdout_bytes": 1621,
+    "stdout_sha256": "D3B5F49083F7466F0555E8AD72B194FD19F1C03CFBAD65AEDA4600E74C071FD1",
+    "stderr_bytes": 0,
+    "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "olean": {
+      "bytes": 399696,
+      "sha256": "B28361D7569F0D0D77094611A7E2BD6A2CE793D06EFBE7120D299C314F6FAC33"
+    }
+  },
+  "public_declarations": [
+    "MathematicalCommons.Noether.NoncommutativeAlgebras1933.matrixAlgEquiv_inner",
+    "MathematicalCommons.Noether.NoncommutativeAlgebras1933.Quaternion.ofComplex",
+    "MathematicalCommons.Noether.NoncommutativeAlgebras1933.Quaternion.jUnit",
+    "MathematicalCommons.Noether.NoncommutativeAlgebras1933.Quaternion.coe_jUnit",
+    "MathematicalCommons.Noether.NoncommutativeAlgebras1933.Quaternion.coe_inv_jUnit",
+    "MathematicalCommons.Noether.NoncommutativeAlgebras1933.Quaternion.ofComplex_I",
+    "MathematicalCommons.Noether.NoncommutativeAlgebras1933.Quaternion.conj_jUnit_ofComplex_I",
+    "MathematicalCommons.Noether.NoncommutativeAlgebras1933.Quaternion.exists_unit_conj_ofComplex_I",
+    "MathematicalCommons.Noether.NoncommutativeAlgebras1933.Quaternion.exists_unit_conj_of_mul_self_eq_neg_one",
+    "MathematicalCommons.Noether.NoncommutativeAlgebras1933.Quaternion.exists_unit_conj_complexAlgHom",
+    "MathematicalCommons.Noether.NoncommutativeAlgebras1933.Quaternion.ofComplex_conjAe"
+  ],
+  "declaration_accounting": {
+    "public_declarations": 11,
+    "theorem_count": 9,
+    "definition_count": 2,
+    "private_support_lemma_count": 2,
+    "print_axioms_count": 11,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "sorry_or_admit": 0,
+    "explicit_axiom_or_unsafe_declarations": 0
+  },
+  "dependency_decision": {
+    "decision": "The final module imports Mathlib.Algebra.Quaternion and defines the required algebraic ofComplex map locally; it does not import Mathlib.Analysis.Quaternion.",
+    "reason": "Pinned Mathlib.Analysis.Quaternion failed at its own line 60 scalar-distribution simp goal after the algebra dependencies were available. No Mathlib source was patched.",
+    "failed_receipt": {
+      "path": "artifacts/build/-lake-packages-mathlib-Mathlib-Analysis-Quaternion-20260829T2228391560809-c707b0a7.module.receipt.json",
+      "bytes": 6844,
+      "sha256": "0E628FA24C925E7B5E5B2DFA3D3762B76524A2EA8DB3FCC3F930C4899DE104F1",
+      "exit_code": 1,
+      "peak_process_tree_bytes": 975601664,
+      "failure_locus": "Mathlib/Analysis/Quaternion.lean:60:32"
+    },
+    "green_receipts": [
+      {
+        "module": "Mathlib.Algebra.Module.Torsion.Prod",
+        "path": "artifacts/build/-lake-packages-mathlib-Mathlib-Algebra-Module-Torsion-Prod-20260829T2226449303990-39021461.module.receipt.json",
+        "bytes": 9334,
+        "sha256": "3300C59C9C6A1BF2EE34227CE0BE1CEF77BA2D1660E2A267473D32CFF9E5D2FB",
+        "exit_code": 0,
+        "peak_process_tree_bytes": 479481856
+      },
+      {
+        "module": "Mathlib.Algebra.Quaternion",
+        "path": "artifacts/build/-lake-packages-mathlib-Mathlib-Algebra-Quaternion-20260829T2227442887333-bf6bf46d.module.receipt.json",
+        "bytes": 9217,
+        "sha256": "2237DD8DAD76792E39E863336943190B903692519F5D47520CE335ED77F254E6",
+        "exit_code": 0,
+        "peak_process_tree_bytes": 892710912
+      }
+    ]
+  },
+  "umbrella_receipt_pins": [
+    {
+      "module": "MathematicalCommons.Noether",
+      "source": {
+        "path": "MathematicalCommons/Noether.lean",
+        "bytes": 4503,
+        "sha256": "2DEA04EFACF349222F6FD55AA3256F16036EADE2047DB14A1E043C9AA9018BA7"
+      },
+      "path": "artifacts/build/MathematicalCommons-Noether-20260829T2237459640666-92e6f3f0.module.receipt.json",
+      "bytes": 6730,
+      "sha256": "1859049076C67522CDBD0A5BB5FE47C51541B9F3B8DCE94838E806B131C6D54D",
+      "exit_code": 0,
+      "peak_process_tree_bytes": 1921093632,
+      "olean_bytes": 8256,
+      "olean_sha256": "ED31A95EF2A4E4C64A8535C3DD1ECB43363C91CE23A910A1C910B9EF1FF6B719"
+    },
+    {
+      "module": "MathematicalCommons",
+      "source": {
+        "path": "MathematicalCommons.lean",
+        "bytes": 36,
+        "sha256": "48EB6B102712DB6C8F0F2289C19200F9FDFB341E7D777BC6DC29B1D3D4C2FA94"
+      },
+      "path": "artifacts/build/MathematicalCommons-20260829T2238415235150-3420620d.module.receipt.json",
+      "bytes": 6650,
+      "sha256": "A9302AD7F1B5D1ECB458991508E3C12E9BC8A67299FBA54AB85287919B1FBCC5",
+      "exit_code": 0,
+      "peak_process_tree_bytes": 1919520768,
+      "olean_bytes": 1480,
+      "olean_sha256": "1C24DDBEC34C55C36E1DD8777FD4987630F13A48F421A4352F86338199D53604"
+    }
+  ],
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "lean_commit": "68218e876d2a38b1985b8590fff244a83c321783",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "worker_memory_limit_gib": 2.5,
+  "runner_sha256": "2BE9B6EBED0E973321A019A7B7E6A24E35C793EEB59FDDCD0ECD7F4D75616EB4",
+  "all_selected_targets_green": true,
+  "limitations": "The matrix result is a strict full-matrix specialization and repackages a Mathlib theorem; it is not new innerness mathematics. The quaternion result is a strict noncentral-source specialization promoted from an Apache-2.0 TauCeti development and is not locally original. Neither result proves conjugacy for arbitrary finite-rank simple subrings containing the center, the full first sentence of P40 lines 19477--19483, or the complete dependency bridge from P40's hypotheses to pinned Mathlib. TauCeti's broader theorem assumes a central-simple source and relies on external simple-Artinian, bimodule, and tensor-product infrastructure. The failed pinned Mathlib.Analysis.Quaternion build was avoided without modifying Mathlib and does not invalidate the green algebraic module or umbrellas."
+}

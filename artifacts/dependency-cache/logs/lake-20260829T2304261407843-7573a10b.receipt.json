@@ -1,0 +1,108 @@
+{
+  "schema": "lean-mathematical-commons/lake-process-receipt/1.0",
+  "run_id": "20260829T2304261407843-7573a10b",
+  "project_directory": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery",
+  "command": {
+    "executable": "C:\\Users\\Floris\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\bin\\lake.exe",
+    "arguments": [
+      "build",
+      "Mathlib.RingTheory.MvPolynomial.Symmetric.FundamentalTheorem"
+    ],
+    "lean_num_threads": 1,
+    "lake_jobs": 1
+  },
+  "inputs": {
+    "runner": {
+      "path": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\scripts\\run-lake-bounded.ps1",
+      "before": {
+        "bytes": 9796,
+        "sha256": "B91F3F77D4933F9831ABFD42DBF1E634EA33668347870A58B7009A66581A2C73"
+      },
+      "after": {
+        "bytes": 9796,
+        "sha256": "B91F3F77D4933F9831ABFD42DBF1E634EA33668347870A58B7009A66581A2C73"
+      }
+    },
+    "toolchain": {
+      "path": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\lean-toolchain",
+      "value": "leanprover/lean4:v4.31.0",
+      "before": {
+        "bytes": 25,
+        "sha256": "EFAC0B94923B2D8B6840CD35BE9177AD0FC5AB2332F4F4311C98712CEE92FDEE"
+      },
+      "after": {
+        "bytes": 25,
+        "sha256": "EFAC0B94923B2D8B6840CD35BE9177AD0FC5AB2332F4F4311C98712CEE92FDEE"
+      }
+    },
+    "manifest": {
+      "path": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\lake-manifest.json",
+      "before": {
+        "bytes": 3747,
+        "sha256": "8C47B013A63DAE8AE1EF2F578C5AC343C6EC05837941C9DD3BD4D3C7A9D96189"
+      },
+      "after": {
+        "bytes": 3747,
+        "sha256": "8C47B013A63DAE8AE1EF2F578C5AC343C6EC05837941C9DD3BD4D3C7A9D96189"
+      }
+    },
+    "lakefile": {
+      "path": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\.agent-tmp\\cache_recovery\\lakefile.toml",
+      "before": {
+        "bytes": 97,
+        "sha256": "8F3A580AB6208633844A3726DBBAE5A214ECFEA2C1747561D4215A75423CB47A"
+      },
+      "after": {
+        "bytes": 97,
+        "sha256": "8F3A580AB6208633844A3726DBBAE5A214ECFEA2C1747561D4215A75423CB47A"
+      }
+    },
+    "lake": {
+      "path": "C:\\Users\\Floris\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\bin\\lake.exe",
+      "before": {
+        "bytes": 87552,
+        "sha256": "A5BE0113AF1C08BA678C1FAD07594E1C5DE6B871FE0C4144DA2998488EBA88A1"
+      },
+      "after": {
+        "bytes": 87552,
+        "sha256": "A5BE0113AF1C08BA678C1FAD07594E1C5DE6B871FE0C4144DA2998488EBA88A1"
+      }
+    }
+  },
+  "watcher": {
+    "enforcement": "best_effort_sampled_process_tree_working_set",
+    "hard_limit": false,
+    "sample_interval_milliseconds": 200,
+    "max_memory_gib": 2.5,
+    "limit_bytes": 2684354560,
+    "observed_process_tree_peak_bytes": 1178333184,
+    "memory_exceeded": false,
+    "kill_policy": "Stop only the captured Lake process tree on limit breach."
+  },
+  "workspace_build_lock": {
+    "path": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\build\\.lean-build.lock",
+    "exclusive": true
+  },
+  "environment_changed_during_run": false,
+  "process_exit_code": 0,
+  "runner_error": null,
+  "started_at": "2026-08-29T23:04:26.1552695+02:00",
+  "finished_at": "2026-08-29T23:12:54.6517872+02:00",
+  "exit_code": 0,
+  "logs": {
+    "stdout": {
+      "path": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\dependency-cache\\logs\\lake-20260829T2304261407843-7573a10b.stdout.txt",
+      "fingerprint": {
+        "bytes": 13045,
+        "sha256": "FEA8EBD5C331537A844CF6D7C41452931F063DBA722AA940A98756590D6F2E54"
+      }
+    },
+    "stderr": {
+      "path": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN\\artifacts\\dependency-cache\\logs\\lake-20260829T2304261407843-7573a10b.stderr.txt",
+      "fingerprint": {
+        "bytes": 0,
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+      }
+    }
+  }
+}

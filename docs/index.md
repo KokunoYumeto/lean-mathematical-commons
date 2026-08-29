@@ -30,6 +30,8 @@ novelty of a theorem.
 | J. J. Sylvester | queued | invariant/matrix/combinatorial paper inventory | [DOI 10.5281/zenodo.20520692](https://doi.org/10.5281/zenodo.20520692) |
 | Hellmuth Kneser | queued | quadratic-form/topology/geometry paper inventory | [DOI 10.5281/zenodo.20836971](https://doi.org/10.5281/zenodo.20836971) |
 | Paul Gordan | scaffold queued | use controlled TeX to support the invariant-theory dependency chain | [DOI 10.5281/zenodo.20616260](https://doi.org/10.5281/zenodo.20616260) |
+| Heinrich Weber | deposited anchor only | acquire and audit a controlled paper corpus before promoting the cubic sidecar beyond an index entry | [DOI 10.5281/zenodo.21129946](https://doi.org/10.5281/zenodo.21129946) |
+| Camille Jordan | deposited anchor only | acquire and audit a controlled paper corpus before promoting the affine-group sidecar beyond an index entry | [DOI 10.5281/zenodo.21129946](https://doi.org/10.5281/zenodo.21129946) |
 
 Historical source editions remain centrally discoverable through
 [modern-latex-manuscripts](https://github.com/KokunoYumeto/modern-latex-manuscripts).
@@ -41,6 +43,22 @@ evidence, and formalization-specific QA only.
 - [Paper inventory](noether/paper-inventory.md): all 43 numbered work packets,
   source spans, authorship roles, and canon-QA states.
 - [Mathlib coverage](noether/mathlib-coverage.md): readable declaration audit.
+- [External Lean discovery and publication front door](noether/external-lean-discovery-and-publication.md):
+  content-level audit of four initial and three follow-up commit-pinned
+  Internet Lean files, the two attributed P40 adaptations, the independently
+  written P11 absorption, the existing Zenodo concept lineage, a proposed
+  author-facing repository, and the priority ranking for the remaining work.
+- [Machine-readable coverage snapshot](../artifacts/coordination/noether-coverage-snapshot-20260829.json):
+  21 of 43 works partially audited over 7,694 controlled-source lines; 154 of
+  343 inventoried units completed or available; 59 newly completed local rows,
+  of which 58 are locally original and one is an externally attributed
+  promoted gap; and explicitly caveated 17–22% availability and 6–8% local-
+  completion whole-corpus planning estimates.
+- [1918 prescribed-group claim route](../metadata/topic-literature-route-noether-p11-prescribed-group.json):
+  ten source claims, three green full-symmetric-group support declarations,
+  exact Lüroth infrastructure, and the still-open fixed-field,
+  minimal-basis/parameterization, singular-locus, reduction, Castelnuovo, and
+  cyclotomic cases.
 - [1918 variational dependency map](noether/variational-1918.md): exact result
   inventory, source qualifications, Mathlib anchors, and missing foundations.
 - [1919 integral-invariant map](noether/integral-invariants-1919.md): binary
@@ -88,20 +106,40 @@ evidence, and formalization-specific QA only.
   Four `NEW_PACKAGING` declarations then clear its localized divisibility into
   the finite selected-coefficient product and produce a compatible nonzero
   integral product numerator whose lift retains that witness. Local cutoff `1`
-  is source stage `i = 2`; this numerator is not historical `R^(2)`, a
-  historical resultant, primitive, canonical, or choice-independent.
+  is source stage `i = 2`. Removing content now yields primitive nonzero
+  integral representatives for the selected coefficient and product, with
+  `e ∣ r`, `r ∣ e ^ ρ`, and both equation-(33) witnesses preserved. These are
+  still selected proxies, not historical `E^(2)` or `R^(2)`, a module norm, gcd
+  of maximal minors, or historical resultant; they are not canonical or
+  choice-independent. The selected-basis transition determinant is now defined
+  over the localized ground-to-denominator equivalence, proved equal to the
+  finite selected-coefficient product, and controlled up to association under a
+  basis change; the primitive product proxy is associated with it after
+  localization. This remains distinct from historical `R^(2)` and its norm,
+  minor-gcd, normalization, and choice-independence bridges. A new ten-
+  declaration finite-matrix scaffold defines selected `k`-minors and the ideal
+  they span, with generator, repeated-row/column, zero-matrix, and degree-zero
+  lemmas. It is explicitly `NEW_PACKAGING`, not yet a Fitting ideal,
+  Cauchy--Binet invariance result, maximal-minor gcd, module norm, or historical
+  resultant.
   Equation (33)'s one-stage Noetherian descent is formalized generally, and a
   supplied witness family is iterated
   through arbitrary finite windows to prove `g_n = I`, the conditional
   `E`-product half of equation (34), and its tail-window endpoint. Extending the
-  construction through the later stages, primitive normalization and choice
-  independence, and the parallel `R`-product/resultant half remain open. The
+  construction through the later stages, historical/canonical primitive-form
+  identification and choice independence, and the parallel
+  `R`-product/resultant half remain open. The
   free-tail model is not yet identified with a separately constructed/localized
   historical unbounded module; there is no canonical coefficient ordering,
   resultant identification, or infinite determinant. Current P22 accounting is
-  557 declarations across the base and 35 support modules. The latest sealed
-  graph pins all 50 direct Noether imports and both umbrellas in the
-  [52-target checkpoint](../artifacts/build/module-graph-checkpoint-20260829T1614266016417-a6b1b43c.json).
+  576 declarations across the base and 38 support modules. The integrated graph
+  has 53 direct Noether imports, and both fresh serial umbrella receipts are
+  green. That P22 checkpoint pins all 53 direct Noether imports and both umbrellas in the
+  [55-target checkpoint](../artifacts/build/module-graph-checkpoint-20260829T2141556003305-de54d554.json),
+  which chains the preceding 54-target checkpoint. P40 and P11 subsequently
+  bring the global graph to 55 direct Noether imports plus both umbrellas in
+  the current
+  [57-target checkpoint](../artifacts/build/module-graph-checkpoint-20260829T2327308948138-d815b8e6.json).
 - [1922 absolute-irreducibility map](noether/absolute-irreducibility-1922.md):
   universal reducibility-form and specialization gaps, with proof components.
 - [1922 formal-variational-calculus map](noether/formal-variational-calculus-1922.md):
@@ -127,6 +165,12 @@ evidence, and formalization-specific QA only.
 - [1927 discriminant-theorem map](noether/discriminant-theorem-1927.md): finite
   algebras and orders, scalar extension, discriminants, localization, and
   ramification, including the pinned étale-descent axiom caveat.
+- [1933 noncommutative-algebra P40 module](../MathematicalCommons/Noether/NoncommutativeAlgebras1933.lean):
+  green attributed adaptations of QICLean's arbitrary-field full-matrix
+  automorphism case and TauCeti's real-quaternion embedding-conjugacy case.
+  Blackfeather's Jacobson–Noether result is already in Mathlib; TauCeti's broad
+  central-source theorem was inspected without copying its dependency cluster,
+  and Noether's full simple-subring statement remains open.
 - [`metadata/noether-theorems.tsv`](../metadata/noether-theorems.tsv):
   machine-readable theorem ledger.
 - [`metadata/noether-canon-qa.tsv`](../metadata/noether-canon-qa.tsv): open

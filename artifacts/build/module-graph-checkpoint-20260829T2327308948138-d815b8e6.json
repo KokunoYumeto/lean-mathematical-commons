@@ -1,0 +1,89 @@
+{
+  "schema": "lean-mathematical-commons/module-graph-checkpoint/1.0",
+  "checkpoint_id": "20260829T2327308948138-d815b8e6",
+  "generated_at_utc": "2026-08-29T21:27:30.9013318Z",
+  "base_batch": {
+    "batch_id": "20260825T0355153955281-3669b4fc",
+    "manifest": "artifacts/build/module-batch-20260825T0355153955281-3669b4fc.json",
+    "verified_modules": 17
+  },
+  "previous_checkpoint": "artifacts/build/module-graph-checkpoint-20260829T2240313990256-8ad42b68.json",
+  "previous_checkpoint_sha256": "22C7073FD8273553B1BF40CE04E0C3410527D6160BE107BAC8324676697A3E8E",
+  "incremental_rebuild": {
+    "batch_ids": [
+      "20260829T2315158128503-7eaaea93",
+      "20260829T2316474443647-f1f57dbe",
+      "20260829T2317515575005-cddcb607"
+    ],
+    "cache_directory": "artifacts/build/local-olean/20260825T0355153955281-3669b4fc",
+    "reason": "P11, Gleichungen mit vorgeschriebener Gruppe (1918), was read end to end from activated ED0020 and split into ten claims. Three full-symmetric-group support declarations are green: elementary-symmetric algebraic independence, the symmetric invariant-ring equivalence, and its abstract fraction-ring extension. The arbitrary prescribed-subgroup fixed-field bridge and the stronger minimal-basis, parameterization, singular-locus, n-2 reduction, Castelnuovo, and cyclotomic claims remain explicit gaps.",
+    "reused_unchanged_theorem_modules": 54,
+    "changed_theorem_modules": 0,
+    "added_theorem_modules": 1,
+    "direct_noether_import_targets": 55,
+    "umbrella_targets": 2,
+    "total_current_targets": 57,
+    "max_memory_gib": 2.5,
+    "global_worker_limit_gib": 3.0,
+    "dependency_builds": [
+      {
+        "module": "Mathlib.RingTheory.MvPolynomial.Symmetric.FundamentalTheorem",
+        "command": "lake build Mathlib.RingTheory.MvPolynomial.Symmetric.FundamentalTheorem",
+        "exit_code": 0,
+        "peak_bytes": 1178333184,
+        "receipt": "artifacts/dependency-cache/logs/lake-20260829T2304261407843-7573a10b.receipt.json",
+        "receipt_sha256": "B6DF43076FB73BC9D83118220C931F17E04AB4EA36ED968D42DB6133B7A67FE8",
+        "object_bytes": 166528,
+        "object_sha256": "C2FEF0A64A66851EA79A45489F47BAF7A1EC30C81C916A19C9E77F3A7296DC42",
+        "resource_note": "The build began after a full clear audit. An unrelated external Lean tree appeared near its completion and briefly violated the global single-worker regime; this task immediately attempted to stop its own tree, which had already completed successfully. All subsequent P11 and umbrella builds began only after fresh Windows, Debian, and Ubuntu-22.04 clear audits."
+      }
+    ],
+    "rebuilt_modules": [
+      {
+        "module": "MathematicalCommons.Noether.EquationsWithPrescribedGroup1918",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1170911232,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-EquationsWithPrescribedGroup1918-20260829T2315159464772-244c1dd8.module.receipt.json",
+        "receipt_sha256": "19E2CC82B49089DF50A76DFB2AC6CB8EEDE004C836D7CD1B7237ADB6BAF0DF6D"
+      },
+      {
+        "module": "MathematicalCommons.Noether",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1921626112,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-20260829T2316475857334-177e79a6.module.receipt.json",
+        "receipt_sha256": "F6161A34543B77FE88DAC728CDF633834CB451BDDCD006C231BF91EB8A44A0F3"
+      },
+      {
+        "module": "MathematicalCommons",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1926107136,
+        "receipt": "artifacts/build/MathematicalCommons-20260829T2317517150328-a16d31a8.module.receipt.json",
+        "receipt_sha256": "A8035889D1A806D0194A65ED7E00A9BB6935F91805FF1876691F8A20DE1CDF12"
+      }
+    ]
+  },
+  "claim_receipt": {
+    "path": "artifacts/build/claim-P11-prescribed-group-20260829T2315159464772-244c1dd8.json",
+    "bytes": 8112,
+    "sha256": "15631C7F52236E00349BC5FFB0AE9B7ADA5A28E08CD042F82EEDEC54AFE5EF31"
+  },
+  "lean_version": "4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial_after_dependency_overlap": true,
+  "all_57_targets_current": true,
+  "all_selected_builds_exit_zero": true,
+  "all_selected_stderr_empty": true,
+  "all_selected_sources_unchanged_during_build": true,
+  "all_selected_environments_unchanged_during_build": true,
+  "current_incremental_maximum_observed_process_tree_peak_bytes": 1926107136,
+  "maximum_observed_process_tree_peak_bytes": 1926107136
+}

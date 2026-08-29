@@ -1,0 +1,94 @@
+{
+  "schema": "lean-mathematical-commons/module-graph-checkpoint/1.0",
+  "checkpoint_id": "20260829T2240313990256-8ad42b68",
+  "base_batch": {
+    "batch_id": "20260825T0355153955281-3669b4fc",
+    "manifest": "artifacts/build/module-batch-20260825T0355153955281-3669b4fc.json",
+    "verified_modules": 17
+  },
+  "previous_checkpoint": "artifacts/build/module-graph-checkpoint-20260829T2141556003305-de54d554.json",
+  "previous_checkpoint_sha256": "BE88D5C55C607A7F9B7B9DFA4F3543C76F91F73550F52124A54E7D521377BA4A",
+  "incremental_rebuild": {
+    "batch_ids": [
+      "20260829T2236561790646-0ed0b871",
+      "20260829T2237458472998-2dec2366",
+      "20260829T2238414171911-21c71ef5"
+    ],
+    "cache_directory": "artifacts/build/local-olean/20260825T0355153955281-3669b4fc",
+    "reason": "P40's inner-automorphism work is advanced by two source-linked special cases selected after content-level review of four external Lean files: matrix algebra equivalences are packaged as conjugation by a unit using the existing Mathlib theorem, and the quaternion complex-subfield conjugacy case is adapted with exact Apache-2.0 attribution. The general finite-rank simple-subring theorem in Noether's P40 and the general central-simple-algebra route remain open; the TauCeti dependency cluster was not copied, and the reviewed Jacobson--Noether file is already absorbed upstream in Mathlib.",
+    "reused_unchanged_theorem_modules": 53,
+    "changed_theorem_modules": 0,
+    "added_theorem_modules": 1,
+    "direct_noether_import_targets": 54,
+    "umbrella_targets": 2,
+    "total_current_targets": 56,
+    "max_memory_gib": 2.5,
+    "global_worker_limit_gib": 3.0,
+    "dependency_builds": [
+      {
+        "module": ".lake.packages.mathlib.Mathlib.Algebra.Module.Torsion.Prod",
+        "batch_id": "20260829T2226447544000-174cea78",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 479481856,
+        "receipt": "artifacts/build/-lake-packages-mathlib-Mathlib-Algebra-Module-Torsion-Prod-20260829T2226449303990-39021461.module.receipt.json",
+        "receipt_sha256": "3300C59C9C6A1BF2EE34227CE0BE1CEF77BA2D1660E2A267473D32CFF9E5D2FB"
+      },
+      {
+        "module": ".lake.packages.mathlib.Mathlib.Algebra.Quaternion",
+        "batch_id": "20260829T2227440192155-04322e2d",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 892710912,
+        "receipt": "artifacts/build/-lake-packages-mathlib-Mathlib-Algebra-Quaternion-20260829T2227442887333-bf6bf46d.module.receipt.json",
+        "receipt_sha256": "2237DD8DAD76792E39E863336943190B903692519F5D47520CE335ED77F254E6"
+      }
+    ],
+    "rebuilt_modules": [
+      {
+        "module": "MathematicalCommons.Noether.NoncommutativeAlgebras1933",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1365549056,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-NoncommutativeAlgebras1933-20260829T2236562973288-8ad42b68.module.receipt.json",
+        "receipt_sha256": "C0FC6EBDE7F63DAF1C957D8F8DEDA803396CC9C80307E16E54AB4B3C86413E0E"
+      },
+      {
+        "module": "MathematicalCommons.Noether",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1921093632,
+        "receipt": "artifacts/build/MathematicalCommons-Noether-20260829T2237459640666-92e6f3f0.module.receipt.json",
+        "receipt_sha256": "1859049076C67522CDBD0A5BB5FE47C51541B9F3B8DCE94838E806B131C6D54D"
+      },
+      {
+        "module": "MathematicalCommons",
+        "exit_code": 0,
+        "stderr_empty": true,
+        "source_unchanged": true,
+        "environment_unchanged": true,
+        "peak_bytes": 1919520768,
+        "receipt": "artifacts/build/MathematicalCommons-20260829T2238415235150-3420620d.module.receipt.json",
+        "receipt_sha256": "A9302AD7F1B5D1ECB458991508E3C12E9BC8A67299FBA54AB85287919B1FBCC5"
+      }
+    ]
+  },
+  "lean_version": "4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "all_56_targets_current": true,
+  "all_exit_zero": true,
+  "all_stderr_empty": true,
+  "all_sources_unchanged_during_build": true,
+  "all_environments_unchanged_during_build": true,
+  "current_incremental_maximum_observed_process_tree_peak_bytes": 1921093632,
+  "maximum_observed_process_tree_peak_bytes": 1922387968
+}

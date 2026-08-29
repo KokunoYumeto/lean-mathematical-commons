@@ -1,0 +1,185 @@
+{
+  "schema": "lean-mathematical-commons/claim-build-receipt/1.0",
+  "claim_id": "NOETHER-1918-P11-EQUATIONS-WITH-PRESCRIBED-GROUP",
+  "status": "three_symmetric_group_support_packages_green_general_p11_open",
+  "generated_at_utc": "2026-08-29T21:20:52.1023789Z",
+  "source": {
+    "witness": "NOETH-DE-ED-0020",
+    "authority_state": "activated_by_canon_owner_before_this_receipt",
+    "path": "C:\\Users\\Floris\\Documents\\interlanguage\\03_projects\\noether\\07_german_canon_control\\candidates\\ED0020\\noether.tex",
+    "bytes": 2154078,
+    "sha256": "77D5BF32D9C6606EAB7DE4579097808EA1EEFD09949A81ED579DFFDB3A87F8C2",
+    "work_id": "P11",
+    "work": "Gleichungen mit vorgeschriebener Gruppe",
+    "year": 1918,
+    "lines": "7882--8084",
+    "german_changed": false,
+    "qa_result": "No transcription defect was identified in the audited P11 locus."
+  },
+  "claim_crosswalk": [
+    {
+      "claim_id": "NOETHER-1918-ELEMENTARY-SYMMETRIC-ALGEBRAIC-INDEPENDENCE",
+      "classification": "MATHLIB_MODERN_FORM",
+      "local_contribution": "FORMALIZED_SOURCE_PACKAGING",
+      "status": "GREEN",
+      "local_declaration": "MathematicalCommons.Noether.EquationsWithPrescribedGroup1918.elementarySymmetric_algebraicIndependent"
+    },
+    {
+      "claim_id": "NOETHER-1918-FULL-SYMMETRIC-INVARIANT-RING",
+      "classification": "MATHLIB_MODERN_FORM",
+      "local_contribution": "FORMALIZED_SOURCE_PACKAGING",
+      "status": "GREEN",
+      "local_declaration": "MathematicalCommons.Noether.EquationsWithPrescribedGroup1918.symmetricInvariantRingAlgEquiv"
+    },
+    {
+      "claim_id": "NOETHER-1918-SYMMETRIC-INVARIANT-FRACTION-RING-RATIONALITY",
+      "classification": "NEW_PACKAGING",
+      "local_contribution": "FORMALIZED_SOURCE_PACKAGING",
+      "status": "GREEN",
+      "local_declaration": "MathematicalCommons.Noether.EquationsWithPrescribedGroup1918.symmetricInvariantFractionRingAlgEquiv"
+    },
+    {
+      "claim_id": "NOETHER-1918-LAGRANGE-INVARIANT-FIELD-FIXED-FIELD-BRIDGE",
+      "classification": "GAP_CANDIDATE",
+      "local_contribution": "NONE",
+      "status": "OPEN"
+    },
+    {
+      "claim_id": "NOETHER-1918-MINIMAL-BASIS-PARAMETERIZATION-THEOREM",
+      "classification": "DEFERRED_INFRASTRUCTURE",
+      "local_contribution": "NONE",
+      "status": "DEPENDENCY_BLOCKED"
+    },
+    {
+      "claim_id": "NOETHER-1918-SINGULAR-PARAMETER-EXCEPTION-LOCUS",
+      "classification": "GAP_CANDIDATE",
+      "local_contribution": "NONE",
+      "status": "OPEN"
+    },
+    {
+      "claim_id": "NOETHER-1918-INVARIANT-FIELD-N-MINUS-TWO-REDUCTION",
+      "classification": "GAP_CANDIDATE",
+      "local_contribution": "NONE",
+      "status": "OPEN"
+    },
+    {
+      "claim_id": "NOETHER-1918-DEGREE-THREE-LUROTH-MINIMAL-BASIS",
+      "classification": "MATHLIB_EXACT",
+      "local_contribution": "NONE",
+      "status": "EXACT_CENTRAL_INGREDIENT_ONLY"
+    },
+    {
+      "claim_id": "NOETHER-1918-DEGREE-FOUR-CASTELNUOVO-AND-EXPLICIT-GROUP-BASES",
+      "classification": "GAP_CANDIDATE",
+      "local_contribution": "NONE",
+      "status": "OPEN"
+    },
+    {
+      "claim_id": "NOETHER-1918-ABELIAN-GROUP-CYCLOTOMIC-MINIMAL-BASIS",
+      "classification": "GAP_CANDIDATE",
+      "local_contribution": "NONE",
+      "status": "OPEN"
+    }
+  ],
+  "external_lineage": {
+    "audit": {
+      "path": "artifacts/coordination/noether-external-github-followup-20260829.json",
+      "bytes": 6707,
+      "sha256": "4335B77F4ED5928227FA3BAE79D1165326187ADF15106B2AECE8EE4743DACE71"
+    },
+    "candidate": {
+      "repository": "rjwalters/lean-genius",
+      "commit": "494c45c4a1000ba00e15ae515d87916628c9d3a2",
+      "path": "proofs/Proofs/AbelRuffiniGaloisExtensionsOQ11.lean",
+      "bytes": 6932,
+      "sha256": "3ACBE0B58F153BB753355C2F55FE04C61E51684FEEBF8B4F3E5F6C64D6EAA3B4",
+      "license_observation": "NO_REPOSITORY_LICENSE_OBSERVED_DURING_BOUNDED_AUDIT",
+      "use": "Mathematical and API lead only. Zero external source bytes were copied; the local proofs were written directly against pinned Mathlib."
+    }
+  },
+  "module": {
+    "name": "MathematicalCommons.Noether.EquationsWithPrescribedGroup1918",
+    "source": {
+      "path": "MathematicalCommons/Noether/EquationsWithPrescribedGroup1918.lean",
+      "bytes": 4626,
+      "sha256": "CB767C6D32D391513610094E586B77EF90D80AEA63E098490D7A26386CB01AE9"
+    },
+    "receipt": {
+      "path": "artifacts/build/MathematicalCommons-Noether-EquationsWithPrescribedGroup1918-20260829T2315159464772-244c1dd8.module.receipt.json",
+      "bytes": 7845,
+      "sha256": "19E2CC82B49089DF50A76DFB2AC6CB8EEDE004C836D7CD1B7237ADB6BAF0DF6D",
+      "batch_id": "20260829T2315158128503-7eaaea93",
+      "run_id": "20260829T2315159464772-244c1dd8",
+      "exit_code": 0,
+      "peak_process_tree_bytes": 1170911232,
+      "memory_limit_bytes": 2684354560,
+      "memory_exceeded": false,
+      "stdout_bytes": 483,
+      "stdout_sha256": "949030CA194E3B1C5AA188D381352A63A73888E30496EF5F97C89697FA0005E2",
+      "stderr_bytes": 0,
+      "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    "olean": {
+      "bytes": 75280,
+      "sha256": "0064B5767D43A6B30A834706AFF9D687F9AD409D76A4465587BCBF74A8609B3D"
+    }
+  },
+  "declaration_accounting": {
+    "public_declarations": 3,
+    "theorem_count": 1,
+    "definition_or_abbrev_count": 2,
+    "print_axioms_count": 3,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "sorry_or_admit": 0,
+    "explicit_axiom_or_unsafe_declarations": 0
+  },
+  "dependency_materialization": {
+    "target": "Mathlib.RingTheory.MvPolynomial.Symmetric.FundamentalTheorem",
+    "receipt": "artifacts/dependency-cache/logs/lake-20260829T2304261407843-7573a10b.receipt.json",
+    "receipt_bytes": 3991,
+    "receipt_sha256": "B6DF43076FB73BC9D83118220C931F17E04AB4EA36ED968D42DB6133B7A67FE8",
+    "exit_code": 0,
+    "peak_process_tree_bytes": 1178333184,
+    "object_bytes": 166528,
+    "object_sha256": "C2FEF0A64A66851EA79A45489F47BAF7A1EC30C81C916A19C9E77F3A7296DC42"
+  },
+  "umbrella_receipt_pins": [
+    {
+      "module": "MathematicalCommons.Noether",
+      "source_path": "MathematicalCommons/Noether.lean",
+      "source_bytes": 4571,
+      "source_sha256": "816BE714CD61F0F2C21351B1E7960BC7220F83CF2EC16C838FD67C882C5FD295",
+      "path": "artifacts/build/MathematicalCommons-Noether-20260829T2316475857334-177e79a6.module.receipt.json",
+      "bytes": 7541,
+      "sha256": "F6161A34543B77FE88DAC728CDF633834CB451BDDCD006C231BF91EB8A44A0F3",
+      "exit_code": 0,
+      "peak_process_tree_bytes": 1921626112,
+      "olean_bytes": 8392,
+      "olean_sha256": "79A56F8B60013C88E31E33B8140FD8B245FA1E4DB8A50D96EF7D8C5DBCFB0900"
+    },
+    {
+      "module": "MathematicalCommons",
+      "source_path": "MathematicalCommons.lean",
+      "source_bytes": 36,
+      "source_sha256": "48EB6B102712DB6C8F0F2289C19200F9FDFB341E7D777BC6DC29B1D3D4C2FA94",
+      "path": "artifacts/build/MathematicalCommons-20260829T2317517150328-a16d31a8.module.receipt.json",
+      "bytes": 7461,
+      "sha256": "A8035889D1A806D0194A65ED7E00A9BB6935F91805FF1876691F8A20DE1CDF12",
+      "exit_code": 0,
+      "peak_process_tree_bytes": 1926107136,
+      "olean_bytes": 1480,
+      "olean_sha256": "1C24DDBEC34C55C36E1DD8777FD4987630F13A48F421A4352F86338199D53604"
+    }
+  ],
+  "toolchain": "leanprover/lean4:v4.31.0",
+  "lean_commit": "68218e876d2a38b1985b8590fff244a83c321783",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "serial": true,
+  "worker_memory_limit_gib": 2.5,
+  "all_selected_targets_green": true,
+  "limitations": "The green declarations cover the full symmetric-group invariant ring, its elementary-symmetric algebraic independence, and an abstract fraction-ring extension. They do not identify the fraction ring with the fixed subfield of the ambient rational-function field, handle an arbitrary prescribed subgroup, prove Noether's minimal-basis or parameterization theorem, analyze singular parameters, prove the n-2 reduction, supply Castelnuovo rationality, or prove the abelian cyclotomic case."
+}

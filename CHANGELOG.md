@@ -1,5 +1,112 @@
 # Changelog
 
+## Unreleased
+
+- Updated the conservative machine-readable Noether coverage snapshot. Twenty-
+  one of 43 works have partial theorem audits covering 7,694 of 20,437
+  controlled-source lines; 154 of 343 inventoried claim units are completed or
+  available. The 59 newly completed local rows comprise 58 locally original rows and one
+  externally attributed promoted gap. Because no paper audit is complete, the
+  document labels 17–22% whole-corpus availability and 6–8% new local
+  completion as planning estimates rather than theorem counts.
+- Added the three-declaration P11 `EquationsWithPrescribedGroup1918` module.
+  It packages elementary-symmetric algebraic independence and Mathlib's full
+  symmetric invariant-ring equivalence, and extends that equivalence to
+  fraction rings. The module, Noether umbrella, and repository umbrella are all
+  green under the 2.5 GiB watcher, peaking at 1,170,911,232, 1,921,626,112,
+  and 1,926,107,136 bytes respectively. The ten-row source crosswalk keeps the
+  arbitrary-subgroup fixed-field bridge, minimal-basis and parameterization
+  theorem, singular locus, `n - 2` reduction, Castelnuovo step, and abelian
+  cyclotomic case open. A commit-pinned `rjwalters/lean-genius` candidate
+  supplied the API lead; no repository license was observed, no external source
+  bytes were copied, and the local proof was written directly against pinned
+  Mathlib.
+- Completed a focused three-file Internet follow-up beyond the original four
+  P40 files. The Hilbert-14 candidate is semantically subsumed by the stronger
+  local fixed-ring theorem, the P11 candidate led to the independently written
+  green module above, and the apparent variational `NoetherAudit` was rejected
+  after content review as a trivial finite-sum relabelling unrelated to the
+  historical theorem. Exact commits, byte counts, hashes, and decisions are
+  pinned in
+  [the follow-up receipt](artifacts/coordination/noether-external-github-followup-20260829.json).
+- Completed a content-level audit of four actual Internet-hosted Lean files
+  relevant to P40, distinct from Zenodo record 21129946's 9,834-byte seed
+  archive. The retained
+  [four-file receipt](artifacts/coordination/noether-external-four-file-audit-20260829.json)
+  pins their exact commits, bytes, hashes, declarations, and licenses. The new
+  source-linked `NoncommutativeAlgebras1933` module adapts QICLean's matrix
+  wrapper and TauCeti's real-quaternion special case with Apache-2.0
+  attribution; both build green. Blackfeather's Jacobson–Noether theorem is
+  already absorbed in Mathlib, while TauCeti's general central-source theorem
+  was inspected as a dependency model without copying its six-module cluster.
+  The full P40 simple-subring theorem remains open. The updated
+  [discovery and publication note](docs/noether/external-lean-discovery-and-publication.md)
+  also retains the recommendation for a generated `emmy-noether-in-lean`
+  public front door backed by the canonical umbrella repository and concept
+  DOI.
+- Retained Zenodo record 21129946's 9,834-byte archive byte-for-byte and
+  losslessly extracted all fourteen deposited entries. The archive SHA-256 is
+  `E9E494210774F814505CEC76F5AA5F2D6C8309EC46EA8B1A70CB77B070691FA9`;
+  the credential-free [download receipt](artifacts/corpus/zenodo-21129946-download-receipt.json)
+  and [extraction receipt](artifacts/corpus/zenodo-21129946-extraction-receipt.json)
+  pin every file byte count and hash. No sidecar was silently merged into the
+  promoted library. Heinrich Weber and Camille Jordan are now conservative
+  deposited-anchor entries in the central author index.
+- Added P22's four-declaration `FirstSmithPrimitiveCoefficientProductForm`:
+  two generic helpers are `NEW_PACKAGING`, and two source-shaped declarations
+  are `FORMALIZED_SOURCE_PACKAGING`. Content removal gives primitive nonzero
+  integral representatives for the selected cutoff-one Smith coefficient and
+  selected-coefficient product; their localized images remain associated with
+  those objects, they satisfy `e ∣ r` and `r ∣ e ^ ρ`, and both full-ring lifts
+  retain `HasEquation33Witness I 1`. These conditional proxies are not the
+  historical `E^(2)` or `R^(2)`, module norm, gcd of maximal minors, or
+  resultant, and no canonicity, choice independence, or
+  later-stage result is claimed. The 12,041-byte source has SHA-256
+  `0DB8944E6447B3678CDF56959FC5552832DE62691A8B02B4E35CBAC133B1F06E`;
+  its 7,428-byte clean bounded
+  [receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithPrimitiveCoefficientProductForm-20260829T1922416820685-b3774a59.module.receipt.json)
+  has SHA-256
+  `BD80AB6E88E4200DB203B392C38F0942BD2CE56A913B7B05ABE2099F10B3EAC7`
+  and records a 1,412,005,888-byte peak.
+- Added P22's five-declaration `FirstSmithPrimitiveTransitionDeterminantForm`:
+  the localized ground-to-denominator transition determinant is defined, the
+  selected Smith-basis determinant is proved equal to the finite selected-
+  coefficient product, and determinants from different linear equivalences are
+  proved associated. The source-shaped primitive representative is consequently
+  associated with the selected determinant after localization. This is selected-
+  basis `NEW_PACKAGING`/`FORMALIZED_SOURCE_PACKAGING`; it does not identify the
+  object with historical `R^(2)`, Hentzelt's module norm, the gcd of maximal
+  minors, a resultant, or a canonical/choice-independent form. The 12,260-byte
+  source has SHA-256
+  `D7E1454B7D1175DF7B68FC150A81D16CE8FA762C7B0A9BAEC706156FD0CC3579`;
+  its clean [bounded receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithPrimitiveTransitionDeterminantForm-20260829T2024252306168-af0bed92.module.receipt.json)
+  has SHA-256
+  `70551DBCF893AC7384F6F4A223A8BE4944A11BA05FE32A862130B9486942D922`
+  and records a 1,428,381,696-byte peak. The integrated
+  [claim receipt](artifacts/build/claim-P22-first-smith-primitive-transition-determinant-20260829T2024252306168-af0bed92.json)
+  is retained for the next meaningful public GitHub/Zenodo checkpoint.
+- Added P22's ten-declaration `DeterminantalIdealScaffold`, classified entirely
+  as source-neutral `NEW_PACKAGING`. It defines selected finite `k`-minors as
+  submatrix determinants and the ideal spanned by all selected minors, then
+  proves generator membership, repeated-row/column vanishing, all-zero-minors
+  and positive-degree zero-matrix bottom results, and the degree-zero top result.
+  It deliberately does not claim Cauchy--Binet invariance, a Fitting ideal,
+  maximal-minor gcd, module norm, historical `R^(2)`, resultant, canonicality,
+  or choice independence. The 6,009-byte source has SHA-256
+  `1BCAAE22D0B4E18243A4F575DC2DBE2A9DE7F1FAF65783D524B179F379F63B80`;
+  its clean [bounded receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-DeterminantalIdealScaffold-20260829T2119094849183-578e0ed0.module.receipt.json)
+  has SHA-256
+  `F99EEE43D3FE34045D5582AB83F394158EBE9D0B09787799BE8100DC332087B3`
+  and records a 1,167,695,872-byte peak. P22 now has 576 declarations across
+  its base and 38 support modules, with 53 direct Noether imports. The Noether
+  and top-level umbrellas are green at 1,919,422,464 and 1,918,066,688 bytes.
+  The new [55-target checkpoint](artifacts/build/module-graph-checkpoint-20260829T2141556003305-de54d554.json)
+  has SHA-256
+  `BE88D5C55C607A7F9B7B9DFA4F3543C76F91F73550F52124A54E7D521377BA4A`
+  and chains the preceding 54-target graph. The integrated
+  [claim receipt](artifacts/build/claim-P22-determinantal-ideal-scaffold-20260829T2119094849183-578e0ed0.json)
+  is queued with the next coherent public checkpoint.
+
 ## 0.2.6 — 2026-08-29
 
 - Added P22's four-declaration `FirstSmithCoefficientProductNumerator`, entirely
@@ -71,7 +178,8 @@
   [52-target checkpoint](artifacts/build/module-graph-checkpoint-20260829T1614266016417-a6b1b43c.json)
   covering 50 direct Noether imports plus both umbrellas. The incremental peak
   is 1,916,051,456 bytes and the graph-chain peak remains 1,922,387,968 bytes.
-  P22 now totals 557 declarations across its base and 35 support modules.
+  At this released checkpoint P22 totaled 557 declarations across its base and
+  35 support modules.
 
 ## 0.2.5 — 2026-08-28
 

@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "topic_id": "NOETHER-P22-SATZ-VIII-PRIMITIVE-DESCENT",
+  "topic": "Hentzelt--Noether Satz VIII: primitive integral representatives, selected transition determinants, finite-minor ideals, and Gauss descent for the cutoff-one Smith coefficient and coefficient product",
+  "workspace": "C:\\Users\\Floris\\Documents\\ChatGPT\\LEAN",
+  "corpus_entrypoint": "C:\\Users\\Floris\\Documents\\Papors\\Chatnotes\\Zeta-Function-Foundation\\config\\literature_index_entrypoint.json",
+  "updated_utc": "2026-08-29T19:44:00.0000000Z",
+  "mathematical_objects": [
+    "primitive part of a polynomial over the later-variable coefficient ring",
+    "Gauss-lemma descent from Frac(P[x3,...])[x2] to P[x3,...][x2]",
+    "selected greatest Smith coefficient",
+    "finite product of selected Smith coefficients",
+    "selected-basis transition endomorphism and its determinant over the localized ground-to-denominator equivalence",
+    "association of transition determinants under a change of linear equivalence",
+    "source-neutral ideal spanned by selected finite submatrix determinants",
+    "equation (33) late-variable multiplier witness"
+  ],
+  "queries": [],
+  "sources": [
+    {
+      "source_class": "local_unpublished_work",
+      "publication_unit_or_source_id": "NOETH-DE-ED-0014",
+      "exact_locators": [
+        "C:\\Users\\Floris\\Documents\\interlanguage\\03_projects\\noether\\07_german_canon_control\\candidates\\ED0014\\noether.tex; SHA-256 EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58",
+        "lines 13321--13327: section 5, the integral/primitive normalization of R^(i) and E^(i), and the transition-determinant edge",
+        "lines 13340--13342: Satz VIII divisibilities and primitive Gauss descent",
+        "lines 13344--13350: equation (33) and its nonzero later-variable multiplier"
+      ],
+      "relevance_edge": "Primary controlled German witness for the precise normalization, divisibility, transition-determinant edge, and equation-(33) claims approximated by the cutoff-one selected-Smith formalization.",
+      "toc_or_section_check": {
+        "status": "checked",
+        "checked_utc": "2026-08-29T17:14:01.0168263Z",
+        "relevant_sections": [
+          "§ 5. Resultantenform und Elementarteilerform eines Ideals aus Polynomen",
+          "Definition VI",
+          "Satz VIII"
+        ]
+      },
+      "reading_status": "fully_content_read_for_current_dependency",
+      "content_loci_read": [
+        "lines 13321--13350"
+      ],
+      "dependencies": [
+        "FirstSmithCoefficientProductNumerator cutoff-one selected coefficient/product construction",
+        "FirstSmithPrimitiveTransitionDeterminantForm selected-basis determinant/product bridge",
+        "DeterminantalIdealScaffold finite-minor and Ideal.span vocabulary",
+        "Mathlib Polynomial.primPart and Polynomial.IsPrimitive",
+        "Mathlib Polynomial.IsPrimitive.dvd_of_fraction_map_dvd_fraction_map",
+        "Mathlib LinearMap.associated_det_comp_equiv",
+        "later-variable denominator lift into nonzeroLateVariableSubmonoid"
+      ],
+      "claim_or_proof_crosswalk_ids": [
+        "HENTZELT-NOETHER-1923-FIRST-SMITH-COEFFICIENT-PRODUCT-NUMERATOR-PACKAGING",
+        "HENTZELT-NOETHER-1923-FIRST-SMITH-PRIMITIVE-COEFFICIENT-PRODUCT-FORM-PACKAGING",
+        "HENTZELT-NOETHER-1923-FIRST-SMITH-PRIMITIVE-TRANSITION-DETERMINANT-FORM-PACKAGING",
+        "HENTZELT-NOETHER-1923-DETERMINANTAL-IDEAL-SCAFFOLD"
+      ],
+      "notes": "The local zero-based cutoff 1 is source stage i=2. The built theorem proves the selected-basis transition determinant/product equality and basis-change association, and the primitive product proxy is associated with that selected determinant after localization. A separate green source-neutral scaffold now defines selected finite minors and their spanned ideal, but does not yet prove row/column-change invariance or identify this ideal with the transition determinant, a Fitting ideal, a maximal-minor gcd, the module norm, or historical R^(2). Unit normalization, auxiliary-choice independence, and later stages remain open. No German correction is proposed."
+    }
+  ],
+  "unresolved_dependencies": [
+    {
+      "dependency": "Canonical corpus publication-unit identifier for the controlled Hentzelt--Noether 1923 witness",
+      "reason_unresolved": "The active no-Python and no-broad-search resource policy rules out invoking the corpus query script in this work unit; the exact controlled source and hash are already available and were read directly.",
+      "next_bounded_query_or_read": "When the resource policy permits, run one literal canonical local-corpus query for Hentzelt Noether Satz VIII Resultantenform and bind its returned unit ID without rereading the source locus."
+    },
+    {
+      "dependency": "Historical R^(2) identification with the determinant transition product, module norm, and gcd of maximal minors",
+      "reason_unresolved": "The selected-basis determinant/product equality, basis-change association, and elementary finite-minor Ideal.span scaffold are now proved, but Cauchy--Binet/exterior-power invariance, the basis/choice-independent maximal-minor or Fitting interpretation, module norm, unit normalization, and historical R^(2) bridge required by lines 13323--13327 are not.",
+      "next_bounded_query_or_read": "Use the audited exteriorPower.map_comp and iotaMultiDual determinant-coefficient APIs to prove the first finite row/column-equivalence invariance lemma for the scaffold, one bounded module at a time."
+    }
+  ],
+  "refresh_reason": "The live theorem target now includes the selected-basis transition determinant/product equality, basis-change association, and the first source-neutral finite-minor ideal scaffold for lines 13323--13327, in addition to the primitive Gauss-descent step at lines 13327 and 13342.",
+  "anti_loop_note": "The exact primary locus and section structure have been read. Do not query or reread a wider shelf unless the determinant/norm identification becomes the active dependency or the controlled edition/hash changes."
+}

@@ -1,0 +1,117 @@
+{
+  "schema": "lean-mathematical-commons/corpus-coverage-snapshot/1.0",
+  "generated_at_utc": "2026-08-29T21:20:52.1023789Z",
+  "scope": "The 43 numbered works in metadata/noether-works.tsv and the 343 inventoried target rows in metadata/noether-theorems.tsv.",
+  "exact_observations": {
+    "works_total": 43,
+    "works_partial_audit": 21,
+    "works_not_audited": 22,
+    "paper_audit_percent": 48.8,
+    "controlled_source_lines_total": 20437,
+    "controlled_source_lines_in_partial_audits": 7694,
+    "source_line_audit_percent": 37.6,
+    "inventoried_target_rows": 343,
+    "locally_compiled_target_rows": 80,
+    "locally_compiled_percent_of_inventoried": 23.3,
+    "locally_completed_new_content_rows": 59,
+    "locally_completed_new_content_percent_of_inventoried": 17.2,
+    "locally_original_completed_new_content_rows": 58,
+    "externally_attributed_promoted_gap_rows": 1,
+    "mathlib_exact_or_modern_target_rows": 95,
+    "completed_or_available_target_rows": 154,
+    "completed_or_available_percent_of_inventoried": 44.9,
+    "green_build_rows_not_counted_as_new_closure": 21,
+    "open_inventoried_target_rows": 189
+  },
+  "mathlib_coverage_states": {
+    "MATHLIB_EXACT": 33,
+    "MATHLIB_MODERN_FORM": 62,
+    "NEW_PACKAGING": 46,
+    "FORMALIZED_GAP": 24,
+    "GAP_CANDIDATE": 121,
+    "BLOCKED_SOURCE": 30,
+    "DEFERRED_INFRASTRUCTURE": 27
+  },
+  "topic_rollup": [
+    {
+      "topic": "invariant theory and algebraic/differential invariants",
+      "works": 12,
+      "works_partially_audited": 6,
+      "inventoried_targets": 90,
+      "locally_completed_new_content": 6,
+      "locally_completed_new_content_percent": 6.7,
+      "completed_or_available": 24,
+      "completed_or_available_percent": 26.7
+    },
+    {
+      "topic": "ideal theory, elimination, and resultants",
+      "works": 9,
+      "works_partially_audited": 6,
+      "inventoried_targets": 152,
+      "locally_completed_new_content": 46,
+      "locally_completed_new_content_percent": 30.3,
+      "completed_or_available": 87,
+      "completed_or_available_percent": 57.2
+    },
+    {
+      "topic": "fields, arithmetic, Dedekind theory, and ramification",
+      "works": 12,
+      "works_partially_audited": 4,
+      "inventoried_targets": 41,
+      "locally_completed_new_content": 4,
+      "locally_completed_new_content_percent": 9.8,
+      "completed_or_available": 26,
+      "completed_or_available_percent": 63.4
+    },
+    {
+      "topic": "noncommutative algebra and representation theory",
+      "works": 8,
+      "works_partially_audited": 3,
+      "inventoried_targets": 26,
+      "locally_completed_new_content": 2,
+      "locally_completed_new_content_percent": 7.7,
+      "completed_or_available": 13,
+      "completed_or_available_percent": 50.0
+    },
+    {
+      "topic": "variational theorems and differential invariants",
+      "works": 2,
+      "works_partially_audited": 2,
+      "inventoried_targets": 34,
+      "locally_completed_new_content": 1,
+      "locally_completed_new_content_percent": 2.9,
+      "completed_or_available": 4,
+      "completed_or_available_percent": 11.8
+    }
+  ],
+  "open_work": {
+    "not_yet_audited_works": 22,
+    "partially_audited_works_requiring_completion": 21,
+    "gap_candidate_rows": 121,
+    "gap_candidate_rows_with_support_builds_but_still_open": 11,
+    "unbuilt_gap_candidate_rows": 110,
+    "unbuilt_new_packaging_targets": 11,
+    "blocked_source_targets": 30,
+    "deferred_infrastructure_targets": 27
+  },
+  "whole_corpus_estimate": {
+    "method": "Combine exact target-row states inside the inventoried slice with the exact source-line or paper audit fraction. These are planning heuristics, not theorem counts.",
+    "locally_completed_new_content_line_weighted_percent": 6.5,
+    "locally_completed_new_content_paper_weighted_percent": 8.4,
+    "locally_completed_new_content_reported_range_percent": "6--8",
+    "completed_or_available_line_weighted_percent": 16.9,
+    "completed_or_available_paper_weighted_percent": 21.9,
+    "completed_or_available_reported_range_percent": "17--22",
+    "exact_or_local_excluding_modern_analogues_line_weighted_percent": 10.1,
+    "exact_or_local_excluding_modern_analogues_paper_weighted_percent": 13.1
+  },
+  "caveats": [
+    "A target row is a source claim or proof package, not necessarily one theorem; one row may cite several Lean declarations.",
+    "A green local build is evidence for its declarations, but support code and wrappers around existing Mathlib results are not counted as closure of a historical target.",
+    "All 21 audited works remain PARTIAL_AUDIT, so no paper is asserted complete.",
+    "The 22 unaudited works have no theorem-row denominator yet, and theorem density is not uniform across pages or topics.",
+    "One promoted FORMALIZED_GAP row is an attributed Apache-2.0 adaptation from TauCeti; it is included in local compiled coverage but excluded from the locally-original count.",
+    "NEW_PACKAGING is reusable formal infrastructure, not a claim that Noether's historical theorem has been completely formalized.",
+    "The topic percentages use inventoried targets only; the works-partially-audited column is required context."
+  ]
+}
