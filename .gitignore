@@ -9,3 +9,6 @@ artifacts/build/.lean-build.lock
 *.olean
 *.ilean
 *.c
+.noether-check/
+__pycache__/
+*.py[cod]

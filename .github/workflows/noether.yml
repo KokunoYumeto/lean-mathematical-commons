@@ -1,0 +1,61 @@
+name: Noether - current source verification
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: noether-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      LEAN_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Current inventory and checker regression tests
+        run: |
+          python3 -m unittest discover -s tests -v
+          python3 scripts/noether_check.py
+      - name: Install the pinned Lean toolchain
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/leanprover/elan/0e36a07b9bbcc5381fa6250df109f9a4f94d7bac/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+          "$HOME/.elan/bin/lean" --version
+      - name: Retrieve locked dependencies and Mathlib cache
+        run: |
+          lake exe cache get
+          git diff --exit-code -- lake-manifest.json lean-toolchain lakefile.toml
+          python3 scripts/noether_check.py --resolved
+      - name: Recompile the entire local graph and inspect source axiom reports
+        run: python3 scripts/noether_check.py --build --strict-file MathematicalCommons/Noether/EliminationIdealTheorySurvey1924.lean
+      - name: Preserve exact source and verification evidence
+        if: always()
+        run: |
+          mkdir -p .noether-check
+          git rev-parse HEAD > .noether-check/commit.txt
+          git archive --format=zip HEAD -o .noether-check/source.zip
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: noether-verification-${{ github.sha }}
+          path: |
+            .noether-check/*.json
+            .noether-check/commit.txt
+            .noether-check/source.zip
+            .noether-check/logs/*.log
+          include-hidden-files: true
+          if-no-files-found: error

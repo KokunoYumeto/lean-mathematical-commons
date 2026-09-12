@@ -179,7 +179,7 @@ theorem mem_stageOneGroundIdeal_iff_exists_smul
       intro hb0
       apply ha
       apply e.injective
-      simpa [hea, hb0]
+      simp [hea, hb0]
     refine ⟨b, hb, ?_⟩
     have hmap : e (a * e.symm F) ∈ finSuccIdeal (n := n + 1) I :=
       finSuccEquiv_mem_finSuccIdeal I haF

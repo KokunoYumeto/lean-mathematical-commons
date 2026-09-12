@@ -1,0 +1,472 @@
+# Lean of the Mathematical Commons
+
+Public living repository:
+[KokunoYumeto/lean-mathematical-commons](https://github.com/KokunoYumeto/lean-mathematical-commons).
+
+A living Lean 4 library for source-linked formalization of classical mathematics.
+The pilot author is **Emmy Noether**. The work runs on two coordinated tracks:
+
+1. transcription QA against a controlled German witness; and
+2. Lean formalization, prioritizing results not already present in Mathlib.
+
+Formalization is evidence about mathematical statements, not a certificate of
+page completeness, typography, translation, or diplomatic transcription.
+Suspected German-source defects are routed to the separate canon owner and are
+never silently repaired here.
+
+## Current checkpoint
+
+- Reproduces the downloaded Zenodo sidecars from
+  [record 21129946](https://zenodo.org/records/21129946) under
+  `archive/zenodo/21129946/`, with verified MD5 and SHA-256.
+- Retains a local copy of the exact 9,834-byte sidecar archive in
+  [`artifacts/corpus/`](artifacts/corpus/ClassicalAudit_LeanSidecars_Noether_Steinitz_Weber_Jordan_20260630.zip)
+  with credential-free [download](artifacts/corpus/zenodo-21129946-download-receipt.json)
+  and [lossless-extraction](artifacts/corpus/zenodo-21129946-extraction-receipt.json)
+  receipts. The extraction retains all 14 entries and independently pins every
+  byte count and SHA-256.
+  Its four Lean entries are `NoetherIdealtheorie.lean`, `Steinitz.lean`,
+  `Weber.lean`, and `AffineGroup.lean`; they remain provenance sidecars rather
+  than being silently merged into the controlled P22 development.
+- Pins Lean/Mathlib `v4.31.0`, matching that deposit.
+- Indexes all 43 numbered Noether work packets, including joint authorship,
+  editorial roles, posthumous-source caveats, and open canon QA.
+- Records declaration-level Mathlib coverage for twenty-one Noether works: the 1916
+  finite-group invariant paper, 1918 prescribed-group and variational papers, 1919 integral-invariant
+  paper, 1920 series-expansion paper, joint 1920 Noether–Schmeidler
+  noncommutative-module paper, Noether's 1921 report on Hentzelt's elimination
+  theory, 1921 *Idealtheorie*, the 1922 formal-variational encyclopedia entry
+  and absolute-irreducibility criterion, the attribution-sensitive 1923
+  Hentzelt--Noether polynomial-ideals/resultants paper, both 1923
+  invariant/elimination surveys, the 1924 elimination/ideal-theory survey, the
+  1924 abstract ideal-theory and 1925
+  Hilbert-number/group-character communications, the 1926 modular-invariant
+  paper, 1927 abstract Dedekind ideal theory, the 1927 discriminant paper, and
+  the inner-automorphism theorem in the 1933 *Nichtkommutative Algebren*.
+- Adds source-shaped, axiom-audited 1921 declarations for finite irreducible
+  decomposition, both primary-ideal formulations, Satz V's unique prime,
+  greatest-ideal and least-exponent clauses, Satz VI, and part of Satz VIII.
+- Exposes the 1916 orbit-resolvent facts already in Mathlib without claiming
+  that this proves Noether's still-open full invariant-system theorem.
+- Adds a characteristic-free fixed-ring finite-generation theorem for finite
+  actions on finite-type commutative algebras over Noetherian bases. The
+  Mathlib ingredients existed, but the integrality-to-Artin–Tate combination
+  did not; the ledger marks this precisely as `FORMALIZED_GAP`.
+- Promotes bounded, axiom-audited support lemmas for the 1918 test-function
+  step and the finite-bad-primes component of the 1922 argument without
+  claiming either headline theorem.
+- Maps every numbered theorem in the joint 1920 noncommutative-module paper,
+  records its source dictionary and QA conflicts, and promotes the bounded,
+  axiom-audited noncommutative quotient-product core of Satz I.
+- Content-reads and commit-pins four Internet-hosted Lean files relevant to
+  Noether. The source-linked P40 module adapts QICLean's full-matrix inner-
+  automorphism wrapper and TauCeti's real-quaternion conjugacy case with
+  Apache-2.0 attribution; both build green. Blackfeather's Jacobson–Noether
+  incubator is already upstream in Mathlib, while TauCeti's general theorem is
+  retained as a dependency model rather than copying its infrastructure
+  cluster. The full P40 simple-subring theorem remains open.
+- Content-reads and commit-pins three additional Internet candidates. The
+  Hilbert-14 file is subsumed by the stronger local fixed-ring theorem; the
+  P11 file supplies a provenance/API lead for an independently written green
+  symmetric-invariant module with zero copied bytes; and the apparent
+  variational `NoetherAudit` is rejected as an unrelated relabelling theorem.
+- Maps the 1919 integral-invariant paper through its determinant, multisymmetric,
+  Plücker-ideal, straightening, and arithmetic finite-generation layers, and
+  promotes only the elementary four-index Plücker support identity with bounded
+  build and axiom evidence.
+- Maps the 1920 series-expansion paper, its three authorial corrections to
+  earlier papers, and the missing Fischer/Plücker/operator layers; promotes the
+  exact substitution-kernel congruence without claiming a normal form.
+- Maps Noether's five 1927 Dedekind axioms, unique prime-power factorization,
+  converse development, fractional ideals, finite length, and Jordan–Hölder;
+  the exact Artinian-nonzero-quotient/dimension-one bridge is promoted with
+  bounded build and axiom evidence.
+- Maps the five labelled results of the 1927 discriminant paper, records the
+  pinned `proof_wanted` dependency in reverse étale descent, and promotes the
+  independent local finite-free quotient-discriminant reduction.
+- Maps the 1922 formal-variational entry and the algebraic/differential halves
+  of the 1923 invariant survey, preserving historical attribution and keeping
+  Noether I/II, curvature jets, Reynolds operators, and jet reduction as
+  explicit infrastructure gaps.
+- Maps all 31 claims in the 1924 elimination/ideal-theory report. Root fields,
+  prime quotients, finite ideal bases, and splitting fields are separated from
+  the missing primary-decomposition and successive-norm layers.
+- Promotes P23 Satz 5 with the source's uniform quantifier order—one positive
+  radical exponent works for every vanishing ideal—and promotes P25's generic
+  zero in the fraction field of a prime quotient, where evaluation vanishes
+  exactly on the prime ideal. Both are axiom-audited Lean 4.31 builds.
+- Maps P22's staged ground modules, Smith forms, resultants, determinantal
+  elimination, compatible zeros, and multiplicities without conflating its
+  factors with `Polynomial.resultant`. Promotes the intrinsic finite localized
+  opening of Satz VIII, its explicit conditional greatest-coefficient bridge,
+  a nonzero integral numerator whose full-ring lift satisfies
+  `HasEquation33Witness I 1` by regular division with a genuine cutoff-two
+  denominator, and a compatible nonzero integral numerator for the finite
+  selected-Smith-coefficient product. The selected-basis transition determinant
+  is now defined, identified with that finite product, and controlled up to
+  association under basis change. Here local cutoff `1` is the source's
+  stage `i = 2`; the product numerator is not identified with historical
+  `R^(2)` or with a resultant. Equation (33)'s Noetherian descent and finite
+  iteration for supplied later witnesses reach the conditional `E`-product
+  half of equation (34), together with the conditional historical radical/zero-set bridge;
+  proves unrestricted relative Dedekind--Mertens, and
+  uses bounded Kronecker substitution to prove Hentzelt's literal integer-linear
+  multivariate equation (17). It now also formalizes the full lower-
+  unitriangular equation (12) over its natural algebraically-independent
+  lower-pair parameters, the literal late-variable stage submonoids, common
+  parameter-denominator presentations, coefficient reconstruction, and the
+  final two-sided transformed-ground-ideal equality of Satz VI. Satz XI's
+  exact residue rank and displayed basis are also promoted. Satz XII now has
+  the finite-coordinate root-box theorem and its explicit zero-locus embedding,
+  as well as the following Nullstellensatz corollary; the later staged
+  resultants and compatible-zero construction remain open. Equation (21)'s
+  regular-division step is also promoted: for a supplied degree-`k` polynomial
+  regular in `x₁`, every polynomial has an exact representative modulo it whose
+  `x₁`-degree is strictly less than `k`. Equations (22)--(23) are now promoted
+  too: the remainder has an explicit `Fin k` coefficient vector, and every
+  polynomial ideal containing the regular divisor is the internal sum of its
+  bounded-degree part and the disjoint principal tail generated by that
+  divisor. The paired quotient immediately after equation (23) is now packaged
+  too: adjoining the same independent tail to numerator and denominator leaves
+  the relative quotient unchanged. That equivalence is instantiated for a
+  supplied regular ideal pair, proving the paired quotient finite and giving
+  every class a bounded representative. The actual source indexing is connected
+  at the ideal level too: cutoff zero gives the unit-ideal base case, cutoff one
+  gives `g₁`, and the transported quotient `g₁/I` inherits the finite bounded
+  model. The first `ξ`/`ζ` linear-form coordinate model is now explicit as well:
+  under a supplied regular `C ∈ I`, its realization maps the ground/original
+  pair to the actual cutoff-one ideals and joins the coordinate quotient, the
+  transported ideal quotient, and the bounded quotient in one equivalence
+  chain. This source-specific bridge is `FORMALIZED_GAP`; the surrounding
+  common-tail and ideal-level layers are `NEW_PACKAGING`.
+  Line 13162 is now formalized exactly: the bounded cutoff-one ground module is
+  the nonzero-scalar saturation of the bounded original module. The library
+  proves the formula-(4) universal property, the source-facing membership iff,
+  torsion of the relative quotient, equal cardinal rank and `finrank`, and
+  finite generation of the bounded module. These are `FORMALIZED_GAP`, with no
+  PID or characteristic-zero assumption hidden in the statements.
+  The source-faithful late-variable tower is now formalized as
+  `B = P[x₃,…]`, `A = B[x₂]`, `K = Frac(B)`, and `R = K[x₂]`: it
+  localizes only the coefficients and fixes `x₂`. Exact cutoff-one saturation
+  and the equal-`finrank` premise are transported to `R`. Equation (24)'s
+  generic finite-free PID scaffold remains `NEW_PACKAGING`; its new actual
+  cutoff-one instance supplies selected Smith bases and coefficients, the
+  diagonal relation and membership theorem, the finite cyclic-quotient
+  decomposition, and the selected-basis determinant product. The two
+  source-specific promotions are `FORMALIZED_GAP`. The actual localized pair
+  is now also extended by an arbitrary freely adjoined Finsupp tail and by its
+  countable `ℕ` specialization. The same standard tail basis is adjoined to
+  numerator and denominator, every tail coefficient is `1`, common-tail
+  cancellation recovers the finite cyclic quotient, and every enlarged class
+  has a finite-part representative. Four generic quotient helpers are
+  `NEW_PACKAGING`; the 33 source-instantiated declarations are
+  `FORMALIZED_GAP`. This models the printed independent `ζ` tail, but does not
+  yet identify it with a separately constructed and localized historical
+  unbounded `ζ`-module or form an infinite determinant. The scalar-quotient
+  formulas following equation (24) are now formalized as scalar colon ideals:
+  15 generic filtration/product-tail declarations are `NEW_PACKAGING`, and 20
+  declarations instantiate them for the actual localized cutoff-one pair and
+  its arbitrary/countable common tail as `FORMALIZED_GAP`. Adjoining one
+  `ηᵢ` gives `(eᵢ)` unconditionally. Quotienting a filtration stage by the
+  whole ground module gives the infimum of all remaining `(eⱼ)`; it becomes one
+  distinguished `(eᵢ)` only under the explicit hypothesis that every remaining
+  coefficient divides `eᵢ`. Satz II's reciprocal module operation is now typed
+  separately: six generic ideal-quotient and diagonal helpers are
+  `NEW_PACKAGING`, and two source-instantiated declarations prove for the actual
+  localized cutoff-one pair that `G₁* = M₁*/(eᵢ)` and package it with
+  `M₁*/G₁* = (eᵢ)`, under that same explicit greatest-coefficient hypothesis.
+  This uses the exact saturation theorem and does not silently impose an order
+  on Mathlib's selected Smith coefficients. The opening finite algebra of Satz
+  VIII is now formalized without that ordering hypothesis: the quotient
+  annihilator is `A = ⋂ᵢ(eᵢ)`, and for the selected coefficient product
+  `D = ∏ᵢeᵢ` the library proves `(D) ≤ A`, `A^ρ ≤ (D)`, both corresponding
+  generator divisibilities, and radical equality. Ten generic declarations are
+  `NEW_PACKAGING` and six actual localized declarations are `FORMALIZED_GAP`.
+  Under the same explicit greatest-coefficient hypothesis used by Satz II,
+  four more generic declarations identify `A = (eᵢ)`, prove `eᵢ ∣ D` and
+  `D ∣ eᵢ^ρ`, and package radical and vanishing consequences; four actual
+  localized declarations join that bridge to the cutoff-one pair. The selected
+  localized greatest coefficient now has a nonzero integral numerator. Exact
+  coordinate rebuilding and regular division extend the bounded action to
+  every `g ∈ stageGroundIdeal 1 I`; the resulting full-ring lift satisfies
+  `HasEquation33Witness I 1` with a nonzero multiplier free of the first two
+  variables. Four further `NEW_PACKAGING` declarations clear the localized
+  divisibility of that coefficient into the finite selected-coefficient
+  product. They return a nonzero integral product numerator divisible by the
+  coefficient numerator, and both full-ring lifts retain the equation-(33)
+  witness. Local cutoff `1` is source stage `i = 2`; the new numerator is not
+  historical `R^(2)`, a historical resultant, primitive, normalized,
+  canonical, or choice-independent. Equation (33)'s next step is also
+  formalized: four generic finite-basis lemmas and six
+  source-shaped declarations turn supplied elementwise denominator witnesses
+  into one multiplier for the whole stage ideal, automatically under
+  Noetherianity, and specialize the construction to the first stage. A supplied
+  consecutive witness family is now iterated through arbitrary finite windows;
+  the terminal ground ideal is the original ideal, yielding the conditional
+  `E`-product half of equation (34) and its tail-window endpoint. The library
+  does not construct the later-stage witness family. Neither `D` nor the
+  annihilator generator is identified with Hentzelt's primitive `R^(i)`, and
+  the integral numerator is not normalized to historical `E^(i)`.
+  The characteristic-zero finite-avoidance step used after Satz VII
+  is formalized for any supplied finite family of regularity coefficients. The
+  full independent lower-unitriangular transform from equation (12) is now
+  proved to preserve the exact total degree of every nonzero input. A
+  dehomogenization and algebraic-independence argument proves its first-variable
+  leading coefficient nonzero for every nonzero polynomial, and the generic
+  transform of every nonzero ideal therefore contains a regular member. In
+  characteristic zero, one finite ground-field assignment preserves any
+  supplied finite family of these witnesses; the resulting transform is proved
+  to be an actual lower-unitriangular algebra equivalence. Canonical
+  divisibility ordering,
+  identification of the freely adjoined tail with the separately constructed
+  historical unbounded module, identification of the determinant product with
+  Hentzelt's norm or resultant, historical/canonical primitive-form
+  identification and choice independence,
+  later-stage equation-(33) witness construction, the parallel `R^(i)` product
+  needed to complete equation (34), and the compatible-zero system remain
+  open. Tail coefficient `1` is
+  identity-tail data, not a canonical normalization theorem.
+- Extends P25's generic-zero construction: evaluation has kernel exactly the
+  prime ideal, and the generic coordinate tuple generates the fraction field
+  of the prime quotient over the coefficient field. It now also proves the
+  range-cardinality bound, the finite-coordinate theorem `trdeg ≤ n`, and the
+  strict theorem `trdeg < n` when the prime ideal is nonzero. The unqualified
+  printed strict bound remains critical apparatus, not silently repaired.
+- Promotes the P23 Satz 3 coefficient-replacement core under an explicit
+  additive invariant retraction; construction of Hilbert/Fischer's
+  Ω/Reynolds operator remains an explicit representation-theory gap.
+- Promotes Noether's 1924 Dedekind characterization as an exact equivalence
+  between `IsDedekindDomain` and integral closure plus Artinian nonzero
+  quotients, under explicit Noetherian-domain assumptions.
+- Promotes the binary localization-contraction core of the 1923 ground-ideal
+  intersection lemma, without claiming the missing elimination norm or primary
+  decomposition.
+- Enforces serial, memory-watched Lean runs with a 2.5 GiB build cap inside a
+  strict 3 GiB per-worker envelope.
+
+## Author index
+
+The full cross-author landing page is [docs/index.md](docs/index.md), backed by
+the machine-readable [metadata/authors.tsv](metadata/authors.tsv).
+
+| Author | Local corpus | Lean status | Existing public record |
+|---|---|---|---|
+| Emmy Noether | present | active pilot | [Noether corpus DOI](https://doi.org/10.5281/zenodo.20412587) |
+| Ernst Steinitz | present | one deposited Mathlib anchor | [Steinitz corpus DOI](https://doi.org/10.5281/zenodo.20616988) |
+| J. J. Sylvester | present | inventory queued | [Sylvester corpus DOI](https://doi.org/10.5281/zenodo.20520692) |
+| Hellmuth Kneser | present | inventory queued | [Kneser corpus DOI](https://doi.org/10.5281/zenodo.20836971) |
+| Paul Gordan | present | invariant-theory scaffold queued | [Gordan corpus DOI](https://doi.org/10.5281/zenodo.20616260) |
+
+The historical corpus remains centrally indexed in
+[modern-latex-manuscripts](https://github.com/KokunoYumeto/modern-latex-manuscripts).
+This repository is the formalization-focused companion, not a duplicate archive.
+
+## Build without exceeding RAM
+
+The normal local check is serial and watched:
+
+```powershell
+./scripts/run-lean-bounded.ps1 `
+  -File ./MathematicalCommons/Noether/Idealtheorie1921.lean `
+  -DependencyProject C:/path/to/a/prebuilt/mathlib-project `
+  -MaxMemoryGiB 2.5
+```
+
+The checker invokes the pinned Lean executable directly and builds `LEAN_PATH`
+from the named project's existing package cache. It does not invoke Lake or Git,
+perform a repository-wide scan, or update dependencies. Each schema-1.2 receipt
+binds the source, runner, Lean executable, toolchains, manifests, Mathlib commit,
+logs, platform, process-tree peak, and limit. The Windows watcher samples the
+captured Lean process tree every 200 ms and kills only that tree over the limit;
+it is explicitly recorded as sampled enforcement, not a Job Object hard ceiling.
+
+Direct source checks do not create local `.olean` files. To verify the complete
+local import graph, `scripts/build-local-olean-bounded.ps1` compiles an explicit
+ordered file list into a run-specific cache under `artifacts/build/local-olean/`.
+It uses the same one-thread, exclusive-lock, sampled process-tree policy and
+writes a receipt for every module. It never invokes Lake or Git and does not
+modify the release-verifier-bound source checker. For a narrowly missing
+dependency object, its opt-in `-MirrorPackageOutputs` mode hash-checks and
+mirrors only explicitly compiled sidecars into the disposable dependency
+project; it refuses a conflicting target rather than rebuilding a package.
+
+The most recent sealed graph check has 55 targets (53 direct Noether imports
+and both umbrellas) at checkpoint
+[`20260829T2141556003305-de54d554`](artifacts/build/module-graph-checkpoint-20260829T2141556003305-de54d554.json),
+which chains the preceding 54-target checkpoint
+[`20260829T2034526550242-a888be76`](artifacts/build/module-graph-checkpoint-20260829T2034526550242-a888be76.json),
+which chains the preceding 52-target checkpoint
+[`20260829T1614266016417-a6b1b43c`](artifacts/build/module-graph-checkpoint-20260829T1614266016417-a6b1b43c.json),
+which in turn chains the preceding
+[51-target checkpoint](artifacts/build/module-graph-checkpoint-20260829T1552050773212-64de772d.json).
+The preceding checkpoint adds the fourteen-declaration `FirstSmithEquation33Bridge`. Its clean
+[bounded receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithEquation33Bridge-20260829T1549364931065-c50c17d9.module.receipt.json)
+records a 1,393,115,136-byte peak. The 17,378-byte source has SHA-256
+`876DB09F6858D2237C6730ED823A2721C09F0D854EDA8DE31FA9A925B05210BE`.
+All fourteen declarations have matching axiom prints, with no warning, error,
+`sorry`, or nonstandard axiom. The Noether and top umbrellas peaked at
+1,914,290,176 and 1,916,993,536 bytes respectively. The checkpoint's
+incremental maximum is 1,916,993,536 bytes, while the checkpoint-chain maximum
+remains 1,922,387,968 bytes under the strict 3 GiB worker envelope.
+
+The new green `FirstSmithCoefficientProductNumerator` module contributes
+four `NEW_PACKAGING` declarations. Its 9,279-byte source has SHA-256
+`C7E8C66C46A88FC578A040A60A9CD6B8FC6661D3965AD03A2AA696420AE77362`;
+the clean [bounded receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithCoefficientProductNumerator-20260829T1607180026573-04e54684.module.receipt.json)
+records a 1,421,578,240-byte peak. The new Noether and full umbrellas peaked at
+1,916,051,456 and 1,911,451,648 bytes respectively; the graph-chain maximum
+remains 1,922,387,968 bytes. The cluster claim is
+[`HENTZELT-NOETHER-1923-FIRST-SMITH-COEFFICIENT-PRODUCT-NUMERATOR-PACKAGING`](artifacts/build/claim-P22-first-smith-coefficient-product-numerator-20260829T1614266016417-a6b1b43c.json).
+
+The green `FirstSmithPrimitiveCoefficientProductForm` module adds two generic
+`NEW_PACKAGING` helpers and two source-shaped
+`FORMALIZED_SOURCE_PACKAGING` declarations. Removing content from the selected
+integral coefficient and coefficient-product numerators gives primitive,
+nonzero representatives `e` and `r`; after localization they remain associated
+with the selected Smith coefficient and finite selected-coefficient product,
+they satisfy the integral divisibilities `e ∣ r` and `r ∣ e ^ ρ`, and both
+full-ring lifts retain `HasEquation33Witness I 1`. These remain conditional
+selected proxies: they are not the historical `E^(2)` or `R^(2)`, module norm,
+gcd of maximal minors, or resultant, and are not canonical or choice-independent.
+The new green `FirstSmithPrimitiveTransitionDeterminantForm` module adds five
+source-facing definitions/theorems. It defines the localized ground-to-
+denominator transition determinant, proves that the selected Smith-basis
+determinant is exactly the finite selected-coefficient product, and proves
+association under a change of linear equivalence. Its final theorem adds the
+association of the primitive product proxy with that selected determinant after
+localization, while deliberately stopping short of historical `R^(2)`, the
+module norm, the gcd of maximal minors, a resultant, or any canonical/
+choice-independent identification. The 12,260-byte source has SHA-256
+`D7E1454B7D1175DF7B68FC150A81D16CE8FA762C7B0A9BAEC706156FD0CC3579`;
+its clean [bounded receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithPrimitiveTransitionDeterminantForm-20260829T2024252306168-af0bed92.module.receipt.json)
+has SHA-256
+`70551DBCF893AC7384F6F4A223A8BE4944A11BA05FE32A862130B9486942D922`, records
+a 1,428,381,696-byte peak, and audits all five declarations. Its module claim
+is [`HENTZELT-NOETHER-1923-FIRST-SMITH-PRIMITIVE-TRANSITION-DETERMINANT-FORM-PACKAGING`](artifacts/build/claim-P22-first-smith-primitive-transition-determinant-20260829T2024252306168-af0bed92.json).
+The green `DeterminantalIdealScaffold` module then adds ten source-neutral
+`NEW_PACKAGING` declarations. It defines finite `k`-minors by selected
+submatrix determinants and the ideal spanned by all such minors; it proves
+generator membership, repeated-row/column vanishing, the all-zero-minors and
+zero-matrix bottom cases, and the degree-zero top case. All ten declarations
+have explicit axiom prints. The 6,009-byte source has SHA-256
+`1BCAAE22D0B4E18243A4F575DC2DBE2A9DE7F1FAF65783D524B179F379F63B80`;
+its clean [bounded receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-DeterminantalIdealScaffold-20260829T2119094849183-578e0ed0.module.receipt.json)
+records a 1,167,695,872-byte peak. This is not yet a Fitting ideal,
+Cauchy--Binet invariance theorem, maximal-minor gcd, module norm, historical
+`R^(2)`, resultant, canonical form, or choice-independent object. Its
+[claim receipt](artifacts/build/claim-P22-determinantal-ideal-scaffold-20260829T2119094849183-578e0ed0.json)
+keeps those boundaries explicit.
+The preceding 12,041-byte source has SHA-256
+`0DB8944E6447B3678CDF56959FC5552832DE62691A8B02B4E35CBAC133B1F06E`;
+its clean [bounded receipt](artifacts/build/MathematicalCommons-Noether-PolynomialIdealsAndResultants1923-FirstSmithPrimitiveCoefficientProductForm-20260829T1922416820685-b3774a59.module.receipt.json)
+records a 1,412,005,888-byte peak. P22 now accounts for 576 canonical
+declarations across its base and 38 support modules. With the finite-minor
+scaffold integrated, the working graph has 53 direct Noether imports and 55
+targets including both umbrellas; both fresh serial umbrella receipts are green
+at that P22 checkpoint. The subsequent P40 and P11 modules bring the current
+graph to 55 direct Noether imports and 57 targets including both umbrellas; the
+[57-target checkpoint](artifacts/build/module-graph-checkpoint-20260829T2327308948138-d815b8e6.json)
+is the latest sealed graph.
+
+The P11 pilot now has a green source-linked module for *Gleichungen mit
+vorgeschriebener Gruppe* (1918). It packages Mathlib's elementary-symmetric
+algebraic independence and full symmetric invariant-ring equivalence, and adds
+the corresponding abstract fraction-ring equivalence. The
+[standalone receipt](artifacts/build/MathematicalCommons-Noether-EquationsWithPrescribedGroup1918-20260829T2315159464772-244c1dd8.module.receipt.json)
+records exit 0, the three standard Mathlib axioms, and a 1,170,911,232-byte
+peak; both fresh umbrellas are green below 2 GiB. The ten-row
+[claim receipt](artifacts/build/claim-P11-prescribed-group-20260829T2315159464772-244c1dd8.json)
+keeps the stronger fixed-field bridge, minimal-basis/parameterization theorem,
+singular locus, `n - 2` reduction, Castelnuovo step, and abelian cyclotomic case
+open. A commit-pinned Internet candidate supplied an API lead, but no external
+source bytes were copied.
+
+The conservative [Noether coverage snapshot](artifacts/coordination/noether-coverage-snapshot-20260829.json)
+records 21 of 43 works under partial theorem audit, covering 7,694 of 20,437
+controlled-source lines. Of 343 inventoried claim units, 154 (44.9%) are
+available through exact/modern Mathlib coverage or completed local content;
+59 are newly completed local content: 58 locally original rows and one
+externally attributed promoted gap. Since no paper audit is complete, the
+whole-corpus planning estimates are 17–22% available and 6–8% newly completed
+locally. Green support builds are not counted as closure of a historical claim.
+
+Meaningful theorem clusters—not individual edits—are the intended GitHub/Zenodo
+release unit. The living series uses concept DOI
+[10.5281/zenodo.21129945](https://doi.org/10.5281/zenodo.21129945); the current
+Noether-pilot release DOI is
+[10.5281/zenodo.22162481](https://doi.org/10.5281/zenodo.22162481).
+
+## Project map
+
+- `MathematicalCommons/`: compiling Lean source.
+- `docs/noether/mathlib-coverage.md`: verified coverage and gaps.
+- `docs/noether/external-lean-discovery-and-publication.md`: third-party
+  Noether Lean discovery, the actual four-file content audit and P40
+  absorption decisions, the three-file follow-up and P11 API-lead absorption,
+  DOI lineage, author-repository architecture, and the ranked high-value
+  formalization program.
+- `metadata/topic-literature-route-noether-p11-prescribed-group.json`: the
+  ten-claim P11 crosswalk, source witness, external lead, green receipts, and
+  next fixed-field dependencies.
+- `docs/index.md`: central cross-author “Lean of the Mathematical Commons”
+  landing page.
+- `docs/noether/paper-inventory.md`: all 43 numbered work packets and QA flags.
+- `docs/noether/integral-invariants-1919.md`: binary integral invariants,
+  multisymmetry, Plücker relations, straightening, and open source QA.
+- `docs/noether/series-expansion-1920.md`: Fischer normal forms, relation
+  ideals, authorial corrections, and the promoted substitution congruence.
+- `docs/noether/communications-1924-1925.md`: abstract ideal theory, Hilbert
+  numbers, semisimple group algebras, and source-scope boundaries.
+- `docs/noether/elimination-ideal-theory-1923.md`: successive elimination
+  forms, primary decomposition, dimension, and arithmetic specialization gaps.
+- `docs/noether/hentzelt-elimination-report-1921.md`: attribution-sensitive
+  resultant claims and the boundary between exact zero-locus semantics and
+  source-blocked elimination structure.
+- `docs/noether/hentzelt-polynomial-ideals-resultants-1923.md`: the full
+  staged Hentzelt--Noether construction, pinned Smith/norm coverage,
+  promoted source-exact multivariate Dedekind--Mertens equation (17), its
+  source-faithful coordinate/localization/ground-ideal equality, Satz XI rank
+  and basis, Satz XII's finite-coordinate zero-locus substrate and
+  Nullstellensatz corollary, the finite regularity-specialization theorem,
+  equation-(21) bounded regular-division representatives, equations-(22)--(23)
+  finite coefficients and internal ideal decomposition, the cutoff-one
+  `ξ`/`ζ` coordinate quotient bridge, the exact line-13162 nonzero-scalar
+  ground-module saturation and its torsion/equal-rank consequences, its
+  source-faithful coefficient localization to `Frac(P[x₃,…])[x₂]`, the
+  generic equation-(24) Smith package and its actual finite cutoff-one
+  Smith/cyclic-quotient and selected-basis determinant instance, and promoted
+  intrinsic annihilator/coefficient-product bounds at the opening of Satz VIII,
+  the explicit conditional greatest-coefficient bridge, its nonzero integral
+  numerator and full cutoff-one witness, the compatible integral numerator for
+  the finite selected-coefficient product, equation (33)'s one-stage
+  Noetherian common-multiplier descent and supplied-witness iteration through
+  the conditional `E`-product half of equation (34), and conditional
+  radical/zero-set support for historical forms.
+- `docs/noether/formal-variational-calculus-1922.md`: formal variations,
+  covariant differentiation, curvature, and the source-level Noether I/II gap.
+- `docs/noether/algebraic-differential-invariants-1923.md`: Hilbert-basis and
+  invariant-theory claims, uniform radical powers, and differential reduction.
+- `docs/noether/elimination-ideal-theory-survey-1924.md`: all 31 compressed
+  univariate/multivariate claims, generic-zero theorems, and the safe
+  transcendence-degree bound.
+- `docs/noether/dedekind-theory-1927.md`: source and Mathlib map for Noether's
+  five Dedekind axioms, factorization, finite length, and Jordan–Hölder.
+- `docs/noether/discriminant-theorem-1927.md`: discriminants of finite algebras
+  and orders, scalar extension, localization, ramification, and open source QA.
+- `metadata/noether-works.tsv`: machine-readable paper inventory.
+- `metadata/noether-theorems.tsv`: source-to-declaration ledger.
+- `metadata/noether-canon-qa.tsv`: machine-readable open discrepancies already
+  routed to the German canon owner.
+- `sources/noether/CANON_REFERENCE.json`: immutable reference to the external
+  German authority snapshot used by this checkpoint.
+- `sources/noether/CANON_DECISION_ED0020_20260825.json`: verified append-only
+  canon decisions and inactive-successor custody; it does not rebase existing
+  ED0014 theorem provenance or activate ED0020.
+- `archive/zenodo/21129946/`: original deposited ZIP and lossless extraction.
+- `scripts/run-lean-bounded.ps1`: RAM-bounded serial checker.
+- `scripts/run-lake-bounded.ps1`: RAM-bounded dependency-cache command runner;
+  it is not a dependency updater.
+- `scripts/build-local-olean-bounded.ps1`: RAM-bounded serial local-module and
+  umbrella builder using a disposable import cache.
+- `scripts/verify-release.ps1`: independent checksum, receipt, source, axiom,
+  toolchain, Mathlib-pin, and memory-evidence verifier.
