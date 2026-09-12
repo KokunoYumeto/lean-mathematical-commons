@@ -133,6 +133,7 @@ def inventory(root: Path = ROOT) -> dict:
             'Every resolved dependency must have an immutable Git commit')
     mathlib = next(p for p in packages if p['name'] == 'mathlib')
     require(mathlib['rev'] == MATHLIB, 'Mathlib lock changed: explicit revalidation required')
+    require(mathlib['configFile'] == 'lakefile.lean', 'Incorrect Mathlib configuration filename')
     config = tomllib.loads((root/'lakefile.toml').read_text())
     direct = config['require']
     require(len(direct) == 1 and direct[0]['name'] == 'mathlib', 'Unexpected direct dependencies')
@@ -188,6 +189,8 @@ def resolved_dependencies(root: Path = ROOT) -> None:
         path = root/manifest['packagesDir']/p['name']
         head = subprocess.check_output(['git', '-C', str(path), 'rev-parse', 'HEAD'], text=True).strip()
         require(head == p['rev'], f'Resolved revision mismatch: {p["name"]}')
+        config = path / (p.get('subDir') or '') / p['configFile']
+        require(config.is_file(), f'Missing dependency configuration: {config}')
         changes = subprocess.check_output(['git', '-C', str(path), 'status', '--porcelain', '--untracked-files=no'], text=True)
         require(not changes.strip(), f'Tracked dependency modifications: {p["name"]}')
 

@@ -1,11 +1,14 @@
 """Checker regression tests. These do not prove any Lean theorem."""
 from pathlib import Path
 import sys
+import hashlib
+import json
+import re
 import tempfile
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]/'scripts'))
-from noether_check import check_axioms, imports_and_targets, lean_code, read_tsv, topological_order
+from noether_check import check_axioms, imports_and_targets, inventory, lean_code, read_tsv, topological_order, TOOLCHAIN, MATHLIB
 
 
 class ScannerTests(unittest.TestCase):
@@ -83,6 +86,33 @@ class LedgerTests(unittest.TestCase):
             path = Path(folder)/'x.tsv'
             path.write_text('id\tv\na\t1\n')
             self.assertEqual(read_tsv(path, 'id'), [{'id':'a','v':'1'}])
+
+
+class RepositoryTests(unittest.TestCase):
+    def test_current_document_links(self):
+        root = Path(__file__).resolve().parents[1]
+        for name in ('README.md', 'BUILDING.md', 'CONTRIBUTING.md', 'docs/noether/README.md'):
+            page = root/name
+            for link in re.findall(r'\[[^\]]+\]\(([^)]+)\)', page.read_text()):
+                if '://' in link or link.startswith('#'):
+                    continue
+                with self.subTest(page=name, link=link):
+                    self.assertTrue((page.parent/link.split('#')[0]).exists())
+
+    def test_historical_readme_preserved(self):
+        root = Path(__file__).resolve().parents[1]
+        raw = (root/'README.checkpoint-20260829.md').read_bytes()
+        self.assertEqual(hashlib.sha1(f'blob {len(raw)}\0'.encode()+raw).hexdigest(),
+                         '053c0a29734bbcbf1ef7efffec593f2fa4885506')
+
+    def test_manifest_configuration_regression(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root/'lean-toolchain').write_text(TOOLCHAIN+'\n')
+            (root/'lake-manifest.json').write_text(json.dumps({'packages': [
+                {'type':'git', 'rev':MATHLIB, 'name':'mathlib', 'configFile':'lakefile.toml'}]}))
+            with self.assertRaisesRegex(ValueError, 'configuration filename'):
+                inventory(root)
 
 
 if __name__ == '__main__':

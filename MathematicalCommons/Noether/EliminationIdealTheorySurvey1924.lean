@@ -9,9 +9,10 @@ import Mathlib.RingTheory.MvPolynomial.Basic
 
 This is the source-shaped generic-zero construction at line 14187 of the
 controlled witness `NOETH-DE-AUTH-v052-20260815`. It proves the vanishing
-kernel and field-generation claims. It deliberately does not assert the
-printed strict transcendence-degree bound; instead it proves the valid
-non-strict upper bound, allowing equality for the zero prime ideal.
+kernel and field-generation claims. The non-strict transcendence-degree bound
+allows equality for the zero prime ideal. The strict finite-coordinate bound
+is proved separately under the explicit hypothesis that the prime ideal is
+nonzero; the unqualified printed strict bound is not asserted.
 -/
 
 noncomputable section
@@ -83,7 +84,7 @@ private theorem isAlgebraic_algebraAdjoin_of_intermediateField_adjoin_eq_top
     (S : Set E) (hS : IntermediateField.adjoin F S = ⊤) :
     Algebra.IsAlgebraic (Algebra.adjoin F S) E := by
   refine ⟨fun x ↦ ?_⟩
-  let y : IntermediateField.adjoin F S := ⟨x, by simpa [hS]⟩
+  let y : IntermediateField.adjoin F S := ⟨x, by simp [hS]⟩
   have hy : IsAlgebraic (Algebra.adjoin F S) y :=
     Algebra.IsAlgebraic.isAlgebraic y
   have hz := hy.algHom
@@ -141,29 +142,14 @@ belongs to that ideal. -/
 theorem aeval_genericZero_eq_zero_iff_mem (I : Ideal (MvPolynomial σ P)) [I.IsPrime]
     (f : MvPolynomial σ P) :
     MvPolynomial.aeval (genericZero I) f = 0 ↔ f ∈ I := by
-  let q : MvPolynomial σ P →ₐ[P] CoordinateRing I := Ideal.Quotient.mkₐ P I
-  let j : CoordinateRing I →ₐ[P] GenericZeroField I :=
-    IsScalarTower.toAlgHom P (CoordinateRing I) (GenericZeroField I)
-  have h_eval : MvPolynomial.aeval (genericZero I) = j.comp q := by
-    ext i
-    simp [genericZero, q, j]
+  rw [aeval_genericZero_eq_algebraMap_mk]
   constructor
-  · intro hf
-    have hmap : algebraMap (CoordinateRing I) (GenericZeroField I)
-        (Ideal.Quotient.mk I f) = 0 := by
-      simpa only [h_eval, AlgHom.comp_apply, q, j, IsScalarTower.toAlgHom_apply,
-        Ideal.Quotient.mkₐ_eq_mk] using hf
+  · intro h
     have hquot : Ideal.Quotient.mk I f = 0 :=
-      IsFractionRing.injective (CoordinateRing I) (GenericZeroField I) (by simpa using hmap)
+      IsFractionRing.injective (CoordinateRing I) (GenericZeroField I) (by simpa using h)
     exact Ideal.Quotient.eq_zero_iff_mem.mp hquot
-  · intro hf
-    have hquot : Ideal.Quotient.mk I f = 0 :=
-      Ideal.Quotient.eq_zero_iff_mem.mpr hf
-    have hmap : algebraMap (CoordinateRing I) (GenericZeroField I)
-        (Ideal.Quotient.mk I f) = 0 := by
-      rw [hquot, map_zero]
-    simpa only [h_eval, AlgHom.comp_apply, q, j, IsScalarTower.toAlgHom_apply,
-      Ideal.Quotient.mkₐ_eq_mk] using hmap
+  · intro h
+    rw [Ideal.Quotient.eq_zero_iff_mem.mpr h, map_zero]
 
 /-- The finite-coordinate form matching Noether's variables `x₁, …, xₙ`. -/
 theorem aeval_genericZero_fin_eq_zero_iff_mem {n : ℕ}
